@@ -394,44 +394,19 @@
       align-items: start;
     }
 
-    form {
+    .form-embed {
       background: white;
-      padding: 30px;
+      padding: 18px;
       border-radius: 18px;
       border: 1px solid #e5e7eb;
       box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+      overflow: hidden;
     }
 
-    label {
-      display: block;
-      font-weight: 800;
-      color: #06203f;
-      margin-bottom: 7px;
-    }
-
-    input,
-    select,
-    textarea {
+    .form-embed iframe {
       width: 100%;
-      padding: 13px;
-      margin-bottom: 16px;
-      border-radius: 8px;
-      border: 1px solid #d1d5db;
-      font-size: 15px;
-    }
-
-    textarea {
-      min-height: 120px;
-    }
-
-    .success-message {
-      display: none;
-      background: #dcfce7;
-      color: #166534;
-      padding: 14px;
-      border-radius: 10px;
-      margin-top: 12px;
-      font-weight: 800;
+      min-height: 1420px;
+      border: none;
     }
 
     .contact-info {
@@ -1124,50 +1099,21 @@
     <div class="container">
       <div class="section-title">
         <h2>Contact / Book Online Trial Class</h2>
-        <p>Fill in the form below. When you submit, WhatsApp will open with your details already written.</p>
+        <p>Fill in the form below. Your details will be saved in our student inquiry directory, and the team will contact you soon.</p>
       </div>
 
       <div class="contact-grid">
-        <form id="trialForm">
-          <label for="studentName">Student Name *</label>
-          <input type="text" id="studentName" required />
-
-          <label for="parentName">Parent Name</label>
-          <input type="text" id="parentName" />
-
-          <label for="email">Email *</label>
-          <input type="email" id="email" required />
-
-          <label for="studentWhatsapp">Student / Parent WhatsApp Number *</label>
-          <input type="text" id="studentWhatsapp" required />
-
-          <label for="classGrade">Class / Grade</label>
-          <input type="text" id="classGrade" placeholder="Example: O Level, IGCSE, Grade 9, Grade 10" />
-
-          <label for="course">Course Required</label>
-          <select id="course">
-            <option>O Level Islamiyat 2058 Complete Course</option>
-            <option>IGCSE Islamiyat 0493 Support</option>
-            <option>Paper 1 Preparation</option>
-            <option>Paper 2 Preparation</option>
-            <option>Crash Course</option>
-            <option>Past Paper Practice</option>
-            <option>Answer Writing Workshop</option>
-            <option>One-to-One Online Class</option>
-          </select>
-
-          <label for="examSession">Exam Session / Target</label>
-          <input type="text" id="examSession" placeholder="Example: May/June 2026, Oct/Nov 2026, school test" />
-
-          <label for="message">Message</label>
-          <textarea id="message" placeholder="Write your weak areas, preferred timing, or questions..."></textarea>
-
-          <button type="submit" class="btn btn-primary">Send Booking Request on WhatsApp</button>
-
-          <div class="success-message" id="successMessage">
-            Thank you. WhatsApp has opened with your booking request.
-          </div>
-        </form>
+        <div class="form-embed">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdMCgRRxvg8id_bHwK68LbdmMGaTZ90F2uwn10OnabukaA9LA/viewform?embedded=true" 
+            width="100%" 
+            height="1420" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0">
+            Loading…
+          </iframe>
+        </div>
 
         <div class="contact-info">
           <h3>Contact Information</h3>
@@ -1235,74 +1181,6 @@
       <p>© 2026 O'Level Islamiyat 2058 with Dr. Imran Hayat. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>
-    document.getElementById("trialForm").addEventListener("submit", async function(event) {
-      event.preventDefault();
-
-      const WHATSAPP_NUMBER = "923354910481";
-      const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzKzehouyRKaOv1Fvt549ZOs7W_PZuB60DzIgyaFeRL4bS6tqspRRvvB_OfhQIjCO4i/exec";
-
-      const studentName = document.getElementById("studentName").value.trim();
-      const parentName = document.getElementById("parentName").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const studentWhatsapp = document.getElementById("studentWhatsapp").value.trim();
-      const classGrade = document.getElementById("classGrade").value.trim();
-      const course = document.getElementById("course").value;
-      const examSession = document.getElementById("examSession").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      if (!studentName || !email || !studentWhatsapp) {
-        alert("Please fill in Student Name, Email, and WhatsApp Number.");
-        return;
-      }
-
-      const formData = new URLSearchParams();
-      formData.append("studentName", studentName);
-      formData.append("parentName", parentName);
-      formData.append("email", email);
-      formData.append("studentWhatsapp", studentWhatsapp);
-      formData.append("classGrade", classGrade);
-      formData.append("course", course);
-      formData.append("examSession", examSession);
-      formData.append("message", message);
-      formData.append("source", "Website Form");
-
-      try {
-        await fetch(GOOGLE_SCRIPT_URL, {
-          method: "POST",
-          mode: "no-cors",
-          body: formData
-        });
-      } catch (error) {
-        console.log("Google Sheet submission issue:", error);
-      }
-
-      const text =
-`Assalamu Alaikum Dr. Imran Hayat. I want to book an online trial class for O Level / IGCSE Islamiyat.
-
-Student Name: ${studentName}
-Parent Name: ${parentName || "Not provided"}
-Email: ${email}
-Student/Parent WhatsApp: ${studentWhatsapp}
-Class / Grade: ${classGrade || "Not provided"}
-Course Required: ${course}
-Exam Session / Target: ${examSession || "Not provided"}
-Message: ${message || "No extra message"}
-
-Please share class details, schedule, and availability.`;
-
-      const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
-
-      window.open(whatsappURL, "_blank");
-
-      document.getElementById("successMessage").style.display = "block";
-      document.getElementById("successMessage").innerText =
-        "Thank you. Your request has been saved and WhatsApp has opened with your booking message.";
-
-      this.reset();
-    });
-  </script>
 
 </body>
 </html>
