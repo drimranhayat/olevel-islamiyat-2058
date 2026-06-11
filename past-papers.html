@@ -1,45 +1,768 @@
-<!-- P2 Past Papers Section Cards: paste inside past-papers.html -->
-<section class="p2-section" id="paper-2">
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Past Papers | O Level & IGCSE Islamiyat 2058 / 0493</title>
+
   <style>
-    .p2-section{max-width:1180px;margin:40px auto;padding:0 18px;font-family:Inter,system-ui,"Segoe UI",Arial,sans-serif}
-    .p2-section .p2-title{background:linear-gradient(135deg,#0b2447,#19376d);color:#fff;border-radius:24px;padding:28px;margin-bottom:20px;box-shadow:0 16px 35px rgba(15,23,42,.12)}
-    .p2-section .p2-title h2{margin:0 0 8px;font-size:clamp(1.8rem,4vw,3rem)}
-    .p2-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
-    .p2-link-card{text-decoration:none;color:#111827;background:#fff;border:1px solid #e5e7eb;border-radius:22px;padding:22px;box-shadow:0 12px 26px rgba(15,23,42,.08);transition:.2s;display:block}
-    .p2-link-card:hover{transform:translateY(-4px);border-color:#d9a441}
-    .p2-link-card small{display:inline-block;background:#fffbeb;color:#92400e;border:1px solid #fde68a;border-radius:999px;padding:5px 10px;font-weight:800}
-    .p2-link-card h3{color:#0b2447;margin:14px 0 8px;font-size:1.25rem}
-    .p2-link-card p{color:#475569;margin:0 0 14px;line-height:1.6}
-    .p2-link-card span{display:inline-block;margin-right:6px;margin-bottom:6px;background:#ecfeff;color:#155e75;border:1px solid #a5f3fc;border-radius:999px;padding:5px 9px;font-size:.82rem}
+    :root {
+      --navy: #08244d;
+      --blue: #0f5ea8;
+      --gold: #f4b400;
+      --light: #f5f8fc;
+      --white: #ffffff;
+      --text: #1d2633;
+      --muted: #667085;
+      --border: #d9e2ef;
+      --shadow: 0 12px 30px rgba(8, 36, 77, 0.12);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #f7fbff 0%, #eef5ff 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .top-bar {
+      background: var(--navy);
+      color: var(--white);
+      padding: 12px 6%;
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    header {
+      background: var(--white);
+      padding: 18px 6%;
+      box-shadow: 0 4px 20px rgba(8, 36, 77, 0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: 800;
+      color: var(--navy);
+      font-size: 22px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+    .nav-links a {
+      color: var(--navy);
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: var(--light);
+      color: var(--blue);
+    }
+
+    .hero {
+      padding: 70px 6% 45px;
+      background:
+        radial-gradient(circle at top left, rgba(244, 180, 0, 0.20), transparent 35%),
+        radial-gradient(circle at top right, rgba(15, 94, 168, 0.18), transparent 35%),
+        linear-gradient(135deg, #08244d, #0f5ea8);
+      color: var(--white);
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      padding: 8px 16px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+      font-weight: 700;
+      color: #fff4c2;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 18px;
+      opacity: 0.94;
+    }
+
+    .hero-actions {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 24px rgba(244, 180, 0, 0.30);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.14);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.24);
+      transform: translateY(-3px);
+    }
+
+    main {
+      padding: 50px 6%;
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    .intro-panel {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      margin-bottom: 35px;
+    }
+
+    .intro-panel h2 {
+      color: var(--navy);
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .intro-panel p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .stat-box {
+      background: var(--light);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      text-align: center;
+    }
+
+    .stat-box strong {
+      display: block;
+      color: var(--blue);
+      font-size: 26px;
+      margin-bottom: 4px;
+    }
+
+    .stat-box span {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .section {
+      margin-top: 42px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-bottom: 22px;
+    }
+
+    .section-heading h2 {
+      color: var(--navy);
+      font-size: 30px;
+      line-height: 1.2;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      max-width: 650px;
+      font-size: 16px;
+    }
+
+    .paper-tag {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--white);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+      min-height: 295px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 7px;
+      background: linear-gradient(90deg, var(--gold), var(--blue));
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 40px rgba(8, 36, 77, 0.18);
+      border-color: rgba(15, 94, 168, 0.35);
+    }
+
+    .card-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(244, 180, 0, 0.20), rgba(15, 94, 168, 0.14));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      font-size: 21px;
+      line-height: 1.25;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .meta span {
+      background: #eef5ff;
+      color: var(--blue);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .open-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      background: var(--navy);
+      color: var(--white);
+      padding: 12px 16px;
+      border-radius: 14px;
+      font-weight: 800;
+      transition: 0.3s;
+    }
+
+    .open-link:hover {
+      background: var(--blue);
+    }
+
+    .exam-focus {
+      margin-top: 45px;
+      background: linear-gradient(135deg, #ffffff, #f4f8ff);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .exam-focus h2 {
+      color: var(--navy);
+      margin-bottom: 14px;
+      font-size: 28px;
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .focus-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .focus-box h3 {
+      color: var(--blue);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .focus-box p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 6%;
+      margin-top: 55px;
+    }
+
+    footer p {
+      opacity: 0.9;
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 1000px) {
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats,
+      .focus-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .top-bar,
+      header,
+      .hero,
+      main,
+      footer {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      .nav {
+        align-items: flex-start;
+      }
+
+      .cards-grid,
+      .stats,
+      .focus-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        min-height: auto;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+    }
   </style>
-  <div class="p2-title">
-    <h2>Paper 2 Topical Past Papers</h2>
-    <p>Section-wise question bank for Cambridge O Level Islamiyat 2058 / IGCSE 0493, arranged for quick revision and A* answer practice.</p>
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div>Cambridge O Level Islamiyat 2058 | IGCSE Islamiyat 0493</div>
+    <div>Prepared for focused past-paper practice</div>
   </div>
-  <div class="p2-grid">
-    <a class="p2-link-card" href="past-papers/p2/premium-major-teachings-hadith-p2-past-papers.html">
-      <small>11 Questions</small>
-      <h3>Major Teachings in the Hadiths</h3>
-      <p>Close study of selected Hadith passages, their teachings, and their importance for individual conduct and community life.</p>
-      <span>Set Hadith references</span><span>Individual conduct</span><span>Communal care</span>
-    </a>
-    <a class="p2-link-card" href="past-papers/p2/premium-history-importance-hadith-p2-past-papers.html">
-      <small>31 Questions</small>
-      <h3>History &amp; Importance of the Hadiths</h3>
-      <p>Compilation, preservation, authentication, classification, collections, compilers, legal significance, and the role of Hadiths in Islamic thought and action.</p>
-      <span>Sahih / Hasan / Da‘if</span><span>Isnad and Matn</span><span>Narrator and text checks</span>
-    </a>
-    <a class="p2-link-card" href="past-papers/p2/premium-rightly-guided-caliphs-p2-past-papers.html">
-      <small>55 Questions</small>
-      <h3>Rightly Guided Caliphs</h3>
-      <p>Main events, policies, achievements, difficulties, leadership qualities, and importance of the four Caliphs as models for later Muslims.</p>
-      <span>Abu Bakr (ra)</span><span>‘Umar (ra)</span><span>‘Uthman (ra)</span>
-    </a>
-    <a class="p2-link-card" href="past-papers/p2/premium-articles-faith-pillars-islam-p2-past-papers.html">
-      <small>67 Questions</small>
-      <h3>Articles of Faith &amp; Pillars of Islam</h3>
-      <p>The Six Articles of Faith, Jihad in its range of meanings, and the Five Pillars of Islam with their method and significance.</p>
-      <span>Six Articles of Faith</span><span>Shahadah and Salat</span><span>Zakat, Sawm and Hajj</span>
-    </a>
-  </div>
-</section>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html" class="logo">O Level <span>Islamiyat</span></a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="notes.html">Notes</a>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-badge">Topical Past Papers 2014–2024</div>
+
+    <h1>O Level & IGCSE Islamiyat Past Papers</h1>
+
+    <p>
+      A clean, topic-wise past-paper hub for Cambridge Islamiyat Paper 1 and Paper 2.
+      Use these sections to revise repeated questions, understand examiner patterns,
+      and prepare high-scoring answers with confidence.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#paper1" class="btn btn-primary">Explore Paper 1</a>
+      <a href="#paper2" class="btn btn-secondary">Explore Paper 2</a>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="intro-panel">
+      <h2>How to Use This Page</h2>
+      <p>
+        Select the paper first, then open the topic you want to practise. Each topic page contains
+        past-paper questions arranged section-wise so students can revise smartly instead of searching
+        through full yearly papers again and again.
+      </p>
+
+      <div class="stats">
+        <div class="stat-box">
+          <strong>2</strong>
+          <span>Papers</span>
+        </div>
+
+        <div class="stat-box">
+          <strong>8</strong>
+          <span>Major Sections</span>
+        </div>
+
+        <div class="stat-box">
+          <strong>2014–2024</strong>
+          <span>Exam Range</span>
+        </div>
+
+        <div class="stat-box">
+          <strong>2058 / 0493</strong>
+          <span>Cambridge Codes</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAPER 1 SECTION ================= -->
+
+    <section class="section" id="paper1">
+      <div class="section-heading">
+        <div>
+          <span class="paper-tag">Paper 1</span>
+          <h2>Paper 1 Topical Past Papers</h2>
+        </div>
+
+        <p>
+          Paper 1 focuses on the Qur’an, the life of the Prophet Muhammad ﷺ,
+          and the early Islamic community. Open each section for repeated and
+          exam-focused questions.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div>
+            <div class="card-icon">📖</div>
+            <h3>History & Importance of the Qur’an</h3>
+            <p>
+              Revelation, compilation, preservation, themes, and importance of the Holy Qur’an.
+            </p>
+
+            <div class="meta">
+              <span>Paper 1</span>
+              <span>Qur’an</span>
+              <span>Topical</span>
+            </div>
+          </div>
+
+          <a class="open-link" href="past-papers/p1/premium-history-importance-quran-p1-past-papers.html">
+            Open Questions
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-icon">🌙</div>
+            <h3>Life of Prophet ﷺ in Makkah</h3>
+            <p>
+              Early life, first revelation, preaching, opposition, persecutions, Ta’if, and Hijrah background.
+            </p>
+
+            <div class="meta">
+              <span>Paper 1</span>
+              <span>Seerah</span>
+              <span>Makkah</span>
+            </div>
+          </div>
+
+          <a class="open-link" href="past-papers/p1/premium-makki-life-p1-past-papers.html">
+            Open Questions
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-icon">🕌</div>
+            <h3>Life of Prophet ﷺ in Madinah</h3>
+            <p>
+              Madinan society, battles, treaties, leadership, community formation, and final years.
+            </p>
+
+            <div class="meta">
+              <span>Paper 1</span>
+              <span>Seerah</span>
+              <span>Madinah</span>
+            </div>
+          </div>
+
+          <a class="open-link" href="past-papers/p1/premium-madani-life-p1-past-papers.html">
+            Open Questions
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-icon">🤝</div>
+            <h3>The First Islamic Community</h3>
+            <p>
+              Companions, wives of the Prophet ﷺ, early Muslims, brotherhood, and community values.
+            </p>
+
+            <div class="meta">
+              <span>Paper 1</span>
+              <span>Community</span>
+              <span>Companions</span>
+            </div>
+          </div>
+
+          <a class="open-link" href="past-papers/p1/premium-first-islamic-community-p1-past-papers.html">
+            Open Questions
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= PAPER 2 SECTION ================= -->
+
+    <section class="section" id="paper2">
+      <div class="section-heading">
+        <div>
+          <span class="paper-tag">Paper 2</span>
+          <h2>Paper 2 Topical Past Papers</h2>
+        </div>
+
+        <p>
+          Paper 2 focuses on Hadiths, the Rightly Guided Caliphs, Articles of Faith,
+          and Pillars of Islam. These pages are arranged section-wise for efficient revision.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div>
+            <div class="card-icon">💬</div>
+            <h3>Major Teachings in the Hadiths</h3>
+            <p>
+              Selected Hadith passages, individual conduct, community life, brotherhood, unity, and guidance.
+            </p>
+
+            <div class="meta">
+              <span>Paper 2</span>
+              <span>Hadith Teachings</span>
+              <span>Set Hadiths</span>
+            </div>
+          </div>
+
+          <a class="open-link" href="past-papers/p2/premium-major-teachings-hadith-p2-past-papers.html">
+            Open Questions
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-icon">📚</div>
+            <h3>History & Importance of the Hadiths</h3>
+            <p>
+              Compilation, preservation, authentication, isnad, matn, collections, compilers, and legal significance.
+            </p>
+
+            <div class="meta">
+              <span>Paper 2</span>
+              <span>Hadith History</span>
+              <span>Authentication</span>
+            </div>
+          </div>
+
+          <a class="open-link" href="past-papers/p2/premium-history-importance-hadith-p2-past-papers.html">
+            Open Questions
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-icon">⚔️</div>
+            <h3>Rightly Guided Caliphs</h3>
+            <p>
+              Abu Bakr, Umar, Uthman, Ali رضی اللہ عنہم, their leadership, policies, battles, difficulties, and achievements.
+            </p>
+
+            <div class="meta">
+              <span>Paper 2</span>
+              <span>Caliphs</span>
+              <span>Leadership</span>
+            </div>
+          </div>
+
+          <a class="open-link" href="past-papers/p2/premium-rightly-guided-caliphs-p2-past-papers.html">
+            Open Questions
+          </a>
+        </article>
+
+        <article class="card">
+          <div>
+            <div class="card-icon">⭐</div>
+            <h3>Articles of Faith & Pillars of Islam</h3>
+            <p>
+              Six Articles of Faith, Five Pillars of Islam, Jihad, methods, meanings, and significance.
+            </p>
+
+            <div class="meta">
+              <span>Paper 2</span>
+              <span>Faith</span>
+              <span>Pillars</span>
+            </div>
+          </div>
+
+          <a class="open-link" href="past-papers/p2/premium-articles-faith-pillars-islam-p2-past-papers.html">
+            Open Questions
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ================= EXAM FOCUS SECTION ================= -->
+
+    <section class="exam-focus">
+      <h2>Exam-Focused Revision Strategy</h2>
+
+      <p>
+        For best results, students should not only read the questions. They should identify repeated
+        themes, prepare answer plans, memorise key facts, and practise 10-mark and 4-mark answers separately.
+      </p>
+
+      <div class="focus-grid">
+
+        <div class="focus-box">
+          <h3>1. Track Repeated Questions</h3>
+          <p>
+            Mark questions that appear again and again. These topics usually show strong exam importance.
+          </p>
+        </div>
+
+        <div class="focus-box">
+          <h3>2. Prepare 10-Mark Content</h3>
+          <p>
+            For part A, focus on detailed knowledge, sequence of events, names, terms, and clear explanation.
+          </p>
+        </div>
+
+        <div class="focus-box">
+          <h3>3. Practise 4-Mark Evaluation</h3>
+          <p>
+            For part B, write personal judgement with Islamic reasoning, examples, and clear relevance.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><strong>O Level / IGCSE Islamiyat 2058 / 0493</strong></p>
+    <p>Past-paper practice hub for focused Cambridge exam preparation.</p>
+  </footer>
+
+</body>
+</html>
+```
