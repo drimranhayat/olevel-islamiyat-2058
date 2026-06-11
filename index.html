@@ -11,611 +11,102 @@
   <meta name="keywords" content="O Level Islamiyat 2058, IGCSE Islamiyat 0493, O Level Islamiyat online classes, Islamiyat tutor Lahore, Dr Imran Hayat, Cambridge Islamiyat, Islamiyat past papers, Islamiyat model answers" />
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.65;
-      color: #111827;
-      background: #ffffff;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    .container {
-      width: 92%;
-      max-width: 1180px;
-      margin: auto;
-    }
-
-    header {
-      background: #06203f;
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 0;
-      gap: 18px;
-    }
-
-    .logo {
-      color: white;
-      font-size: 21px;
-      font-weight: 900;
-      white-space: nowrap;
-      letter-spacing: -0.3px;
-    }
-
-    .logo span {
-      color: #d6a84f;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    nav a {
-      color: white;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    nav a:hover,
-    nav a.active {
-      color: #d6a84f;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 13px 21px;
-      border-radius: 10px;
-      font-weight: 800;
-      transition: 0.3s ease;
-      border: none;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    .btn-primary {
-      background: #d6a84f;
-      color: #06203f;
-      box-shadow: 0 10px 24px rgba(214,168,79,0.24);
-    }
-
-    .btn-primary:hover {
-      background: #c3953d;
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      background: #0f766e;
-      color: white;
-    }
-
-    .btn-secondary:hover {
-      background: #115e59;
-      transform: translateY(-2px);
-    }
-
-    .btn-outline {
-      border: 2px solid rgba(255,255,255,0.9);
-      color: white;
-    }
-
-    .btn-outline:hover {
-      background: white;
-      color: #06203f;
-      transform: translateY(-2px);
-    }
-
-    .hero {
-      background:
-        radial-gradient(circle at 20% 20%, rgba(214,168,79,0.16), transparent 28%),
-        radial-gradient(circle at 85% 30%, rgba(15,118,110,0.26), transparent 28%),
-        linear-gradient(135deg, #06203f 0%, #073159 48%, #0f766e 100%);
-      color: white;
-      padding: 88px 0 72px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 46px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      background: rgba(214,168,79,0.16);
-      border: 1px solid rgba(214,168,79,0.45);
-      color: #ffe6ad;
-      padding: 7px 12px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 900;
-      margin-bottom: 16px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      line-height: 1.12;
-      margin-bottom: 18px;
-      letter-spacing: -1px;
-    }
-
-    .hero p {
-      color: #e5e7eb;
-      font-size: 19px;
-      margin-bottom: 25px;
-      max-width: 720px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-bottom: 24px;
-    }
-
-    .badge-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 18px;
-    }
-
-    .badge {
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.24);
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-size: 14px;
-      color: white;
-      font-weight: 700;
-    }
-
-    .hero-card {
-      background: white;
-      color: #111827;
-      padding: 32px;
-      border-radius: 24px;
-      box-shadow: 0 20px 54px rgba(0,0,0,0.30);
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-
-    .hero-card h3 {
-      color: #06203f;
-      font-size: 25px;
-      margin-bottom: 16px;
-    }
-
-    .hero-card ul {
-      list-style: none;
-    }
-
-    .hero-card li {
-      position: relative;
-      padding-left: 30px;
-      margin-bottom: 13px;
-      color: #374151;
-      font-weight: 600;
-    }
-
-    .hero-card li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #0f766e;
-      font-weight: 900;
-    }
-
-    .stats-strip {
-      margin-top: 36px;
-      background: rgba(255,255,255,0.10);
-      border: 1px solid rgba(255,255,255,0.18);
-      border-radius: 18px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      overflow: hidden;
-      backdrop-filter: blur(10px);
-    }
-
-    .stat {
-      padding: 20px;
-      border-right: 1px solid rgba(255,255,255,0.14);
-      text-align: center;
-    }
-
-    .stat:last-child {
-      border-right: none;
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 24px;
-      color: #d6a84f;
-      line-height: 1.1;
-      margin-bottom: 5px;
-    }
-
-    .stat span {
-      font-size: 13px;
-      color: #e5e7eb;
-      font-weight: 700;
-    }
-
-    section {
-      padding: 74px 0;
-    }
-
-    .bg-light {
-      background: #f8fafc;
-    }
-
-    .section-title {
-      text-align: center;
-      margin-bottom: 42px;
-    }
-
-    .section-title h2 {
-      color: #06203f;
-      font-size: 36px;
-      margin-bottom: 12px;
-      letter-spacing: -0.5px;
-    }
-
-    .section-title p {
-      max-width: 830px;
-      margin: auto;
-      color: #4b5563;
-      font-size: 17px;
-    }
-
-    .grid-4 {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
-    }
-
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 28px;
-      align-items: start;
-    }
-
-    .card {
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 18px;
-      padding: 27px;
-      box-shadow: 0 9px 25px rgba(0,0,0,0.055);
-      transition: 0.3s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 16px 38px rgba(0,0,0,0.10);
-    }
-
-    .card h3 {
-      color: #06203f;
-      font-size: 21px;
-      margin-bottom: 11px;
-    }
-
-    .card p,
-    .card li {
-      color: #4b5563;
-    }
-
-    .card ul {
-      margin: 14px 0 20px 18px;
-    }
-
-    .icon {
-      width: 50px;
-      height: 50px;
-      background: #eef6f5;
-      color: #0f766e;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 14px;
-      font-size: 24px;
-      margin-bottom: 17px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #eef6f5;
-      color: #0f766e;
-      padding: 5px 10px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: 900;
-      margin-bottom: 12px;
-    }
-
-    .gold-tag {
-      background: #fff7e6;
-      color: #8a5a00;
-    }
-
-    .paper-card {
-      border-left: 5px solid #d6a84f;
-    }
-
-    .profile-panel {
-      background: #06203f;
-      color: white;
-      padding: 38px;
-      border-radius: 22px;
-      box-shadow: 0 14px 32px rgba(6,32,63,0.18);
-    }
-
-    .profile-panel h3 {
-      color: #d6a84f;
-      font-size: 28px;
-      margin-bottom: 14px;
-    }
-
-    .profile-panel p {
-      color: #e5e7eb;
-      margin-bottom: 13px;
-    }
-
-    .info-list {
-      display: grid;
-      gap: 14px;
-    }
-
-    .info-item {
-      background: white;
-      padding: 17px 20px;
-      border-radius: 13px;
-      border: 1px solid #e5e7eb;
-      font-weight: 800;
-      color: #06203f;
-    }
-
-    .process {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 22px;
-    }
-
-    .step {
-      text-align: center;
-      background: white;
-      border: 1px solid #e5e7eb;
-      border-radius: 17px;
-      padding: 28px 20px;
-      box-shadow: 0 9px 25px rgba(0,0,0,0.045);
-    }
-
-    .step-number {
-      width: 48px;
-      height: 48px;
-      background: #06203f;
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto 15px;
-      font-weight: 900;
-    }
-
-    .highlight {
-      background:
-        radial-gradient(circle at 18% 20%, rgba(214,168,79,0.18), transparent 24%),
-        linear-gradient(135deg, #06203f, #0f766e);
-      color: white;
-      border-radius: 26px;
-      padding: 58px 32px;
-      text-align: center;
-      box-shadow: 0 18px 44px rgba(6,32,63,0.20);
-    }
-
-    .highlight h2 {
-      font-size: 34px;
-      margin-bottom: 13px;
-    }
-
-    .highlight p {
-      color: #e5e7eb;
-      max-width: 780px;
-      margin: 0 auto 24px;
-    }
-
-    .contact-info {
-      background: #06203f;
-      color: white;
-      border-radius: 20px;
-      padding: 34px;
-    }
-
-    .contact-info h3 {
-      color: #d6a84f;
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    .contact-info p {
-      color: #e5e7eb;
-      margin-bottom: 13px;
-    }
-
-    .social-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
-    }
-
-    .social-row a {
-      color: white;
-      border: 1px solid rgba(255,255,255,0.3);
-      padding: 9px 12px;
-      border-radius: 999px;
-      font-weight: 800;
-    }
-
-    footer {
-      background: #030f24;
-      color: white;
-      padding: 55px 0 25px;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1.3fr;
-      gap: 28px;
-      margin-bottom: 28px;
-    }
-
-    footer h3,
-    footer h4 {
-      color: #d6a84f;
-      margin-bottom: 14px;
-    }
-
-    footer p,
-    footer a {
-      color: #d1d5db;
-      display: block;
-      margin-bottom: 8px;
-      font-size: 15px;
-    }
-
-    .disclaimer {
-      border-top: 1px solid rgba(255,255,255,0.15);
-      padding-top: 20px;
-      text-align: center;
-      color: #cbd5e1;
-      font-size: 13px;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      right: 22px;
-      bottom: 22px;
-      background: #25d366;
-      color: white;
-      padding: 14px 18px;
-      border-radius: 999px;
-      font-weight: 900;
-      z-index: 2000;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: Arial, sans-serif; line-height: 1.65; color: #111827; background: #ffffff; }
+    a { text-decoration: none; }
+    .container { width: 92%; max-width: 1180px; margin: auto; }
+    header { background: #06203f; color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 16px rgba(0,0,0,0.18); }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; gap: 18px; }
+    .logo { color: white; font-size: 21px; font-weight: 900; white-space: nowrap; letter-spacing: -0.3px; }
+    .logo span { color: #d6a84f; }
+    nav { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; justify-content: flex-end; }
+    nav a { color: white; font-size: 14px; font-weight: 700; }
+    nav a:hover, nav a.active { color: #d6a84f; }
+    .btn { display: inline-block; padding: 13px 21px; border-radius: 10px; font-weight: 800; transition: 0.3s ease; border: none; cursor: pointer; text-align: center; }
+    .btn-primary { background: #d6a84f; color: #06203f; box-shadow: 0 10px 24px rgba(214,168,79,0.24); }
+    .btn-primary:hover { background: #c3953d; transform: translateY(-2px); }
+    .btn-secondary { background: #0f766e; color: white; }
+    .btn-secondary:hover { background: #115e59; transform: translateY(-2px); }
+    .btn-outline { border: 2px solid rgba(255,255,255,0.9); color: white; }
+    .btn-outline:hover { background: white; color: #06203f; transform: translateY(-2px); }
+    .hero { background: radial-gradient(circle at 20% 20%, rgba(214,168,79,0.16), transparent 28%), radial-gradient(circle at 85% 30%, rgba(15,118,110,0.26), transparent 28%), linear-gradient(135deg, #06203f 0%, #073159 48%, #0f766e 100%); color: white; padding: 88px 0 72px; }
+    .hero-grid { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: 46px; align-items: center; }
+    .eyebrow { display: inline-block; background: rgba(214,168,79,0.16); border: 1px solid rgba(214,168,79,0.45); color: #ffe6ad; padding: 7px 12px; border-radius: 999px; font-size: 13px; font-weight: 900; margin-bottom: 16px; }
+    .hero h1 { font-size: 48px; line-height: 1.12; margin-bottom: 18px; letter-spacing: -1px; }
+    .hero p { color: #e5e7eb; font-size: 19px; margin-bottom: 25px; max-width: 720px; }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 24px; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.24); padding: 8px 12px; border-radius: 999px; font-size: 14px; color: white; font-weight: 700; }
+    .hero-card { background: white; color: #111827; padding: 32px; border-radius: 24px; box-shadow: 0 20px 54px rgba(0,0,0,0.30); border: 1px solid rgba(255,255,255,0.2); }
+    .hero-card h3 { color: #06203f; font-size: 25px; margin-bottom: 16px; }
+    .hero-card ul { list-style: none; }
+    .hero-card li { position: relative; padding-left: 30px; margin-bottom: 13px; color: #374151; font-weight: 600; }
+    .hero-card li::before { content: "✓"; position: absolute; left: 0; color: #0f766e; font-weight: 900; }
+    .stats-strip { margin-top: 36px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.18); border-radius: 18px; display: grid; grid-template-columns: repeat(4, 1fr); overflow: hidden; backdrop-filter: blur(10px); }
+    .stat { padding: 20px; border-right: 1px solid rgba(255,255,255,0.14); text-align: center; }
+    .stat:last-child { border-right: none; }
+    .stat strong { display: block; font-size: 24px; color: #d6a84f; line-height: 1.1; margin-bottom: 5px; }
+    .stat span { font-size: 13px; color: #e5e7eb; font-weight: 700; }
+    section { padding: 74px 0; }
+    .bg-light { background: #f8fafc; }
+    .section-title { text-align: center; margin-bottom: 42px; }
+    .section-title h2 { color: #06203f; font-size: 36px; margin-bottom: 12px; letter-spacing: -0.5px; }
+    .section-title p { max-width: 830px; margin: auto; color: #4b5563; font-size: 17px; }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; align-items: start; }
+    .card { background: white; border: 1px solid #e5e7eb; border-radius: 18px; padding: 27px; box-shadow: 0 9px 25px rgba(0,0,0,0.055); transition: 0.3s ease; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 16px 38px rgba(0,0,0,0.10); }
+    .card h3 { color: #06203f; font-size: 21px; margin-bottom: 11px; }
+    .card p, .card li { color: #4b5563; }
+    .card ul { margin: 14px 0 20px 18px; }
+    .icon { width: 50px; height: 50px; background: #eef6f5; color: #0f766e; display: flex; align-items: center; justify-content: center; border-radius: 14px; font-size: 24px; margin-bottom: 17px; }
+    .tag { display: inline-block; background: #eef6f5; color: #0f766e; padding: 5px 10px; border-radius: 999px; font-size: 13px; font-weight: 900; margin-bottom: 12px; }
+    .gold-tag { background: #fff7e6; color: #8a5a00; }
+    .paper-card { border-left: 5px solid #d6a84f; }
+    .profile-panel { background: #06203f; color: white; padding: 38px; border-radius: 22px; box-shadow: 0 14px 32px rgba(6,32,63,0.18); }
+    .profile-panel h3 { color: #d6a84f; font-size: 28px; margin-bottom: 14px; }
+    .profile-panel p { color: #e5e7eb; margin-bottom: 13px; }
+    .info-list { display: grid; gap: 14px; }
+    .info-item { background: white; padding: 17px 20px; border-radius: 13px; border: 1px solid #e5e7eb; font-weight: 800; color: #06203f; }
+    .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+    .step { text-align: center; background: white; border: 1px solid #e5e7eb; border-radius: 17px; padding: 28px 20px; box-shadow: 0 9px 25px rgba(0,0,0,0.045); }
+    .step-number { width: 48px; height: 48px; background: #06203f; color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 auto 15px; font-weight: 900; }
+    .highlight { background: radial-gradient(circle at 18% 20%, rgba(214,168,79,0.18), transparent 24%), linear-gradient(135deg, #06203f, #0f766e); color: white; border-radius: 26px; padding: 58px 32px; text-align: center; box-shadow: 0 18px 44px rgba(6,32,63,0.20); }
+    .highlight h2 { font-size: 34px; margin-bottom: 13px; }
+    .highlight p { color: #e5e7eb; max-width: 780px; margin: 0 auto 24px; }
+    .contact-info { background: #06203f; color: white; border-radius: 20px; padding: 34px; }
+    .contact-info h3 { color: #d6a84f; font-size: 28px; margin-bottom: 15px; }
+    .contact-info p { color: #e5e7eb; margin-bottom: 13px; }
+    .social-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+    .social-row a { color: white; border: 1px solid rgba(255,255,255,0.3); padding: 9px 12px; border-radius: 999px; font-weight: 800; }
+    .stars { color: #d6a84f; font-size: 20px; letter-spacing: 2px; margin-bottom: 10px; }
+    footer { background: #030f24; color: white; padding: 55px 0 25px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.3fr; gap: 28px; margin-bottom: 28px; }
+    footer h3, footer h4 { color: #d6a84f; margin-bottom: 14px; }
+    footer p, footer a { color: #d1d5db; display: block; margin-bottom: 8px; font-size: 15px; }
+    .disclaimer { border-top: 1px solid rgba(255,255,255,0.15); padding-top: 20px; text-align: center; color: #cbd5e1; font-size: 13px; }
+    .whatsapp-float { position: fixed; right: 22px; bottom: 22px; background: #25d366; color: white; padding: 14px 18px; border-radius: 999px; font-weight: 900; z-index: 2000; box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
     @media (max-width: 980px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav {
-        width: 100%;
-        justify-content: flex-start;
-        overflow-x: auto;
-        padding-bottom: 6px;
-        flex-wrap: nowrap;
-      }
-
-      nav a {
-        white-space: nowrap;
-      }
-
-      .hero-grid,
-      .grid-2 {
-        grid-template-columns: 1fr;
-      }
-
-      .grid-4,
-      .process,
-      .stats-strip {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .grid-3,
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        font-size: 38px;
-      }
-
-      .stat:nth-child(2) {
-        border-right: none;
-      }
-
-      .stat {
-        border-bottom: 1px solid rgba(255,255,255,0.14);
-      }
+      .navbar { flex-direction: column; align-items: flex-start; }
+      nav { width: 100%; justify-content: flex-start; overflow-x: auto; padding-bottom: 6px; flex-wrap: nowrap; }
+      nav a { white-space: nowrap; }
+      .hero-grid, .grid-2 { grid-template-columns: 1fr; }
+      .grid-4, .process, .stats-strip { grid-template-columns: repeat(2, 1fr); }
+      .grid-3, .footer-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 38px; }
+      .stat:nth-child(2) { border-right: none; }
+      .stat { border-bottom: 1px solid rgba(255,255,255,0.14); }
     }
-
     @media (max-width: 560px) {
-      .hero {
-        padding: 64px 0;
-      }
-
-      .hero h1 {
-        font-size: 31px;
-      }
-
-      .section-title h2 {
-        font-size: 28px;
-      }
-
-      .grid-4,
-      .process,
-      .stats-strip {
-        grid-template-columns: 1fr;
-      }
-
-      .stat {
-        border-right: none;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .whatsapp-float {
-        left: 18px;
-        right: 18px;
-        text-align: center;
-      }
+      .hero { padding: 64px 0; }
+      .hero h1 { font-size: 31px; }
+      .section-title h2 { font-size: 28px; }
+      .grid-4, .process, .stats-strip { grid-template-columns: 1fr; }
+      .stat { border-right: none; }
+      .btn { width: 100%; }
+      .whatsapp-float { left: 18px; right: 18px; text-align: center; }
     }
   </style>
 </head>
@@ -635,14 +126,13 @@
         <a href="past-papers.html">Past Papers</a>
         <a href="resources.html">Resources</a>
         <a href="faq.html">FAQ</a>
+        <a href="reviews.html">Reviews</a>
         <a href="contact.html">Book Trial</a>
       </nav>
     </div>
   </header>
 
-  <a class="whatsapp-float" href="https://wa.me/923354910481?text=Hello%20Dr.%20Imran%20Hayat%2C%20I%20want%20to%20book%20an%20O%20Level%20Islamiyat%20trial%20class." target="_blank">
-    WhatsApp
-  </a>
+  <a class="whatsapp-float" href="https://wa.me/923354910481?text=Hello%20Dr.%20Imran%20Hayat%2C%20I%20want%20to%20book%20an%20O%20Level%20Islamiyat%20trial%20class." target="_blank">WhatsApp</a>
 
   <section class="hero" id="home">
     <div class="container">
@@ -651,13 +141,11 @@
           <span class="eyebrow">Online Cambridge Islamiyat Preparation</span>
           <h1>O Level Islamiyat 2058 & IGCSE Islamiyat 0493 Classes</h1>
           <p>Learn Islamiyat with Dr. Imran Hayat through syllabus-based lessons, past paper practice, model answers, and guided 10-mark and 4-mark answer training.</p>
-
           <div class="hero-buttons">
             <a href="contact.html" class="btn btn-primary">Book a Free Trial Class</a>
             <a href="olevel-islamiyat-2058.html" class="btn btn-outline">View Course Plan</a>
-            <a href="https://wa.me/923354910481" target="_blank" class="btn btn-secondary">WhatsApp Now</a>
+            <a href="reviews.html" class="btn btn-secondary">Student Reviews</a>
           </div>
-
           <div class="badge-row">
             <span class="badge">Dr. Imran Hayat</span>
             <span class="badge">PhD Islamic Studies</span>
@@ -665,7 +153,6 @@
             <span class="badge">Online Classes</span>
           </div>
         </div>
-
         <div class="hero-card">
           <h3>Exam-Focused Support</h3>
           <ul>
@@ -674,28 +161,16 @@
             <li>Paper 1 and Paper 2 complete guidance</li>
             <li>Past paper and mark scheme awareness</li>
             <li>Model answer and writing improvement</li>
-            <li>Student inquiry form connected to directory</li>
+            <li>Student reviews and inquiry directory</li>
           </ul>
         </div>
       </div>
 
       <div class="stats-strip">
-        <div class="stat">
-          <strong>PhD</strong>
-          <span>Islamic Studies</span>
-        </div>
-        <div class="stat">
-          <strong>12+</strong>
-          <span>Years Experience</span>
-        </div>
-        <div class="stat">
-          <strong>2058</strong>
-          <span>O Level Islamiyat</span>
-        </div>
-        <div class="stat">
-          <strong>0493</strong>
-          <span>IGCSE Islamiyat</span>
-        </div>
+        <div class="stat"><strong>PhD</strong><span>Islamic Studies</span></div>
+        <div class="stat"><strong>12+</strong><span>Years Experience</span></div>
+        <div class="stat"><strong>2058</strong><span>O Level Islamiyat</span></div>
+        <div class="stat"><strong>0493</strong><span>IGCSE Islamiyat</span></div>
       </div>
     </div>
   </section>
@@ -708,29 +183,10 @@
       </div>
 
       <div class="grid-4">
-        <div class="card">
-          <div class="icon">📖</div>
-          <h3>Syllabus-Based Lessons</h3>
-          <p>Every lesson follows the important areas of Qur’an, Hadith, Seerah, Caliphs, beliefs, and practices.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">✍️</div>
-          <h3>Answer Writing</h3>
-          <p>Students learn how to develop clear, relevant, well-structured 10-mark and 4-mark answers.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">🎯</div>
-          <h3>Past Paper Practice</h3>
-          <p>Preparation includes repeated questions, question patterns, timing, and exam-style improvement.</p>
-        </div>
-
-        <div class="card">
-          <div class="icon">💬</div>
-          <h3>Online Support</h3>
-          <p>Online lessons, WhatsApp contact, class reminders, and guidance for students and parents.</p>
-        </div>
+        <div class="card"><div class="icon">📖</div><h3>Syllabus-Based Lessons</h3><p>Every lesson follows the important areas of Qur’an, Hadith, Seerah, Caliphs, beliefs, and practices.</p></div>
+        <div class="card"><div class="icon">✍️</div><h3>Answer Writing</h3><p>Students learn how to develop clear, relevant, well-structured 10-mark and 4-mark answers.</p></div>
+        <div class="card"><div class="icon">🎯</div><h3>Past Paper Practice</h3><p>Preparation includes repeated questions, question patterns, timing, and exam-style improvement.</p></div>
+        <div class="card"><div class="icon">💬</div><h3>Online Support</h3><p>Online lessons, WhatsApp contact, class reminders, and guidance for students and parents.</p></div>
       </div>
     </div>
   </section>
@@ -742,7 +198,6 @@
           <h2>About Dr. Imran Hayat</h2>
           <p>Islamic scholar, educator, university lecturer, and Cambridge-experienced teacher.</p>
         </div>
-
         <div class="info-list">
           <div class="info-item">Qualification: PhD Islamic Studies</div>
           <div class="info-item">Teaching Experience: 12 years</div>
@@ -750,11 +205,9 @@
           <div class="info-item">Location: Lahore, Pakistan</div>
           <div class="info-item">Class Mode: Online</div>
         </div>
-
         <br />
         <a href="about.html" class="btn btn-primary">Read Full Profile</a>
       </div>
-
       <div class="profile-panel">
         <h3>Professional Profile</h3>
         <p>Dr. Imran Hayat is an accomplished Islamic scholar, educator, and examiner with extensive experience in Cambridge and higher education.</p>
@@ -770,28 +223,10 @@
         <h2>Choose Your Preparation Path</h2>
         <p>Open the relevant page according to your syllabus, paper, or preparation need.</p>
       </div>
-
       <div class="grid-3">
-        <div class="card paper-card">
-          <span class="tag gold-tag">O Level 2058</span>
-          <h3>Complete O Level Islamiyat</h3>
-          <p>Complete preparation for Cambridge O Level Islamiyat 2058 with Paper 1, Paper 2, revision, and answer writing.</p>
-          <a href="olevel-islamiyat-2058.html" class="btn btn-primary">View O Level Page</a>
-        </div>
-
-        <div class="card paper-card">
-          <span class="tag gold-tag">IGCSE 0493</span>
-          <h3>IGCSE Islamiyat Support</h3>
-          <p>Focused support for IGCSE Islamiyat 0493 students needing clear concepts and exam-style practice.</p>
-          <a href="igcse-islamiyat-0493.html" class="btn btn-primary">View IGCSE Page</a>
-        </div>
-
-        <div class="card paper-card">
-          <span class="tag gold-tag">Past Papers</span>
-          <h3>Past Paper Practice</h3>
-          <p>Question-by-question practice using repeated questions, examiner expectations, and model answer structure.</p>
-          <a href="past-papers.html" class="btn btn-primary">View Past Papers</a>
-        </div>
+        <div class="card paper-card"><span class="tag gold-tag">O Level 2058</span><h3>Complete O Level Islamiyat</h3><p>Complete preparation for Cambridge O Level Islamiyat 2058 with Paper 1, Paper 2, revision, and answer writing.</p><a href="olevel-islamiyat-2058.html" class="btn btn-primary">View O Level Page</a></div>
+        <div class="card paper-card"><span class="tag gold-tag">IGCSE 0493</span><h3>IGCSE Islamiyat Support</h3><p>Focused support for IGCSE Islamiyat 0493 students needing clear concepts and exam-style practice.</p><a href="igcse-islamiyat-0493.html" class="btn btn-primary">View IGCSE Page</a></div>
+        <div class="card paper-card"><span class="tag gold-tag">Past Papers</span><h3>Past Paper Practice</h3><p>Question-by-question practice using repeated questions, examiner expectations, and model answer structure.</p><a href="past-papers.html" class="btn btn-primary">View Past Papers</a></div>
       </div>
     </div>
   </section>
@@ -802,33 +237,9 @@
         <h2>Paper 1 & Paper 2 Support</h2>
         <p>Students can prepare for the full syllabus or focus on a specific paper according to their need.</p>
       </div>
-
       <div class="grid-2">
-        <div class="card paper-card">
-          <span class="tag">Paper 1</span>
-          <h3>Qur’an, Prophet ﷺ & First Islamic Community</h3>
-          <p>Paper 1 preparation covers Qur’anic themes, history and importance of the Qur’an, life of Prophet Muhammad ﷺ, and the first Islamic community.</p>
-          <ul>
-            <li>Major themes of the Qur’an</li>
-            <li>Revelation and compilation</li>
-            <li>Makkan and Madinan life</li>
-            <li>First Islamic community</li>
-          </ul>
-          <a href="paper-1.html" class="btn btn-primary">Open Paper 1 Page</a>
-        </div>
-
-        <div class="card paper-card">
-          <span class="tag">Paper 2</span>
-          <h3>Hadith, Caliphs, Beliefs & Practices</h3>
-          <p>Paper 2 preparation covers Hadith teachings, Hadith compilation, Rightly Guided Caliphs, Articles of Faith, Pillars of Islam, and Jihad.</p>
-          <ul>
-            <li>Hadith teachings and compilation</li>
-            <li>Rightly Guided Caliphs</li>
-            <li>Articles of Faith</li>
-            <li>Five Pillars of Islam</li>
-          </ul>
-          <a href="paper-2.html" class="btn btn-primary">Open Paper 2 Page</a>
-        </div>
+        <div class="card paper-card"><span class="tag">Paper 1</span><h3>Qur’an, Prophet ﷺ & First Islamic Community</h3><p>Paper 1 preparation covers Qur’anic themes, history and importance of the Qur’an, life of Prophet Muhammad ﷺ, and the first Islamic community.</p><ul><li>Major themes of the Qur’an</li><li>Revelation and compilation</li><li>Makkan and Madinan life</li><li>First Islamic community</li></ul><a href="paper-1.html" class="btn btn-primary">Open Paper 1 Page</a></div>
+        <div class="card paper-card"><span class="tag">Paper 2</span><h3>Hadith, Caliphs, Beliefs & Practices</h3><p>Paper 2 preparation covers Hadith teachings, Hadith compilation, Rightly Guided Caliphs, Articles of Faith, Pillars of Islam, and Jihad.</p><ul><li>Hadith teachings and compilation</li><li>Rightly Guided Caliphs</li><li>Articles of Faith</li><li>Five Pillars of Islam</li></ul><a href="paper-2.html" class="btn btn-primary">Open Paper 2 Page</a></div>
       </div>
     </div>
   </section>
@@ -839,31 +250,45 @@
         <h2>Teaching Method</h2>
         <p>A practical process that moves students from understanding topics to writing exam-ready answers.</p>
       </div>
-
       <div class="process">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>Diagnosis</h3>
-          <p>Student’s syllabus coverage and answer-writing weaknesses are identified.</p>
-        </div>
+        <div class="step"><div class="step-number">1</div><h3>Diagnosis</h3><p>Student’s syllabus coverage and answer-writing weaknesses are identified.</p></div>
+        <div class="step"><div class="step-number">2</div><h3>Concept Building</h3><p>Each topic is explained with key facts, terms, background, and significance.</p></div>
+        <div class="step"><div class="step-number">3</div><h3>Practice</h3><p>Students practise exam-style questions with timing and structure awareness.</p></div>
+        <div class="step"><div class="step-number">4</div><h3>Feedback</h3><p>Answers are corrected and improved using exam-focused comments.</p></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Concept Building</h3>
-          <p>Each topic is explained with key facts, terms, background, and significance.</p>
-        </div>
+  <section class="bg-light" id="reviews">
+    <div class="container">
+      <div class="section-title">
+        <h2>Student & Parent Reviews</h2>
+        <p>Students and parents can submit feedback through the review page. Only approved reviews with permission will be displayed publicly.</p>
+      </div>
 
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Practice</h3>
-          <p>Students practise exam-style questions with timing and structure awareness.</p>
+      <div class="grid-3">
+        <div class="card">
+          <span class="tag gold-tag">Approved Reviews</span>
+          <div class="stars">★★★★★</div>
+          <h3>Feedback Section</h3>
+          <p>Approved student reviews will be displayed here after permission.</p>
         </div>
+        <div class="card">
+          <span class="tag gold-tag">Student Voice</span>
+          <div class="stars">★★★★★</div>
+          <h3>Share Experience</h3>
+          <p>Students can review their experience of Paper 1, Paper 2, past papers, and answer-writing support.</p>
+        </div>
+        <div class="card">
+          <span class="tag gold-tag">Parent Trust</span>
+          <div class="stars">★★★★★</div>
+          <h3>Parent Feedback</h3>
+          <p>Parents can share feedback about progress, guidance, and class experience.</p>
+        </div>
+      </div>
 
-        <div class="step">
-          <div class="step-number">4</div>
-          <h3>Feedback</h3>
-          <p>Answers are corrected and improved using exam-focused comments.</p>
-        </div>
+      <div style="text-align:center; margin-top:30px;">
+        <a href="reviews.html" class="btn btn-primary">Submit / View Reviews</a>
       </div>
     </div>
   </section>
@@ -874,28 +299,10 @@
         <h2>Resources & FAQs</h2>
         <p>Students can use dedicated pages for revision support, repeated questions, and common parent/student questions.</p>
       </div>
-
       <div class="grid-3">
-        <div class="card">
-          <span class="tag">Resources</span>
-          <h3>Free Islamiyat Resources</h3>
-          <p>Qur’anic passages notes, Hadith notes, Seerah timelines, Caliphs revision, and 30-day revision support.</p>
-          <a href="resources.html" class="btn btn-primary">Open Resources</a>
-        </div>
-
-        <div class="card">
-          <span class="tag">FAQ</span>
-          <h3>Frequently Asked Questions</h3>
-          <p>Answers about online classes, syllabus coverage, Paper 1, Paper 2, notes, past papers, and trial class booking.</p>
-          <a href="faq.html" class="btn btn-primary">Open FAQs</a>
-        </div>
-
-        <div class="card">
-          <span class="tag">Contact</span>
-          <h3>Book Trial Class</h3>
-          <p>Submit student details through the professional inquiry form connected to the student directory.</p>
-          <a href="contact.html" class="btn btn-primary">Book Trial</a>
-        </div>
+        <div class="card"><span class="tag">Resources</span><h3>Free Islamiyat Resources</h3><p>Qur’anic passages notes, Hadith notes, Seerah timelines, Caliphs revision, and 30-day revision support.</p><a href="resources.html" class="btn btn-primary">Open Resources</a></div>
+        <div class="card"><span class="tag">FAQ</span><h3>Frequently Asked Questions</h3><p>Answers about online classes, syllabus coverage, Paper 1, Paper 2, notes, past papers, and trial class booking.</p><a href="faq.html" class="btn btn-primary">Open FAQs</a></div>
+        <div class="card"><span class="tag">Contact</span><h3>Book Trial Class</h3><p>Submit student details through the professional inquiry form connected to the student directory.</p><a href="contact.html" class="btn btn-primary">Book Trial</a></div>
       </div>
     </div>
   </section>
@@ -907,35 +314,7 @@
         <p>Book an online trial class with Dr. Imran Hayat and discuss your syllabus coverage, weak areas, exam session, and preparation plan.</p>
         <div class="hero-buttons" style="justify-content:center;">
           <a href="contact.html" class="btn btn-primary">Open Trial Form</a>
-          <a href="https://wa.me/923354910481" target="_blank" class="btn btn-outline">Contact on WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-light">
-    <div class="container grid-2">
-      <div class="card">
-        <span class="tag gold-tag">Student Directory</span>
-        <h3>Professional Inquiry Form</h3>
-        <p>The contact page now uses a clean custom form. Student responses are saved in the Google Form/Sheet directory.</p>
-        <br />
-        <a href="contact.html" class="btn btn-primary">Open Contact Page</a>
-      </div>
-
-      <div class="contact-info">
-        <h3>Contact Information</h3>
-        <p><strong>Tutor:</strong> Dr. Imran Hayat</p>
-        <p><strong>WhatsApp:</strong> +92 335 4910481</p>
-        <p><strong>Email:</strong> drimranhayatmalik@gmail.com</p>
-        <p><strong>Location:</strong> Lahore, Pakistan</p>
-        <p><strong>Class Mode:</strong> Online</p>
-
-        <a href="https://wa.me/923354910481" target="_blank" class="btn btn-primary">Message on WhatsApp</a>
-
-        <div class="social-row">
-          <a href="https://www.facebook.com/imranhayat96/" target="_blank">Facebook</a>
-          <a href="https://www.youtube.com/@dr.imranhayatmalik9384" target="_blank">YouTube</a>
+          <a href="reviews.html" class="btn btn-outline">Submit a Review</a>
         </div>
       </div>
     </div>
@@ -943,44 +322,15 @@
 
   <footer>
     <div class="container footer-grid">
-      <div>
-        <h3>O'Level Islamiyat 2058 with Dr. Imran Hayat</h3>
-        <p>Online Cambridge O Level Islamiyat 2058 and IGCSE Islamiyat 0493 preparation with syllabus-based teaching, past paper practice, and examiner-style answer guidance.</p>
-      </div>
-
-      <div>
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">Dr. Imran Hayat</a>
-        <a href="olevel-islamiyat-2058.html">O Level 2058</a>
-        <a href="igcse-islamiyat-0493.html">IGCSE 0493</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Book Trial</a>
-      </div>
-
-      <div>
-        <h4>Preparation Areas</h4>
-        <a href="paper-1.html">Paper 1 Preparation</a>
-        <a href="paper-2.html">Paper 2 Preparation</a>
-        <a href="past-papers.html">Past Papers</a>
-        <a href="resources.html">Resources</a>
-      </div>
-
-      <div>
-        <h4>Contact</h4>
-        <p>Dr. Imran Hayat</p>
-        <p>WhatsApp: +92 335 4910481</p>
-        <p>Email: drimranhayatmalik@gmail.com</p>
-        <p>Lahore, Pakistan / Online Classes</p>
-        <a href="https://wa.me/923354910481" target="_blank">Contact on WhatsApp</a>
-      </div>
+      <div><h3>O'Level Islamiyat 2058 with Dr. Imran Hayat</h3><p>Online Cambridge O Level Islamiyat 2058 and IGCSE Islamiyat 0493 preparation with syllabus-based teaching, past paper practice, and examiner-style answer guidance.</p></div>
+      <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">Dr. Imran Hayat</a><a href="olevel-islamiyat-2058.html">O Level 2058</a><a href="igcse-islamiyat-0493.html">IGCSE 0493</a><a href="reviews.html">Reviews</a><a href="contact.html">Book Trial</a></div>
+      <div><h4>Preparation Areas</h4><a href="paper-1.html">Paper 1 Preparation</a><a href="paper-2.html">Paper 2 Preparation</a><a href="past-papers.html">Past Papers</a><a href="resources.html">Resources</a></div>
+      <div><h4>Contact</h4><p>Dr. Imran Hayat</p><p>WhatsApp: +92 335 4910481</p><p>Email: drimranhayatmalik@gmail.com</p><p>Lahore, Pakistan / Online Classes</p><a href="https://wa.me/923354910481" target="_blank">Contact on WhatsApp</a></div>
     </div>
-
     <div class="container disclaimer">
       <p>This website provides independent tutoring and exam preparation support. It is not officially affiliated with Cambridge Assessment International Education.</p>
       <p>© 2026 O'Level Islamiyat 2058 with Dr. Imran Hayat. All rights reserved.</p>
     </div>
   </footer>
-
 </body>
 </html>

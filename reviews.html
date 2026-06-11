@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Student Reviews | O Level Islamiyat 2058 with Dr. Imran Hayat</title>
+
+  <meta name="description" content="Submit a student or parent review for O Level Islamiyat 2058 and IGCSE Islamiyat 0493 online classes with Dr. Imran Hayat." />
+
+  <meta name="keywords" content="O Level Islamiyat reviews, Dr Imran Hayat reviews, Islamiyat tutor feedback, O Level Islamiyat student feedback, IGCSE Islamiyat reviews" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.65;
+      color: #111827;
+      background: #ffffff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    header {
+      background: #06203f;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+      gap: 18px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 21px;
+      font-weight: 900;
+      white-space: nowrap;
+      letter-spacing: -0.3px;
+    }
+
+    .logo span {
+      color: #d6a84f;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    nav a {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #d6a84f;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 10px;
+      font-weight: 800;
+      transition: 0.3s ease;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: #d6a84f;
+      color: #06203f;
+      box-shadow: 0 10px 24px rgba(214,168,79,0.24);
+    }
+
+    .btn-primary:hover {
+      background: #c3953d;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: #0f766e;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #115e59;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid rgba(255,255,255,0.9);
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #06203f;
+      transform: translateY(-2px);
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at 20% 20%, rgba(214,168,79,0.16), transparent 28%),
+        radial-gradient(circle at 85% 30%, rgba(15,118,110,0.26), transparent 28%),
+        linear-gradient(135deg, #06203f 0%, #073159 48%, #0f766e 100%);
+      color: white;
+      padding: 86px 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(214,168,79,0.16);
+      border: 1px solid rgba(214,168,79,0.45);
+      color: #ffe6ad;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 46px;
+      line-height: 1.12;
+      margin-bottom: 18px;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      color: #e5e7eb;
+      font-size: 19px;
+      margin-bottom: 25px;
+      max-width: 720px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .hero-card {
+      background: white;
+      color: #111827;
+      padding: 32px;
+      border-radius: 24px;
+      box-shadow: 0 20px 54px rgba(0,0,0,0.30);
+    }
+
+    .hero-card h3 {
+      color: #06203f;
+      font-size: 25px;
+      margin-bottom: 16px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+    }
+
+    .hero-card li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 13px;
+      color: #374151;
+      font-weight: 600;
+    }
+
+    .hero-card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #0f766e;
+      font-weight: 900;
+    }
+
+    section {
+      padding: 74px 0;
+    }
+
+    .bg-light {
+      background: #f8fafc;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .section-title h2 {
+      color: #06203f;
+      font-size: 36px;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .section-title p {
+      max-width: 850px;
+      margin: auto;
+      color: #4b5563;
+      font-size: 17px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: start;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 27px;
+      box-shadow: 0 9px 25px rgba(0,0,0,0.055);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 38px rgba(0,0,0,0.10);
+    }
+
+    .card h3 {
+      color: #06203f;
+      font-size: 21px;
+      margin-bottom: 11px;
+    }
+
+    .card p,
+    .card li {
+      color: #4b5563;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #eef6f5;
+      color: #0f766e;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+
+    .gold-tag {
+      background: #fff7e6;
+      color: #8a5a00;
+    }
+
+    .review-card {
+      position: relative;
+    }
+
+    .stars {
+      color: #d6a84f;
+      font-size: 20px;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .review-note {
+      background: #fff7e6;
+      border-left: 5px solid #d6a84f;
+      padding: 18px;
+      border-radius: 14px;
+      color: #4b5563;
+      font-weight: 700;
+    }
+
+    .custom-form {
+      background: white;
+      padding: 34px;
+      border-radius: 20px;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    }
+
+    label {
+      display: block;
+      font-weight: 800;
+      color: #06203f;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 16px;
+      border-radius: 9px;
+      border: 1px solid #d1d5db;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 2px solid rgba(15, 118, 110, 0.22);
+      border-color: #0f766e;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    .required {
+      color: #dc2626;
+    }
+
+    .success-message {
+      display: none;
+      background: #dcfce7;
+      color: #166534;
+      padding: 15px;
+      border-radius: 12px;
+      margin-top: 14px;
+      font-weight: 800;
+      border: 1px solid #86efac;
+    }
+
+    .contact-info {
+      background: #06203f;
+      color: white;
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 14px 32px rgba(6,32,63,0.18);
+    }
+
+    .contact-info h3 {
+      color: #d6a84f;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info p,
+    .contact-info li {
+      color: #e5e7eb;
+      margin-bottom: 13px;
+    }
+
+    .contact-info ul {
+      margin-left: 18px;
+      margin-top: 14px;
+    }
+
+    .highlight {
+      background:
+        radial-gradient(circle at 18% 20%, rgba(214,168,79,0.18), transparent 24%),
+        linear-gradient(135deg, #06203f, #0f766e);
+      color: white;
+      border-radius: 26px;
+      padding: 58px 32px;
+      text-align: center;
+      box-shadow: 0 18px 44px rgba(6,32,63,0.20);
+    }
+
+    .highlight h2 {
+      font-size: 34px;
+      margin-bottom: 13px;
+    }
+
+    .highlight p {
+      color: #e5e7eb;
+      max-width: 780px;
+      margin: 0 auto 24px;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      background: #25d366;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 999px;
+      font-weight: 900;
+      z-index: 2000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    footer {
+      background: #030f24;
+      color: white;
+      padding: 55px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.3fr;
+      gap: 28px;
+      margin-bottom: 28px;
+    }
+
+    footer h3,
+    footer h4 {
+      color: #d6a84f;
+      margin-bottom: 14px;
+    }
+
+    footer p,
+    footer a {
+      color: #d1d5db;
+      display: block;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .disclaimer {
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 20px;
+      text-align: center;
+      color: #cbd5e1;
+      font-size: 13px;
+    }
+
+    @media (max-width: 980px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        flex-wrap: nowrap;
+      }
+
+      nav a {
+        white-space: nowrap;
+      }
+
+      .hero-grid,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding: 64px 0;
+      }
+
+      .hero h1 {
+        font-size: 31px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .whatsapp-float {
+        left: 18px;
+        right: 18px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container navbar">
+      <a href="index.html" class="logo">O'Level Islamiyat <span>2058</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Dr. Imran Hayat</a>
+        <a href="olevel-islamiyat-2058.html">O Level 2058</a>
+        <a href="igcse-islamiyat-0493.html">IGCSE 0493</a>
+        <a href="paper-1.html">Paper 1</a>
+        <a href="paper-2.html">Paper 2</a>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a href="reviews.html" class="active">Reviews</a>
+        <a href="contact.html">Book Trial</a>
+      </nav>
+    </div>
+  </header>
+
+  <a class="whatsapp-float" href="https://wa.me/923354910481?text=Hello%20Dr.%20Imran%20Hayat%2C%20I%20want%20to%20ask%20about%20O%20Level%20Islamiyat%20classes." target="_blank">
+    WhatsApp
+  </a>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Student & Parent Feedback</span>
+        <h1>Share Your Review</h1>
+        <p>Students and parents can share their learning experience with Dr. Imran Hayat’s O Level Islamiyat 2058 and IGCSE Islamiyat 0493 online classes.</p>
+
+        <div class="hero-buttons">
+          <a href="#review-form" class="btn btn-primary">Submit a Review</a>
+          <a href="contact.html" class="btn btn-outline">Book Trial Class</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h3>Review Guidelines</h3>
+        <ul>
+          <li>Share honest and respectful feedback</li>
+          <li>Mention your course or preparation area</li>
+          <li>Select rating from 1 to 5 stars</li>
+          <li>Choose whether review can be published</li>
+          <li>Only approved reviews will appear on website</li>
+          <li>Private reviews will remain internal</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Approved Reviews</h2>
+        <p>Only reviews submitted with permission and approved by the team will be displayed here.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card review-card">
+          <span class="tag gold-tag">Coming Soon</span>
+          <div class="stars">★★★★★</div>
+          <h3>Student Review</h3>
+          <p>Approved student reviews will be displayed here after permission.</p>
+        </div>
+
+        <div class="card review-card">
+          <span class="tag gold-tag">Coming Soon</span>
+          <div class="stars">★★★★★</div>
+          <h3>Parent Review</h3>
+          <p>Approved parent reviews will be displayed here after permission.</p>
+        </div>
+
+        <div class="card review-card">
+          <span class="tag gold-tag">Coming Soon</span>
+          <div class="stars">★★★★★</div>
+          <h3>Course Feedback</h3>
+          <p>Feedback about Paper 1, Paper 2, past papers, and answer writing will be added here.</p>
+        </div>
+      </div>
+
+      <br>
+      <div class="review-note">
+        Reviews are not published automatically. This protects students, parents, and the professional quality of the website.
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light" id="review-form">
+    <div class="container">
+      <div class="section-title">
+        <h2>Submit Your Review</h2>
+        <p>This clean review form is connected to the Google Form/Sheet review directory.</p>
+      </div>
+
+      <div class="grid-2">
+        <form
+          class="custom-form"
+          id="reviewForm"
+          action="https://docs.google.com/forms/d/e/1FAIpQLScsxPqta1CNz_OGY0c3G-9ai2uR1OnSdrRg2GkVjG2JZyybtA/formResponse"
+          method="POST"
+          target="hidden_review_iframe">
+
+          <label for="reviewerName">Student / Parent Name <span class="required">*</span></label>
+          <input type="text" id="reviewerName" name="entry.467026928" placeholder="Your name" required />
+
+          <label for="reviewerRole">Student or Parent <span class="required">*</span></label>
+          <select id="reviewerRole" name="entry.690938953" required>
+            <option value="">Select one</option>
+            <option value="Student">Student</option>
+            <option value="Parent">Parent</option>
+          </select>
+
+          <label for="courseStudied">Course Studied <span class="required">*</span></label>
+          <input type="text" id="courseStudied" name="entry.2010024889" placeholder="Example: O Level Islamiyat 2058, Paper 1, Paper 2, Past Papers" required />
+
+          <label for="rating">Rating <span class="required">*</span></label>
+          <select id="rating" name="entry.1363711772" required>
+            <option value="">Select rating</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+          </select>
+
+          <label for="reviewMessage">Review Message <span class="required">*</span></label>
+          <textarea id="reviewMessage" name="entry.1452105882" placeholder="Write your learning experience..." required></textarea>
+
+          <label for="publishPermission">Can we publish this review on our website? <span class="required">*</span></label>
+          <select id="publishPermission" name="entry.229768012" required>
+            <option value="">Select one</option>
+            <option value="Yes">Yes, you may publish it</option>
+            <option value="No">No, keep it private</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+
+          <div class="success-message" id="reviewSuccessMessage">
+            Thank you. Your review has been submitted successfully.
+          </div>
+        </form>
+
+        <iframe name="hidden_review_iframe" id="hidden_review_iframe" style="display:none;"></iframe>
+
+        <div class="contact-info">
+          <h3>Review Policy</h3>
+          <p>Your feedback helps improve classes and helps new students understand the quality of preparation.</p>
+          <ul>
+            <li>Only respectful reviews are accepted.</li>
+            <li>Private reviews will not be published.</li>
+            <li>Published reviews may be edited only for spelling, grammar, or privacy.</li>
+            <li>Student contact details are not displayed publicly.</li>
+          </ul>
+          <br>
+          <a href="contact.html" class="btn btn-primary">Book Trial Class</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="highlight">
+        <h2>Ready to Start Learning?</h2>
+        <p>Book a free trial class and discuss your current syllabus coverage, weak areas, and exam target.</p>
+        <div class="hero-buttons" style="justify-content:center;">
+          <a href="contact.html" class="btn btn-primary">Book Free Trial</a>
+          <a href="https://wa.me/923354910481" target="_blank" class="btn btn-outline">Contact on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>O'Level Islamiyat 2058 with Dr. Imran Hayat</h3>
+        <p>Online Cambridge O Level Islamiyat 2058 and IGCSE Islamiyat 0493 preparation with syllabus-based teaching, past paper practice, and examiner-style answer guidance.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">Dr. Imran Hayat</a>
+        <a href="olevel-islamiyat-2058.html">O Level 2058</a>
+        <a href="igcse-islamiyat-0493.html">IGCSE 0493</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Book Trial</a>
+      </div>
+
+      <div>
+        <h4>Preparation Areas</h4>
+        <a href="paper-1.html">Paper 1 Preparation</a>
+        <a href="paper-2.html">Paper 2 Preparation</a>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="resources.html">Resources</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Dr. Imran Hayat</p>
+        <p>WhatsApp: +92 335 4910481</p>
+        <p>Email: drimranhayatmalik@gmail.com</p>
+        <p>Lahore, Pakistan / Online Classes</p>
+        <a href="https://wa.me/923354910481" target="_blank">Contact on WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="container disclaimer">
+      <p>This website provides independent tutoring and exam preparation support. It is not officially affiliated with Cambridge Assessment International Education.</p>
+      <p>© 2026 O'Level Islamiyat 2058 with Dr. Imran Hayat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const reviewForm = document.getElementById("reviewForm");
+    const reviewSuccessMessage = document.getElementById("reviewSuccessMessage");
+
+    reviewForm.addEventListener("submit", function () {
+      setTimeout(function () {
+        reviewSuccessMessage.style.display = "block";
+        reviewForm.reset();
+        reviewSuccessMessage.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 900);
+    });
+  </script>
+
+</body>
+</html>
