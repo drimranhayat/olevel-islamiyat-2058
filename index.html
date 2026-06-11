@@ -80,7 +80,8 @@
       font-weight: 600;
     }
 
-    nav a:hover {
+    nav a:hover,
+    nav a.active {
       color: #d6a84f;
     }
 
@@ -223,7 +224,7 @@
     }
 
     .section-title p {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
       color: #4b5563;
       font-size: 17px;
@@ -387,13 +388,6 @@
       margin: 0 auto 24px;
     }
 
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-      align-items: start;
-    }
-
     .form-embed {
       background: white;
       padding: 18px;
@@ -407,6 +401,13 @@
       width: 100%;
       min-height: 1420px;
       border: none;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      align-items: start;
     }
 
     .contact-info {
@@ -578,17 +579,18 @@
 
   <header>
     <div class="container navbar">
-      <a href="#home" class="logo">O'Level Islamiyat <span>2058</span></a>
+      <a href="index.html" class="logo">O'Level Islamiyat <span>2058</span></a>
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">Dr. Imran Hayat</a>
-        <a href="#syllabus">Syllabus</a>
-        <a href="#paper1">Paper 1</a>
-        <a href="#paper2">Paper 2</a>
-        <a href="#courses">Courses</a>
-        <a href="#resources">Resources</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Book Trial</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">Dr. Imran Hayat</a>
+        <a href="olevel-islamiyat-2058.html">O Level 2058</a>
+        <a href="igcse-islamiyat-0493.html">IGCSE 0493</a>
+        <a href="paper-1.html">Paper 1</a>
+        <a href="paper-2.html">Paper 2</a>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="resources.html">Resources</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Book Trial</a>
       </nav>
     </div>
   </header>
@@ -604,8 +606,8 @@
         <p>Syllabus-based Cambridge Islamiyat preparation with Qur’anic passages, Hadith, Seerah, Caliphs, beliefs, practices, past papers, model answers, and examiner-style writing guidance.</p>
 
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Book a Free Trial Class</a>
-          <a href="#syllabus" class="btn btn-outline">View Syllabus Plan</a>
+          <a href="contact.html" class="btn btn-primary">Book a Free Trial Class</a>
+          <a href="olevel-islamiyat-2058.html" class="btn btn-outline">View O Level 2058 Plan</a>
           <a href="https://wa.me/923354910481" target="_blank" class="btn btn-secondary">Contact on WhatsApp</a>
         </div>
 
@@ -678,11 +680,13 @@
           <div class="info-item">Tutor: Dr. Imran Hayat</div>
           <div class="info-item">Qualification: PhD Islamic Studies</div>
           <div class="info-item">Teaching Experience: 12 years</div>
-          <div class="info-item">Taught O'Level Islamiyat at Aitchison College, Lahore, Pakistan</div>
           <div class="info-item">Current Role: Lecturer in Islamic Studies, University of Education</div>
           <div class="info-item">Location: Lahore, Pakistan</div>
           <div class="info-item">Class Mode: Online</div>
         </div>
+
+        <br />
+        <a href="about.html" class="btn btn-primary">Read Full Profile</a>
       </div>
 
       <div class="profile-box">
@@ -707,27 +711,29 @@
 
       <div class="grid-3">
         <div class="card paper-card">
-          <span class="tag gold-tag">Paper 1</span>
-          <h3>Qur’an, Prophet ﷺ & Early Community</h3>
-          <p>Paper 1 focuses on major Qur’anic themes, history and importance of the Qur’an, the life and importance of Prophet Muhammad ﷺ, and the first Islamic community.</p>
+          <span class="tag gold-tag">O Level 2058</span>
+          <h3>Complete O Level Islamiyat 2058</h3>
+          <p>Complete Cambridge O Level Islamiyat 2058 preparation from basic concepts to exam-ready answer writing.</p>
           <ul>
-            <li>Major themes of the Qur’an</li>
-            <li>History and importance of the Qur’an</li>
-            <li>Life of Prophet Muhammad ﷺ</li>
-            <li>First Islamic community</li>
+            <li>Paper 1 and Paper 2 support</li>
+            <li>Syllabus-based explanation</li>
+            <li>Topic-wise revision</li>
+            <li>Past paper practice</li>
           </ul>
+          <a href="olevel-islamiyat-2058.html" class="btn btn-primary">View Page</a>
         </div>
 
         <div class="card paper-card">
-          <span class="tag gold-tag">Paper 2</span>
-          <h3>Hadith, Caliphs, Beliefs & Practices</h3>
-          <p>Paper 2 focuses on major Hadith teachings, history and importance of Hadith, Rightly Guided Caliphs, Articles of Faith, and Pillars of Islam.</p>
+          <span class="tag gold-tag">IGCSE 0493</span>
+          <h3>IGCSE Islamiyat 0493 Support</h3>
+          <p>Focused online preparation for IGCSE Islamiyat 0493 students with clear concepts and guided answer writing.</p>
           <ul>
-            <li>Major teachings in Hadith</li>
-            <li>History and importance of Hadith</li>
-            <li>Rightly Guided Caliphs</li>
-            <li>Articles of Faith and Pillars</li>
+            <li>Qur’an and Hadith support</li>
+            <li>Seerah and Caliphs</li>
+            <li>Beliefs and practices</li>
+            <li>Model answer guidance</li>
           </ul>
+          <a href="igcse-islamiyat-0493.html" class="btn btn-primary">View Page</a>
         </div>
 
         <div class="card paper-card">
@@ -740,6 +746,7 @@
             <li>10-mark structured answers</li>
             <li>4-mark reasoning and evaluation</li>
           </ul>
+          <a href="past-papers.html" class="btn btn-primary">Past Paper Practice</a>
         </div>
       </div>
     </div>
@@ -756,12 +763,7 @@
         <div class="card">
           <span class="tag">Qur’an</span>
           <h3>Major Themes of the Qur’an</h3>
-          <p>Students study the selected Qur’anic passages with focus on themes, meaning, Arabic reference, translation, and relevance for Muslims today.</p>
-          <ul>
-            <li>Allah in Himself</li>
-            <li>Allah’s relationship with the created world</li>
-            <li>Allah’s Messengers</li>
-          </ul>
+          <p>Students study selected Qur’anic passages with focus on themes, meaning, Arabic reference, translation, and relevance for Muslims today.</p>
         </div>
 
         <div class="card">
@@ -775,24 +777,10 @@
           <h3>Life of Prophet Muhammad ﷺ</h3>
           <p>Students study Makkan and Madinan life, his leadership, conflicts, actions, character, and his significance as the Seal of the Prophets.</p>
         </div>
+      </div>
 
-        <div class="card">
-          <span class="tag">Community</span>
-          <h3>The First Islamic Community</h3>
-          <p>Includes the Prophet’s wives, descendants, leading Companions, Emigrants, Helpers, scribes, and important figures around the Prophet ﷺ.</p>
-        </div>
-
-        <div class="card">
-          <span class="tag">Writing</span>
-          <h3>10-Mark Answer Writing</h3>
-          <p>Students learn how to write clear, detailed, well-developed answers using accurate facts, Islamic terms, quotations, and relevant examples.</p>
-        </div>
-
-        <div class="card">
-          <span class="tag">Evaluation</span>
-          <h3>4-Mark Part (b) Answers</h3>
-          <p>Students practise significance-based questions using reasoning, personal response, examples from Muslim life, and clear explanation.</p>
-        </div>
+      <div style="text-align:center; margin-top:30px;">
+        <a href="paper-1.html" class="btn btn-primary">Open Full Paper 1 Page</a>
       </div>
     </div>
   </section>
@@ -812,34 +800,20 @@
         </div>
 
         <div class="card">
-          <span class="tag">Hadith</span>
-          <h3>History & Importance of Hadith</h3>
-          <p>Includes compilation, early collections, musnad and musannaf collections, isnad and matn, compilers, and Hadith in legal thinking.</p>
-        </div>
-
-        <div class="card">
           <span class="tag">Caliphs</span>
           <h3>Rightly Guided Caliphs</h3>
           <p>Students study the main events, policies, achievements, difficulties, leadership examples, and relevance of their rule for later Muslim communities.</p>
         </div>
 
         <div class="card">
-          <span class="tag">Beliefs</span>
-          <h3>Articles of Faith</h3>
-          <p>Includes belief in Allah, angels, books, prophets, predestination and decree, resurrection, and the Last Day.</p>
+          <span class="tag">Beliefs & Practices</span>
+          <h3>Articles of Faith & Pillars</h3>
+          <p>Includes belief in Allah, angels, books, prophets, predestination, resurrection, and the Five Pillars of Islam.</p>
         </div>
+      </div>
 
-        <div class="card">
-          <span class="tag">Practices</span>
-          <h3>Pillars of Islam</h3>
-          <p>Includes Shahada, Salat, Zakat, Sawm, and Hajj with their method, meaning, importance, and impact on Muslim life.</p>
-        </div>
-
-        <div class="card">
-          <span class="tag">Jihad</span>
-          <h3>Jihad: Physical, Mental & Spiritual</h3>
-          <p>Students study Jihad carefully in its range of meanings with balanced explanation, religious context, and exam-appropriate wording.</p>
-        </div>
+      <div style="text-align:center; margin-top:30px;">
+        <a href="paper-2.html" class="btn btn-primary">Open Full Paper 2 Page</a>
       </div>
     </div>
   </section>
@@ -862,7 +836,7 @@
             <li>Past paper practice</li>
             <li>Answer feedback</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Book Trial</a>
+          <a href="contact.html" class="btn btn-primary">Book Trial</a>
         </div>
 
         <div class="card">
@@ -875,7 +849,7 @@
             <li>Model answer practice</li>
             <li>Final revision strategy</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Book Trial</a>
+          <a href="contact.html" class="btn btn-primary">Book Trial</a>
         </div>
 
         <div class="card">
@@ -888,28 +862,28 @@
             <li>AO2 explanation</li>
             <li>Correction and feedback</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Book Trial</a>
+          <a href="contact.html" class="btn btn-primary">Book Trial</a>
         </div>
 
         <div class="card">
           <span class="tag gold-tag">Past Papers</span>
           <h3>Past Paper Practice Sessions</h3>
           <p>Question-by-question practice using past papers, examiner expectations, and mark scheme awareness.</p>
-          <a href="#contact" class="btn btn-primary">Ask Details</a>
+          <a href="past-papers.html" class="btn btn-primary">View Past Papers Page</a>
+        </div>
+
+        <div class="card">
+          <span class="tag gold-tag">Resources</span>
+          <h3>Free Revision Resources</h3>
+          <p>Topic notes, worksheets, model answer structures, revision plans, and guidance for both papers.</p>
+          <a href="resources.html" class="btn btn-primary">View Resources</a>
         </div>
 
         <div class="card">
           <span class="tag gold-tag">One-to-One</span>
           <h3>Individual Online Class</h3>
           <p>Personalized support for weak areas, answer checking, topic revision, and preparation planning.</p>
-          <a href="#contact" class="btn btn-primary">Ask Details</a>
-        </div>
-
-        <div class="card">
-          <span class="tag gold-tag">Group Class</span>
-          <h3>Small Group Online Batch</h3>
-          <p>Structured online learning with classmates, guided practice, tests, and regular revision.</p>
-          <a href="#contact" class="btn btn-primary">Ask Details</a>
+          <a href="contact.html" class="btn btn-primary">Ask Details</a>
         </div>
       </div>
     </div>
@@ -962,43 +936,23 @@
           <span class="tag">Qur’an</span>
           <h3>Qur’anic Passages Notes</h3>
           <p>Theme-wise notes for Qur’anic passages with meaning, theme, and relevance for Muslims today.</p>
-          <a href="#" class="btn btn-secondary">Coming Soon</a>
         </div>
 
         <div class="card">
           <span class="tag">Hadith</span>
           <h3>Hadith Teachings Notes</h3>
           <p>Hadith explanation cards focused on individual conduct, community life, and exam relevance.</p>
-          <a href="#" class="btn btn-secondary">Coming Soon</a>
-        </div>
-
-        <div class="card">
-          <span class="tag">Seerah</span>
-          <h3>Seerah Timeline</h3>
-          <p>Makkan and Madinan life timeline for quick revision of key events and significance.</p>
-          <a href="#" class="btn btn-secondary">Coming Soon</a>
-        </div>
-
-        <div class="card">
-          <span class="tag">Caliphs</span>
-          <h3>Rightly Guided Caliphs Notes</h3>
-          <p>Topic-wise revision notes on achievements, difficulties, leadership, and significance.</p>
-          <a href="#" class="btn btn-secondary">Coming Soon</a>
-        </div>
-
-        <div class="card">
-          <span class="tag">Model Answers</span>
-          <h3>10-Mark Answer Samples</h3>
-          <p>Editable model answer samples showing structure, factual detail, and explanation.</p>
-          <a href="#" class="btn btn-secondary">Coming Soon</a>
         </div>
 
         <div class="card">
           <span class="tag">Revision</span>
           <h3>30-Day Revision Plan</h3>
           <p>A focused plan for revising both papers before school tests or final examinations.</p>
-          <a href="#" class="btn btn-secondary">Coming Soon</a>
         </div>
+      </div>
+
+      <div style="text-align:center; margin-top:30px;">
+        <a href="resources.html" class="btn btn-primary">Open Full Resources Page</a>
       </div>
     </div>
   </section>
@@ -1032,19 +986,6 @@
     </div>
   </section>
 
-  <section>
-    <div class="container">
-      <div class="highlight">
-        <h2>Start Your Islamiyat Preparation with a Free Trial Class</h2>
-        <p>Book an online trial class with Dr. Imran Hayat and discuss your syllabus coverage, weak areas, exam attempt, and preparation plan.</p>
-        <div class="hero-buttons" style="justify-content:center;">
-          <a href="#contact" class="btn btn-primary">Book Free Trial</a>
-          <a href="https://wa.me/923354910481" target="_blank" class="btn btn-outline">Contact on WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="bg-light" id="faq">
     <div class="container">
       <div class="section-title">
@@ -1072,25 +1013,22 @@
           <h3>Will students practise past papers?</h3>
           <p>Yes. Past paper practice is included so students learn question patterns, answer structure, timing, and mark scheme expectations.</p>
         </div>
+      </div>
 
-        <div class="card">
-          <h3>Will students get notes and worksheets?</h3>
-          <p>Yes. Students receive topic-wise guidance, revision support, worksheets, and model-answer practice according to their preparation needs.</p>
-        </div>
+      <div style="text-align:center; margin-top:30px;">
+        <a href="faq.html" class="btn btn-primary">Open Full FAQ Page</a>
+      </div>
+    </div>
+  </section>
 
-        <div class="card">
-          <h3>Will answers be checked?</h3>
-          <p>Yes. Students are guided on 10-mark knowledge answers and 4-mark evaluation answers, with correction and feedback where required.</p>
-        </div>
-
-        <div class="card">
-          <h3>Is there a free trial class?</h3>
-          <p>Yes. Students and parents can book a free online trial class through WhatsApp before joining the regular course.</p>
-        </div>
-
-        <div class="card">
-          <h3>How can I contact Dr. Imran Hayat?</h3>
-          <p>You can contact directly on WhatsApp: +92 335 4910481 or email: drimranhayatmalik@gmail.com.</p>
+  <section>
+    <div class="container">
+      <div class="highlight">
+        <h2>Start Your Islamiyat Preparation with a Free Trial Class</h2>
+        <p>Book an online trial class with Dr. Imran Hayat and discuss your syllabus coverage, weak areas, exam attempt, and preparation plan.</p>
+        <div class="hero-buttons" style="justify-content:center;">
+          <a href="contact.html" class="btn btn-primary">Book Free Trial</a>
+          <a href="https://wa.me/923354910481" target="_blank" class="btn btn-outline">Contact on WhatsApp</a>
         </div>
       </div>
     </div>
@@ -1100,20 +1038,16 @@
     <div class="container">
       <div class="section-title">
         <h2>Contact / Book Online Trial Class</h2>
-        <p>Fill in the form below. Your details will be saved in our student inquiry directory, and the team will contact you soon.</p>
+        <p>This homepage contact section is kept so older links ending in <strong>#contact</strong> still work. For the full inquiry form, open the dedicated contact page.</p>
       </div>
 
-      <div class="contact-grid">
-        <div class="form-embed">
-          <iframe 
-            src="https://docs.google.com/forms/d/e/1FAIpQLSdMCgRRxvg8id_bHwK68LbdmMGaTZ90F2uwn10OnabukaA9LA/viewform?embedded=true" 
-            width="100%" 
-            height="1420" 
-            frameborder="0" 
-            marginheight="0" 
-            marginwidth="0">
-            Loading…
-          </iframe>
+      <div class="grid-2">
+        <div class="card">
+          <span class="tag gold-tag">Recommended</span>
+          <h3>Open the Full Contact Form</h3>
+          <p>Use the dedicated contact page to submit student details. Your inquiry will be saved in the student directory through Google Forms.</p>
+          <br>
+          <a href="contact.html" class="btn btn-primary">Open Contact Form</a>
         </div>
 
         <div class="contact-info">
@@ -1132,11 +1066,6 @@
             <a href="https://www.facebook.com/imranhayat96/" target="_blank">Facebook</a>
             <a href="https://www.youtube.com/@dr.imranhayatmalik9384" target="_blank">YouTube</a>
           </div>
-
-          <div class="map-placeholder">
-            Lahore, Pakistan<br />
-            Online Islamiyat Classes Available
-          </div>
         </div>
       </div>
     </div>
@@ -1151,20 +1080,20 @@
 
       <div>
         <h4>Quick Links</h4>
-        <a href="#home">Home</a>
-        <a href="#about">Dr. Imran Hayat</a>
-        <a href="#syllabus">Syllabus</a>
-        <a href="#resources">Resources</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Book Trial</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">Dr. Imran Hayat</a>
+        <a href="olevel-islamiyat-2058.html">O Level 2058</a>
+        <a href="igcse-islamiyat-0493.html">IGCSE 0493</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Book Trial</a>
       </div>
 
       <div>
         <h4>Preparation Areas</h4>
-        <a href="#paper1">Paper 1</a>
-        <a href="#paper2">Paper 2</a>
-        <a href="#courses">Courses</a>
-        <a href="#testimonials">Testimonials</a>
+        <a href="paper-1.html">Paper 1 Preparation</a>
+        <a href="paper-2.html">Paper 2 Preparation</a>
+        <a href="past-papers.html">Past Papers</a>
+        <a href="resources.html">Resources</a>
       </div>
 
       <div>
