@@ -52,21 +52,30 @@
       justify-content: space-between;
       align-items: center;
       padding: 15px 0;
+      gap: 18px;
     }
 
     .logo {
       color: white;
       font-size: 21px;
       font-weight: 800;
+      white-space: nowrap;
     }
 
     .logo span {
       color: #d6a84f;
     }
 
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
     nav a {
       color: white;
-      margin-left: 16px;
       font-size: 14px;
       font-weight: 600;
     }
@@ -521,8 +530,21 @@
     }
 
     @media (max-width: 980px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
       nav {
-        display: none;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        flex-wrap: nowrap;
+      }
+
+      nav a {
+        white-space: nowrap;
       }
 
       .hero-grid,
@@ -590,6 +612,7 @@
         <a href="#paper2">Paper 2</a>
         <a href="#courses">Courses</a>
         <a href="#resources">Resources</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Book Trial</a>
       </nav>
     </div>
@@ -1046,6 +1069,57 @@
     </div>
   </section>
 
+  <section class="bg-light" id="faq">
+    <div class="container">
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Common questions from students and parents about O Level Islamiyat 2058 and IGCSE Islamiyat 0493 online preparation.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Are the classes online?</h3>
+          <p>Yes. The classes are online, so students can join from Lahore, other cities of Pakistan, or abroad.</p>
+        </div>
+
+        <div class="card">
+          <h3>Which syllabus is covered?</h3>
+          <p>The course focuses on Cambridge O Level Islamiyat 2058 and also supports IGCSE Islamiyat 0493 students.</p>
+        </div>
+
+        <div class="card">
+          <h3>Are Paper 1 and Paper 2 both included?</h3>
+          <p>Yes. Paper 1 includes Qur’anic passages, Qur’an history, Seerah, and the first Islamic community. Paper 2 includes Hadith, Caliphs, Articles of Faith, and Pillars of Islam.</p>
+        </div>
+
+        <div class="card">
+          <h3>Will students practise past papers?</h3>
+          <p>Yes. Past paper practice is included so students learn question patterns, answer structure, timing, and mark scheme expectations.</p>
+        </div>
+
+        <div class="card">
+          <h3>Will students get notes and worksheets?</h3>
+          <p>Yes. Students receive topic-wise guidance, revision support, worksheets, and model-answer practice according to their preparation needs.</p>
+        </div>
+
+        <div class="card">
+          <h3>Will answers be checked?</h3>
+          <p>Yes. Students are guided on 10-mark knowledge answers and 4-mark evaluation answers, with correction and feedback where required.</p>
+        </div>
+
+        <div class="card">
+          <h3>Is there a free trial class?</h3>
+          <p>Yes. Students and parents can book a free online trial class through WhatsApp before joining the regular course.</p>
+        </div>
+
+        <div class="card">
+          <h3>How can I contact Dr. Imran Hayat?</h3>
+          <p>You can contact directly on WhatsApp: +92 335 4910481 or email: drimranhayatmalik@gmail.com.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-light" id="contact">
     <div class="container">
       <div class="section-title">
@@ -1134,6 +1208,7 @@
         <a href="#about">Dr. Imran Hayat</a>
         <a href="#syllabus">Syllabus</a>
         <a href="#resources">Resources</a>
+        <a href="#faq">FAQ</a>
         <a href="#contact">Book Trial</a>
       </div>
 
