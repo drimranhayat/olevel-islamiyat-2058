@@ -1,1 +1,307 @@
+<section class="past-papers-home">
+  <style>
+    .past-papers-home {
+      font-family: Inter, Arial, sans-serif;
+      background: linear-gradient(135deg, #f7f9fc 0%, #eef4fb 100%);
+      padding: 60px 20px;
+      color: #102033;
+    }
 
+```
+.past-papers-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.past-papers-header {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.past-papers-badge {
+  display: inline-block;
+  background: #fff4d6;
+  color: #7a5712;
+  border: 1px solid #e6c878;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.past-papers-header h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 58px);
+  color: #071b33;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.past-papers-header p {
+  max-width: 760px;
+  margin: 18px auto 0;
+  color: #5d6b82;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.paper-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 34px;
+  flex-wrap: wrap;
+}
+
+.paper-tab {
+  background: #071b33;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 12px 22px;
+  font-weight: 800;
+  box-shadow: 0 10px 25px rgba(7, 27, 51, 0.18);
+}
+
+.paper-tab.secondary {
+  background: #ffffff;
+  color: #071b33;
+  border: 1px solid #dfe7f3;
+  box-shadow: none;
+}
+
+.past-paper-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.past-paper-card {
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dfe7f3;
+  border-radius: 24px;
+  padding: 26px;
+  min-height: 250px;
+  box-shadow: 0 18px 42px rgba(7, 27, 51, 0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.past-paper-card::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  right: -70px;
+  width: 150px;
+  height: 150px;
+  background: rgba(216, 170, 69, 0.18);
+  border-radius: 50%;
+}
+
+.past-paper-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 24px 56px rgba(7, 27, 51, 0.16);
+  border-color: #d8aa45;
+}
+
+.card-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #071b33, #0f2f56);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.past-paper-card h2 {
+  position: relative;
+  z-index: 2;
+  color: #071b33;
+  font-size: 21px;
+  line-height: 1.25;
+  margin: 0 0 12px;
+  letter-spacing: -0.02em;
+}
+
+.past-paper-card p {
+  position: relative;
+  z-index: 2;
+  color: #5d6b82;
+  font-size: 14.5px;
+  line-height: 1.65;
+  margin: 0 0 20px;
+}
+
+.card-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+  position: relative;
+  z-index: 2;
+}
+
+.card-meta span {
+  background: #e8f7f4;
+  color: #0f766e;
+  border: 1px solid #bfe7dc;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.open-card {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #d8aa45;
+  color: #1b1302;
+  padding: 11px 16px;
+  border-radius: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.open-card:hover {
+  background: #c99a35;
+  transform: translateX(4px);
+}
+
+.coming-soon {
+  margin-top: 34px;
+  background: #ffffff;
+  border: 1px dashed #b8c8dc;
+  border-radius: 22px;
+  padding: 24px;
+  text-align: center;
+  color: #5d6b82;
+}
+
+.coming-soon strong {
+  color: #071b33;
+}
+
+@media (max-width: 1050px) {
+  .past-paper-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .past-papers-home {
+    padding: 42px 14px;
+  }
+
+  .past-paper-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .past-paper-card {
+    padding: 22px;
+  }
+}
+```
+
+  </style>
+
+  <div class="past-papers-container">
+    <div class="past-papers-header">
+      <span class="past-papers-badge">O Level / IGCSE Islamiyat 2058 / 0493</span>
+      <h1>Past Paper Questions</h1>
+      <p>
+        Explore premium topic-wise Paper 1 past-paper resources designed for focused revision,
+        examiner understanding, repeated question analysis, and A/A* exam preparation.
+      </p>
+    </div>
+
+```
+<div class="paper-tabs">
+  <span class="paper-tab">Paper 1 Resources</span>
+  <span class="paper-tab secondary">Paper 2 Coming Soon</span>
+</div>
+
+<div class="past-paper-grid">
+  <article class="past-paper-card">
+    <div class="card-icon">📖</div>
+    <h2>History & Importance of the Qur’an</h2>
+    <p>
+      Revelation, compilation, preservation, major themes, and sources of Islamic law arranged with examiner-focused guidance.
+    </p>
+    <div class="card-meta">
+      <span>P1</span>
+      <span>High Frequency</span>
+      <span>Qur’an Topics</span>
+    </div>
+    <a class="open-card" href="p1/premium-history-importance-quran-p1-past-papers.html">
+      Open Resource →
+    </a>
+  </article>
+
+  <article class="past-paper-card">
+    <div class="card-icon">🕋</div>
+    <h2>Life of Prophet ﷺ in Makkah</h2>
+    <p>
+      Early life, preaching, persecution, migrations, pledges, Israʾ wal-Miʿraj, and Hijrah questions organized topic-wise.
+    </p>
+    <div class="card-meta">
+      <span>P1</span>
+      <span>Very Important</span>
+      <span>Makki Life</span>
+    </div>
+    <a class="open-card" href="p1/premium-makki-life-p1-past-papers.html">
+      Open Resource →
+    </a>
+  </article>
+
+  <article class="past-paper-card">
+    <div class="card-icon">🕌</div>
+    <h2>Life of Prophet ﷺ in Madinah</h2>
+    <p>
+      Brotherhood, Constitution of Madinah, battles, Hudaybiyyah, Conquest of Makkah, and Farewell Sermon.
+    </p>
+    <div class="card-meta">
+      <span>P1</span>
+      <span>Exam Favourite</span>
+      <span>Madani Life</span>
+    </div>
+    <a class="open-card" href="p1/premium-madani-life-p1-past-papers.html">
+      Open Resource →
+    </a>
+  </article>
+
+  <article class="past-paper-card">
+    <div class="card-icon">⭐</div>
+    <h2>The First Islamic Community</h2>
+    <p>
+      Wives, Companions, descendants, scribes, and key personalities arranged with modern application questions.
+    </p>
+    <div class="card-meta">
+      <span>P1</span>
+      <span>Repeated Area</span>
+      <span>Community</span>
+    </div>
+    <a class="open-card" href="p1/premium-first-islamic-community-p1-past-papers.html">
+      Open Resource →
+    </a>
+  </article>
+</div>
+
+<div class="coming-soon">
+  <strong>Paper 2 Past Papers:</strong> A separate section can be added here once your P2 HTML files are ready.
+</div>
+```
+
+  </div>
+</section>
