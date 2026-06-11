@@ -1237,10 +1237,11 @@
   </footer>
 
   <script>
-    document.getElementById("trialForm").addEventListener("submit", function(event) {
+    document.getElementById("trialForm").addEventListener("submit", async function(event) {
       event.preventDefault();
 
       const WHATSAPP_NUMBER = "923354910481";
+      const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzKzehouyRKaOv1Fvt549ZOs7W_PZuB60DzIgyaFeRL4bS6tqspRRvvB_OfhQIjCO4i/exec";
 
       const studentName = document.getElementById("studentName").value.trim();
       const parentName = document.getElementById("parentName").value.trim();
@@ -1254,6 +1255,27 @@
       if (!studentName || !email || !studentWhatsapp) {
         alert("Please fill in Student Name, Email, and WhatsApp Number.");
         return;
+      }
+
+      const formData = new URLSearchParams();
+      formData.append("studentName", studentName);
+      formData.append("parentName", parentName);
+      formData.append("email", email);
+      formData.append("studentWhatsapp", studentWhatsapp);
+      formData.append("classGrade", classGrade);
+      formData.append("course", course);
+      formData.append("examSession", examSession);
+      formData.append("message", message);
+      formData.append("source", "Website Form");
+
+      try {
+        await fetch(GOOGLE_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          body: formData
+        });
+      } catch (error) {
+        console.log("Google Sheet submission issue:", error);
       }
 
       const text =
@@ -1275,6 +1297,9 @@ Please share class details, schedule, and availability.`;
       window.open(whatsappURL, "_blank");
 
       document.getElementById("successMessage").style.display = "block";
+      document.getElementById("successMessage").innerText =
+        "Thank you. Your request has been saved and WhatsApp has opened with your booking message.";
+
       this.reset();
     });
   </script>
