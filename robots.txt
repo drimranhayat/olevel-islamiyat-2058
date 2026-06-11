@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drimranhayat.github.io/olevel-islamiyat-2058/sitemap.xml
