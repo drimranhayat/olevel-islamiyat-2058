@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunni and Shi'a Hadith Collections | O Level Islamiyat 2058 Paper 2</title>
+  <meta name="description" content="Premium Cambridge O Level Islamiyat 2058 Paper 2 notes on the six Sunni Hadith collections and the four Shi'a Hadith collections, with features, comparison, model answers and exam practice." />
+  <style>
+    :root{
+      --navy:#0b1f3a;
+      --blue:#153e75;
+      --deep:#102a43;
+      --sky:#eaf4ff;
+      --gold:#c9972b;
+      --gold-soft:#fff5d9;
+      --green:#0f766e;
+      --green-soft:#e8fff8;
+      --ink:#111827;
+      --muted:#526071;
+      --line:#d9e2ec;
+      --soft:#f7fafc;
+      --white:#ffffff;
+      --danger:#9f1239;
+      --danger-soft:#fff1f2;
+      --purple:#5b21b6;
+      --purple-soft:#f4f0ff;
+      --shadow:0 14px 36px rgba(11,31,58,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.72;
+      color:var(--ink);
+      background:linear-gradient(180deg,#f6fbff 0%,#ffffff 34%,#f9fbff 100%);
+    }
+    a{color:var(--blue);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .page{max-width:1180px;margin:auto;padding:24px;}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:radial-gradient(circle at top left,rgba(201,151,43,.24),transparent 35%),linear-gradient(135deg,var(--navy),#123d6b 62%,#0f766e);
+      color:white;
+      border-radius:30px;
+      padding:44px 38px;
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:280px;height:280px;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:50%;
+      right:-95px;top:-95px;
+      box-shadow:0 0 0 34px rgba(255,255,255,.035),0 0 0 72px rgba(255,255,255,.025);
+    }
+    .eyebrow{
+      display:inline-flex;gap:8px;align-items:center;
+      padding:7px 13px;
+      border-radius:999px;
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.24);
+      font-weight:700;
+      letter-spacing:.3px;
+      font-size:.88rem;
+      position:relative;z-index:1;
+    }
+    h1{font-size:clamp(2rem,4vw,4.1rem);line-height:1.06;margin:20px 0 14px;position:relative;z-index:1;}
+    .subtitle{font-size:1.15rem;max-width:930px;color:#e8f2ff;margin:0;position:relative;z-index:1;}
+    .hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;position:relative;z-index:1;}
+    .hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:16px;}
+    .hero-card strong{display:block;font-size:1.05rem;color:#fff;}
+    .hero-card span{display:block;color:#dbeafe;font-size:.94rem;margin-top:4px;}
+    .toc{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px;}
+    .toc a{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 13px;font-weight:700;color:var(--navy);box-shadow:0 6px 18px rgba(15,23,42,.05);}
+    section{margin:26px 0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 10px 26px rgba(15,23,42,.055);}
+    h2{font-size:clamp(1.45rem,2.2vw,2.15rem);line-height:1.2;margin:0 0 14px;color:var(--navy);}
+    h3{font-size:1.22rem;margin:24px 0 9px;color:#102a43;}
+    h4{font-size:1.06rem;margin:16px 0 8px;color:var(--navy);}
+    p{margin:10px 0;}
+    .lead{font-size:1.05rem;color:#25364a;}
+    .badge-row{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0;}
+    .badge{display:inline-block;background:var(--sky);border:1px solid #cbe2ff;border-radius:999px;color:#14365d;font-weight:700;padding:7px 12px;font-size:.9rem;}
+    .badge.gold{background:var(--gold-soft);border-color:#f6d887;color:#7a4d00;}
+    .badge.green{background:var(--green-soft);border-color:#b6f4e5;color:#065f56;}
+    .badge.purple{background:var(--purple-soft);border-color:#d6c7ff;color:#4c1d95;}
+    .exam-focus{border-left:6px solid var(--gold);background:#fffdf5;border-radius:18px;padding:18px;margin:18px 0;}
+    .warning{border-left:6px solid var(--danger);background:var(--danger-soft);border-radius:18px;padding:18px;margin:18px 0;}
+    .success{border-left:6px solid var(--green);background:var(--green-soft);border-radius:18px;padding:18px;margin:18px 0;}
+    .purple-note{border-left:6px solid var(--purple);background:var(--purple-soft);border-radius:18px;padding:18px;margin:18px 0;}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+    .card{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:18px;}
+    .card.white{background:#fff;}
+    .card h3,.card h4{margin-top:0;}
+    .big-term{font-size:1.55rem;font-weight:900;color:var(--navy);}
+    .term-label{display:block;font-size:.82rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.07em;}
+    .split-card{display:grid;grid-template-columns:98px 1fr;gap:16px;align-items:start;}
+    .icon-circle{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;font-size:1.75rem;background:linear-gradient(135deg,#eaf4ff,#fff5d9);border:1px solid #d8e4f0;color:var(--navy);font-weight:900;}
+    ul,ol{padding-left:22px;}
+    li{margin:8px 0;}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;margin:16px 0;}
+    table{width:100%;border-collapse:collapse;background:#fff;min-width:820px;}
+    th{background:var(--navy);color:white;text-align:left;padding:13px 14px;font-size:.94rem;}
+    td{border-top:1px solid var(--line);padding:13px 14px;vertical-align:top;}
+    tr:nth-child(even) td{background:#fbfdff;}
+    .collection{
+      border:1px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      margin:18px 0;
+      background:#fff;
+    }
+    .collection-head{
+      display:flex;justify-content:space-between;gap:18px;align-items:flex-start;
+      background:linear-gradient(135deg,#eef6ff,#ffffff);
+      padding:18px 20px;border-bottom:1px solid var(--line);
+    }
+    .collection-head h3{margin:0;color:var(--navy);}
+    .collection-head .meta{font-weight:700;color:#315b88;text-align:right;min-width:230px;}
+    .collection-body{padding:18px 20px;}
+    .mini-tags{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0;}
+    .mini-tags span{background:#f0f7ff;border:1px solid #c9ddf5;color:#183b5b;padding:6px 10px;border-radius:999px;font-weight:700;font-size:.86rem;}
+    .shia .collection-head{background:linear-gradient(135deg,#f4f0ff,#ffffff);}
+    .answer{background:#fcfcff;border:1px solid #d8e4f0;border-radius:18px;padding:20px;margin:16px 0;}
+    .answer h3{margin-top:0;}
+    .mark-pill{display:inline-block;background:var(--navy);color:#fff;border-radius:999px;padding:5px 10px;font-weight:800;font-size:.85rem;margin-bottom:10px;}
+    .exam-box{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+    .question{background:#fff;border:1px dashed #adc6e6;border-radius:16px;padding:16px;}
+    .question strong{color:var(--navy);}
+    details{border:1px solid var(--line);border-radius:16px;padding:0;background:#fff;margin:12px 0;overflow:hidden;}
+    summary{cursor:pointer;font-weight:800;color:var(--navy);padding:15px 17px;background:#f8fbff;}
+    details .inside{padding:0 17px 17px;}
+    .two-col-list{columns:2;column-gap:34px;}
+    .keyword-bank{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+    .keyword-bank span{background:#f0f7ff;border:1px solid #c9ddf5;color:#183b5b;padding:7px 11px;border-radius:999px;font-weight:700;font-size:.9rem;}
+    .source-list li{margin:6px 0;}
+    .footer-note{font-size:.92rem;color:var(--muted);}
+    .small{font-size:.93rem;color:var(--muted);}
+    .print-tip{background:#eef7ff;border:1px solid #cfe7ff;border-radius:18px;padding:16px;color:#173b63;}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0;}
+    .flow .step{background:#ffffff;border:1px solid var(--line);border-radius:16px;padding:16px;position:relative;box-shadow:0 6px 18px rgba(15,23,42,.04);}
+    .flow .step:not(:last-child)::after{content:"→";position:absolute;right:-15px;top:38%;color:var(--gold);font-size:1.4rem;font-weight:900;}
+    .step-num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;margin-bottom:8px;}
+    @media(max-width:900px){
+      .hero-grid,.grid-2,.grid-3,.exam-box{grid-template-columns:1fr;}
+      .flow{grid-template-columns:1fr;}
+      .flow .step:not(:last-child)::after{display:none;}
+      .split-card{grid-template-columns:1fr;}
+      .collection-head{display:block;}
+      .collection-head .meta{text-align:left;margin-top:8px;}
+      .two-col-list{columns:1;}
+      section{padding:22px;}
+      .hero{padding:34px 24px;}
+    }
+    @media print{
+      body{background:#fff;}
+      .toc{display:none;}
+      section,.hero{box-shadow:none;break-inside:avoid;}
+      a{text-decoration:none;color:inherit;}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">O Level Islamiyat 2058 · Paper 2 · History and Importance of Hadith</div>
+      <h1>Sunni and Shi'a Hadith Collections</h1>
+      <p class="subtitle">A complete examiner-focused lesson on the <strong>six major Sunni collections</strong> and the <strong>four major Shi'a collections</strong>: their names, compilers, features, legal value, differences, and how to turn them into high-scoring Paper 2 answers.</p>
+      <div class="hero-grid">
+        <div class="hero-card"><strong>Core Topic</strong><span>Six Sunni collections and four Shi'a collections.</span></div>
+        <div class="hero-card"><strong>Exam Demand</strong><span>Name, describe, compare, and explain significance.</span></div>
+        <div class="hero-card"><strong>High-Grade Skill</strong><span>Show why collections mattered for law, belief, and practice.</span></div>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Page contents">
+      <a href="#syllabus">Syllabus focus</a>
+      <a href="#overview">Big picture</a>
+      <a href="#sunni">Six Sunni collections</a>
+      <a href="#shia">Four Shi'a collections</a>
+      <a href="#comparison">Comparison</a>
+      <a href="#legal">Legal importance</a>
+      <a href="#exam">Exam answers</a>
+      <a href="#practice">Practice</a>
+      <a href="#revision">Revision</a>
+    </nav>
+
+    <section id="syllabus">
+      <h2>1. Cambridge Syllabus Focus</h2>
+      <p class="lead">This topic belongs to <strong>Paper 2: The history and importance of the Hadiths</strong>. Cambridge specifically requires candidates to study <strong>“the main features of the six collections of Sunni Hadiths and the four collections of Shi'a Hadiths.”</strong></p>
+      <div class="exam-focus">
+        <h3>What the examiner wants</h3>
+        <p>A top answer should not simply list book names. It should identify the collections, mention their compilers where relevant, describe their main features, and explain why these collections became central sources for Islamic belief, worship, law, ethics and community life.</p>
+      </div>
+      <div class="badge-row">
+        <span class="badge">AO1: accurate names and facts</span>
+        <span class="badge gold">AO2: significance for Muslims</span>
+        <span class="badge green">Key phrase: preservation of Sunnah</span>
+        <span class="badge purple">Exam skill: compare without bias</span>
+      </div>
+    </section>
+
+    <section id="overview">
+      <h2>2. Big Picture: Why Hadith Collections Matter</h2>
+      <p class="lead">After the Prophet ﷺ, Muslims needed reliable guidance about his words, actions, approvals and example. The Qur'an remained the supreme source of Islam, but the Qur'an itself commands obedience to the Messenger ﷺ. Therefore, preserving the Sunnah became essential for understanding prayer, fasting, zakat, pilgrimage, family law, trade, justice, manners and moral conduct.</p>
+      <div class="grid-2">
+        <div class="card white split-card">
+          <div class="icon-circle">6</div>
+          <div>
+            <span class="term-label">Sunni canon</span>
+            <div class="big-term">Kutub al-Sittah</div>
+            <p>The <strong>six books</strong> are the best-known Sunni Hadith collections. The two <strong>Sahih</strong> collections hold the highest position, while the four remaining collections are especially important for legal rulings and practical matters.</p>
+          </div>
+        </div>
+        <div class="card white split-card">
+          <div class="icon-circle">4</div>
+          <div>
+            <span class="term-label">Shi'a canon</span>
+            <div class="big-term">al-Kutub al-Arba'ah</div>
+            <p>The <strong>four books</strong> are the major Twelver Shi'a Hadith collections. They preserve reports from the Prophet ﷺ and the Imams of the Ahl al-Bayt, and are central to Shi'a law, belief and religious practice.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="success">
+        <h3>One-line memory formula</h3>
+        <p><strong>Sunni collections preserve the Sunnah mainly through Companion-based chains; Shi'a collections preserve guidance through the Prophet ﷺ and the Imams of the Ahl al-Bayt.</strong></p>
+      </div>
+
+      <div class="warning">
+        <h3>Important accuracy warning</h3>
+        <p>Do not write that every Hadith in every famous collection is equally authentic. In Sunni scholarship, <strong>Sahih al-Bukhari</strong> and <strong>Sahih Muslim</strong> have a special status. The Sunan and Jami' collections may contain reports of different grades. In Shi'a scholarship too, major collections are highly respected, but scholars still examine chains, meanings and legal implications.</p>
+      </div>
+    </section>
+
+    <section id="sunni">
+      <h2>3. The Six Major Sunni Hadith Collections</h2>
+      <p class="lead">The six major Sunni collections are commonly known as <strong>Kutub al-Sittah</strong>. They became central because they gathered Hadiths by subject and helped scholars apply the Sunnah to belief, worship, law and daily life.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Collection</th>
+              <th>Compiler</th>
+              <th>Main feature for exam answers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>Sahih al-Bukhari</strong></td>
+              <td>Imam Muhammad ibn Isma'il al-Bukhari</td>
+              <td>Highly rigorous collection of authentic reports; arranged into books/chapters; given the highest status among Sunni Hadith collections.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Sahih Muslim</strong></td>
+              <td>Imam Muslim ibn al-Hajjaj</td>
+              <td>Authentic collection; grouped related narrations together; together with Bukhari known as the <em>Sahihayn</em>.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Sunan Abi Dawud</strong></td>
+              <td>Imam Abu Dawud al-Sijistani</td>
+              <td>Strong legal focus; useful for rulings in worship, transactions, marriage, punishments and social law.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>Jami' al-Tirmidhi</strong></td>
+              <td>Imam Abu 'Isa al-Tirmidhi</td>
+              <td>Gives Hadith grades and often mentions juristic opinions, making it valuable for fiqh discussion.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><strong>Sunan al-Nasa'i</strong></td>
+              <td>Imam Ahmad al-Nasa'i</td>
+              <td>Known for careful selection and legal organization; often counted among the strongest Sunan collections.</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><strong>Sunan Ibn Majah</strong></td>
+              <td>Imam Muhammad ibn Yazid Ibn Majah</td>
+              <td>Completes the six-book set; includes useful reports in law and practice, including some narrations not found in the other five.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <article class="collection">
+        <div class="collection-head">
+          <h3>1. Sahih al-Bukhari</h3>
+          <div class="meta">Compiler: Imam al-Bukhari<br>Highest Sunni status</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Sahih collection</span><span>Very strict conditions</span><span>Arranged by chapters</span><span>Core source of Sunnah</span></div>
+          <p><strong>Sahih al-Bukhari</strong> is the most respected Sunni Hadith collection after the Qur'an in traditional Sunni scholarship. Imam al-Bukhari travelled widely, listened to teachers, examined narrators, and selected reports according to strict standards. His collection is arranged into books and chapters, so it is useful for belief, worship, manners, law and biography of the Prophet ﷺ.</p>
+          <h4>Exam point</h4>
+          <p>Mention that al-Bukhari did not simply gather reports randomly. He used careful criteria, including continuity of chain, reliability of narrators and soundness of content. This makes the collection a model of Hadith verification.</p>
+        </div>
+      </article>
+
+      <article class="collection">
+        <div class="collection-head">
+          <h3>2. Sahih Muslim</h3>
+          <div class="meta">Compiler: Imam Muslim<br>Part of the Sahihayn</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Sahih collection</span><span>Grouped variants</span><span>Clear arrangement</span><span>Major Sunni authority</span></div>
+          <p><strong>Sahih Muslim</strong> is considered one of the two most authentic Sunni Hadith collections. Its special strength is that related chains and versions of a Hadith are often placed together. This helps scholars compare wording, understand context and see how the same report was transmitted through different routes.</p>
+          <h4>Exam point</h4>
+          <p>Use the term <strong>Sahihayn</strong> for Bukhari and Muslim together. This single word immediately shows examiner-level knowledge.</p>
+        </div>
+      </article>
+
+      <article class="collection">
+        <div class="collection-head">
+          <h3>3. Sunan Abi Dawud</h3>
+          <div class="meta">Compiler: Imam Abu Dawud<br>Strong legal focus</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Sunan collection</span><span>Fiqh rulings</span><span>Acts of worship</span><span>Social law</span></div>
+          <p><strong>Sunan Abi Dawud</strong> is especially important for Islamic law. It is organized around practical legal topics such as purification, prayer, fasting, marriage, divorce, trade and judicial matters. It helps jurists find Hadith evidence for rulings.</p>
+          <h4>Exam point</h4>
+          <p>Do not describe it merely as “another Hadith book.” Its key identity is <strong>legal usefulness</strong>. It links Hadith to fiqh.</p>
+        </div>
+      </article>
+
+      <article class="collection">
+        <div class="collection-head">
+          <h3>4. Jami' al-Tirmidhi</h3>
+          <div class="meta">Compiler: Imam al-Tirmidhi<br>Hadith grades + juristic views</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Jami' collection</span><span>Hadith grading</span><span>Legal discussion</span><span>Useful for comparison</span></div>
+          <p><strong>Jami' al-Tirmidhi</strong> is valuable because it does more than present narrations. It often comments on the strength of Hadiths and records how scholars of law used them. This makes it useful for understanding both narration and legal reasoning.</p>
+          <h4>Exam point</h4>
+          <p>The word <strong>Jami'</strong> suggests a wider collection covering many areas of religion, while the notes on grades and legal opinions make Tirmidhi especially useful for students and jurists.</p>
+        </div>
+      </article>
+
+      <article class="collection">
+        <div class="collection-head">
+          <h3>5. Sunan al-Nasa'i</h3>
+          <div class="meta">Compiler: Imam al-Nasa'i<br>Careful selection</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Sunan collection</span><span>Legal chapters</span><span>Careful standards</span><span>Practical guidance</span></div>
+          <p><strong>Sunan al-Nasa'i</strong> is known for careful selection and legal arrangement. It includes many Hadiths on worship and law, and is valued for its precision among the Sunan collections.</p>
+          <h4>Exam point</h4>
+          <p>When comparing the Sunan works, mention that they are especially useful for legal and practical issues because their arrangement follows topics of fiqh.</p>
+        </div>
+      </article>
+
+      <article class="collection">
+        <div class="collection-head">
+          <h3>6. Sunan Ibn Majah</h3>
+          <div class="meta">Compiler: Imam Ibn Majah<br>Completes Kutub al-Sittah</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Sixth collection</span><span>Practical topics</span><span>Additional narrations</span><span>Law and ethics</span></div>
+          <p><strong>Sunan Ibn Majah</strong> is usually counted as the sixth of the major Sunni collections. It contains legal and practical chapters and includes some narrations not found in the other five. This made it useful for completing the range of Hadith evidence available to later scholars.</p>
+          <h4>Exam point</h4>
+          <p>A balanced answer should state that its position is important, but it is not equal in rank to Bukhari and Muslim. This shows scholarly accuracy.</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="shia">
+      <h2>4. The Four Major Shi'a Hadith Collections</h2>
+      <p class="lead">The four major Twelver Shi'a collections are known as <strong>al-Kutub al-Arba'ah</strong>. They preserve reports connected with the Prophet ﷺ and the Imams of the Ahl al-Bayt. For Shi'a Muslims, the Imams are authoritative guides in explaining the Qur'an and Sunnah, so their teachings have a central role in law, belief and practice.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Collection</th>
+              <th>Compiler</th>
+              <th>Main feature for exam answers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>al-Kafi</strong></td>
+              <td>Muhammad ibn Ya'qub al-Kulayni</td>
+              <td>Comprehensive collection; includes beliefs, law, ethics and miscellaneous reports; one of the most important Shi'a Hadith works.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Man la Yahduruhu al-Faqih</strong></td>
+              <td>al-Shaykh al-Saduq / Ibn Babawayh</td>
+              <td>Practical legal guide for those without direct access to a jurist; focuses strongly on rulings and religious practice.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Tahdhib al-Ahkam</strong></td>
+              <td>al-Shaykh al-Tusi</td>
+              <td>Large legal Hadith collection and commentary; explains rulings and deals with differences between reports.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>al-Istibsar</strong></td>
+              <td>al-Shaykh al-Tusi</td>
+              <td>Shorter legal collection focused on apparently conflicting reports and ways to reconcile them.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <article class="collection shia">
+        <div class="collection-head">
+          <h3>1. al-Kafi</h3>
+          <div class="meta">Compiler: al-Kulayni<br>Most comprehensive of the four</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Beliefs</span><span>Law</span><span>Ethics</span><span>Ahl al-Bayt reports</span></div>
+          <p><strong>al-Kafi</strong> is the first and most comprehensive of the four major Shi'a Hadith collections. It is often described through three broad parts: <strong>Usul</strong> dealing with principles and beliefs, <strong>Furu'</strong> dealing with practical law, and <strong>Rawda</strong> containing miscellaneous reports, sermons and ethical material.</p>
+          <h4>Exam point</h4>
+          <p>Use the phrase <strong>comprehensive source</strong>. It covers belief, law and moral guidance, so it is not only a book of legal rulings.</p>
+        </div>
+      </article>
+
+      <article class="collection shia">
+        <div class="collection-head">
+          <h3>2. Man la Yahduruhu al-Faqih</h3>
+          <div class="meta">Compiler: al-Shaykh al-Saduq<br>Practical legal guidance</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Practical law</span><span>Religious duties</span><span>Accessible guide</span><span>Fatwa-based selection</span></div>
+          <p><strong>Man la Yahduruhu al-Faqih</strong> means “for the one who has no jurist present.” Its purpose is practical: to guide Muslims in worship and daily rulings when a specialist jurist is not immediately available. It reflects the compiler's judgement about reports suitable for legal use.</p>
+          <h4>Exam point</h4>
+          <p>This book is useful to mention in a 4-mark answer on the importance of Hadith collections because it shows how Hadith became a practical guide for ordinary religious life.</p>
+        </div>
+      </article>
+
+      <article class="collection shia">
+        <div class="collection-head">
+          <h3>3. Tahdhib al-Ahkam</h3>
+          <div class="meta">Compiler: al-Shaykh al-Tusi<br>Large legal commentary</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Fiqh</span><span>Legal commentary</span><span>Reconciliation</span><span>Scholarly depth</span></div>
+          <p><strong>Tahdhib al-Ahkam</strong> is a major legal Hadith work by al-Shaykh al-Tusi. It is connected with explaining legal rulings and dealing with different narrations on the same issue. It became a central source for Shi'a jurisprudence.</p>
+          <h4>Exam point</h4>
+          <p>Its strength is not merely size; its strength is that it connects Hadith to legal reasoning and explains how apparently different reports may be understood.</p>
+        </div>
+      </article>
+
+      <article class="collection shia">
+        <div class="collection-head">
+          <h3>4. al-Istibsar</h3>
+          <div class="meta">Compiler: al-Shaykh al-Tusi<br>Shorter companion work</div>
+        </div>
+        <div class="collection-body">
+          <div class="mini-tags"><span>Conflicting reports</span><span>Concise legal source</span><span>Hadith analysis</span><span>Practical rulings</span></div>
+          <p><strong>al-Istibsar</strong> is also by al-Shaykh al-Tusi. It is shorter than <em>Tahdhib al-Ahkam</em> and is especially associated with discussing reports that appear to differ from one another. Its purpose is to help students and scholars understand how legal reports can be weighed, reconciled or applied.</p>
+          <h4>Exam point</h4>
+          <p>For comparison, write: <strong>Tahdhib is larger and fuller; al-Istibsar is more concise and focused on reconciling differences.</strong></p>
+        </div>
+      </article>
+    </section>
+
+    <section id="comparison">
+      <h2>5. Sunni and Shi'a Collections: Similarities and Differences</h2>
+      <p class="lead">A mature answer should compare respectfully and accurately. The aim is not sectarian debate; the aim is to show how different Hadith traditions preserved religious authority and practical guidance.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Point of comparison</th>
+              <th>Sunni collections</th>
+              <th>Shi'a collections</th>
+              <th>Exam-useful conclusion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Main canon</strong></td>
+              <td>Six major books, commonly known as <strong>Kutub al-Sittah</strong>.</td>
+              <td>Four major books, commonly known as <strong>al-Kutub al-Arba'ah</strong>.</td>
+              <td>Both traditions developed recognised collections to preserve guidance.</td>
+            </tr>
+            <tr>
+              <td><strong>Authority structure</strong></td>
+              <td>Reports are mainly traced through Companions and later transmitters to the Prophet ﷺ.</td>
+              <td>Reports include the Prophet ﷺ and the Imams of the Ahl al-Bayt as religious authorities.</td>
+              <td>The difference reflects different understandings of authority after the Prophet ﷺ.</td>
+            </tr>
+            <tr>
+              <td><strong>Highest-status works</strong></td>
+              <td>Bukhari and Muslim are known together as the <strong>Sahihayn</strong>.</td>
+              <td>al-Kafi is often treated as the most comprehensive of the Four Books.</td>
+              <td>Name the special books instead of listing all collections with equal wording.</td>
+            </tr>
+            <tr>
+              <td><strong>Legal function</strong></td>
+              <td>Four Sunan/Jami' collections are especially useful for fiqh chapters.</td>
+              <td>Man la Yahduruhu al-Faqih, Tahdhib and al-Istibsar are especially linked with legal rulings.</td>
+              <td>Hadith collections became a bridge between Sunnah and Islamic law.</td>
+            </tr>
+            <tr>
+              <td><strong>Authenticity</strong></td>
+              <td>Hadiths are graded through isnad, matn, narrator reliability and continuity.</td>
+              <td>Shi'a scholars also examine chains, narrators and meanings, especially in legal use.</td>
+              <td>Do not say all reports in famous books are automatically equal.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="purple-note">
+        <h3>Balanced comparison sentence</h3>
+        <p><strong>Both Sunni and Shi'a Muslims rely on Hadith collections to preserve religious guidance, but they differ in the chains and authorities they give most weight to, especially regarding the role of the Companions and the Imams of the Ahl al-Bayt.</strong></p>
+      </div>
+    </section>
+
+    <section id="legal">
+      <h2>6. Importance of These Collections in Islamic Law and Life</h2>
+      <p class="lead">Hadith collections are not only historical records. They are living sources used to understand how Muslims should believe, worship, behave and organise social life.</p>
+
+      <div class="flow">
+        <div class="step"><span class="step-num">1</span><strong>Report preserved</strong><p>Words, actions and approvals of the Prophet ﷺ are transmitted.</p></div>
+        <div class="step"><span class="step-num">2</span><strong>Hadith verified</strong><p>Scholars check chains, narrators and text.</p></div>
+        <div class="step"><span class="step-num">3</span><strong>Topic arranged</strong><p>Reports are placed under chapters such as prayer, fasting or marriage.</p></div>
+        <div class="step"><span class="step-num">4</span><strong>Law derived</strong><p>Jurists use reliable reports with Qur'an, ijma' and qiyas.</p></div>
+        <div class="step"><span class="step-num">5</span><strong>Life guided</strong><p>Muslims apply teachings in worship, ethics and community life.</p></div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>1. Worship</h3>
+          <p>Collections explain details of prayer, fasting, zakat and pilgrimage that are not fully described step by step in the Qur'an.</p>
+        </div>
+        <div class="card">
+          <h3>2. Law</h3>
+          <p>They provide evidence for rulings on marriage, divorce, inheritance, trade, courts, contracts and social responsibilities.</p>
+        </div>
+        <div class="card">
+          <h3>3. Character</h3>
+          <p>They preserve prophetic teachings on honesty, mercy, patience, modesty, forgiveness, family life and treatment of others.</p>
+        </div>
+      </div>
+
+      <div class="exam-focus">
+        <h3>4-mark answer idea</h3>
+        <p>For AO2, write that without Hadith collections Muslims would have the Qur'an but would lose many practical details of how the Prophet ﷺ implemented Qur'anic teachings. The collections therefore preserve both knowledge and example.</p>
+      </div>
+    </section>
+
+    <section id="exam">
+      <h2>7. Exam-Focused Model Answers</h2>
+
+      <div class="answer">
+        <span class="mark-pill">10-mark model answer</span>
+        <h3>Question: Describe the main features of the six Sunni collections and the four Shi'a collections of Hadith.</h3>
+        <p>The six major Sunni collections are known as <strong>Kutub al-Sittah</strong>. They became the most recognised Sunni Hadith collections because they preserved reports of the Prophet's ﷺ words, actions and approvals in organised form. The first and most highly regarded is <strong>Sahih al-Bukhari</strong>, compiled by Imam Muhammad ibn Isma'il al-Bukhari. It is famous for its strict conditions of authenticity and is arranged into books and chapters dealing with belief, worship, law and manners. The second is <strong>Sahih Muslim</strong>, compiled by Imam Muslim ibn al-Hajjaj. Together, Bukhari and Muslim are called the <strong>Sahihayn</strong> and are given the highest authority among Sunni collections.</p>
+        <p>The other four Sunni collections are also central, especially for legal rulings. <strong>Sunan Abi Dawud</strong> is strongly connected with fiqh and contains many reports on worship, marriage, trade and judicial matters. <strong>Jami' al-Tirmidhi</strong> is important because it often gives grades of Hadith and mentions the opinions of jurists, so it connects narration with legal discussion. <strong>Sunan al-Nasa'i</strong> is valued for careful selection and legal arrangement, while <strong>Sunan Ibn Majah</strong> completes the six-book set and includes additional narrations on practical matters. These collections helped Sunni scholars preserve the Sunnah and apply it to Islamic law and daily practice.</p>
+        <p>The four major Shi'a collections are known as <strong>al-Kutub al-Arba'ah</strong>. The first is <strong>al-Kafi</strong> by Muhammad ibn Ya'qub al-Kulayni. It is a comprehensive work covering beliefs, law, ethics and miscellaneous reports, and it includes teachings from the Prophet ﷺ and the Imams of the Ahl al-Bayt. The second is <strong>Man la Yahduruhu al-Faqih</strong> by al-Shaykh al-Saduq, which was designed as a practical guide for those who did not have direct access to a jurist. The third is <strong>Tahdhib al-Ahkam</strong> by al-Shaykh al-Tusi, a large legal Hadith work connected with explaining rulings and dealing with different reports. The fourth is <strong>al-Istibsar</strong>, also by al-Tusi, which is shorter and focuses especially on reconciling apparently conflicting legal narrations.</p>
+        <p>Both Sunni and Shi'a collections show the importance of Hadith in Islam. They preserved religious knowledge, helped scholars test reports, and provided guidance for belief, worship, law and conduct. However, they differ in the authorities emphasised: Sunni collections mainly transmit reports through the Companions, while Shi'a collections give central importance to the Prophet ﷺ and the Imams of the Ahl al-Bayt.</p>
+      </div>
+
+      <div class="answer">
+        <span class="mark-pill">4-mark model answer</span>
+        <h3>Question: Why are Hadith collections important for Muslims?</h3>
+        <p>Hadith collections are important because they preserve the Sunnah of the Prophet ﷺ and show Muslims how to practise the teachings of the Qur'an. For example, the Qur'an commands prayer and zakat, but Hadiths explain many practical details. These collections also help scholars derive Islamic law by using Hadith with the Qur'an, ijma' and qiyas. They guide Muslims in worship, family life, business, justice and personal character. Therefore, they are not only historical books but living sources of belief and action.</p>
+      </div>
+
+      <div class="answer">
+        <span class="mark-pill">4-mark model answer</span>
+        <h3>Question: Why do Sunni and Shi'a Muslims have different Hadith collections?</h3>
+        <p>Sunni and Shi'a Muslims have different Hadith collections because they developed different views about religious authority after the Prophet ﷺ. Sunni collections mainly preserve reports transmitted through the Companions and later scholars, while Shi'a collections give special authority to the Imams of the Ahl al-Bayt as interpreters of the Prophet's ﷺ teachings. This affected which narrators and reports were accepted as central. However, both traditions used Hadith collections to preserve guidance for worship, law and moral life.</p>
+      </div>
+    </section>
+
+    <section id="practice">
+      <h2>8. Cambridge-Style Practice Questions</h2>
+      <div class="exam-box">
+        <div class="question">
+          <strong>10 marks</strong>
+          <p>Describe the main features of the six Sunni Hadith collections and the four Shi'a Hadith collections.</p>
+        </div>
+        <div class="question">
+          <strong>4 marks</strong>
+          <p>Why are Hadith collections important for Muslims today?</p>
+        </div>
+        <div class="question">
+          <strong>10 marks</strong>
+          <p>Write about the main Sunni collections of Hadith and explain how they are useful for Islamic law.</p>
+        </div>
+        <div class="question">
+          <strong>4 marks</strong>
+          <p>Why is it important to know that not all Hadith collections have the same rank?</p>
+        </div>
+        <div class="question">
+          <strong>10 marks</strong>
+          <p>Give an account of the four Shi'a collections of Hadith and their main features.</p>
+        </div>
+        <div class="question">
+          <strong>4 marks</strong>
+          <p>How do Hadith collections help Muslims understand the Qur'an?</p>
+        </div>
+      </div>
+
+      <div class="warning">
+        <h3>Editorial note</h3>
+        <p>These are <strong>Cambridge-style practice questions</strong>, not claimed as exact past-paper questions. Exact year/session labels should only be added after checking official Cambridge question papers or mark schemes.</p>
+      </div>
+    </section>
+
+    <section id="revision">
+      <h2>9. Quick Revision Cards</h2>
+      <details open>
+        <summary>Card 1: Six Sunni collections</summary>
+        <div class="inside">
+          <p><strong>Bukhari, Muslim, Abu Dawud, Tirmidhi, Nasa'i, Ibn Majah.</strong> Bukhari and Muslim are the Sahihayn. Abu Dawud, Nasa'i and Ibn Majah are Sunan collections with strong legal value. Tirmidhi is a Jami' and is famous for grading and juristic discussion.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Card 2: Four Shi'a collections</summary>
+        <div class="inside">
+          <p><strong>al-Kafi, Man la Yahduruhu al-Faqih, Tahdhib al-Ahkam, al-Istibsar.</strong> al-Kafi is comprehensive; Man la Yahduruhu al-Faqih is practical; Tahdhib is a large legal work; al-Istibsar focuses on reconciling differences.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Card 3: One comparison sentence</summary>
+        <div class="inside">
+          <p>Sunni collections mainly preserve Prophetic reports through Companion-based chains, while Shi'a collections also give central authority to reports from the Imams of the Ahl al-Bayt.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Card 4: One significance sentence</summary>
+        <div class="inside">
+          <p>Hadith collections are important because they preserve the Prophet's ﷺ Sunnah, explain practical details of Qur'anic commands, and provide evidence for Islamic law and moral conduct.</p>
+        </div>
+      </details>
+
+      <h3>Keyword bank</h3>
+      <div class="keyword-bank">
+        <span>Kutub al-Sittah</span>
+        <span>Sahihayn</span>
+        <span>Sunan</span>
+        <span>Jami'</span>
+        <span>al-Kutub al-Arba'ah</span>
+        <span>Ahl al-Bayt</span>
+        <span>Imams</span>
+        <span>isnad</span>
+        <span>matn</span>
+        <span>fiqh</span>
+        <span>legal rulings</span>
+        <span>preservation of Sunnah</span>
+        <span>authenticity</span>
+        <span>juristic opinions</span>
+        <span>reconciliation of reports</span>
+      </div>
+
+      <h3>Common mistakes to avoid</h3>
+      <ul class="two-col-list">
+        <li>Writing only the names of collections without features.</li>
+        <li>Saying all six Sunni books are equally authentic.</li>
+        <li>Forgetting the term <strong>Sahihayn</strong> for Bukhari and Muslim.</li>
+        <li>Confusing <strong>Sunan</strong> with <strong>Sunnah</strong>.</li>
+        <li>Ignoring the four Shi'a collections completely.</li>
+        <li>Writing sectarian or disrespectful comparison instead of academic comparison.</li>
+        <li>Not explaining the legal importance of the books.</li>
+        <li>Using exact Hadith counts without checking edition differences.</li>
+      </ul>
+    </section>
+
+    <section id="teacher-use">
+      <h2>10. Teacher's Presentation Plan</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>10-minute opening</h3>
+          <p>Begin with the question: <strong>“How did Muslims preserve the Prophet's ﷺ guidance after his lifetime?”</strong> Then introduce the need for reliable collections and explain why Paper 2 asks about them.</p>
+        </div>
+        <div class="card">
+          <h3>20-minute core explanation</h3>
+          <p>Teach the six Sunni collections first, then the four Shi'a collections. Use the comparison table to show similarities and differences without turning the lesson into polemics.</p>
+        </div>
+        <div class="card">
+          <h3>10-minute exam training</h3>
+          <p>Ask students to write a 10-mark paragraph on Bukhari and Muslim, then one paragraph on al-Kafi and Man la Yahduruhu al-Faqih.</p>
+        </div>
+        <div class="card">
+          <h3>5-minute exit task</h3>
+          <p>Students must answer: <strong>“Why are Hadith collections important for Islamic law?”</strong> in four developed sentences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources">
+      <h2>11. Source and Accuracy Notes</h2>
+      <p class="footer-note">This page is written for Cambridge O Level Islamiyat 2058 Paper 2 revision. It avoids fabricated past-paper claims and avoids exact Hadith-number dependence because counts vary by edition, repetition and numbering system.</p>
+      <ul class="source-list">
+        <li>Cambridge International, <em>O Level Islamiyat 2058 Syllabus for 2026–2027</em>, Paper 2 syllabus content.</li>
+        <li>Sunnah.com collection pages for Sahih al-Bukhari, Sahih Muslim, Sunan Abi Dawud, Jami' al-Tirmidhi, Sunan al-Nasa'i and Sunan Ibn Majah.</li>
+        <li>WikiShia, “The Four Books,” for the standard names and compilers of the four major Shi'a Hadith collections.</li>
+        <li>Al-Islam.org, “Great Shi'i Works: Tahdhib al-Ahkam and al-Istibsar by al-Tusi,” for features of al-Tusi's works.</li>
+      </ul>
+      <div class="print-tip">
+        <strong>Website upload suggestion:</strong> save this page as <code>sunny-and-shia-hadith-collections.html</code> only if that is your internal spelling. For the URL you shared, the correct filename should be <code>sunni-and-shia-hadith-collections.html</code> inside <code>notes/paper-2/</code>.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
