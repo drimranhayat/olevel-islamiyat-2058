@@ -1,65 +1,415 @@
-.btn {
-display: inline-block;
-padding: 14px 30px;
-border-radius: 50px;
-font-weight: 700;
-font-size: 1rem;
-letter-spacing: 0.5px;
-border: none;
-cursor: pointer;
-transition: all 0.35s ease;
-text-align: center;
-position: relative;
-overflow: hidden;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hadith Compilers | O Level Islamiyat 2058 Paper 2</title>
+  <meta name="description" content="Premium O Level Islamiyat Paper 2 notes on the main compilers of Hadith, their activities, books, methods, exam focus and model answers." />
+  <style>
+    :root{
+      --navy:#0b1f3a;
+      --blue:#153e75;
+      --sky:#eaf4ff;
+      --gold:#c9972b;
+      --green:#0f766e;
+      --ink:#111827;
+      --muted:#526071;
+      --line:#d9e2ec;
+      --soft:#f7fafc;
+      --white:#ffffff;
+      --danger:#9f1239;
+      --shadow:0 14px 36px rgba(11,31,58,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.72;
+      color:var(--ink);
+      background:linear-gradient(180deg,#f6fbff 0%,#ffffff 34%,#f9fbff 100%);
+    }
+    a{color:var(--blue);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .page{max-width:1180px;margin:auto;padding:24px;}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:radial-gradient(circle at top left,rgba(201,151,43,.24),transparent 35%),linear-gradient(135deg,var(--navy),#123d6b 62%,#0f766e);
+      color:white;
+      border-radius:30px;
+      padding:44px 38px;
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:260px;height:260px;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:50%;
+      right:-90px;top:-80px;
+      box-shadow:0 0 0 34px rgba(255,255,255,.035),0 0 0 70px rgba(255,255,255,.025);
+    }
+    .eyebrow{
+      display:inline-flex;gap:8px;align-items:center;
+      padding:7px 13px;
+      border-radius:999px;
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.24);
+      font-weight:700;
+      letter-spacing:.3px;
+      font-size:.88rem;
+      position:relative;z-index:1;
+    }
+    h1{font-size:clamp(2rem,4vw,4.1rem);line-height:1.06;margin:20px 0 14px;position:relative;z-index:1;}
+    .subtitle{font-size:1.15rem;max-width:860px;color:#e8f2ff;margin:0;position:relative;z-index:1;}
+    .hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;position:relative;z-index:1;}
+    .hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:16px;}
+    .hero-card strong{display:block;font-size:1.05rem;color:#fff;}
+    .hero-card span{display:block;color:#dbeafe;font-size:.94rem;margin-top:4px;}
+    .toc{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px;}
+    .toc a{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 13px;font-weight:700;color:var(--navy);box-shadow:0 6px 18px rgba(15,23,42,.05);}
+    section{margin:26px 0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 10px 26px rgba(15,23,42,.055);}
+    h2{font-size:clamp(1.45rem,2.2vw,2.15rem);line-height:1.2;margin:0 0 14px;color:var(--navy);}
+    h3{font-size:1.22rem;margin:24px 0 9px;color:#102a43;}
+    h4{font-size:1.06rem;margin:16px 0 8px;color:var(--navy);}
+    p{margin:10px 0;}
+    .lead{font-size:1.05rem;color:#25364a;}
+    .badge-row{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0;}
+    .badge{display:inline-block;background:var(--sky);border:1px solid #cbe2ff;border-radius:999px;color:#14365d;font-weight:700;padding:7px 12px;font-size:.9rem;}
+    .note{border-left:5px solid var(--gold);background:#fff8e6;border-radius:16px;padding:16px 18px;margin:16px 0;}
+    .exam{border-left:5px solid var(--green);background:#eefdf9;border-radius:16px;padding:16px 18px;margin:16px 0;}
+    .warning{border-left:5px solid var(--danger);background:#fff1f2;border-radius:16px;padding:16px 18px;margin:16px 0;}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+    .card{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:18px;}
+    .card h3,.card h4{margin-top:0;}
+    .compiler{
+      border:1px solid var(--line);
+      border-radius:22px;
+      overflow:hidden;
+      margin:18px 0;
+      background:#fff;
+    }
+    .compiler-head{
+      display:flex;justify-content:space-between;gap:18px;align-items:flex-start;
+      background:linear-gradient(135deg,#eef6ff,#ffffff);
+      padding:18px 20px;border-bottom:1px solid var(--line);
+    }
+    .compiler-head h3{margin:0;color:var(--navy);}
+    .compiler-head .meta{font-weight:700;color:#315b88;text-align:right;min-width:185px;}
+    .compiler-body{padding:18px 20px;}
+    .compiler-body ul{margin:8px 0 0 20px;padding:0;}
+    .checklist li{margin:8px 0;}
+    table{width:100%;border-collapse:collapse;margin:16px 0;border-radius:16px;overflow:hidden;}
+    th{background:var(--navy);color:white;text-align:left;padding:12px;font-size:.95rem;}
+    td{border:1px solid var(--line);padding:12px;vertical-align:top;background:white;}
+    tr:nth-child(even) td{background:#f8fbff;}
+    .formula{display:grid;grid-template-columns:180px 1fr;gap:10px;margin:12px 0;align-items:start;}
+    .formula strong{background:var(--navy);color:white;border-radius:14px;padding:10px;text-align:center;}
+    .formula span{background:#f1f7ff;border:1px solid #d6e7ff;border-radius:14px;padding:10px;}
+    .answer-box{background:#fcfcfd;border:1px solid var(--line);border-radius:20px;padding:22px;margin-top:18px;}
+    .mark{display:inline-block;background:#e8f7ef;color:#065f46;border:1px solid #b7ebcd;border-radius:999px;padding:4px 10px;font-weight:800;font-size:.85rem;}
+    .past-list{counter-reset:item;list-style:none;padding:0;margin:0;}
+    .past-list li{counter-increment:item;background:#f8fbff;border:1px solid var(--line);border-radius:16px;margin:10px 0;padding:14px 14px 14px 52px;position:relative;}
+    .past-list li::before{content:counter(item);position:absolute;left:14px;top:15px;background:var(--blue);color:white;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:.88rem;}
+    .keyword-bank{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}
+    .keyword-bank span{background:#f0f7ff;border:1px solid #c9ddf5;color:#183b5b;padding:7px 11px;border-radius:999px;font-weight:700;font-size:.9rem;}
+    .footer-note{font-size:.92rem;color:var(--muted);border-top:1px solid var(--line);margin-top:20px;padding-top:14px;}
+    @media(max-width:850px){
+      .page{padding:14px;}
+      .hero{padding:30px 22px;border-radius:22px;}
+      .hero-grid,.grid-2,.grid-3{grid-template-columns:1fr;}
+      .compiler-head{display:block;}
+      .compiler-head .meta{text-align:left;margin-top:8px;}
+      .formula{grid-template-columns:1fr;}
+      section{padding:22px;}
+    }
+    @media print{
+      body{background:white;}
+      .hero,section{box-shadow:none;}
+      .toc{display:none;}
+      a{text-decoration:none;color:inherit;}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">Cambridge O Level Islamiyat 2058 / IGCSE 0493 • Paper 2</div>
+      <h1>Main Compilers of Hadith and Their Activities</h1>
+      <p class="subtitle">A premium, exam-focused study page explaining who the major Hadith compilers were, what they collected, how they verified reports, and how students can convert this knowledge into high-scoring 10-mark and 4-mark answers.</p>
+      <div class="hero-grid">
+        <div class="hero-card"><strong>Topic Focus</strong><span>History and importance of Hadith</span></div>
+        <div class="hero-card"><strong>Exam Skill</strong><span>AO1 detailed knowledge + AO2 significance</span></div>
+        <div class="hero-card"><strong>Key Demand</strong><span>No vague praise: name, method, activity, value</span></div>
+      </div>
+    </header>
 
-/* Blue → Purple Premium Button */
-.btn-primary {
-background: linear-gradient(
-135deg,
-#2563EB 0%,
-#4F46E5 50%,
-#7C3AED 100%
-);
-color: white;
-box-shadow: 0 10px 25px rgba(79, 70, 229, 0.35);
-}
+    <nav class="toc" aria-label="Page contents">
+      <a href="#scope">Scope</a>
+      <a href="#why">Why Compilers Matter</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#sunna">Six Sunni Collections</a>
+      <a href="#other">Other Major Compilers</a>
+      <a href="#shia">Four Shi'a Collections</a>
+      <a href="#methods">Verification Methods</a>
+      <a href="#exam">Exam Preparation</a>
+      <a href="#answers">Model Answers</a>
+    </nav>
 
-.btn-primary:hover {
-transform: translateY(-4px) scale(1.03);
-box-shadow: 0 18px 35px rgba(79, 70, 229, 0.45);
-}
+    <section id="scope">
+      <h2>1. What the syllabus expects students to know</h2>
+      <p class="lead">This topic belongs to the Paper 2 section on the <strong>history and importance of Hadiths</strong>. Students are expected to understand the development of Hadith collection, the earliest collections, the musnad and musannaf arrangements, the <strong>main compilers and their activities</strong>, and the methods used to test Hadith through <strong>isnad</strong> and <strong>matn</strong>.</p>
+      <div class="badge-row">
+        <span class="badge">Isnad = chain of narrators</span>
+        <span class="badge">Matn = text/content of the Hadith</span>
+        <span class="badge">Sahih = sound/authentic</span>
+        <span class="badge">Sunan/Jami'/Musnad/Muwatta = collection types</span>
+      </div>
+      <div class="exam"><strong>Examiner-style focus:</strong> Do not merely list names. A strong answer explains each compiler’s <strong>book, purpose, method, travel, selection, arrangement, and contribution to Muslim life</strong>.</div>
+    </section>
 
-/* Orange → Pink CTA Button */
-.btn-secondary {
-background: linear-gradient(
-135deg,
-#F59E0B 0%,
-#F97316 50%,
-#EC4899 100%
-);
-color: white;
-box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
-}
+    <section id="why">
+      <h2>2. Why Hadith compilers were so important</h2>
+      <p>After the Prophet Muhammad ﷺ, Muslims needed reliable guidance about his sayings, actions, approvals, legal judgements, worship, manners and community life. The Qur'an remained the first source of Islamic guidance, while Hadith explained how the Prophet ﷺ applied Qur'anic teachings in real life.</p>
+      <p>The task of the compilers was not simply to write religious stories. They performed a disciplined scholarly service: they travelled to teachers, checked narrators, compared reports, rejected unreliable material, and organised authentic or useful narrations into books that later Muslims could study.</p>
+      <div class="note"><strong>Core idea:</strong> Hadith compilation protected the Sunnah from loss, confusion and fabrication. It also provided Muslims with practical guidance for prayer, zakat, fasting, hajj, family life, trade, manners, leadership and law.</div>
+      <div class="grid-3">
+        <div class="card"><h3>Preservation</h3><p>Compilers preserved Prophetic teachings as the early generations passed away and Islam spread into new regions.</p></div>
+        <div class="card"><h3>Authentication</h3><p>They checked whether a report could truly be traced back through trustworthy narrators.</p></div>
+        <div class="card"><h3>Organisation</h3><p>They arranged Hadiths by narrator, topic, legal chapter or theme so scholars and ordinary Muslims could use them.</p></div>
+      </div>
+    </section>
 
-.btn-secondary:hover {
-transform: translateY(-4px) scale(1.03);
-box-shadow: 0 18px 35px rgba(236, 72, 153, 0.45);
-}
+    <section id="timeline">
+      <h2>3. Historical background: from preservation to major compilations</h2>
+      <table>
+        <thead><tr><th>Period</th><th>Development</th><th>Why it mattered</th></tr></thead>
+        <tbody>
+          <tr><td>Prophet's lifetime</td><td>Companions memorised, practised and sometimes wrote Hadiths.</td><td>Direct learning from the Prophet ﷺ gave the earliest Muslims living knowledge of Sunnah.</td></tr>
+          <tr><td>Companions and Successors</td><td>Hadiths were transmitted through students, family members and regional circles of learning.</td><td>Islam expanded, so accurate transmission became more urgent.</td></tr>
+          <tr><td>Early written collections</td><td>Works such as <em>al-Muwatta'</em>, musnad collections and musannaf collections appeared.</td><td>Knowledge began to move from scattered narration to organised books.</td></tr>
+          <tr><td>3rd century AH</td><td>The most famous Sunni collections, including the Six Books, were compiled.</td><td>This is often seen as the golden period of major Hadith compilation.</td></tr>
+          <tr><td>Later scholarship</td><td>Commentaries, grading, legal usage and comparison of chains continued.</td><td>Hadith remained a living source for Islamic law, worship and ethics.</td></tr>
+        </tbody>
+      </table>
+      <div class="warning"><strong>Accuracy note:</strong> Hadith counts can vary between editions because some counts include repetitions, chapter headings, variant chains or repeated reports. In exam writing, use cautious phrases such as <strong>“about”</strong>, <strong>“approximately”</strong> or <strong>“with repetitions”</strong>.</div>
+    </section>
 
-/* Outline Button */
-.btn-outline {
-border: 2px solid #2563EB;
-color: #2563EB;
-background: transparent;
-}
+    <section id="sunna">
+      <h2>4. The six major Sunni compilers: Kutub al-Sittah</h2>
+      <p class="lead">The six famous Sunni books are usually known as <strong>Kutub al-Sittah</strong>. They are not identical in method or purpose. Two are called <strong>Sahih</strong> collections because of their very strict focus on authentic reports; the others are mainly organised as <strong>Sunan</strong> or <strong>Jami'</strong> works, often serving legal and practical needs.</p>
 
-.btn-outline:hover {
-background: linear-gradient(
-135deg,
-#2563EB,
-#7C3AED
-);
-color: white;
-border-color: transparent;
-}
+      <article class="compiler">
+        <div class="compiler-head"><h3>1. Imam al-Bukhari — Sahih al-Bukhari</h3><div class="meta">194–256 AH / 810–870 CE</div></div>
+        <div class="compiler-body">
+          <p><strong>Full name:</strong> Muhammad ibn Isma'il al-Bukhari. He is remembered as one of the greatest Hadith scholars in Islamic history.</p>
+          <ul>
+            <li><strong>Main work:</strong> <em>al-Jami' al-Sahih</em>, commonly known as <em>Sahih al-Bukhari</em>.</li>
+            <li><strong>Arrangement:</strong> Organised into books and chapters covering revelation, belief, worship, trade, marriage, legal matters, tafsir, virtues and manners.</li>
+            <li><strong>Method:</strong> He used very strict criteria for accepting reports, including continuity of chain, reliability of narrators and strong evidence that narrators could have met.</li>
+            <li><strong>Importance:</strong> Sunni Muslims widely regard his collection as the most authentic Hadith collection after the Qur'an.</li>
+          </ul>
+          <p><strong>Exam phrase:</strong> “Al-Bukhari did not merely collect Hadiths; he selected them through strict scrutiny of both chain and content, making his work a model of Hadith criticism.”</p>
+        </div>
+      </article>
+
+      <article class="compiler">
+        <div class="compiler-head"><h3>2. Imam Muslim — Sahih Muslim</h3><div class="meta">204–261 AH / 819–875 CE</div></div>
+        <div class="compiler-body">
+          <p><strong>Full name:</strong> Muslim ibn al-Hajjaj al-Naysaburi. He studied under leading scholars and is often associated with al-Bukhari as part of the two most authentic Sunni collections.</p>
+          <ul>
+            <li><strong>Main work:</strong> <em>Sahih Muslim</em>.</li>
+            <li><strong>Arrangement:</strong> Similar narrations and variant chains are often grouped together, making comparison easier.</li>
+            <li><strong>Method:</strong> He accepted only reports that met high standards of reliability, though his technical conditions differ from al-Bukhari's.</li>
+            <li><strong>Importance:</strong> Together with <em>Sahih al-Bukhari</em>, it is known as one of the <em>Sahihayn</em>, the “Two Sahihs”.</li>
+          </ul>
+          <p><strong>Exam phrase:</strong> “Muslim’s arrangement helped scholars compare different chains and wordings of the same report.”</p>
+        </div>
+      </article>
+
+      <article class="compiler">
+        <div class="compiler-head"><h3>3. Imam Abu Dawud — Sunan Abi Dawud</h3><div class="meta">202–275 AH / 817–889 CE</div></div>
+        <div class="compiler-body">
+          <p><strong>Full name:</strong> Sulayman ibn al-Ash'ath al-Sijistani. His work is especially important for legal Hadith.</p>
+          <ul>
+            <li><strong>Main work:</strong> <em>Sunan Abi Dawud</em>.</li>
+            <li><strong>Purpose:</strong> To collect Hadiths useful for Islamic law and practical rulings.</li>
+            <li><strong>Method:</strong> He included reports relevant to legal questions and sometimes indicated weakness or reliability.</li>
+            <li><strong>Importance:</strong> Jurists benefited from his careful selection of legal material related to prayer, purification, zakat, trade, marriage and punishments.</li>
+          </ul>
+          <p><strong>Exam phrase:</strong> “Abu Dawud’s collection is valued because it links Hadith study with practical legal needs.”</p>
+        </div>
+      </article>
+
+      <article class="compiler">
+        <div class="compiler-head"><h3>4. Imam al-Tirmidhi — Jami' al-Tirmidhi</h3><div class="meta">209–279 AH / 824–892 CE</div></div>
+        <div class="compiler-body">
+          <p><strong>Full name:</strong> Abu 'Isa Muhammad ibn 'Isa al-Tirmidhi. His collection is valuable because it combines Hadith narration with scholarly comments.</p>
+          <ul>
+            <li><strong>Main work:</strong> <em>Jami' al-Tirmidhi</em>.</li>
+            <li><strong>Arrangement:</strong> It covers belief, worship, law, manners, tafsir, virtues and other themes.</li>
+            <li><strong>Method:</strong> He often comments on the grade of Hadiths, such as sound, good or weak, and sometimes mentions juristic opinions.</li>
+            <li><strong>Importance:</strong> His work helps students see not only a Hadith but also how scholars understood its reliability and use.</li>
+          </ul>
+          <p><strong>Exam phrase:</strong> “Al-Tirmidhi’s special contribution was that he frequently discussed the status of reports and the opinions of scholars.”</p>
+        </div>
+      </article>
+
+      <article class="compiler">
+        <div class="compiler-head"><h3>5. Imam al-Nasa'i — Sunan al-Nasa'i</h3><div class="meta">214–303 AH / 829–915 CE</div></div>
+        <div class="compiler-body">
+          <p><strong>Full name:</strong> Ahmad ibn Shu'ayb al-Nasa'i. He is known for careful selection and strong attention to reliability.</p>
+          <ul>
+            <li><strong>Main work:</strong> <em>Sunan al-Nasa'i</em>, often referring to <em>al-Mujtaba</em>, the selected version.</li>
+            <li><strong>Arrangement:</strong> Organised mainly by legal and devotional topics.</li>
+            <li><strong>Method:</strong> He was careful about narrators and chains, and his collection is often regarded as strong among the Sunan works.</li>
+            <li><strong>Importance:</strong> It became a major resource for rulings and devotional practice.</li>
+          </ul>
+          <p><strong>Exam phrase:</strong> “Al-Nasa'i’s work shows the compiler’s concern for careful selection and dependable transmission.”</p>
+        </div>
+      </article>
+
+      <article class="compiler">
+        <div class="compiler-head"><h3>6. Imam Ibn Majah — Sunan Ibn Majah</h3><div class="meta">209–273 AH / 824–887 CE</div></div>
+        <div class="compiler-body">
+          <p><strong>Full name:</strong> Muhammad ibn Yazid Ibn Majah al-Qazvini. His Sunan is commonly counted as the sixth of the six canonical Sunni collections.</p>
+          <ul>
+            <li><strong>Main work:</strong> <em>Sunan Ibn Majah</em>.</li>
+            <li><strong>Arrangement:</strong> Begins with chapters on Sunnah and knowledge, then moves through worship, transactions and legal topics.</li>
+            <li><strong>Method:</strong> It includes many useful legal and devotional narrations, though scholars note that it contains some weaker reports compared with the two Sahih collections.</li>
+            <li><strong>Importance:</strong> It preserved additional reports and became part of the standard Sunni Hadith library.</li>
+          </ul>
+          <p><strong>Exam phrase:</strong> “Ibn Majah’s collection is important, but students should avoid claiming that every report in it has the same status as reports in Bukhari or Muslim.”</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="other">
+      <h2>5. Other major compilers students should recognise</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Imam Malik — al-Muwatta'</h3>
+          <p><strong>Dates:</strong> 93–179 AH / 711–795 CE.</p>
+          <p><strong>Contribution:</strong> <em>al-Muwatta'</em> is one of the earliest famous written collections. It combines Hadiths, reports from Companions and Successors, and the practice of the people of Madinah.</p>
+          <p><strong>Exam use:</strong> Mention Imam Malik when discussing early collections and the transition from oral transmission to organised written works.</p>
+        </div>
+        <div class="card">
+          <h3>Imam Ahmad ibn Hanbal — Musnad Ahmad</h3>
+          <p><strong>Dates:</strong> 164–241 AH / 780–855 CE.</p>
+          <p><strong>Contribution:</strong> <em>Musnad Ahmad</em> arranges Hadiths mainly according to the Companion who narrated them. This is known as a <strong>musnad</strong> style.</p>
+          <p><strong>Exam use:</strong> Mention him when comparing <strong>musnad</strong> collections with <strong>musannaf</strong> or topic-based collections.</p>
+        </div>
+      </div>
+      <div class="note"><strong>Link with previous topic:</strong> Musnad collections are organised by narrator, while musannaf collections are organised by topic. The six books are mainly useful for topic-based study, law and practice.</div>
+    </section>
+
+    <section id="shia">
+      <h2>6. Four major Shi'a Hadith collections</h2>
+      <p class="lead">The Cambridge syllabus also requires awareness of the main features of the four collections of Shi'a Hadiths. These are central in Twelver Shi'a scholarship and include reports transmitted through the Prophet ﷺ, the Ahl al-Bayt and the Imams.</p>
+      <table>
+        <thead><tr><th>Collection</th><th>Compiler</th><th>Main feature</th></tr></thead>
+        <tbody>
+          <tr><td><em>al-Kafi</em></td><td>Muhammad ibn Ya'qub al-Kulayni</td><td>A major Shi'a Hadith collection covering belief, law, ethics and practice.</td></tr>
+          <tr><td><em>Man la Yahduruhu al-Faqih</em></td><td>Ibn Babawayh / al-Shaykh al-Saduq</td><td>A practical legal Hadith collection intended to guide those without direct access to a jurist.</td></tr>
+          <tr><td><em>Tahdhib al-Ahkam</em></td><td>al-Shaykh al-Tusi</td><td>A large work dealing with legal narrations and juristic discussion.</td></tr>
+          <tr><td><em>al-Istibsar</em></td><td>al-Shaykh al-Tusi</td><td>Often discusses apparently conflicting reports and how they may be understood.</td></tr>
+        </tbody>
+      </table>
+      <div class="exam"><strong>Safe exam wording:</strong> “Sunni and Shi'a Muslims both value Hadith, but their major collections and chains of authority differ. Sunni collections focus heavily on Companion-based chains, while Twelver Shi'a collections give special importance to narrations through the Ahl al-Bayt and the Imams.”</div>
+    </section>
+
+    <section id="methods">
+      <h2>7. What activities did the compilers actually perform?</h2>
+      <p>Students often lose marks because they write only “they collected Hadiths.” That is too general. A strong answer explains the scholarly activities behind compilation.</p>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Checking the isnad</h3>
+          <ul class="checklist">
+            <li>Was the chain complete or broken?</li>
+            <li>Were narrators known for truthfulness and piety?</li>
+            <li>Did narrators have strong memory or reliable written notes?</li>
+            <li>Could each narrator have met or heard from the previous narrator?</li>
+            <li>Was the report supported by other reliable chains?</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Checking the matn</h3>
+          <ul class="checklist">
+            <li>Did the content agree with the Qur'an?</li>
+            <li>Did it agree with stronger authentic Hadiths?</li>
+            <li>Was it reasonable and free from obvious contradiction?</li>
+            <li>Was its language suitable for Prophetic teaching?</li>
+            <li>Did it avoid exaggeration, sectarian invention or political bias?</li>
+          </ul>
+        </div>
+      </div>
+      <h3>High-scoring chain of explanation</h3>
+      <div class="formula"><strong>Travel</strong><span>Compilers travelled to centres of learning such as Makkah, Madinah, Basrah, Kufa, Baghdad, Nishapur and other regions to hear reports from teachers directly.</span></div>
+      <div class="formula"><strong>Selection</strong><span>They selected only those reports that met their purpose and reliability standards.</span></div>
+      <div class="formula"><strong>Comparison</strong><span>They compared different chains and wordings to detect weakness, mistakes or stronger versions.</span></div>
+      <div class="formula"><strong>Arrangement</strong><span>They organised Hadiths into books, chapters, narrator-based collections or legal topics.</span></div>
+      <div class="formula"><strong>Preservation</strong><span>Their books protected Muslim knowledge and enabled later scholars to teach, judge and derive rulings.</span></div>
+    </section>
+
+    <section id="exam">
+      <h2>8. Cambridge-style questions on Hadith compilers</h2>
+      <p class="lead">The following are exam-style questions for practice. They are written in the style of Paper 2, but they are not presented as exact session claims.</p>
+      <ol class="past-list">
+        <li><strong>10 marks:</strong> Give an account of the main compilers of Hadith and their activities.</li>
+        <li><strong>10 marks:</strong> Describe how Hadith compilers checked the reliability of Hadiths before including them in their collections.</li>
+        <li><strong>10 marks:</strong> Write about the main features of the six Sunni collections of Hadith.</li>
+        <li><strong>10 marks:</strong> Explain the difference between musnad and musannaf collections, giving examples of compilers.</li>
+        <li><strong>4 marks:</strong> Why was the work of Hadith compilers important for later Muslims?</li>
+        <li><strong>4 marks:</strong> Which activity of the compilers do you think was most important: collecting, checking, or arranging Hadiths? Give reasons.</li>
+      </ol>
+
+      <h3>What a 10-mark answer needs</h3>
+      <table>
+        <thead><tr><th>Level</th><th>What the answer looks like</th><th>How to improve</th></tr></thead>
+        <tbody>
+          <tr><td>Basic</td><td>Names a few compilers and books.</td><td>Add dates, purposes, methods and examples of activities.</td></tr>
+          <tr><td>Good</td><td>Explains several compilers with some detail and mentions isnad/matn.</td><td>Compare the different purposes of Sahih, Sunan, Jami', Musnad and Muwatta.</td></tr>
+          <tr><td>Excellent</td><td>Gives accurate names, books, methods, arrangement, historical importance and clear exam wording.</td><td>End by explaining how the collections guide Muslim belief, worship, law and conduct today.</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Keyword bank</h3>
+      <div class="keyword-bank">
+        <span>isnad</span><span>matn</span><span>transmission</span><span>narrator reliability</span><span>continuity of chain</span><span>memory</span><span>integrity</span><span>travel</span><span>comparison</span><span>authentication</span><span>Kutub al-Sittah</span><span>Sahihayn</span><span>musnad</span><span>musannaf</span><span>Sunan</span><span>Jami'</span><span>Muwatta'</span><span>Ahl al-Bayt</span>
+      </div>
+    </section>
+
+    <section id="answers">
+      <h2>9. Model answer: Main compilers of Hadith and their activities</h2>
+      <div class="answer-box">
+        <p><span class="mark">10-mark model answer</span></p>
+        <p>The main compilers of Hadith played a vital role in preserving the Sunnah of the Prophet Muhammad ﷺ. Their work became especially important as Islam spread to new lands and the early generations of Muslims passed away. They did not simply gather reports randomly; they travelled widely, met teachers, checked chains of transmission, compared different versions of reports and arranged Hadiths into useful collections.</p>
+        <p>Among the greatest compilers was <strong>Imam al-Bukhari</strong>, who compiled <em>Sahih al-Bukhari</em>. He used very strict standards before accepting a Hadith. He checked that the chain of narrators was continuous, that narrators were trustworthy and accurate, and that there was strong evidence that narrators could have heard from one another. His collection is arranged into books and chapters dealing with belief, worship, law, manners and many other aspects of Muslim life.</p>
+        <p><strong>Imam Muslim</strong> compiled <em>Sahih Muslim</em>, which together with <em>Sahih al-Bukhari</em> is known as one of the <em>Sahihayn</em>. Muslim also used strict criteria and arranged similar narrations together so that different chains and wordings could be compared. This made his collection especially useful for scholars studying the reliability and meaning of reports.</p>
+        <p>Other important compilers included <strong>Abu Dawud</strong>, who compiled <em>Sunan Abi Dawud</em>, a collection especially useful for legal rulings. <strong>Al-Tirmidhi</strong> compiled <em>Jami' al-Tirmidhi</em> and often commented on the grade of Hadiths and the views of scholars. <strong>Al-Nasa'i</strong> compiled <em>Sunan al-Nasa'i</em>, known for careful selection, while <strong>Ibn Majah</strong> compiled <em>Sunan Ibn Majah</em>, which became the sixth of the famous Sunni collections.</p>
+        <p>Earlier and wider Hadith scholarship also included <strong>Imam Malik</strong>, whose <em>al-Muwatta'</em> preserved Hadiths, Companion reports and the practice of Madinah, and <strong>Ahmad ibn Hanbal</strong>, whose <em>Musnad</em> arranged Hadiths mainly according to the Companion narrator. Shi'a scholarship also developed four major collections: <em>al-Kafi</em>, <em>Man la Yahduruhu al-Faqih</em>, <em>Tahdhib al-Ahkam</em> and <em>al-Istibsar</em>.</p>
+        <p>The activities of these compilers included checking the <strong>isnad</strong>, or chain of narrators, and the <strong>matn</strong>, or text of the Hadith. They examined whether narrators were honest, accurate and connected to one another. They also compared the content with the Qur'an, stronger Hadiths and accepted Islamic teaching. Because of their work, Muslims today have organised and carefully studied collections that guide worship, law, ethics and community life.</p>
+      </div>
+
+      <div class="answer-box">
+        <p><span class="mark">4-mark model answer</span></p>
+        <p>The work of Hadith compilers is important because it preserved the Sunnah of the Prophet ﷺ in an organised and reliable form. Their checking of chains and texts helped protect Muslims from false reports. Their collections also guide Muslims in worship, law, manners and daily conduct. Without their work, later Muslims would have found it much harder to distinguish reliable Prophetic teachings from weak or fabricated reports.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>10. Common mistakes to avoid</h2>
+      <div class="grid-2">
+        <div class="card"><h3>Mistake 1: Listing only names</h3><p>Names alone do not earn high marks. Always add book, purpose, method and importance.</p></div>
+        <div class="card"><h3>Mistake 2: Saying all books are equally authentic</h3><p>Be careful. <em>Bukhari</em> and <em>Muslim</em> are treated differently from Sunan works, which may include reports of varying grades.</p></div>
+        <div class="card"><h3>Mistake 3: Ignoring matn checks</h3><p>Students often mention narrator checking but forget that compilers also examined the content of the Hadith.</p></div>
+        <div class="card"><h3>Mistake 4: Confusing collection types</h3><p>Musnad means narrator-based arrangement; musannaf is topic-based arrangement. Sunan usually focuses heavily on legal chapters.</p></div>
+      </div>
+      <div class="footer-note">Prepared as a premium study resource for O Level Islamiyat Paper 2. For classroom use, teachers should cross-check exact past-paper wording and current syllabus wording from official Cambridge material before quoting a question as an exact past-paper item.</div>
+    </section>
+  </main>
+</body>
+</html>
