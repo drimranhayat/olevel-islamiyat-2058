@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Muhajirun and Ansar | O Level Islamiyat 2058 / IGCSE 0493</title>
+  <meta name="description" content="Comprehensive read-only notes on the Muhajirun and Ansar for Cambridge O Level Islamiyat 2058 and IGCSE Islamiyat 0493 Paper 1, with best UI, structure, answer frames and exam-focused revision." />
+
+  <style>
+    :root {
+      --navy:#06203f;
+      --navy2:#0b3b66;
+      --teal:#0f766e;
+      --teal2:#115e59;
+      --gold:#d6a84f;
+      --gold-soft:#fff7e6;
+      --mint:#ecfdf5;
+      --blue:#eff6ff;
+      --rose:#fff1f2;
+      --purple:#f5f3ff;
+      --cream:#fffaf0;
+      --ink:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --shadow:0 18px 46px rgba(6,32,63,.11);
+      --radius:26px;
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      -webkit-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+
+    html { scroll-behavior:smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.18), transparent 27%),
+        radial-gradient(circle at 88% 15%, rgba(15,118,110,.15), transparent 24%),
+        radial-gradient(circle at 20% 80%, rgba(6,32,63,.08), transparent 25%),
+        linear-gradient(180deg,#f8fafc 0%,#eef5ff 48%,#f8fafc 100%);
+      line-height:1.72;
+    }
+
+    a { text-decoration:none; }
+
+    .container {
+      width:92%;
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .topbar {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(6,32,63,.98);
+      color:white;
+      box-shadow:0 8px 24px rgba(0,0,0,.18);
+      backdrop-filter:blur(10px);
+    }
+
+    .topbar-inner {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:14px;
+      padding:14px 0;
+    }
+
+    .brand {
+      color:white;
+      font-size:19px;
+      font-weight:900;
+      letter-spacing:-.01em;
+    }
+
+    .brand span { color:var(--gold); }
+
+    .nav {
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .nav a {
+      color:white;
+      padding:8px 10px;
+      border-radius:999px;
+      font-size:13.5px;
+      font-weight:800;
+      transition:.25s ease;
+    }
+
+    .nav a:hover {
+      color:#fff3c4;
+      background:rgba(255,255,255,.12);
+    }
+
+    .hero {
+      position:relative;
+      overflow:hidden;
+      color:white;
+      padding:90px 0 74px;
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.38), transparent 36%),
+        radial-gradient(circle at bottom right, rgba(15,118,110,.44), transparent 36%),
+        linear-gradient(135deg,#04162f 0%, #06203f 48%, #0f766e 100%);
+    }
+
+    .hero:after {
+      content:"";
+      position:absolute;
+      width:390px;
+      height:390px;
+      right:-155px;
+      top:-130px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+
+    .hero:before {
+      content:"";
+      position:absolute;
+      width:240px;
+      height:240px;
+      left:-90px;
+      bottom:-110px;
+      border-radius:50%;
+      border:34px solid rgba(214,168,79,.16);
+    }
+
+    .hero-grid {
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:38px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .label {
+      display:inline-block;
+      background:rgba(214,168,79,.18);
+      border:1px solid rgba(214,168,79,.48);
+      color:#fff3c4;
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:900;
+      margin-bottom:16px;
+    }
+
+    h1 {
+      font-size:clamp(35px,5vw,58px);
+      line-height:1.06;
+      margin-bottom:18px;
+      letter-spacing:-.035em;
+    }
+
+    .hero p {
+      color:#e5e7eb;
+      font-size:18px;
+      margin-bottom:15px;
+      max-width:880px;
+    }
+
+    .hero-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:26px;
+    }
+
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      border-radius:999px;
+      padding:12px 18px;
+      font-size:14px;
+      font-weight:900;
+      transition:.25s ease;
+    }
+
+    .btn-primary { background:var(--gold); color:var(--navy); }
+    .btn-primary:hover { background:#c3953d; transform:translateY(-2px); }
+    .btn-outline { border:2px solid white; color:white; }
+    .btn-outline:hover { background:white; color:var(--navy); transform:translateY(-2px); }
+
+    .hero-card {
+      background:rgba(255,255,255,.98);
+      color:var(--ink);
+      border:1px solid rgba(255,255,255,.6);
+      border-radius:30px;
+      padding:26px;
+      box-shadow:0 28px 66px rgba(0,0,0,.28);
+    }
+
+    .title-box {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.26), transparent 35%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      padding:24px;
+      border-radius:24px;
+      border-bottom:5px solid var(--gold);
+      text-align:center;
+      margin-bottom:16px;
+    }
+
+    .title-box strong {
+      display:block;
+      color:#fff3c4;
+      font-size:31px;
+      margin-bottom:4px;
+    }
+
+    .dual-pill {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      margin:14px 0 4px;
+    }
+
+    .dual-pill div {
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:16px;
+      padding:10px;
+      font-weight:900;
+      color:white;
+    }
+
+    .hero-card h2 { color:var(--navy); font-size:25px; margin-bottom:12px; }
+
+    .hero-card ul {
+      list-style:none;
+      display:grid;
+      gap:9px;
+    }
+
+    .hero-card li {
+      position:relative;
+      padding-left:28px;
+      color:#374151;
+      font-weight:700;
+    }
+
+    .hero-card li:before {
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:var(--teal);
+      font-weight:900;
+    }
+
+    .toolbar {
+      margin:-31px auto 34px;
+      position:relative;
+      z-index:5;
+    }
+
+    .toolbox {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:14px;
+      align-items:center;
+    }
+
+    .search {
+      width:100%;
+      border:1px solid #d9e2ef;
+      border-radius:999px;
+      padding:13px 16px;
+      font-size:15px;
+      outline:none;
+      background:#f8fafc;
+      color:var(--ink);
+      user-select:text;
+      -webkit-user-select:text;
+    }
+
+    .search:focus {
+      border-color:var(--gold);
+      box-shadow:0 0 0 4px rgba(214,168,79,.16);
+    }
+
+    .mini-buttons { display:flex; gap:9px; flex-wrap:wrap; }
+
+    .mini-btn {
+      border:0;
+      background:var(--navy);
+      color:white;
+      padding:11px 14px;
+      border-radius:999px;
+      font-weight:900;
+      cursor:pointer;
+      transition:.25s ease;
+    }
+
+    .mini-btn:hover { background:var(--teal); }
+
+    .section { padding:44px 0; }
+
+    .section-title {
+      text-align:center;
+      max-width:950px;
+      margin:0 auto 34px;
+    }
+
+    .section-title .label { background:var(--navy); border:0; }
+
+    .section-title h2 {
+      color:var(--navy);
+      font-size:clamp(29px,4vw,43px);
+      line-height:1.15;
+      margin-bottom:12px;
+      letter-spacing:-.02em;
+    }
+
+    .section-title p { color:var(--muted); font-size:17px; }
+
+    .grid-4 {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:17px;
+    }
+
+    .stat-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:23px;
+      padding:22px;
+      box-shadow:var(--shadow);
+      min-height:174px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .stat-card:after {
+      content:"";
+      position:absolute;
+      right:-26px;
+      top:-26px;
+      width:95px;
+      height:95px;
+      border-radius:50%;
+      background:rgba(214,168,79,.13);
+    }
+
+    .stat-card span {
+      display:inline-block;
+      background:var(--mint);
+      color:#166534;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .stat-card h3 { color:var(--navy); font-size:22px; margin-bottom:8px; }
+    .stat-card p { color:var(--muted); font-size:14px; }
+
+    .compare-hero {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .compare-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+
+    .compare-head {
+      padding:24px;
+      color:white;
+      background:linear-gradient(135deg,var(--navy),var(--teal));
+      border-bottom:5px solid var(--gold);
+      text-align:center;
+    }
+
+    .compare-head h3 {
+      font-size:30px;
+      margin-bottom:4px;
+    }
+
+    .compare-head p { color:#e5e7eb; }
+
+    .compare-body {
+      padding:24px;
+      background:#fff;
+    }
+
+    .compare-body ul { padding-left:22px; }
+    .compare-body li { margin-bottom:9px; }
+
+    .flow {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      padding:26px;
+    }
+
+    .flow-grid {
+      display:grid;
+      grid-template-columns:repeat(6,1fr);
+      gap:14px;
+    }
+
+    .flow-step {
+      background:#f8fafc;
+      border:1px solid #d9e2ef;
+      border-top:5px solid var(--gold);
+      border-radius:20px;
+      padding:17px;
+      min-height:170px;
+      text-align:center;
+    }
+
+    .flow-step .icon {
+      width:50px;
+      height:50px;
+      margin:0 auto 11px;
+      display:grid;
+      place-items:center;
+      border-radius:17px;
+      background:linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      font-size:23px;
+    }
+
+    .flow-step h3 { color:var(--navy); font-size:17px; margin-bottom:7px; }
+    .flow-step p { color:var(--muted); font-size:13px; }
+
+    .note-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+      overflow:hidden;
+    }
+
+    .note-head {
+      padding:24px 28px;
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.16), transparent 35%),
+        linear-gradient(135deg,var(--navy),var(--navy2));
+      color:white;
+      border-bottom:5px solid var(--gold);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      cursor:pointer;
+    }
+
+    .note-head h2 { font-size:26px; line-height:1.25; }
+
+    .note-head span {
+      display:inline-block;
+      background:rgba(255,255,255,.12);
+      color:#fff3c4;
+      padding:6px 11px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:12px;
+      margin-bottom:8px;
+    }
+
+    .toggle { font-size:24px; color:#fff3c4; transition:.25s ease; }
+    .note-card.closed .toggle { transform:rotate(-90deg); }
+    .note-body { padding:28px; }
+    .note-card.closed .note-body { display:none; }
+
+    .two-col {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .mini-card {
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:20px;
+      margin-bottom:18px;
+    }
+
+    .mini-card.gold { background:var(--gold-soft); border-color:#f3d48b; }
+    .mini-card.teal { background:#eef6f5; border-color:#bfe4dc; }
+    .mini-card.blue { background:var(--blue); border-color:#bfdbfe; }
+    .mini-card.rose { background:var(--rose); border-color:#fecdd3; }
+    .mini-card.purple { background:var(--purple); border-color:#ddd6fe; }
+    .mini-card.cream { background:var(--cream); border-color:#fde68a; }
+
+    .mini-card h3 { color:var(--navy); font-size:22px; margin-bottom:11px; }
+    .mini-card h4 { color:var(--teal); font-size:18px; margin:14px 0 7px; }
+
+    ul { padding-left:22px; }
+    li { margin-bottom:8px; color:#374151; }
+    strong { color:var(--navy); }
+
+    .quote-strip {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.21), transparent 32%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      border-radius:26px;
+      padding:24px;
+      margin:20px 0;
+      box-shadow:0 14px 36px rgba(6,32,63,.18);
+    }
+
+    .quote-strip h3 {
+      color:#fff3c4;
+      font-size:23px;
+      margin-bottom:10px;
+    }
+
+    .quote-strip p,
+    .quote-strip li {
+      color:#e5e7eb;
+    }
+
+    .people-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+
+    .person-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:25px;
+      box-shadow:0 12px 30px rgba(6,32,63,.07);
+      overflow:hidden;
+      transition:.25s ease;
+    }
+
+    .person-card:hover {
+      transform:translateY(-4px);
+      box-shadow:0 18px 40px rgba(6,32,63,.12);
+    }
+
+    .person-top {
+      padding:20px;
+      background:linear-gradient(135deg,#06203f,#0f766e);
+      color:white;
+      border-bottom:5px solid var(--gold);
+    }
+
+    .person-top span {
+      display:inline-block;
+      background:rgba(214,168,79,.18);
+      border:1px solid rgba(214,168,79,.45);
+      color:#fff3c4;
+      padding:5px 9px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:9px;
+    }
+
+    .person-top h3 { font-size:21px; line-height:1.28; }
+    .person-body { padding:20px; }
+    .person-body h4 { color:var(--navy); font-size:17px; margin:12px 0 7px; }
+    .person-body li { font-size:14px; color:#374151; margin-bottom:7px; }
+
+    .table-wrap {
+      overflow-x:auto;
+      border-radius:22px;
+      border:1px solid var(--line);
+      margin:18px 0;
+      box-shadow:0 10px 26px rgba(6,32,63,.05);
+    }
+
+    table {
+      width:100%;
+      min-width:800px;
+      border-collapse:collapse;
+      background:white;
+    }
+
+    th {
+      background:var(--navy);
+      color:white;
+      padding:15px;
+      text-align:left;
+      font-size:14px;
+    }
+
+    td {
+      padding:15px;
+      border-top:1px solid var(--line);
+      color:#374151;
+      vertical-align:top;
+      font-size:14px;
+    }
+
+    tr:nth-child(even) td { background:#f8fafc; }
+
+    .answer-box {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:25px;
+      box-shadow:var(--shadow);
+      padding:24px;
+      margin-bottom:22px;
+      border-top:6px solid var(--teal);
+    }
+
+    .answer-box h3 { color:var(--navy); font-size:24px; margin-bottom:12px; }
+
+    .mark-pill {
+      display:inline-block;
+      background:var(--gold-soft);
+      color:#7a4f00;
+      border:1px solid #f3d48b;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .question-bank {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+
+    .question {
+      background:white;
+      border:1px solid var(--line);
+      border-left:5px solid var(--gold);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:0 10px 26px rgba(6,32,63,.06);
+    }
+
+    .question h3 { color:var(--navy); font-size:19px; margin-bottom:8px; }
+    .question p { color:var(--muted); font-size:14px; }
+
+    .source-list { display:grid; gap:13px; }
+
+    .source-list a {
+      display:block;
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-left:5px solid var(--teal);
+      border-radius:16px;
+      padding:14px 16px;
+      color:var(--navy);
+      font-weight:800;
+      transition:.25s ease;
+    }
+
+    .source-list a:hover { background:var(--navy); color:white; }
+
+    .back-final {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.22), transparent 34%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      border-radius:30px;
+      padding:42px 28px;
+      text-align:center;
+      box-shadow:var(--shadow);
+    }
+
+    .back-final h2 { font-size:32px; margin-bottom:10px; }
+    .back-final p { color:#e5e7eb; max-width:780px; margin:0 auto 22px; }
+
+    footer {
+      background:#030f24;
+      color:white;
+      text-align:center;
+      padding:35px 0;
+      margin-top:40px;
+    }
+
+    footer p { color:#d1d5db; margin-bottom:8px; }
+    footer a { color:var(--gold); font-weight:900; }
+
+    .readonly-alert {
+      position:fixed;
+      left:50%;
+      bottom:22px;
+      transform:translateX(-50%);
+      background:var(--navy);
+      color:white;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:14px;
+      box-shadow:0 14px 32px rgba(0,0,0,.28);
+      display:none;
+      z-index:99999;
+      text-align:center;
+    }
+
+    .hidden-search { display:none !important; }
+
+    @media print {
+      body { display:none !important; }
+    }
+
+    @media (max-width:1080px) {
+      .hero-grid,
+      .two-col,
+      .compare-hero {
+        grid-template-columns:1fr;
+      }
+
+      .grid-4,
+      .flow-grid,
+      .people-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .toolbox {
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:650px) {
+      .nav { gap:6px; }
+      .nav a { font-size:12px; padding:7px 8px; }
+      .hero { padding:64px 0 52px; }
+      .hero-actions,
+      .mini-buttons { width:100%; }
+      .btn,
+      .mini-btn { width:100%; }
+      .dual-pill,
+      .grid-4,
+      .flow-grid,
+      .people-grid,
+      .question-bank {
+        grid-template-columns:1fr;
+      }
+      .note-head { flex-direction:column; align-items:flex-start; }
+      .note-body { padding:20px; }
+      .hero-card { padding:20px; }
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+  <div class="readonly-alert" id="readonlyAlert">This page is read-only for protected study use.</div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../../index.html">O Level Islamiyat <span>2058</span></a>
+      <nav class="nav">
+        <a href="../../index.html">Home</a>
+        <a href="../../paper-1.html">Paper 1</a>
+        <a href="prophet-in-madina.html">Prophet in Madinah</a>
+        <a href="../../past-papers.html">Past Papers</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="label">Paper 1 • First Islamic Community • Emigrants and Helpers</span>
+        <h1>Muhajirun and Ansar رضي الله عنهم</h1>
+        <p>
+          Premium, fully structured Cambridge-style notes on the Emigrants and Helpers: their background, brotherhood, sacrifices, role in Madinah and importance for Muslims today.
+        </p>
+        <p>
+          This page combines syllabus coverage, chronological flow, beautiful visuals, key personalities, Qur’anic support, Hadith support, 10-mark plans and 4-mark evaluation frames.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#chronology">Study Chronology</a>
+          <a class="btn btn-outline" href="../../paper-1.html">Back to Paper 1</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="title-box">
+          <strong>Muhajirun + Ansar</strong>
+          <span>The two pillars of the first Madinan community</span>
+          <div class="dual-pill">
+            <div>Emigrants</div>
+            <div>Helpers</div>
+          </div>
+        </div>
+        <h2>Core Idea</h2>
+        <ul>
+          <li>The Muhajirun left Makkah for Allah and His Messenger ﷺ.</li>
+          <li>The Ansar welcomed, protected and supported them in Madinah.</li>
+          <li>The Prophet ﷺ united them through brotherhood.</li>
+          <li>Their unity helped build the first Islamic state/community.</li>
+          <li>Their lives teach sacrifice, hospitality, equality and unity.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container toolbar">
+    <div class="toolbox">
+      <input class="search" id="searchInput" type="search" placeholder="Search within these notes: Muhajirun, Ansar, brotherhood, Sa‘d, Abd al-Rahman, Hijrah, 59:9..." />
+      <div class="mini-buttons">
+        <button class="mini-btn" id="expandAll">Expand All</button>
+        <button class="mini-btn" id="collapseAll">Collapse All</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Syllabus Focus</span>
+          <h2>Why this topic matters in Cambridge Paper 1</h2>
+          <p>
+            This topic belongs to the Paper 1 area “The first Islamic community.” Students should know the main characters who lived with and near the Prophet ﷺ, including the Emigrants and Helpers, significant facts from their lives, and the importance of their actions in Islamic history and Muslim belief.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="stat-card searchable">
+            <span>AO1</span>
+            <h3>Define clearly</h3>
+            <p>Know who the Muhajirun and Ansar were and why they were given these titles.</p>
+          </div>
+
+          <div class="stat-card searchable">
+            <span>AO1</span>
+            <h3>Give events</h3>
+            <p>Explain Hijrah, arrival in Madinah, brotherhood and community building.</p>
+          </div>
+
+          <div class="stat-card searchable">
+            <span>AO2</span>
+            <h3>Show importance</h3>
+            <p>Explain sacrifice, generosity, unity, equality, trust and social responsibility.</p>
+          </div>
+
+          <div class="stat-card searchable">
+            <span>Exam Skill</span>
+            <h3>Use examples</h3>
+            <p>Use Abu Bakr, Abd al-Rahman ibn Awf, Sa‘d ibn al-Rabi‘ and Abu Ayyub رضي الله عنهم.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:18px;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Quick Contrast</span>
+          <h2>Muhajirun vs Ansar</h2>
+          <p>
+            Learn this comparison first. It gives students a clean foundation before studying the chronological events.
+          </p>
+        </div>
+
+        <div class="compare-hero">
+          <div class="compare-card searchable">
+            <div class="compare-head">
+              <h3>Muhajirun</h3>
+              <p>المهاجرون • The Emigrants</p>
+            </div>
+            <div class="compare-body">
+              <ul>
+                <li>Muslims who migrated from Makkah to Madinah for Islam.</li>
+                <li>They left homes, wealth, families and security.</li>
+                <li>Their sacrifice showed that faith was more important than worldly comfort.</li>
+                <li>Many had suffered persecution in Makkah.</li>
+                <li>Important examples include Abu Bakr, Umar, Uthman, Ali, Bilal, Umm Salamah and Abd al-Rahman ibn Awf رضي الله عنهم.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="compare-card searchable">
+            <div class="compare-head">
+              <h3>Ansar</h3>
+              <p>الأنصار • The Helpers</p>
+            </div>
+            <div class="compare-body">
+              <ul>
+                <li>Muslims of Madinah who welcomed and helped the migrants.</li>
+                <li>They belonged mainly to the Aws and Khazraj tribes.</li>
+                <li>They gave homes, wealth, protection and brotherhood.</li>
+                <li>Their support made Madinah the centre of Islam.</li>
+                <li>Important examples include Sa‘d ibn al-Rabi‘, Sa‘d ibn Mu‘adh, Abu Ayyub al-Ansari and Usayd ibn Hudayr رضي الله عنهم.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="chronology" style="background:#eef5ff;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Chronological Structure</span>
+          <h2>From Makkah’s Persecution to Madinah’s Brotherhood</h2>
+          <p>
+            For the best exam answers, present the topic in order: why migration became necessary, how Madinah prepared, how the Prophet ﷺ arrived, and how brotherhood created a new community.
+          </p>
+        </div>
+
+        <div class="flow">
+          <div class="flow-grid">
+            <div class="flow-step searchable">
+              <div class="icon">🔥</div>
+              <h3>Persecution</h3>
+              <p>Muslims suffered pressure, boycott and danger in Makkah.</p>
+            </div>
+
+            <div class="flow-step searchable">
+              <div class="icon">🤝</div>
+              <h3>Aqabah</h3>
+              <p>People of Yathrib accepted Islam and pledged support.</p>
+            </div>
+
+            <div class="flow-step searchable">
+              <div class="icon">🌙</div>
+              <h3>Hijrah</h3>
+              <p>Muhajirun migrated for Allah and His Messenger ﷺ.</p>
+            </div>
+
+            <div class="flow-step searchable">
+              <div class="icon">🏡</div>
+              <h3>Welcome</h3>
+              <p>Ansar received the Prophet ﷺ and the migrants with love.</p>
+            </div>
+
+            <div class="flow-step searchable">
+              <div class="icon">🕌</div>
+              <h3>Community</h3>
+              <p>Masjid, brotherhood and constitution organised society.</p>
+            </div>
+
+            <div class="flow-step searchable">
+              <div class="icon">🛡️</div>
+              <h3>Defence</h3>
+              <p>Together they defended Islam and built the first Muslim community.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Foundation</span>
+              <h2>1. Who were the Muhajirun?</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>Definition and background</h3>
+                <ul>
+                  <li><strong>Muhajirun</strong> means the Emigrants.</li>
+                  <li>They were the Muslims who migrated from Makkah to Madinah for the sake of Allah and His Messenger ﷺ.</li>
+                  <li>They left homes, businesses, tribal protection, relatives and property.</li>
+                  <li>Some had already suffered persecution, torture, social boycott or loss of status in Makkah.</li>
+                  <li>Their migration was not for wealth or comfort; it was a religious migration to preserve faith and help establish Islam.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>Qualities shown by the Muhajirun</h3>
+                <ul>
+                  <li><strong>Sacrifice:</strong> they gave up worldly security for Islam.</li>
+                  <li><strong>Trust:</strong> they relied on Allah during uncertainty.</li>
+                  <li><strong>Courage:</strong> they faced danger during and after migration.</li>
+                  <li><strong>Obedience:</strong> they followed the Prophet’s ﷺ guidance.</li>
+                  <li><strong>Resilience:</strong> they rebuilt life in Madinah with dignity and hard work.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="quote-strip">
+              <h3>Qur’anic meaning guide</h3>
+              <p>
+                Qur’an 9:100 honours the earliest Muhajirun and Ansar, and those who follow them in goodness. This makes the two groups central examples for Muslims.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Foundation</span>
+              <h2>2. Who were the Ansar?</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>Definition and background</h3>
+                <ul>
+                  <li><strong>Ansar</strong> means the Helpers or Supporters.</li>
+                  <li>They were the Muslims of Madinah who supported the Prophet ﷺ and the Muhajirun.</li>
+                  <li>They belonged mainly to the tribes of <strong>Aws</strong> and <strong>Khazraj</strong>.</li>
+                  <li>Before Islam, these tribes had experienced conflict and rivalry.</li>
+                  <li>Islam united them and gave Madinah a new moral and religious direction.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>Qualities shown by the Ansar</h3>
+                <ul>
+                  <li><strong>Hospitality:</strong> they opened their homes to migrants.</li>
+                  <li><strong>Selflessness:</strong> they gave preference to others even when they had need.</li>
+                  <li><strong>Protection:</strong> they accepted the duty to defend the Prophet ﷺ.</li>
+                  <li><strong>Brotherhood:</strong> they treated the Muhajirun as true brothers.</li>
+                  <li><strong>Unity:</strong> they helped transform Yathrib into Madinah, the centre of Islam.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="quote-strip">
+              <h3>Qur’anic meaning guide</h3>
+              <p>
+                Qur’an 59:9 praises the people of Madinah who loved the migrants and gave them preference over themselves even when they were in need. This is one of the strongest evidences for the character of the Ansar.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Before Hijrah</span>
+              <h2>3. How Madinah became ready: Yathrib, Aqabah and the Ansar</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="mini-card blue">
+              <h3>Chronological explanation</h3>
+              <ul>
+                <li>Before the Hijrah, Madinah was known as Yathrib.</li>
+                <li>The city had important Arab tribes, especially Aws and Khazraj, and Jewish tribes living nearby.</li>
+                <li>Some people from Yathrib met the Prophet ﷺ during the pilgrimage season in Makkah.</li>
+                <li>They accepted Islam and took the message back to Yathrib.</li>
+                <li>The First and Second Pledges of Aqabah prepared the way for the Prophet’s ﷺ migration.</li>
+                <li>In these pledges, people from Yathrib accepted Islam, promised loyalty and agreed to support/protect the Prophet ﷺ.</li>
+                <li>This meant Madinah was not an accidental refuge; it was spiritually and socially prepared to become the new centre of Islam.</li>
+              </ul>
+            </div>
+
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>Why the Ansar were crucial before Hijrah</h3>
+                <ul>
+                  <li>They accepted the message before the Prophet ﷺ arrived.</li>
+                  <li>They invited him to their city.</li>
+                  <li>They offered protection at a time when Makkah had become dangerous.</li>
+                  <li>They created the conditions for Islam to move from a persecuted group to an organised community.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>Exam development point</h3>
+                <ul>
+                  <li>Do not start the topic only from the arrival in Madinah.</li>
+                  <li>For a strong answer, mention the Aqabah pledges because they show that the Ansar had already accepted responsibility.</li>
+                  <li>This makes the role of the Ansar more than hospitality; it was a serious covenant of faith and protection.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Hijrah</span>
+              <h2>4. The Muhajirun’s sacrifice during migration</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>What they sacrificed</h3>
+                <ul>
+                  <li>They left behind houses and trade in Makkah.</li>
+                  <li>They were separated from relatives and familiar tribal networks.</li>
+                  <li>They risked being chased, stopped, attacked or robbed.</li>
+                  <li>Some migrated secretly because Makkans opposed the movement.</li>
+                  <li>They arrived in Madinah needing housing, work, food and social support.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>Why this mattered</h3>
+                <ul>
+                  <li>Their migration proved sincerity of faith.</li>
+                  <li>It separated Islam from tribal dependence on Makkah.</li>
+                  <li>It allowed Muslims to worship and organise society freely.</li>
+                  <li>It helped create the first Muslim community under the Prophet’s ﷺ leadership.</li>
+                  <li>It became a turning point in Islamic history and later the basis for the Islamic calendar.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mini-card rose">
+              <h3>Common mistake</h3>
+              <ul>
+                <li>Do not write that the Muhajirun migrated because they “wanted a better life.”</li>
+                <li>Write that they migrated for faith, safety, obedience to the Prophet ﷺ and the establishment of Islam.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Arrival</span>
+              <h2>5. How the Ansar welcomed the Prophet ﷺ and the Muhajirun</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>The welcome</h3>
+                <ul>
+                  <li>The Ansar received the Prophet ﷺ with joy and honour.</li>
+                  <li>Many people wished to host him.</li>
+                  <li>The Prophet ﷺ stayed at the house of Abu Ayyub al-Ansari رضي الله عنه in the early days.</li>
+                  <li>This welcome showed love for the Prophet ﷺ and readiness to serve Islam.</li>
+                  <li>The arrival changed Yathrib into Madinat al-Nabi, the city of the Prophet ﷺ.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>How they helped the migrants</h3>
+                <ul>
+                  <li>They shared homes and resources.</li>
+                  <li>They helped the Muhajirun settle into a new city.</li>
+                  <li>They provided social protection in a society where tribal support mattered.</li>
+                  <li>They helped build the mosque and the new community.</li>
+                  <li>They became partners in the Prophet’s ﷺ mission, not just hosts.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Brotherhood</span>
+              <h2>6. Mu’akhah: the Brotherhood between Muhajirun and Ansar</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="mini-card blue">
+              <h3>What the Prophet ﷺ did</h3>
+              <ul>
+                <li>After arriving in Madinah, the Prophet ﷺ established brotherhood between the Muhajirun and Ansar.</li>
+                <li>This brotherhood is known as <strong>Mu’akhah</strong>.</li>
+                <li>It paired migrants with local Muslims so that the migrants would not remain isolated or helpless.</li>
+                <li>It replaced tribal selfishness with faith-based brotherhood.</li>
+                <li>It helped solve immediate problems of housing, food, work and emotional support.</li>
+              </ul>
+            </div>
+
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>Example: Abd al-Rahman ibn Awf and Sa‘d ibn al-Rabi‘ رضي الله عنهما</h3>
+                <ul>
+                  <li>The Prophet ﷺ paired Abd al-Rahman, a Muhajir, with Sa‘d, an Ansari.</li>
+                  <li>Sa‘d offered generous support from his wealth.</li>
+                  <li>Abd al-Rahman thanked him and asked to be shown the market.</li>
+                  <li>This shows two virtues together: Ansari generosity and Muhajir self-respect.</li>
+                  <li>It is one of the best examples for a Cambridge answer.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>Why brotherhood was brilliant social policy</h3>
+                <ul>
+                  <li>It prevented poverty and resentment.</li>
+                  <li>It integrated migrants into the city.</li>
+                  <li>It created equality between different tribes and backgrounds.</li>
+                  <li>It built trust before later tests such as Badr, Uhud and the Trench.</li>
+                  <li>It made Islam a living community, not only a belief system.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="quote-strip">
+              <h3>Hadith support</h3>
+              <p>
+                Sahih al-Bukhari records the brotherhood of Abd al-Rahman ibn Awf and Sa‘d ibn al-Rabi‘ رضي الله عنهما, showing Sa‘d’s generosity and Abd al-Rahman’s self-reliance.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Community Building</span>
+              <h2>7. Their role in building the first Islamic community in Madinah</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Area</th>
+                    <th>Role of Muhajirun</th>
+                    <th>Role of Ansar</th>
+                    <th>Exam Significance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Masjid al-Nabawi</strong></td>
+                    <td>Joined the Prophet ﷺ in establishing the religious centre.</td>
+                    <td>Helped provide space, labour and local support.</td>
+                    <td>The mosque became the centre of worship, teaching and consultation.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Brotherhood</strong></td>
+                    <td>Accepted new brothers and rebuilt life with dignity.</td>
+                    <td>Shared homes, wealth and protection.</td>
+                    <td>Shows practical Islamic unity beyond tribe and race.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Economy</strong></td>
+                    <td>Worked, traded and became self-reliant.</td>
+                    <td>Helped the migrants settle and access livelihood.</td>
+                    <td>Shows balance between charity and hard work.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Defence</strong></td>
+                    <td>Fought and defended Islam after years of persecution.</td>
+                    <td>Protected the Prophet ﷺ as promised at Aqabah.</td>
+                    <td>Shows courage, loyalty and fulfilment of pledge.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Unity</strong></td>
+                    <td>Brought Makkan experience and early faith.</td>
+                    <td>Brought local support and political strength.</td>
+                    <td>Together they created the first Islamic community.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Later Tests</span>
+              <h2>8. Muhajirun and Ansar in battles and public life</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>Badr, Uhud and Trench</h3>
+                <ul>
+                  <li>After Hijrah, the Muslims faced military pressure from the Makkans and other opponents.</li>
+                  <li>At Badr, Muhajirun and Ansar fought together as one community.</li>
+                  <li>At Uhud, their unity was tested through hardship and loss.</li>
+                  <li>At the Trench, Madinah itself was defended through collective planning and sacrifice.</li>
+                  <li>These battles show that brotherhood was not theoretical; it was tested in danger.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>Political and social life</h3>
+                <ul>
+                  <li>They supported the Prophet ﷺ in consultation and decision-making.</li>
+                  <li>They helped implement the Constitution of Madinah.</li>
+                  <li>They created a model of faith-based citizenship and social responsibility.</li>
+                  <li>The Ansar gave local strength while the Muhajirun brought early experience of struggle.</li>
+                  <li>Together they helped Islam become a complete community system.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mini-card purple">
+              <h3>A* development point</h3>
+              <ul>
+                <li>Do not present the Muhajirun and Ansar as two separate groups only.</li>
+                <li>The real importance is that Islam joined them into one Ummah under the Prophet ﷺ.</li>
+                <li>This is why their story is a model for Muslim unity today.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="people" style="background:#eef5ff;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Key People</span>
+          <h2>Important Examples for Exam Answers</h2>
+          <p>
+            Learn these examples carefully. They allow students to write developed answers instead of giving vague general statements.
+          </p>
+        </div>
+
+        <div class="people-grid">
+          
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Muhajir • Companion of Hijrah</span>
+            <h3>Abu Bakr al-Siddiq رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>One of the earliest Muslims and the closest Companion of the Prophet ﷺ.</li><li>Left Makkah with the Prophet ﷺ during the Hijrah.</li><li>Stayed with the Prophet ﷺ in the Cave of Thawr.</li><li>Spent wealth for Islam and supported vulnerable Muslims.</li><li>His migration shows complete loyalty, trust and sacrifice.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Best example for loyalty of the Muhajirun.</li><li>Useful for Hijrah, Cave of Thawr, sacrifice and leadership questions.</li><li>Connects Muhajirun with later Rightly Guided Caliphate.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Muhajir • Courage and strength</span>
+            <h3>Umar ibn al-Khattab رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>Accepted Islam in Makkah and strengthened the Muslims.</li><li>Migrated from Makkah to Madinah as part of the Muhajirun.</li><li>Known for courage, firmness, justice and open support for Islam.</li><li>Became a major adviser of the Prophet ﷺ in Madinah.</li><li>Later became the second Rightly Guided Caliph.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Useful for courage and public strength of the Muslims.</li><li>Shows that Hijrah was not escape from faith but movement for faith.</li><li>Good example for leadership and justice.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Muhajir • Double migration</span>
+            <h3>Uthman ibn Affan رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>One of the early Muslims and husband of two daughters of the Prophet ﷺ at different times.</li><li>Migrated to Abyssinia and later to Madinah.</li><li>Known for modesty, generosity and sacrifice.</li><li>Helped the Muslim community with wealth.</li><li>Later became the third Rightly Guided Caliph.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Shows willingness to leave home more than once for Islam.</li><li>Useful for migration, sacrifice, generosity and Qur’an standardisation links.</li><li>Strong example of wealthy Muslim serving the community.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Muhajir • Courage and family</span>
+            <h3>Ali ibn Abi Talib رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>Cousin of the Prophet ﷺ and one of the earliest believers.</li><li>Slept in the Prophet’s ﷺ bed on the night of Hijrah to protect his departure.</li><li>Returned trusts to their owners before migrating.</li><li>Married Fatimah رضي الله عنها in Madinah.</li><li>Later became the fourth Rightly Guided Caliph.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Excellent example for bravery and trustworthiness.</li><li>Shows that the Hijrah involved planning, courage and responsibility.</li><li>Connects Muhajirun with Ahl al-Bayt and the Prophet’s ﷺ family.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Muhajir • Self-reliance</span>
+            <h3>Abd al-Rahman ibn Awf رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>A wealthy Makkan Muslim who migrated and lost much of his earlier comfort.</li><li>The Prophet ﷺ paired him with Sa‘d ibn al-Rabi‘ رضي الله عنه.</li><li>Sa‘d offered him support, but Abd al-Rahman asked to be shown the market.</li><li>He worked, traded and rebuilt his livelihood in Madinah.</li><li>He later became known for generosity and support for Islam.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Best example for brotherhood plus dignity and hard work.</li><li>Shows that Muhajirun were not lazy dependents.</li><li>Useful for economic rebuilding after Hijrah.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Muhajir • Patience under persecution</span>
+            <h3>Bilal ibn Rabah رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>An early Muslim who suffered severe persecution in Makkah.</li><li>Freed through Abu Bakr’s رضي الله عنه support.</li><li>Migrated and became part of the Madinan Muslim community.</li><li>Chosen as the first mu’adhdhin in Madinah.</li><li>His life shows patience, dignity and equality in Islam.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Strong example for persecution before Hijrah.</li><li>Shows how Madinah gave dignity to oppressed Muslims.</li><li>Useful for equality, worship and first community questions.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Ansari • Generosity</span>
+            <h3>Sa‘d ibn al-Rabi‘ رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>An Ansari Companion from Madinah.</li><li>Paired with Abd al-Rahman ibn Awf رضي الله عنه in brotherhood.</li><li>Offered generous support from his wealth.</li><li>Represents the open-hearted welcome of the Ansar.</li><li>His example is one of the clearest practical illustrations of brotherhood.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Best Ansari example for generosity.</li><li>Useful for Qur’an 59:9 and selflessness of the Ansar.</li><li>Shows why the Ansar are praised in Islamic sources.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Ansari leader • Aws</span>
+            <h3>Sa‘d ibn Mu‘adh رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>A leading figure of the Aws in Madinah.</li><li>Accepted Islam and influenced many of his people.</li><li>Supported the Prophet ﷺ and the Muslim community strongly.</li><li>Important in Madinah’s political and military life.</li><li>Represents the leadership role of the Ansar.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Useful for Ansari leadership in Madinah.</li><li>Shows that the Ansar were not only hosts but protectors and leaders.</li><li>Good example for community-building answers.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Ansari leader • Aws</span>
+            <h3>Usayd ibn Hudayr رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>A respected leader among the Aws.</li><li>Accepted Islam after hearing the message brought to Madinah.</li><li>His acceptance helped spread Islam among his people.</li><li>Known for commitment and service.</li><li>Represents the early spread of Islam in Yathrib before Hijrah.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Useful for the pre-Hijrah preparation of Madinah.</li><li>Shows how the Ansar became ready to receive the Prophet ﷺ.</li><li>Good supporting example in detailed answers.</li>
+            </ul>
+          </div>
+        </article>
+    
+        <article class="person-card searchable">
+          <div class="person-top">
+            <span>Ansari host • Madinah welcome</span>
+            <h3>Abu Ayyub al-Ansari رضي الله عنه</h3>
+          </div>
+          <div class="person-body">
+            <h4>Key Facts</h4>
+            <ul>
+              <li>The Prophet ﷺ stayed at his house after arriving in Madinah.</li><li>His home became a place of honour in the early days after Hijrah.</li><li>He represents the hospitality and love of the Ansar.</li><li>His example shows how the people of Madinah received the Prophet ﷺ.</li><li>He remained known for devotion and service.</li>
+            </ul>
+            <h4>Importance / Exam Value</h4>
+            <ul>
+              <li>Excellent example for the welcome in Madinah.</li><li>Useful for arrival, hospitality and status of Ansar.</li><li>Helps students write vivid details in 10-mark answers.</li>
+            </ul>
+          </div>
+        </article>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Importance Today</span>
+              <h2>9. Lessons Muslims learn from Muhajirun and Ansar</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Lesson</th>
+                    <th>Muhajirun Example</th>
+                    <th>Ansar Example</th>
+                    <th>Modern Muslim Application</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Sacrifice</strong></td>
+                    <td>Leaving Makkah for faith.</td>
+                    <td>Sharing resources with migrants.</td>
+                    <td>Putting religion and moral duty above selfish comfort.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Brotherhood</strong></td>
+                    <td>Accepting a new community in Madinah.</td>
+                    <td>Treating migrants as brothers.</td>
+                    <td>Helping refugees, newcomers, poor Muslims and neighbours.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Self-reliance</strong></td>
+                    <td>Abd al-Rahman ibn Awf asking for the market.</td>
+                    <td>Giving support without humiliation.</td>
+                    <td>Combining welfare with dignity and hard work.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Unity</strong></td>
+                    <td>Makkan migrants joining a new society.</td>
+                    <td>Aws and Khazraj uniting under Islam.</td>
+                    <td>Overcoming class, ethnicity, language and sectarian divisions.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Leadership</strong></td>
+                    <td>Senior Muhajirun advised and served the Prophet ﷺ.</td>
+                    <td>Ansari leaders protected Madinah.</td>
+                    <td>Religious communities need consultation, service and responsible leadership.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Exam Balance</span>
+              <h2>10. Common misunderstandings and corrections</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card rose">
+                <h3>Mistakes to avoid</h3>
+                <ul>
+                  <li>Writing that Muhajirun were only “poor refugees”.</li>
+                  <li>Writing that Ansar were only “kind hosts”.</li>
+                  <li>Forgetting the Aqabah pledges before the Hijrah.</li>
+                  <li>Not mentioning brotherhood in Madinah.</li>
+                  <li>Writing general praise without examples.</li>
+                  <li>Ignoring the Qur’anic praise of both groups.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card teal">
+                <h3>Correct approach</h3>
+                <ul>
+                  <li>Define both groups clearly.</li>
+                  <li>Explain the chronological story from Makkah to Madinah.</li>
+                  <li>Use examples: Abu Bakr, Abd al-Rahman, Sa‘d ibn al-Rabi‘ and Abu Ayyub رضي الله عنهم.</li>
+                  <li>Link the topic with Hijrah, mosque, brotherhood and first Islamic community.</li>
+                  <li>For part (b), explain lessons for Muslims today.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="answer-frames" style="background:#eef5ff;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Exam Training</span>
+          <h2>Cambridge-Style Answer Frames</h2>
+          <p>
+            These frameworks help students write clear, developed answers. Learn the bullet plan first, then turn it into paragraphs.
+          </p>
+        </div>
+
+        <div class="answer-box searchable">
+          <span class="mark-pill">10-mark Part (a) Knowledge Answer</span>
+          <h3>Question: Write about the Muhajirun and Ansar and their role in the first Islamic community.</h3>
+          <ul>
+            <li>Define the Muhajirun as the Muslims who migrated from Makkah to Madinah for Islam.</li>
+            <li>Explain that they left homes, wealth, family protection and business because faith was more important than worldly comfort.</li>
+            <li>Give examples such as Abu Bakr, Umar, Uthman, Ali, Bilal and Abd al-Rahman ibn Awf رضي الله عنهم.</li>
+            <li>Define the Ansar as the Muslims of Madinah who welcomed and helped the Prophet ﷺ and the migrants.</li>
+            <li>Mention that they mainly came from the Aws and Khazraj tribes.</li>
+            <li>Explain the Aqabah pledges, where people of Yathrib promised faith, loyalty and support.</li>
+            <li>Describe the welcome in Madinah and the Prophet’s ﷺ stay with Abu Ayyub al-Ansari رضي الله عنه.</li>
+            <li>Explain Mu’akhah: the Prophet ﷺ created brotherhood between Muhajirun and Ansar.</li>
+            <li>Use the example of Abd al-Rahman ibn Awf and Sa‘d ibn al-Rabi‘ رضي الله عنهما to show generosity and self-reliance.</li>
+            <li>Conclude that together they built, protected and strengthened the first Islamic community in Madinah.</li>
+          </ul>
+        </div>
+
+        <div class="answer-box searchable">
+          <span class="mark-pill">4-mark Part (b) Evaluation Answer</span>
+          <h3>Question: Why are the Muhajirun and Ansar important examples for Muslims today?</h3>
+          <ul>
+            <li>They are important because the Muhajirun show sacrifice for faith and obedience to Allah and His Messenger ﷺ.</li>
+            <li>The Ansar show hospitality, generosity and selflessness towards those in need.</li>
+            <li>The brotherhood between the two groups teaches Muslims to overcome tribal, racial and social divisions.</li>
+            <li>The example of Abd al-Rahman ibn Awf رضي الله عنه teaches dignity and hard work, while Sa‘d ibn al-Rabi‘ رضي الله عنه teaches generosity.</li>
+            <li>Their unity reminds Muslims that a strong community is built through faith, service, trust and shared responsibility.</li>
+          </ul>
+        </div>
+
+        <div class="answer-box searchable">
+          <span class="mark-pill">A* Sentence Starters</span>
+          <h3>Useful phrases for high-level answers</h3>
+          <ul>
+            <li><strong>“The Muhajirun are significant because their migration showed that faith was more valuable than home, wealth and tribal security…”</strong></li>
+            <li><strong>“The Ansar were not only hosts; they became protectors and partners in the Prophet’s ﷺ mission…”</strong></li>
+            <li><strong>“The brotherhood in Madinah transformed separate groups into one faith-based Ummah…”</strong></li>
+            <li><strong>“The example of Sa‘d ibn al-Rabi‘ and Abd al-Rahman ibn Awf رضي الله عنهما shows both generosity and self-reliance…”</strong></li>
+            <li><strong>“For Muslims today, this topic gives a model for refugee support, community welfare and unity beyond ethnicity…”</strong></li>
+          </ul>
+        </div>
+
+        <div class="section-title" style="margin-top:44px;">
+          <h2>Likely Past-Paper Style Question Angles</h2>
+          <p>
+            These are Cambridge-style revision angles for topical practice. Use your topical past-paper pages for exact year-by-year questions.
+          </p>
+        </div>
+
+        <div class="question-bank">
+          <div class="question searchable">
+            <h3>Angle 1: Direct group question</h3>
+            <p>Write about the Muhajirun and Ansar and their role in the early Muslim community.</p>
+          </div>
+
+          <div class="question searchable">
+            <h3>Angle 2: Brotherhood</h3>
+            <p>Describe the brotherhood established by the Prophet ﷺ between the Muhajirun and Ansar.</p>
+          </div>
+
+          <div class="question searchable">
+            <h3>Angle 3: Importance of Ansar</h3>
+            <p>Explain why the Ansar were important in the development of Islam in Madinah.</p>
+          </div>
+
+          <div class="question searchable">
+            <h3>Angle 4: Sacrifice of Muhajirun</h3>
+            <p>What sacrifices did the Muhajirun make for Islam?</p>
+          </div>
+
+          <div class="question searchable">
+            <h3>Angle 5: Community lessons</h3>
+            <p>What lessons can Muslims today learn from the Muhajirun and Ansar?</p>
+          </div>
+
+          <div class="question searchable">
+            <h3>Angle 6: Hijrah to community</h3>
+            <p>How did the Hijrah lead to the creation of the first Islamic community?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Mark Scheme Focus</span>
+              <h2>What Full-Mark Answers Usually Do</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>For 10-mark answers</h3>
+                <ul>
+                  <li>Define Muhajirun and Ansar accurately.</li>
+                  <li>Explain the events in chronological order.</li>
+                  <li>Mention the Aqabah pledges, Hijrah, arrival, mosque and brotherhood.</li>
+                  <li>Use named examples instead of vague general praise.</li>
+                  <li>Explain how both groups helped build the Madinan community.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>For 4-mark answers</h3>
+                <ul>
+                  <li>Explain importance, not just history.</li>
+                  <li>Connect lessons with Muslims today: sacrifice, charity, refugee support, unity and brotherhood.</li>
+                  <li>Use “this teaches Muslims…” and “this is important because…”</li>
+                  <li>Give two developed reasons rather than four weak one-line points.</li>
+                  <li>Show present-day relevance clearly.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mini-card rose">
+              <h3>Common mistakes to avoid</h3>
+              <ul>
+                <li>Not knowing the difference between Muhajirun and Ansar.</li>
+                <li>Ignoring the role of the Aqabah pledges.</li>
+                <li>Forgetting the example of Abd al-Rahman ibn Awf and Sa‘d ibn al-Rabi‘ رضي الله عنهما.</li>
+                <li>Writing only emotional praise without historical details.</li>
+                <li>Not linking the topic with the first Islamic community.</li>
+                <li>Failing to explain why the topic matters for Muslims today.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Sources</span>
+              <h2>Sources Consulted / Recommended</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="source-list">
+              <a href="https://www.cambridgeinternational.org/Images/697279-2026-2027-syllabus.pdf" target="_blank">Cambridge O Level Islamiyat 2058 Syllabus 2026–2027</a>
+              <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-o-level-islamiyat-2058/past-papers/" target="_blank">Cambridge O Level Islamiyat 2058 Past Papers, Mark Schemes and Examiner Reports</a>
+              <a href="https://quran.com/en/at-tawbah/100" target="_blank">Qur’an 9:100 — Earliest Muhajirun and Ansar, meaning guide</a>
+              <a href="https://quran.com/en/al-hashr/9" target="_blank">Qur’an 59:9 — Selflessness of the Ansar, meaning guide</a>
+              <a href="https://sunnah.com/search?q=Abdur+Rahman+bin+Auf+Sa%27d+bin+Ar-Rabi" target="_blank">Sahih al-Bukhari report — Abd al-Rahman ibn Awf and Sa‘d ibn al-Rabi‘ رضي الله عنهما</a>
+              <a href="https://sunnah.com/bukhari/2" target="_blank">Sahih al-Bukhari — Love for the Ansar as a sign of faith</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="back-final">
+          <h2>Return to Paper 1</h2>
+          <p>
+            Go back to the main Paper 1 page for the full topic map, Qur’anic passages, Seerah notes, Madinan community topics and topical past-paper links.
+          </p>
+          <a class="btn btn-primary" href="../../paper-1.html">← Back to Paper 1</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>O Level Islamiyat 2058 / IGCSE Islamiyat 0493</p>
+      <p>Muhajirun and Ansar رضي الله عنهم • Read-only study page</p>
+      <p><a href="../../paper-1.html">Back to Paper 1</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const readonlyAlert = document.getElementById("readonlyAlert");
+
+    function showReadonlyAlert() {
+      readonlyAlert.style.display = "block";
+      clearTimeout(window.readonlyTimer);
+      window.readonlyTimer = setTimeout(() => {
+        readonlyAlert.style.display = "none";
+      }, 1800);
+    }
+
+    document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("copy", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("cut", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("paste", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("selectstart", function(e) {
+      if (e.target && e.target.classList && e.target.classList.contains("search")) return;
+      e.preventDefault();
+    });
+
+    document.addEventListener("dragstart", function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener("keydown", function(e) {
+      const key = e.key.toLowerCase();
+      if (
+        (e.ctrlKey && ["s","p","u","c","x","a"].includes(key)) ||
+        (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(key)) ||
+        key === "f12" ||
+        key === "printscreen"
+      ) {
+        e.preventDefault();
+        showReadonlyAlert();
+        return false;
+      }
+    });
+
+    window.addEventListener("beforeprint", function() {
+      document.body.innerHTML = "";
+    });
+
+    const cards = document.querySelectorAll(".note-card");
+    cards.forEach(card => {
+      const head = card.querySelector(".note-head");
+      if (head) {
+        head.addEventListener("click", () => {
+          card.classList.toggle("closed");
+        });
+      }
+    });
+
+    document.getElementById("expandAll").addEventListener("click", () => {
+      cards.forEach(card => card.classList.remove("closed"));
+    });
+
+    document.getElementById("collapseAll").addEventListener("click", () => {
+      cards.forEach(card => card.classList.add("closed"));
+    });
+
+    const searchInput = document.getElementById("searchInput");
+    const searchable = document.querySelectorAll(".searchable, .stat-card, .flow-step, .person-card, .answer-box, .question, .compare-card");
+
+    searchInput.addEventListener("input", function() {
+      const query = this.value.toLowerCase().trim();
+
+      searchable.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (!query || text.includes(query)) {
+          item.classList.remove("hidden-search");
+          const parent = item.closest(".note-card");
+          if (parent) parent.classList.remove("closed");
+        } else {
+          item.classList.add("hidden-search");
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
