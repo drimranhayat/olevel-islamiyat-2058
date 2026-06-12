@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Qur’an in Legal Thinking | O Level Islamiyat 2058 / IGCSE 0493 Paper 1 Notes</title>
+  <meta name="description" content="Read-only detailed bullet notes on the use of the Qur’an in Islamic legal thinking and its relationship with Hadith, ijma‘ and qiyas for Cambridge O Level Islamiyat 2058 and IGCSE 0493 Paper 1." />
+
+  <style>
+    :root{
+      --navy:#06203f;
+      --navy2:#0b3b66;
+      --teal:#0f766e;
+      --gold:#d6a84f;
+      --gold2:#fff7e6;
+      --green:#ecfdf5;
+      --blue:#eff6ff;
+      --red:#fff1f2;
+      --purple:#f5f3ff;
+      --ink:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --paper:#ffffff;
+      --bg:#f8fafc;
+      --shadow:0 14px 36px rgba(6,32,63,.10);
+      --radius:22px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.13), transparent 26%),
+        linear-gradient(180deg,#f8fafc 0%,#eef5ff 55%,#f8fafc 100%);
+      line-height:1.72;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+
+    a{color:inherit}
+    .container{width:92%;max-width:1180px;margin:auto}
+
+    .top-lock{
+      position:fixed;
+      right:16px;
+      top:16px;
+      z-index:9000;
+      background:rgba(6,32,63,.92);
+      color:#fff;
+      padding:9px 13px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      box-shadow:0 10px 25px rgba(6,32,63,.22);
+    }
+
+    .hero{
+      background:
+        radial-gradient(circle at top right, rgba(214,168,79,.24), transparent 35%),
+        linear-gradient(135deg,var(--navy),var(--navy2) 58%,var(--teal));
+      color:white;
+      padding:72px 0 54px;
+      border-bottom:7px solid var(--gold);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:34px;
+      align-items:center;
+    }
+
+    .kicker{
+      display:inline-block;
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.25);
+      color:#fff3c4;
+      padding:7px 13px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:12px;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+      margin-bottom:16px;
+    }
+
+    h1{
+      font-size:clamp(2.2rem,5vw,4.2rem);
+      line-height:1.05;
+      margin:0 0 15px;
+    }
+
+    .hero p{
+      color:#e5e7eb;
+      font-size:18px;
+      max-width:820px;
+      margin:0 0 22px;
+    }
+
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:900;
+      border:1px solid transparent;
+      transition:.25s ease;
+    }
+    .btn.primary{background:var(--gold);color:var(--navy)}
+    .btn.outline{border-color:rgba(255,255,255,.48);color:white;background:rgba(255,255,255,.08)}
+    .btn:hover{transform:translateY(-2px);filter:brightness(.98)}
+
+    .quick-card{
+      background:rgba(255,255,255,.96);
+      color:var(--ink);
+      border-radius:28px;
+      padding:25px;
+      box-shadow:0 24px 60px rgba(0,0,0,.28);
+      border:1px solid rgba(255,255,255,.65);
+    }
+
+    .quick-card h2{
+      margin:0 0 14px;
+      color:var(--navy);
+      font-size:24px;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+    }
+
+    .stat{
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:15px;
+    }
+    .stat strong{display:block;color:var(--teal);font-size:24px;line-height:1}
+    .stat span{display:block;color:var(--muted);font-size:13px;font-weight:800;margin-top:5px}
+
+    .toolbar{
+      position:sticky;
+      top:0;
+      z-index:2000;
+      background:rgba(255,255,255,.95);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+      box-shadow:0 8px 20px rgba(15,23,42,.06);
+    }
+    .toolbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:13px 0}
+    .search{flex:1;min-width:230px}
+    .search input{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:12px 16px;
+      font-size:15px;
+      outline:0;
+      background:#fff;
+    }
+    .search input:focus{border-color:var(--teal);box-shadow:0 0 0 4px rgba(15,118,110,.11)}
+    .tool-btn{
+      border:0;
+      background:var(--navy);
+      color:#fff;
+      border-radius:999px;
+      padding:11px 14px;
+      cursor:pointer;
+      font-weight:900;
+    }
+    .tool-btn.light{background:#e2e8f0;color:#0f172a}
+
+    .main{padding:34px 0 74px}
+    .nav-pills{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px}
+    .nav-pills a{
+      text-decoration:none;
+      background:#fff;
+      color:var(--navy);
+      border:1px solid var(--line);
+      border-left:4px solid var(--gold);
+      padding:9px 12px;
+      border-radius:12px;
+      font-size:13px;
+      font-weight:900;
+      transition:.2s ease;
+    }
+    .nav-pills a:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+    .section{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      margin:22px 0;
+      overflow:hidden;
+    }
+
+    .section-head{
+      padding:24px 26px;
+      background:linear-gradient(90deg,#ffffff,#f8fafc);
+      border-bottom:1px solid var(--line);
+    }
+
+    .section-head .tag{
+      display:inline-block;
+      background:var(--gold2);
+      color:#875b00;
+      border:1px solid #f3d48b;
+      padding:5px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:9px;
+    }
+
+    .section-head h2{
+      margin:0 0 8px;
+      color:var(--navy);
+      font-size:clamp(1.5rem,3vw,2.2rem);
+      line-height:1.2;
+    }
+
+    .section-head p{margin:0;color:var(--muted)}
+    .section-body{padding:24px 26px}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+
+    .mini-card{border:1px solid var(--line);border-radius:18px;background:#fff;padding:18px}
+    .mini-card.blue{background:var(--blue);border-color:#bfdbfe}
+    .mini-card.green{background:var(--green);border-color:#bbf7d0}
+    .mini-card.gold{background:var(--gold2);border-color:#f3d48b}
+    .mini-card.red{background:var(--red);border-color:#fecdd3}
+    .mini-card.purple{background:var(--purple);border-color:#ddd6fe}
+    .mini-card h3{margin:0 0 10px;color:var(--navy);font-size:20px}
+
+    ul{margin:0;padding-left:21px}
+    li{margin:7px 0;color:#374151}
+    li strong{color:var(--navy)}
+    .important{font-weight:900;color:#0f766e}
+    .danger{font-weight:900;color:#b42318}
+
+    details.topic{border:1px solid var(--line);background:#fff;border-radius:18px;margin:14px 0;overflow:hidden}
+    details.topic[open]{box-shadow:0 12px 28px rgba(6,32,63,.08);border-color:#cbd5e1}
+    details.topic summary{
+      list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;
+      padding:17px 18px;background:linear-gradient(90deg,#fff,#f8fafc);
+    }
+    details.topic summary::-webkit-details-marker{display:none}
+
+    .num{width:36px;height:36px;border-radius:12px;background:var(--navy);color:#fff;display:grid;place-items:center;font-weight:900}
+    .sum-title{font-weight:900;color:#0f172a}
+    .sum-chip{background:#ecfeff;color:#155e75;border:1px solid #a5f3fc;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:900;white-space:nowrap}
+    .topic-content{padding:18px;background:#fcfcfd;border-top:1px solid var(--line)}
+
+    .answer-plan{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}
+    .plan-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}
+    .plan-box h4{margin:0 0 10px;color:var(--navy);font-size:18px}
+
+    .exam-question{border:1px solid var(--line);border-left:5px solid var(--gold);background:#fff;border-radius:16px;padding:16px 18px;margin:14px 0}
+    .exam-question h3{margin:0 0 8px;color:var(--navy);font-size:19px}
+    .exam-question p{margin:6px 0;color:#374151}
+
+    .mark-scheme{background:linear-gradient(180deg,#ecfdf5,#ffffff);border:1px solid #bbf7d0;border-radius:18px;padding:18px;margin-top:16px}
+    .mark-scheme h3{margin:0 0 10px;color:#166534}
+    .warning{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;border-radius:16px;padding:16px 18px;margin-top:16px;font-weight:800}
+    .verse-note{background:#eff6ff;border:1px solid #bfdbfe;border-left:5px solid #0b3b66;border-radius:16px;padding:16px 18px;margin-top:16px;color:#1e3a8a;font-weight:800}
+    .source-list{font-size:13px;color:#475569}
+    .source-list a{color:#0b3b66;text-decoration:none;font-weight:800;word-break:break-word}
+    .back-end{margin:32px 0 0;display:flex;justify-content:center}
+    .back-end a{background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;text-decoration:none;border-radius:999px;padding:14px 22px;font-weight:900;box-shadow:0 12px 25px rgba(6,32,63,.20)}
+    .footer{background:#030f24;color:#fff;padding:30px 0;text-align:center}
+    .footer p{margin:5px 0;color:#cbd5e1}
+    .no-results{display:none;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;color:#64748b;font-weight:800;margin:18px 0}
+    .watermark{position:fixed;inset:auto 15px 15px auto;z-index:1000;opacity:.18;color:#06203f;font-weight:900;pointer-events:none;font-size:12px}
+    .protection-overlay{display:none;position:fixed;inset:0;background:#06203f;color:white;z-index:99999;align-items:center;justify-content:center;text-align:center;padding:30px}
+    .protection-overlay.show{display:flex}
+    .protection-overlay h2{font-size:30px;margin-bottom:12px}
+
+    @media(max-width:980px){.hero-grid,.grid-2,.grid-3,.grid-4,.answer-plan{grid-template-columns:1fr}details.topic summary{grid-template-columns:auto 1fr}.sum-chip{grid-column:2}.top-lock{display:none}}
+    @media print{body *{visibility:hidden!important}body::before{content:"Printing is disabled for this read-only study page.";visibility:visible!important;display:block!important;font-size:24px;color:#111;padding:50px}}
+  </style>
+</head>
+
+<body oncontextmenu="return false">
+  <div class="top-lock">🔒 Read-only Study Page</div>
+  <div class="watermark">Dr. Imran Hayat • O Level Islamiyat 2058 / 0493</div>
+
+  <div class="protection-overlay" id="protectionOverlay">
+    <div>
+      <h2>Read-only protection is active</h2>
+      <p>Copying, printing, saving and screenshots are discouraged on this study page.</p>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Paper 1 Notes • History & Importance of the Qur’an</span>
+        <h1>Qur’an in Legal Thinking</h1>
+        <p>
+          Complete, student-friendly bullet notes on how the Qur’an is used as the first source of Islamic law and how it works with Hadith, ijma‘ and qiyas in Cambridge-style answers.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#a-star-answer">A* Answer Plan</a>
+          <a class="btn outline" href="#past-paper-links">Past Paper Links</a>
+        </div>
+      </div>
+
+      <div class="quick-card">
+        <h2>What you must master</h2>
+        <div class="stats">
+          <div class="stat"><strong>1st</strong><span>Qur’an as primary source</span></div>
+          <div class="stat"><strong>4</strong><span>Main legal sources</span></div>
+          <div class="stat"><strong>10+4</strong><span>Exam answer pattern</span></div>
+          <div class="stat"><strong>A*</strong><span>Bullet plan included</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar">
+    <div class="container toolbar-inner">
+      <div class="search">
+        <input id="searchBox" type="search" placeholder="Search: Qur’an, Hadith, ijma, qiyas, law, analogy, consensus, zakat, prayer..." />
+      </div>
+      <button class="tool-btn" id="expandAll">Expand All</button>
+      <button class="tool-btn light" id="collapseAll">Collapse All</button>
+    </div>
+  </nav>
+
+  <main class="main container">
+
+    <div class="nav-pills">
+      <a href="#exam-snapshot">Exam Snapshot</a>
+      <a href="#core-idea">Core Idea</a>
+      <a href="#quran-primary">Qur’an as Source</a>
+      <a href="#hadith-link">With Hadith</a>
+      <a href="#ijma-link">With Ijma‘</a>
+      <a href="#qiyas-link">With Qiyas</a>
+      <a href="#examples">Examples</a>
+      <a href="#past-paper-links">Past Papers</a>
+      <a href="#a-star-answer">A* Plan</a>
+    </div>
+
+    <div class="no-results" id="noResults">No matching section found. Try another keyword.</div>
+
+    <section class="section searchable" id="exam-snapshot">
+      <div class="section-head">
+        <span class="tag">Exam Snapshot</span>
+        <h2>What this topic means in Cambridge Paper 1</h2>
+        <p>This topic belongs to the history and importance of the Qur’an: its use in legal thinking and its relationship with Hadith, ijma‘ and qiyas.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="grid-3">
+          <div class="mini-card blue">
+            <h3>Part A [10]</h3>
+            <ul>
+              <li>Requires <strong>accurate knowledge</strong> of the four sources of Islamic law.</li>
+              <li>Explain why the <strong>Qur’an is the first and supreme source</strong>.</li>
+              <li>Show how Hadith, ijma‘ and qiyas work <strong>with</strong> the Qur’an.</li>
+              <li>Use clear examples: prayer, zakat, fasting, intoxicants, inheritance, modern issues.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card green">
+            <h3>Part B [4]</h3>
+            <ul>
+              <li>Requires <strong>understanding and reasoning</strong>.</li>
+              <li>Usually asks about the importance of ijma‘/qiyas today or why the Qur’an is central.</li>
+              <li>Give judgement and examples, not just definitions.</li>
+              <li>Link to new issues faced by Muslims in modern life.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card gold">
+            <h3>Core Formula</h3>
+            <ul>
+              <li><strong>Qur’an:</strong> main authority and foundation.</li>
+              <li><strong>Hadith/Sunnah:</strong> explains and applies Qur’anic commands.</li>
+              <li><strong>Ijma‘:</strong> scholarly consensus based on Qur’an and Sunnah.</li>
+              <li><strong>Qiyas:</strong> analogy from an existing Qur’anic/Sunnah ruling to a new case.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mark-scheme">
+          <h3>Mark scheme focus in simple words</h3>
+          <ul>
+            <li>Top answers know that the Qur’an is <strong>the word of Allah</strong> and the <strong>basis of Islamic legal rulings</strong>.</li>
+            <li>Top answers do not treat the four sources as separate lists only; they explain their <strong>relationship</strong>.</li>
+            <li>Hadith should be shown as explaining, expanding and applying Qur’anic commands.</li>
+            <li>Ijma‘ and qiyas should be shown as secondary sources that do not contradict the Qur’an.</li>
+            <li>Part B must include reasoning and examples of present-day issues.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="core-idea">
+      <div class="section-head">
+        <span class="tag">Big Picture</span>
+        <h2>The full idea in one flow</h2>
+        <p>Learn this sequence first. It is the backbone of almost every answer on legal thinking.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="grid-2">
+          <div class="mini-card">
+            <h3>What is legal thinking?</h3>
+            <ul>
+              <li><strong>Legal thinking</strong> means working out Islamic rulings for belief, worship, conduct, family life, trade, society and new situations.</li>
+              <li>It is not random personal opinion; it is based on recognised sources of Islamic law.</li>
+              <li>The Qur’an is always the starting point because it is divine revelation.</li>
+              <li>When the Qur’an gives a clear ruling, Muslims accept it as authoritative.</li>
+              <li>When the Qur’an gives a general principle, scholars use Hadith, ijma‘ and qiyas to understand and apply it.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <h3>The correct order of sources</h3>
+            <ul>
+              <li><strong>1. Qur’an:</strong> first primary source; direct word of Allah.</li>
+              <li><strong>2. Sunnah/Hadith:</strong> second primary source; the Prophet’s ﷺ example preserved in reports.</li>
+              <li><strong>3. Ijma‘:</strong> consensus of qualified Muslim scholars on a matter.</li>
+              <li><strong>4. Qiyas:</strong> analogy from an established ruling to a new issue with the same effective cause.</li>
+              <li>Ijma‘ and qiyas are called <strong>secondary sources</strong> because they depend on the Qur’an and Sunnah.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="verse-note">
+          Qur’anic verse note: This page uses verse references and careful meaning guides only. Students should use the translation printed in the Cambridge paper or a recognised translation approved by their teacher.
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="quran-primary">
+      <div class="section-head">
+        <span class="tag">Source 1</span>
+        <h2>The Qur’an as the primary source of Islamic law</h2>
+        <p>The Qur’an is the foundation from which all valid Islamic legal thinking begins.</p>
+      </div>
+
+      <div class="section-body">
+        <details class="topic" open>
+          <summary><span class="num">1</span><span class="sum-title">Why the Qur’an has the highest authority</span><span class="sum-chip">Primary source</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The Qur’an is believed by Muslims to be the <strong>word of Allah</strong>.</li>
+              <li>It was revealed to Prophet Muhammad ﷺ and is the final revealed book.</li>
+              <li>Its authority is not based on human reasoning, but on divine revelation.</li>
+              <li>It is the first source consulted when deciding any Islamic ruling.</li>
+              <li>No other legal source can contradict the Qur’an.</li>
+              <li>Hadith, ijma‘ and qiyas are accepted only when they agree with Qur’anic teachings and principles.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">2</span><span class="sum-title">How the Qur’an gives laws</span><span class="sum-chip">Direct + general</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The Qur’an sometimes gives <strong>direct rulings</strong>, such as commands about fasting, inheritance, marriage, business ethics and justice.</li>
+              <li>It sometimes gives <strong>general principles</strong>, such as justice, mercy, honesty, fulfilment of contracts and obedience to Allah.</li>
+              <li>It gives a moral framework for Muslim life, not only a list of legal rules.</li>
+              <li>Some Qur’anic commands are broad; Hadith and scholarly reasoning explain how they are applied in detail.</li>
+              <li>This is why the Qur’an is both a book of guidance and the foundation of legal thought.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">3</span><span class="sum-title">Examples of Qur’anic legal guidance</span><span class="sum-chip">Use carefully</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li><strong>Worship:</strong> the Qur’an commands prayer, fasting, zakat and Hajj, while Hadith explains details.</li>
+              <li><strong>Fasting:</strong> Sura 2:183 is commonly used to show that fasting is prescribed for believers.</li>
+              <li><strong>Obedience:</strong> Sura 4:59 is commonly used to show obedience to Allah, the Messenger and those in authority.</li>
+              <li><strong>Justice:</strong> Qur’anic passages command justice, honesty and fair judgement.</li>
+              <li><strong>Family law:</strong> the Qur’an gives guidance about inheritance, marriage, divorce and family responsibilities.</li>
+              <li><strong>Business ethics:</strong> the Qur’an warns against riba and commands fairness in dealings.</li>
+              <li><strong>Social conduct:</strong> the Qur’an teaches respect for parents, care for the needy and moral responsibility.</li>
+            </ul>
+            <div class="verse-note">Translation care: Instead of quoting long translations from memory, write: “The Qur’an teaches...” and give the verse reference if you know it accurately.</div>
+          </div>
+        </details>
+
+        <div class="warning">
+          Common mistake: Do not write that the Qur’an gives every detail of every modern issue directly. A better answer says: the Qur’an gives direct laws and guiding principles, and the other sources help apply these principles.
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="hadith-link">
+      <div class="section-head">
+        <span class="tag">Relationship 1</span>
+        <h2>The Qur’an and Hadith/Sunnah</h2>
+        <p>Hadith explains, expands and applies the Qur’an. It never has authority to contradict the Qur’an.</p>
+      </div>
+
+      <div class="section-body">
+        <details class="topic" open>
+          <summary><span class="num">1</span><span class="sum-title">What Hadith and Sunnah do</span><span class="sum-chip">Explanation</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li><strong>Sunnah</strong> means the Prophet’s ﷺ example, practice and way of life.</li>
+              <li><strong>Hadith</strong> are reports of the Prophet’s ﷺ sayings, actions and approvals.</li>
+              <li>The Prophet ﷺ was the receiver and teacher of the Qur’an.</li>
+              <li>His Sunnah shows Muslims how Qur’anic teachings are lived in practice.</li>
+              <li>Hadith can explain a Qur’anic command, specify its details, or show its practical application.</li>
+              <li>Hadith is especially important where the Qur’an gives a command but not all operational details.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">2</span><span class="sum-title">Examples of Hadith explaining the Qur’an</span><span class="sum-chip">Exam examples</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The Qur’an commands Muslims to establish prayer, but the Sunnah shows the method, timings and units of prayer.</li>
+              <li>The Qur’an commands zakat, but the Sunnah explains rates, categories and details.</li>
+              <li>The Qur’an commands Hajj, but the Prophet’s ﷺ practice explains the rituals step by step.</li>
+              <li>The Qur’an gives general moral instructions, while Hadith gives practical examples of how the Prophet ﷺ applied them.</li>
+              <li>Some legal details, such as specific applications of inheritance or worship practice, are understood through Hadith.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic">
+          <summary><span class="num">3</span><span class="sum-title">Why Hadith cannot contradict the Qur’an</span><span class="sum-chip">Key rule</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The Qur’an is the first and supreme source.</li>
+              <li>Hadith is authoritative because the Prophet ﷺ explained and practised the Qur’an.</li>
+              <li>A sound understanding of Hadith must agree with the Qur’an’s teachings.</li>
+              <li>If a report appears to conflict with the Qur’an, scholars examine its authenticity, wording and interpretation.</li>
+              <li>For exam purposes, write: <strong>Hadith supports and explains the Qur’an; it does not replace or contradict it.</strong></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section searchable" id="ijma-link">
+      <div class="section-head">
+        <span class="tag">Relationship 2</span>
+        <h2>The Qur’an and Ijma‘</h2>
+        <p>Ijma‘ is the consensus of qualified scholars and is used when new issues require a ruling based on Qur’anic and Prophetic principles.</p>
+      </div>
+
+      <div class="section-body">
+        <details class="topic" open>
+          <summary><span class="num">1</span><span class="sum-title">Meaning of Ijma‘</span><span class="sum-chip">Consensus</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li><strong>Ijma‘</strong> means agreement or consensus.</li>
+              <li>In Islamic law, it usually means the agreement of qualified Muslim scholars on a legal issue.</li>
+              <li>It is used when the Qur’an and Sunnah do not give an explicit detailed answer to a new situation.</li>
+              <li>It is not the opinion of ordinary people; it must be based on knowledge of the Qur’an and Sunnah.</li>
+              <li>Ijma‘ is a secondary source because it depends on the primary sources.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">2</span><span class="sum-title">How Ijma‘ works with the Qur’an</span><span class="sum-chip">Based on revelation</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>Scholars first look at the Qur’an for direct guidance or general principles.</li>
+              <li>They then consider the Sunnah/Hadith for explanation and application.</li>
+              <li>If the issue is still not directly settled, qualified scholars may agree on a ruling.</li>
+              <li>This agreement must remain within Qur’anic values such as justice, protection of life, honesty and obedience to Allah.</li>
+              <li>Ijma‘ helps Muslims remain united in situations where individual opinions could create confusion.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic">
+          <summary><span class="num">3</span><span class="sum-title">Examples of Ijma‘ for exams</span><span class="sum-chip">Use wisely</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The early Muslim community’s agreement on the need to compile the Qur’an is often used as a historical example of collective decision-making.</li>
+              <li>Scholars may use ijma‘ for modern medical, technological or social issues where direct detailed wording is not found in the Qur’an.</li>
+              <li>Cambridge-style mark schemes often reward modern examples such as IVF when discussing why ijma‘ may be needed today.</li>
+              <li>Do not give a final fatwa in your answer; simply explain that qualified scholars use Qur’an and Sunnah-based reasoning to reach agreement.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="warning">
+          Common mistake: Do not define ijma‘ as “everyone voting.” It is the consensus of qualified scholars, guided by the Qur’an and Sunnah.
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="qiyas-link">
+      <div class="section-head">
+        <span class="tag">Relationship 3</span>
+        <h2>The Qur’an and Qiyas</h2>
+        <p>Qiyas is analogy: applying an existing ruling to a new case because both share the same effective cause.</p>
+      </div>
+
+      <div class="section-body">
+        <details class="topic" open>
+          <summary><span class="num">1</span><span class="sum-title">Meaning of Qiyas</span><span class="sum-chip">Analogy</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li><strong>Qiyas</strong> means analogical reasoning.</li>
+              <li>It is used when a new issue has no direct ruling in the Qur’an or Sunnah.</li>
+              <li>Scholars compare the new issue with an earlier case that has a known ruling.</li>
+              <li>If both cases share the same effective cause, the ruling of the original case is extended to the new case.</li>
+              <li>Qiyas is a secondary source because it depends on the Qur’an and Sunnah for the original ruling.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">2</span><span class="sum-title">The four-part qiyas method</span><span class="sum-chip">A* structure</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li><strong>Original case:</strong> an issue already addressed by Qur’an or Sunnah.</li>
+              <li><strong>Original ruling:</strong> the known Islamic ruling on that issue.</li>
+              <li><strong>Effective cause (‘illah):</strong> the reason behind the ruling.</li>
+              <li><strong>New case:</strong> the modern or new issue that shares the same effective cause.</li>
+              <li><strong>New ruling:</strong> the ruling is extended to the new case because the cause is the same.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">3</span><span class="sum-title">Common qiyas example: intoxicants</span><span class="sum-chip">Exam-friendly</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The Qur’an prohibits intoxicants/wine.</li>
+              <li>The effective cause is intoxication and harm to judgement, worship and society.</li>
+              <li>Modern narcotic drugs were not named in the Qur’an in the same modern form.</li>
+              <li>By qiyas, scholars may prohibit drugs because they share the cause of intoxication/harm.</li>
+              <li>This example is frequently used because it clearly shows how Qur’anic principles apply to new situations.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic">
+          <summary><span class="num">4</span><span class="sum-title">Limits of Qiyas</span><span class="sum-chip">Important</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>Qiyas cannot be used against a clear Qur’anic ruling.</li>
+              <li>It must be used by qualified scholars, not by personal guesswork.</li>
+              <li>The new case must genuinely share the same effective cause as the original case.</li>
+              <li>Qiyas is useful but must remain controlled by revelation.</li>
+              <li>In exam answers, show that qiyas is flexible but not independent from the Qur’an.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section searchable" id="examples">
+      <div class="section-head">
+        <span class="tag">Examples Bank</span>
+        <h2>Examples students can use in answers</h2>
+        <p>Use examples carefully and only where they directly answer the question.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="grid-2">
+          <div class="mini-card blue">
+            <h3>Qur’an + Hadith examples</h3>
+            <ul>
+              <li><strong>Prayer:</strong> Qur’an commands prayer; Sunnah shows method and details.</li>
+              <li><strong>Zakat:</strong> Qur’an commands zakat; Hadith explains rates and practical details.</li>
+              <li><strong>Hajj:</strong> Qur’an commands pilgrimage; Prophet’s ﷺ practice explains rituals.</li>
+              <li><strong>Fasting:</strong> Qur’an prescribes fasting; Sunnah explains start/end times and related rules.</li>
+              <li><strong>Moral conduct:</strong> Qur’an commands justice and kindness; Sunnah shows living examples.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card green">
+            <h3>Qur’an + Ijma‘ examples</h3>
+            <ul>
+              <li><strong>Compilation of Qur’an:</strong> early community accepted a collective decision to preserve revelation.</li>
+              <li><strong>Modern medicine:</strong> scholars may discuss new medical issues using Qur’anic principles of life, dignity and protection.</li>
+              <li><strong>Modern technology:</strong> scholars may reach consensus on issues not present in early Islam.</li>
+              <li><strong>Community unity:</strong> ijma‘ prevents Muslims from following random individual opinions.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card gold">
+            <h3>Qur’an + Qiyas examples</h3>
+            <ul>
+              <li><strong>Drugs/narcotics:</strong> compared with intoxicants due to shared cause of intoxication/harm.</li>
+              <li><strong>New financial practices:</strong> examined in light of Qur’anic principles on riba, fairness and exploitation.</li>
+              <li><strong>New social issues:</strong> compared with existing rulings where the cause is similar.</li>
+              <li><strong>Modern consumer products:</strong> judged through analogy when no direct text names them.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card purple">
+            <h3>Verse references to remember</h3>
+            <ul>
+              <li><strong>4:59:</strong> obedience to Allah, the Messenger and those in authority.</li>
+              <li><strong>2:183:</strong> fasting prescribed for believers.</li>
+              <li><strong>2:275:</strong> warning against riba.</li>
+              <li><strong>4:11:</strong> inheritance guidance.</li>
+              <li><strong>5:90:</strong> intoxicants and gambling as harmful practices.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="verse-note">
+          Verse translation care: Mention references only when you are confident. Do not invent wording. In the exam, use the wording printed in the question paper or a recognised translation learned from your teacher.
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="relationship-table">
+      <div class="section-head">
+        <span class="tag">Comparison</span>
+        <h2>How the Qur’an works with the other three sources</h2>
+        <p>This comparison helps students answer “relationship” questions clearly.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="grid-3">
+          <div class="mini-card blue">
+            <h3>Qur’an + Hadith</h3>
+            <ul>
+              <li>Hadith explains Qur’anic commands.</li>
+              <li>Hadith gives details of worship and conduct.</li>
+              <li>Hadith shows the Prophet’s ﷺ practical example.</li>
+              <li>Hadith cannot contradict the Qur’an.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card green">
+            <h3>Qur’an + Ijma‘</h3>
+            <ul>
+              <li>Ijma‘ uses Qur’anic principles.</li>
+              <li>Scholars agree on issues not explicitly detailed.</li>
+              <li>It helps Muslim unity.</li>
+              <li>It must remain within Qur’anic and Prophetic guidance.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card gold">
+            <h3>Qur’an + Qiyas</h3>
+            <ul>
+              <li>Qiyas extends an existing ruling to a new issue.</li>
+              <li>The original ruling comes from Qur’an or Sunnah.</li>
+              <li>The same effective cause must exist.</li>
+              <li>It helps Muslims deal with modern questions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="past-paper-links">
+      <div class="section-head">
+        <span class="tag">Past Paper Links</span>
+        <h2>Relevant past-paper question angles</h2>
+        <p>Use these question types to practise. The wording may vary by variant/session, but the core topic is the same.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="exam-question">
+          <h3>Question Angle 1: Qur’an with the other three sources</h3>
+          <p><strong>Part A:</strong> The Qur’an is the main source of Islamic law. Write an account of how it is used with each of the other three sources. [10]</p>
+          <p><strong>Part B:</strong> Do you think that both ijma‘ and qiyas are equally important for solving present-day issues? Give reasons for your answer. [4]</p>
+          <ul>
+            <li>Best plan: define Qur’an → explain Hadith → explain ijma‘ → explain qiyas → give examples → show all remain linked to Qur’an.</li>
+          </ul>
+        </div>
+
+        <div class="exam-question">
+          <h3>Question Angle 2: Four sources of Islamic legal thinking</h3>
+          <p><strong>Part A:</strong> Briefly describe the four main sources of legal thinking in Islam. [10]</p>
+          <p><strong>Part B:</strong> Why are secondary sources needed when Muslims already have the Qur’an and Sunnah? [4]</p>
+          <ul>
+            <li>Best plan: primary sources first, then explain how ijma‘ and qiyas help with new issues without contradicting the primary sources.</li>
+          </ul>
+        </div>
+
+        <div class="exam-question">
+          <h3>Question Angle 3: Importance of ijma‘ or qiyas today</h3>
+          <p><strong>Part A:</strong> Explain how ijma‘ and qiyas are used in Islamic legal thinking. [10]</p>
+          <p><strong>Part B:</strong> Which of these two sources is more useful for Muslims today? Give reasons. [4]</p>
+          <ul>
+            <li>Best plan: use modern examples such as medical, technological and social questions, but do not turn the answer into a fatwa.</li>
+          </ul>
+        </div>
+
+        <div class="mark-scheme">
+          <h3>What examiners usually reward</h3>
+          <ul>
+            <li>Clear definition of each source.</li>
+            <li>Correct distinction between primary and secondary sources.</li>
+            <li>Explanation that the Qur’an is the highest authority and cannot be contradicted.</li>
+            <li>Examples of Hadith explaining Qur’anic commands such as prayer and zakat.</li>
+            <li>Examples of ijma‘ dealing with new issues through scholarly agreement.</li>
+            <li>Examples of qiyas such as applying the prohibition of intoxicants to modern drugs.</li>
+            <li>Reasoned discussion in Part B, especially on why new issues require ijma‘ and qiyas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="a-star-answer">
+      <div class="section-head">
+        <span class="tag">A* Answer Route</span>
+        <h2>Maximum content plan for Part A and Part B</h2>
+        <p>Use this as a full answer checklist before writing.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="answer-plan">
+          <div class="plan-box">
+            <h4>Part A [10]: Full content plan</h4>
+            <ul>
+              <li>Start with a short opening:
+                <ul>
+                  <li>The Qur’an is the first and supreme source of Islamic law.</li>
+                  <li>All other sources work with it and cannot contradict it.</li>
+                </ul>
+              </li>
+              <li>Explain the Qur’an:
+                <ul>
+                  <li>word of Allah;</li>
+                  <li>final revelation;</li>
+                  <li>contains direct laws and general principles;</li>
+                  <li>basis of worship, morality, family life, trade and justice;</li>
+                  <li>first source consulted for rulings.</li>
+                </ul>
+              </li>
+              <li>Explain Qur’an with Hadith:
+                <ul>
+                  <li>Hadith records the Prophet’s ﷺ sayings and actions;</li>
+                  <li>Sunnah explains Qur’anic commands;</li>
+                  <li>prayer, zakat, fasting and Hajj need Prophetic detail;</li>
+                  <li>Hadith supports and applies the Qur’an;</li>
+                  <li>Hadith does not contradict Qur’an.</li>
+                </ul>
+              </li>
+              <li>Explain Qur’an with ijma‘:
+                <ul>
+                  <li>ijma‘ is scholarly consensus;</li>
+                  <li>used when Qur’an and Sunnah do not give direct detailed ruling;</li>
+                  <li>must be based on Qur’anic principles;</li>
+                  <li>helps unity and prevents random opinion;</li>
+                  <li>can help with modern medical or technological issues.</li>
+                </ul>
+              </li>
+              <li>Explain Qur’an with qiyas:
+                <ul>
+                  <li>qiyas is analogy;</li>
+                  <li>starts from existing Qur’anic/Sunnah ruling;</li>
+                  <li>finds the effective cause;</li>
+                  <li>applies ruling to new case with same cause;</li>
+                  <li>example: intoxicants/drugs because of shared intoxication and harm.</li>
+                </ul>
+              </li>
+              <li>End with outcome:
+                <ul>
+                  <li>The Qur’an remains the foundation of Islamic law, while other sources allow its guidance to be understood and applied in every age.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="plan-box">
+            <h4>Part B [4]: Full evaluation plan</h4>
+            <ul>
+              <li>Choose a clear judgement:
+                <ul>
+                  <li>“Ijma‘ and qiyas are very important today because Muslims face new issues not directly named in early texts.”</li>
+                </ul>
+              </li>
+              <li>Reason 1: New situations:
+                <ul>
+                  <li>Modern medicine, technology and finance raise questions that did not exist in the same form before.</li>
+                  <li>Scholars need methods to apply Qur’anic principles to these cases.</li>
+                </ul>
+              </li>
+              <li>Reason 2: Unity:
+                <ul>
+                  <li>Ijma‘ helps Muslims avoid confusion and random personal rulings.</li>
+                  <li>It gives confidence because qualified scholars agree after studying the sources.</li>
+                </ul>
+              </li>
+              <li>Reason 3: Flexibility with limits:
+                <ul>
+                  <li>Qiyas shows that Islamic law can respond to new matters.</li>
+                  <li>But it is controlled by Qur’an and Sunnah, so it is not uncontrolled opinion.</li>
+                </ul>
+              </li>
+              <li>Balanced point:
+                <ul>
+                  <li>Ijma‘ may create stronger unity, while qiyas may be more useful for individual new cases.</li>
+                  <li>Both are needed, but neither can overrule the Qur’an.</li>
+                </ul>
+              </li>
+              <li>Modern link:
+                <ul>
+                  <li>This helps Muslims live faithfully in changing circumstances while remaining connected to revelation.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="warning">
+          A* reminder: Part A explains the sources and their relationship. Part B gives a reasoned judgement about why this system matters today.
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="mistakes">
+      <div class="section-head">
+        <span class="tag">Common Mistakes</span>
+        <h2>What students should avoid</h2>
+      </div>
+      <div class="section-body">
+        <div class="grid-2">
+          <div class="mini-card red">
+            <h3>Do not write this</h3>
+            <ul>
+              <li>“Qiyas means personal opinion.”</li>
+              <li>“Ijma‘ means all Muslims vote on a matter.”</li>
+              <li>“Hadith can change the Qur’an.”</li>
+              <li>“The Qur’an gives no laws, only beliefs.”</li>
+              <li>“Modern issues can be solved by anyone using common sense.”</li>
+              <li>“Secondary sources are equal to the Qur’an.”</li>
+            </ul>
+          </div>
+
+          <div class="mini-card green">
+            <h3>Write this instead</h3>
+            <ul>
+              <li>Qiyas is controlled analogy based on Qur’an/Sunnah rulings.</li>
+              <li>Ijma‘ is consensus of qualified scholars.</li>
+              <li>Hadith explains and applies the Qur’an.</li>
+              <li>The Qur’an gives direct rulings and broad principles.</li>
+              <li>Qualified scholars deal with new issues using recognised methods.</li>
+              <li>Secondary sources depend on the Qur’an and cannot contradict it.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="sources">
+      <div class="section-head">
+        <span class="tag">Sources Consulted</span>
+        <h2>Reliable sources behind these notes</h2>
+      </div>
+      <div class="section-body source-list">
+        <ul>
+          <li>Cambridge O Level Islamiyat 2058 official syllabus and past-paper resources: <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-o-level-islamiyat-2058/" target="_blank" rel="noopener">Cambridge International Islamiyat 2058</a></li>
+          <li>Cambridge O Level Islamiyat 2058 syllabus section on the use of the Qur’an in legal thinking and its relationship with Hadith, ijma‘ and qiyas.</li>
+          <li>Cambridge-style mark-scheme guidance for questions on the Qur’an as main source of Islamic law and its use with Hadith, ijma‘ and qiyas.</li>
+          <li>Qur’an references checked carefully through recognised Qur’anic references; students should use the translation printed in their examination paper or approved by their teacher.</li>
+          <li>Common O Level Islamiyat exam examples: prayer, zakat, fasting, Hajj, intoxicants, ijma‘ on new issues and qiyas for modern cases.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="back-end">
+      <a href="../../paper-1.html">← Back to Paper 1</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>O Level Islamiyat 2058 / IGCSE Islamiyat 0493</strong></p>
+      <p>Read-only student notes prepared for focused Paper 1 revision.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cards = [...document.querySelectorAll('.searchable')];
+    const input = document.getElementById('searchBox');
+    const noResults = document.getElementById('noResults');
+
+    function searchSections(){
+      const q = (input.value || '').toLowerCase().trim();
+      let visible = 0;
+      cards.forEach(card => {
+        const hit = !q || card.innerText.toLowerCase().includes(q);
+        card.style.display = hit ? '' : 'none';
+        if(hit) visible++;
+      });
+      noResults.style.display = visible ? 'none' : 'block';
+    }
+
+    input.addEventListener('input', searchSections);
+
+    document.getElementById('expandAll').addEventListener('click', () => {
+      document.querySelectorAll('details.topic').forEach(d => d.open = true);
+    });
+
+    document.getElementById('collapseAll').addEventListener('click', () => {
+      document.querySelectorAll('details.topic').forEach(d => d.open = false);
+    });
+
+    document.addEventListener('copy', e => e.preventDefault());
+    document.addEventListener('cut', e => e.preventDefault());
+    document.addEventListener('paste', e => e.preventDefault());
+    document.addEventListener('selectstart', e => e.preventDefault());
+    document.addEventListener('dragstart', e => e.preventDefault());
+
+    document.addEventListener('keydown', function(e){
+      const key = e.key.toLowerCase();
+      if (
+        (e.ctrlKey && ['c','x','s','p','u','a'].includes(key)) ||
+        (e.metaKey && ['c','x','s','p','u','a'].includes(key)) ||
+        key === 'printscreen' ||
+        key === 'f12'
+      ) {
+        e.preventDefault();
+        showProtection();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && ['i','j','c'].includes(key)) {
+        e.preventDefault();
+        showProtection();
+        return false;
+      }
+    });
+
+    window.addEventListener('beforeprint', function(e){
+      showProtection();
+    });
+
+    function showProtection(){
+      const overlay = document.getElementById('protectionOverlay');
+      overlay.classList.add('show');
+      setTimeout(() => overlay.classList.remove('show'), 1800);
+    }
+
+    window.addEventListener('keyup', function(e){
+      if(e.key === 'PrintScreen'){
+        try { navigator.clipboard.writeText('Read-only page: screenshots are discouraged.'); } catch(err) {}
+        showProtection();
+      }
+    });
+  </script>
+</body>
+</html>
