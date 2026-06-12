@@ -1,0 +1,930 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Qur’anic Passages Index | O Level Islamiyat 2058 / IGCSE 0493</title>
+
+  <meta name="description" content="Complete index of the 15 set Qur’anic passages for Cambridge O Level Islamiyat 2058 and IGCSE Islamiyat 0493 Paper 1, arranged by themes with links to detailed notes." />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafc;
+      color: #111827;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .top-bar {
+      background: #06203f;
+      color: white;
+      padding: 14px 0;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .top-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: white;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .brand span {
+      color: #d6a84f;
+    }
+
+    .top-nav {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .top-nav a {
+      color: white;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .top-nav a:hover {
+      color: #d6a84f;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,0.24), transparent 34%),
+        linear-gradient(135deg, #06203f 0%, #0b3b66 58%, #0f766e 100%);
+      color: white;
+      padding: 82px 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 34px;
+      align-items: center;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(214,168,79,0.18);
+      color: #fff1b8;
+      border: 1px solid rgba(214,168,79,0.45);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      color: #e5e7eb;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 14px;
+      transition: 0.25s ease;
+    }
+
+    .btn-primary {
+      background: #d6a84f;
+      color: #06203f;
+    }
+
+    .btn-primary:hover {
+      background: #c3953d;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: #06203f;
+      transform: translateY(-2px);
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.98);
+      color: #111827;
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 24px 55px rgba(0,0,0,0.28);
+      border: 1px solid rgba(255,255,255,0.6);
+    }
+
+    .hero-card h2 {
+      color: #06203f;
+      font-size: 26px;
+      margin-bottom: 13px;
+    }
+
+    .hero-card ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .hero-card li {
+      position: relative;
+      padding-left: 28px;
+      color: #374151;
+      font-weight: 700;
+    }
+
+    .hero-card li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #0f766e;
+      font-weight: 900;
+    }
+
+    .notice {
+      background: #fff7e6;
+      border: 1px solid #f3d48b;
+      border-left: 6px solid #d6a84f;
+      border-radius: 18px;
+      padding: 20px;
+      margin: 34px 0;
+      color: #7a4f00;
+      font-weight: 700;
+    }
+
+    .section {
+      padding: 68px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 42px;
+    }
+
+    .section-title h2 {
+      color: #06203f;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #4b5563;
+      font-size: 17px;
+    }
+
+    .quick-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+
+    .quick-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 10px 28px rgba(6,32,63,0.07);
+    }
+
+    .quick-card span {
+      display: inline-block;
+      background: #eef6f5;
+      color: #0f766e;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .quick-card h3 {
+      color: #06203f;
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .quick-card p {
+      color: #4b5563;
+      font-size: 14px;
+    }
+
+    .theme-card {
+      background: white;
+      border-radius: 26px;
+      border: 1px solid #e5e7eb;
+      margin-bottom: 28px;
+      overflow: hidden;
+      box-shadow: 0 16px 38px rgba(6,32,63,0.08);
+    }
+
+    .theme-head {
+      background: linear-gradient(135deg, #06203f, #0b3b66);
+      color: white;
+      padding: 28px;
+      border-bottom: 5px solid #d6a84f;
+    }
+
+    .theme-head .theme-label {
+      display: inline-block;
+      background: rgba(214,168,79,0.18);
+      border: 1px solid rgba(214,168,79,0.45);
+      color: #fff1b8;
+      padding: 6px 11px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .theme-head h2 {
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .theme-head p {
+      color: #e5e7eb;
+      max-width: 900px;
+    }
+
+    .theme-body {
+      padding: 26px;
+    }
+
+    .passage-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+      margin-bottom: 24px;
+    }
+
+    .passage-chip {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-left: 5px solid #d6a84f;
+      border-radius: 16px;
+      padding: 15px;
+      min-height: 105px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .passage-chip strong {
+      color: #06203f;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .passage-chip span {
+      color: #4b5563;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .focus-box {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 18px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+
+    .focus-box h3 {
+      color: #06203f;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .focus-box ul {
+      padding-left: 22px;
+    }
+
+    .focus-box li {
+      margin-bottom: 7px;
+      color: #374151;
+    }
+
+    .theme-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .theme-link {
+      display: inline-block;
+      background: #06203f;
+      color: white;
+      padding: 12px 17px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 14px;
+      transition: 0.25s ease;
+    }
+
+    .theme-link:hover {
+      background: #0f766e;
+      transform: translateY(-2px);
+    }
+
+    .theme-link.gold {
+      background: #d6a84f;
+      color: #06203f;
+    }
+
+    .theme-link.gold:hover {
+      background: #c3953d;
+    }
+
+    .method-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .method-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: 0 12px 30px rgba(6,32,63,0.07);
+    }
+
+    .method-card h3 {
+      color: #06203f;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .method-card ul {
+      padding-left: 22px;
+    }
+
+    .method-card li {
+      margin-bottom: 8px;
+      color: #374151;
+    }
+
+    .footer {
+      background: #030f24;
+      color: white;
+      padding: 34px 0;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .footer p {
+      color: #d1d5db;
+      margin-bottom: 8px;
+    }
+
+    .footer a {
+      color: #d6a84f;
+      font-weight: 900;
+    }
+
+    .back-final {
+      background: linear-gradient(135deg, #06203f, #0f766e);
+      color: white;
+      border-radius: 24px;
+      padding: 38px 28px;
+      text-align: center;
+      margin-top: 36px;
+    }
+
+    .back-final h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .back-final p {
+      color: #e5e7eb;
+      margin-bottom: 20px;
+    }
+
+    .readonly-alert {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      background: #06203f;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 999px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+      font-weight: 800;
+      font-size: 14px;
+      display: none;
+      z-index: 9999;
+    }
+
+    @media print {
+      body {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .method-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .quick-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .passage-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .section-title h2 {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .top-bar-inner {
+        align-items: flex-start;
+      }
+
+      .top-nav {
+        gap: 10px;
+      }
+
+      .hero {
+        padding: 62px 0 52px;
+      }
+
+      .hero h1 {
+        font-size: 30px;
+      }
+
+      .quick-grid,
+      .passage-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .theme-head h2 {
+        font-size: 25px;
+      }
+
+      .btn,
+      .theme-link {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+  <div class="readonly-alert" id="readonlyAlert">This page is read-only for protected study use.</div>
+
+  <header class="top-bar">
+    <div class="container top-bar-inner">
+      <a class="brand" href="../../index.html">O Level Islamiyat <span>2058</span></a>
+
+      <nav class="top-nav">
+        <a href="../../index.html">Home</a>
+        <a href="../../paper-1.html">Paper 1</a>
+        <a href="../paper-1/major-themes-of-the-quran.html">Major Themes</a>
+        <a href="../../past-papers.html">Past Papers</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="hero-tag">Paper 1 • Question 1 • Qur’anic Passages</span>
+        <h1>Qur’anic Passages Index</h1>
+        <p>
+          A complete reader-friendly dashboard for the 15 set Qur’anic passages in Cambridge O Level Islamiyat 2058 and IGCSE Islamiyat 0493 Paper 1.
+        </p>
+        <p>
+          Use this page to revise the three major theme groups, understand what each group teaches, and open detailed notes for main themes and importance.
+        </p>
+
+        <div class="hero-actions">
+          <a href="../paper-1/major-themes-of-the-quran.html" class="btn btn-primary">Open Major Themes Notes</a>
+          <a href="../../paper-1.html" class="btn btn-outline">Back to Paper 1</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <h2>How Question 1 Works</h2>
+        <ul>
+          <li>Three passages are normally printed in the paper.</li>
+          <li>Students usually choose any two passages.</li>
+          <li>Part (a) asks for the main theme or teachings.</li>
+          <li>Part (b) asks why the theme is important for Muslims today.</li>
+          <li>Best answers are clear, focused and linked to the passage.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="notice">
+          Important: For Qur’anic verses, students should use the translation printed in the Cambridge paper or a recognised translation approved by their teacher. These notes guide the meaning and exam approach; they are not a replacement for the original Qur’anic text.
+        </div>
+
+        <div class="quick-grid">
+          <div class="quick-card">
+            <span>Group 1</span>
+            <h3>Allah in Himself</h3>
+            <p>Oneness, uniqueness, knowledge, power, authority and independence of Allah.</p>
+          </div>
+
+          <div class="quick-card">
+            <span>Group 2</span>
+            <h3>Created World</h3>
+            <p>Allah as Creator, Sustainer, Lord, Judge and Protector of creation.</p>
+          </div>
+
+          <div class="quick-card">
+            <span>Group 3</span>
+            <h3>Messengers</h3>
+            <p>Allah’s guidance through prophets, revelation, miracles, support and mercy.</p>
+          </div>
+
+          <div class="quick-card">
+            <span>Exam Skill</span>
+            <h3>Theme + Importance</h3>
+            <p>Every passage should be prepared in two parts: main theme and importance.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>The 15 Set Qur’anic Passages</h2>
+          <p>
+            The passages are arranged below in three theme groups. Open the detailed notes pages for full bullet-point answers.
+          </p>
+        </div>
+
+        <!-- GROUP 1 -->
+        <article class="theme-card" id="allah-in-himself">
+          <div class="theme-head">
+            <span class="theme-label">Theme Group 1</span>
+            <h2>Allah in Himself</h2>
+            <p>
+              This group focuses on Allah’s oneness, uniqueness, power, knowledge, authority, mercy and absolute independence.
+            </p>
+          </div>
+
+          <div class="theme-body">
+            <div class="passage-grid">
+              <div class="passage-chip">
+                <strong>Sura 2:255</strong>
+                <span>Ayat al-Kursi</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 6:101–103</strong>
+                <span>Allah beyond human sight and imagination</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 41:37</strong>
+                <span>Signs of Allah in sun, moon, night and day</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 42:4–5</strong>
+                <span>Allah’s ownership, greatness and mercy</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 112</strong>
+                <span>Pure statement of Tawhid</span>
+              </div>
+            </div>
+
+            <div class="focus-box">
+              <h3>What Students Must Learn</h3>
+              <ul>
+                <li>Allah is one and has no partner.</li>
+                <li>Allah is unlike creation and cannot be compared to anything.</li>
+                <li>Allah has complete knowledge and authority over everything.</li>
+                <li>Allah does not depend on anyone, while all creation depends on Him.</li>
+                <li>Muslims should worship Allah alone and avoid shirk.</li>
+              </ul>
+            </div>
+
+            <div class="theme-actions">
+              <a class="theme-link gold" href="../paper-1/allah-in-himself.html">Open Detailed Notes</a>
+              <a class="theme-link" href="../paper-1/major-themes-of-the-quran.html">Open Major Themes Page</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- GROUP 2 -->
+        <article class="theme-card" id="created-world">
+          <div class="theme-head">
+            <span class="theme-label">Theme Group 2</span>
+            <h2>Allah’s Relationship with the Created World</h2>
+            <p>
+              This group focuses on Allah as Creator, Lord, Sustainer, Guide, Judge and Protector of human beings and the universe.
+            </p>
+          </div>
+
+          <div class="theme-body">
+            <div class="passage-grid">
+              <div class="passage-chip">
+                <strong>Sura 1</strong>
+                <span>Allah as Lord, Merciful Master and Guide</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 2:21–22</strong>
+                <span>Allah created people, earth, sky and provision</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 96:1–5</strong>
+                <span>Allah creates and teaches humanity</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 99</strong>
+                <span>Earthquake, accountability and judgement</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 114</strong>
+                <span>Allah as Lord, King and Protector of mankind</span>
+              </div>
+            </div>
+
+            <div class="focus-box">
+              <h3>What Students Must Learn</h3>
+              <ul>
+                <li>Allah created the universe and provides for His creation.</li>
+                <li>Human beings should worship Allah because He created and sustains them.</li>
+                <li>Allah gives guidance, knowledge and protection.</li>
+                <li>Allah will judge every deed, even the smallest good or evil action.</li>
+                <li>Muslims should live with gratitude, obedience, responsibility and trust in Allah.</li>
+              </ul>
+            </div>
+
+            <div class="theme-actions">
+              <a class="theme-link gold" href="../paper-1/allahs-relationship-with-created-world.html">Open Detailed Notes</a>
+              <a class="theme-link" href="../paper-1/major-themes-of-the-quran.html">Open Major Themes Page</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- GROUP 3 -->
+        <article class="theme-card" id="messengers">
+          <div class="theme-head">
+            <span class="theme-label">Theme Group 3</span>
+            <h2>Allah’s Relationship with His Messengers</h2>
+            <p>
+              This group focuses on prophethood, revelation, divine support, miracles, guidance and Allah’s mercy towards His chosen messengers.
+            </p>
+          </div>
+
+          <div class="theme-body">
+            <div class="passage-grid">
+              <div class="passage-chip">
+                <strong>Sura 2:30–37</strong>
+                <span>Adam عليه السلام, human responsibility and repentance</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 6:75–79</strong>
+                <span>Ibrahim عليه السلام rejects false worship</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 5:110</strong>
+                <span>Isa عليه السلام and miracles by Allah’s permission</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 93</strong>
+                <span>Allah comforts and supports the Prophet ﷺ</span>
+              </div>
+
+              <div class="passage-chip">
+                <strong>Sura 108</strong>
+                <span>Allah grants abundance and honour to the Prophet ﷺ</span>
+              </div>
+            </div>
+
+            <div class="focus-box">
+              <h3>What Students Must Learn</h3>
+              <ul>
+                <li>Allah chooses messengers to guide human beings.</li>
+                <li>Prophets teach Tawhid and call people away from false worship.</li>
+                <li>Miracles occur only by Allah’s permission, not by independent human power.</li>
+                <li>Allah supports, comforts and protects His messengers.</li>
+                <li>Muslims should respect all prophets and follow the final Prophet Muhammad ﷺ.</li>
+              </ul>
+            </div>
+
+            <div class="theme-actions">
+              <a class="theme-link gold" href="../paper-1/gods-messengers.html">Open Detailed Notes</a>
+              <a class="theme-link" href="../paper-1/major-themes-of-the-quran.html">Open Major Themes Page</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" style="background:#eef5ff;">
+      <div class="container">
+        <div class="section-title">
+          <h2>How to Write Answers for Qur’anic Passages</h2>
+          <p>
+            Every passage should be prepared in two separate ways: Part (a) main theme and Part (b) importance of theme.
+          </p>
+        </div>
+
+        <div class="method-grid">
+          <div class="method-card">
+            <h3>Part (a): Main Theme</h3>
+            <ul>
+              <li>Identify the central teaching of the passage.</li>
+              <li>Use words and ideas from the passage.</li>
+              <li>Explain what the passage teaches about Allah, creation or messengers.</li>
+              <li>Do not write a general story only; stay close to the passage.</li>
+              <li>Develop at least two or three clear points.</li>
+            </ul>
+          </div>
+
+          <div class="method-card">
+            <h3>Part (b): Importance of Theme</h3>
+            <ul>
+              <li>Explain why the theme matters for Muslims today.</li>
+              <li>Link the theme with belief, worship, behaviour and daily life.</li>
+              <li>Show practical impact: prayer, Tawhid, gratitude, accountability, patience or trust.</li>
+              <li>Avoid repeating Part (a); apply the theme to Muslim life.</li>
+              <li>Use clear reasoning, not memorised vague lines.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="back-final">
+          <h2>Return to Paper 1</h2>
+          <p>
+            Go back to the main Paper 1 page for notes, topical links, past-paper sections and answer-writing guidance.
+          </p>
+          <a class="btn btn-primary" href="../../paper-1.html">← Back to Paper 1</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>O Level Islamiyat 2058 / IGCSE Islamiyat 0493</p>
+      <p>Qur’anic Passages Index • Read-only study page</p>
+      <p><a href="../../paper-1.html">Back to Paper 1</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const readonlyAlert = document.getElementById("readonlyAlert");
+
+    function showReadonlyAlert() {
+      readonlyAlert.style.display = "block";
+      clearTimeout(window.readonlyTimer);
+      window.readonlyTimer = setTimeout(() => {
+        readonlyAlert.style.display = "none";
+      }, 1800);
+    }
+
+    document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("copy", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("cut", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("paste", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("selectstart", function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener("dragstart", function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener("keydown", function(e) {
+      const key = e.key.toLowerCase();
+
+      if (
+        (e.ctrlKey && key === "s") ||
+        (e.ctrlKey && key === "p") ||
+        (e.ctrlKey && key === "u") ||
+        (e.ctrlKey && key === "c") ||
+        (e.ctrlKey && key === "x") ||
+        (e.ctrlKey && key === "a") ||
+        (e.ctrlKey && e.shiftKey && key === "i") ||
+        (e.ctrlKey && e.shiftKey && key === "j") ||
+        key === "f12" ||
+        key === "printscreen"
+      ) {
+        e.preventDefault();
+        showReadonlyAlert();
+        return false;
+      }
+    });
+
+    window.addEventListener("beforeprint", function() {
+      document.body.innerHTML = "";
+    });
+  </script>
+
+</body>
+</html>
+```
