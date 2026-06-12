@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isnad and Matn | O Level Islamiyat 2058 Paper 2</title>
+  <meta name="description" content="Premium Cambridge O Level Islamiyat 2058 Paper 2 notes on isnad and matn: how Hadith scholars tested reliability through chain and text, with exam-focused model answers, key terms and practice questions." />
+  <style>
+    :root{
+      --navy:#0b1f3a;
+      --blue:#153e75;
+      --deep:#102a43;
+      --sky:#eaf4ff;
+      --gold:#c9972b;
+      --gold-soft:#fff5d9;
+      --green:#0f766e;
+      --green-soft:#e8fff8;
+      --ink:#111827;
+      --muted:#526071;
+      --line:#d9e2ec;
+      --soft:#f7fafc;
+      --white:#ffffff;
+      --danger:#9f1239;
+      --danger-soft:#fff1f2;
+      --shadow:0 14px 36px rgba(11,31,58,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      line-height:1.72;
+      color:var(--ink);
+      background:linear-gradient(180deg,#f6fbff 0%,#ffffff 34%,#f9fbff 100%);
+    }
+    a{color:var(--blue);text-decoration:none;}
+    a:hover{text-decoration:underline;}
+    .page{max-width:1180px;margin:auto;padding:24px;}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      background:radial-gradient(circle at top left,rgba(201,151,43,.24),transparent 35%),linear-gradient(135deg,var(--navy),#123d6b 62%,#0f766e);
+      color:white;
+      border-radius:30px;
+      padding:44px 38px;
+      box-shadow:var(--shadow);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      width:280px;height:280px;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:50%;
+      right:-95px;top:-95px;
+      box-shadow:0 0 0 34px rgba(255,255,255,.035),0 0 0 72px rgba(255,255,255,.025);
+    }
+    .eyebrow{
+      display:inline-flex;gap:8px;align-items:center;
+      padding:7px 13px;
+      border-radius:999px;
+      background:rgba(255,255,255,.14);
+      border:1px solid rgba(255,255,255,.24);
+      font-weight:700;
+      letter-spacing:.3px;
+      font-size:.88rem;
+      position:relative;z-index:1;
+    }
+    h1{font-size:clamp(2rem,4vw,4.1rem);line-height:1.06;margin:20px 0 14px;position:relative;z-index:1;}
+    .subtitle{font-size:1.15rem;max-width:910px;color:#e8f2ff;margin:0;position:relative;z-index:1;}
+    .hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px;position:relative;z-index:1;}
+    .hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:16px;}
+    .hero-card strong{display:block;font-size:1.05rem;color:#fff;}
+    .hero-card span{display:block;color:#dbeafe;font-size:.94rem;margin-top:4px;}
+    .toc{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px;}
+    .toc a{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 13px;font-weight:700;color:var(--navy);box-shadow:0 6px 18px rgba(15,23,42,.05);}
+    section{margin:26px 0;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 10px 26px rgba(15,23,42,.055);}
+    h2{font-size:clamp(1.45rem,2.2vw,2.15rem);line-height:1.2;margin:0 0 14px;color:var(--navy);}
+    h3{font-size:1.22rem;margin:24px 0 9px;color:#102a43;}
+    h4{font-size:1.06rem;margin:16px 0 8px;color:var(--navy);}
+    p{margin:10px 0;}
+    .lead{font-size:1.05rem;color:#25364a;}
+    .badge-row{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0;}
+    .badge{display:inline-block;background:var(--sky);border:1px solid #cbe2ff;border-radius:999px;color:#14365d;font-weight:700;padding:7px 12px;font-size:.9rem;}
+    .badge.gold{background:var(--gold-soft);border-color:#f6d887;color:#7a4d00;}
+    .badge.green{background:var(--green-soft);border-color:#b6f4e5;color:#065f56;}
+    .exam-focus{border-left:6px solid var(--gold);background:#fffdf5;border-radius:18px;padding:18px;margin:18px 0;}
+    .warning{border-left:6px solid var(--danger);background:var(--danger-soft);border-radius:18px;padding:18px;margin:18px 0;}
+    .success{border-left:6px solid var(--green);background:var(--green-soft);border-radius:18px;padding:18px;margin:18px 0;}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+    .card{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:18px;}
+    .card.white{background:#fff;}
+    .card h3,.card h4{margin-top:0;}
+    .big-term{font-size:1.6rem;font-weight:900;color:var(--navy);}
+    .term-label{display:block;font-size:.82rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.07em;}
+    .split-card{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start;}
+    .icon-circle{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;font-size:2rem;background:linear-gradient(135deg,#eaf4ff,#fff5d9);border:1px solid #d8e4f0;color:var(--navy);font-weight:900;}
+    ul,ol{padding-left:22px;}
+    li{margin:8px 0;}
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;margin:16px 0;}
+    table{width:100%;border-collapse:collapse;background:#fff;min-width:760px;}
+    th{background:var(--navy);color:white;text-align:left;padding:13px 14px;font-size:.94rem;}
+    td{border-top:1px solid var(--line);padding:13px 14px;vertical-align:top;}
+    tr:nth-child(even) td{background:#fbfdff;}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0;}
+    .flow .step{background:#ffffff;border:1px solid var(--line);border-radius:16px;padding:16px;position:relative;box-shadow:0 6px 18px rgba(15,23,42,.04);}
+    .flow .step:not(:last-child)::after{content:"→";position:absolute;right:-15px;top:38%;color:var(--gold);font-size:1.4rem;font-weight:900;}
+    .step-num{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;font-weight:800;margin-bottom:8px;}
+    .answer{background:#fcfcff;border:1px solid #d8e4f0;border-radius:18px;padding:20px;margin:16px 0;}
+    .answer h3{margin-top:0;}
+    .mark-pill{display:inline-block;background:var(--navy);color:#fff;border-radius:999px;padding:5px 10px;font-weight:800;font-size:.85rem;margin-bottom:10px;}
+    .quote{font-size:1.05rem;border-left:5px solid var(--green);padding:12px 18px;background:#f0fff9;border-radius:14px;margin:16px 0;}
+    .arabic{font-family:"Times New Roman", serif;font-size:1.25rem;direction:rtl;text-align:right;line-height:2;color:#0b1f3a;}
+    details{border:1px solid var(--line);border-radius:16px;padding:0;background:#fff;margin:12px 0;overflow:hidden;}
+    summary{cursor:pointer;font-weight:800;color:var(--navy);padding:15px 17px;background:#f8fbff;}
+    details .inside{padding:0 17px 17px;}
+    .exam-box{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+    .question{background:#fff;border:1px dashed #adc6e6;border-radius:16px;padding:16px;}
+    .question strong{color:var(--navy);}
+    .footer-note{font-size:.92rem;color:var(--muted);}
+    .small{font-size:.93rem;color:var(--muted);}
+    .print-tip{background:#eef7ff;border:1px solid #cfe7ff;border-radius:18px;padding:16px;color:#173b63;}
+    .diagram{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin:16px 0;}
+    .chain{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0;}
+    .chain span{background:#f8fbff;border:1px solid #d7e5f6;border-radius:999px;padding:9px 13px;font-weight:800;color:var(--navy);}
+    .chain b{color:var(--gold);font-size:1.25rem;}
+    .two-col-list{columns:2;column-gap:34px;}
+    .source-list li{margin:6px 0;}
+    @media(max-width:900px){
+      .hero-grid,.grid-2,.grid-3,.exam-box{grid-template-columns:1fr;}
+      .flow{grid-template-columns:1fr;}
+      .flow .step:not(:last-child)::after{display:none;}
+      .split-card{grid-template-columns:1fr;}
+      .two-col-list{columns:1;}
+      section{padding:22px;}
+      .hero{padding:34px 24px;}
+    }
+    @media print{
+      body{background:#fff;}
+      .toc{display:none;}
+      section,.hero{box-shadow:none;break-inside:avoid;}
+      a{text-decoration:none;color:inherit;}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="eyebrow">O Level Islamiyat 2058 · Paper 2 · History and Importance of Hadith</div>
+      <h1>Isnād and Matn: How Hadith Reliability Is Tested</h1>
+      <p class="subtitle">A complete examiner-focused lesson on the two-part method used by Hadith scholars: checking the <strong>chain of transmitters</strong> and checking the <strong>text/content</strong> of the report. Designed for Cambridge O Level Islamiyat Paper 2 with model answers, keywords, revision cards and common mistakes.</p>
+      <div class="hero-grid">
+        <div class="hero-card"><strong>Core Concept</strong><span>Authenticity is tested through both transmission and meaning.</span></div>
+        <div class="hero-card"><strong>Exam Link</strong><span>Paper 2, Question 2: history and importance of Hadiths.</span></div>
+        <div class="hero-card"><strong>Skill Aim</strong><span>Write clear AO1 facts and AO2 significance, not vague general statements.</span></div>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Page contents">
+      <a href="#syllabus">Syllabus focus</a>
+      <a href="#meaning">Meaning</a>
+      <a href="#why">Why checks were needed</a>
+      <a href="#isnad">Isnād method</a>
+      <a href="#matn">Matn method</a>
+      <a href="#classification">Classification</a>
+      <a href="#exam">Exam answers</a>
+      <a href="#practice">Practice</a>
+      <a href="#revision">Revision</a>
+    </nav>
+
+    <section id="syllabus">
+      <h2>1. Cambridge Syllabus Focus</h2>
+      <p class="lead">This topic belongs to <strong>Paper 2: The history and importance of the Hadiths</strong>. Cambridge expects candidates to study the methods used to test Hadith reliability through the <strong>chain of transmitters</strong> and the <strong>text</strong> of the Hadith.</p>
+      <div class="exam-focus">
+        <h3>What the examiner wants</h3>
+        <p>A strong answer does not merely define isnād and matn. It explains <strong>how scholars used them</strong>, <strong>why they mattered</strong>, and <strong>how they protected the Sunnah</strong> from weak or fabricated reports.</p>
+      </div>
+      <div class="badge-row">
+        <span class="badge">AO1: recall accurate facts</span>
+        <span class="badge gold">AO2: explain significance</span>
+        <span class="badge green">Key skill: compare chain and text</span>
+      </div>
+    </section>
+
+    <section id="meaning">
+      <h2>2. Meaning of Isnād and Matn</h2>
+      <div class="grid-2">
+        <div class="card white split-card">
+          <div class="icon-circle">إ</div>
+          <div>
+            <span class="term-label">Chain of transmission</span>
+            <div class="big-term">Isnād</div>
+            <p><strong>Isnād</strong> means the chain of narrators who transmitted a Hadith from the Prophet ﷺ to later collectors. It answers the question: <strong>Who passed this report to whom?</strong></p>
+          </div>
+        </div>
+        <div class="card white split-card">
+          <div class="icon-circle">م</div>
+          <div>
+            <span class="term-label">Text of the report</span>
+            <div class="big-term">Matn</div>
+            <p><strong>Matn</strong> means the actual wording or content of the Hadith. It answers the question: <strong>What does the report say?</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="diagram">
+        <h3>Simple visual formula</h3>
+        <div class="chain">
+          <span>Narrator 1</span><b>→</b><span>Narrator 2</span><b>→</b><span>Narrator 3</span><b>→</b><span>Companion</span><b>→</b><span>Prophet ﷺ</span>
+        </div>
+        <p><strong>Isnād</strong> is the route of transmission. <strong>Matn</strong> is the message being transmitted.</p>
+      </div>
+
+      <div class="success">
+        <h3>Memory line for students</h3>
+        <p><strong>Isnād checks the messenger; matn checks the message.</strong> A Hadith scholar needed both because a good-looking message could still have a weak route, and a strong-looking route still needed careful textual examination.</p>
+      </div>
+    </section>
+
+    <section id="why">
+      <h2>3. Why Were Isnād and Matn Checks Needed?</h2>
+      <p>During the Prophet’s ﷺ lifetime, Muslims could ask him directly. After his death, the Muslim community expanded rapidly into new lands, more people narrated reports, and new legal and social questions appeared. This made careful preservation necessary.</p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Expansion of Islam</h3>
+          <p>As Muslims spread beyond Arabia, Hadiths travelled through many transmitters and regions. Scholars needed to know whether each report had been passed on accurately.</p>
+        </div>
+        <div class="card">
+          <h3>Legal importance</h3>
+          <p>Hadiths explain worship, law, manners, family life and community conduct. A weak or false report could mislead Muslims in practical religious matters.</p>
+        </div>
+        <div class="card">
+          <h3>Danger of fabrication</h3>
+          <p>Some reports could be invented for political, sectarian, tribal or personal reasons. Verification protected the Prophet’s ﷺ teachings from false attribution.</p>
+        </div>
+      </div>
+      <div class="quote">
+        <p><strong>Supporting idea:</strong> The Qur’an teaches believers to verify reports before acting on them, so they do not harm others unknowingly. This general principle of verification helps students understand why Hadith scholars were so careful with transmitted reports.</p>
+      </div>
+      <div class="quote">
+        <p><strong>Hadith warning:</strong> The Prophet ﷺ strongly warned against attributing lies to him. This warning explains why Muslim scholars treated Hadith verification as a serious religious responsibility, not a casual academic exercise.</p>
+      </div>
+    </section>
+
+    <section id="isnad">
+      <h2>4. How Scholars Examined the Isnād</h2>
+      <p class="lead">The isnād was checked to see whether the Hadith had travelled through a reliable and continuous chain of narrators. Scholars studied biographies, dates, places, teachers, students, memory, character and comparison with other reports.</p>
+
+      <div class="flow" aria-label="Isnad checking steps">
+        <div class="step"><span class="step-num">1</span><h4>Continuity</h4><p>Did every narrator receive the report from the previous narrator?</p></div>
+        <div class="step"><span class="step-num">2</span><h4>Meeting possibility</h4><p>Were the narrators alive in the same period and able to meet?</p></div>
+        <div class="step"><span class="step-num">3</span><h4>Character</h4><p>Was the narrator truthful, upright and religiously trustworthy?</p></div>
+        <div class="step"><span class="step-num">4</span><h4>Accuracy</h4><p>Did the narrator have strong memory or reliable written records?</p></div>
+        <div class="step"><span class="step-num">5</span><h4>Comparison</h4><p>Was the chain supported or contradicted by other trustworthy chains?</p></div>
+      </div>
+
+      <h3>Detailed isnād criteria</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Criterion</th><th>What scholars checked</th><th>Why it mattered</th><th>Exam phrase</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ittiṣāl</strong><br>Continuity</td>
+              <td>Whether the chain was uninterrupted from collector back to the Prophet ﷺ.</td>
+              <td>A missing link could mean the report was not securely transmitted.</td>
+              <td>“The chain had to be complete, not broken.”</td>
+            </tr>
+            <tr>
+              <td><strong>ʿAdālah</strong><br>Uprightness</td>
+              <td>Whether narrators were known for truthfulness, piety and moral reliability.</td>
+              <td>A dishonest or careless narrator could not be trusted with the Prophet’s ﷺ words.</td>
+              <td>“Narrators had to be morally trustworthy.”</td>
+            </tr>
+            <tr>
+              <td><strong>Ḍabṭ</strong><br>Precision</td>
+              <td>Whether narrators possessed accurate memory or dependable written records.</td>
+              <td>A sincere narrator could still make mistakes if memory or recording was weak.</td>
+              <td>“They checked memory, accuracy and written preservation.”</td>
+            </tr>
+            <tr>
+              <td><strong>Muʿāṣarah / Liqāʾ</strong><br>Contemporaneity / meeting</td>
+              <td>Whether one narrator could realistically have heard from the previous narrator.</td>
+              <td>If dates or locations made transmission impossible, the chain was defective.</td>
+              <td>“Dates and places were compared.”</td>
+            </tr>
+            <tr>
+              <td><strong>Comparison of routes</strong></td>
+              <td>Whether the same report came through other chains and whether narrators agreed.</td>
+              <td>Supporting chains could strengthen a report; contradictions needed investigation.</td>
+              <td>“Scholars compared chains to detect mistakes.”</td>
+            </tr>
+            <tr>
+              <td><strong>Hidden defect</strong><br>ʿIllah</td>
+              <td>Subtle problems that were not obvious at first sight, often detected by expert comparison.</td>
+              <td>A chain might look sound outwardly but still contain a hidden technical weakness.</td>
+              <td>“Experts looked for hidden defects.”</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="exam-focus">
+        <h3>High-grade point</h3>
+        <p>Do not write: “They checked the chain.” That is too general. Write: “They checked whether the chain was continuous, whether each narrator could have met the previous narrator, and whether each narrator was truthful and accurate.”</p>
+      </div>
+    </section>
+
+    <section id="matn">
+      <h2>5. How Scholars Examined the Matn</h2>
+      <p class="lead">The matn was checked to see whether the content was acceptable, meaningful and consistent with stronger Islamic evidence. Scholars did not judge only by how a report sounded; they compared it with the Qur’an, established Sunnah, known facts and reliable versions of the same report.</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>1. Consistency with the Qur’an</h3>
+          <p>A report could not be accepted as authentic if its meaning clearly opposed the Qur’an. The Qur’an is the primary source of Islam, so Hadith reports were understood in harmony with it.</p>
+        </div>
+        <div class="card">
+          <h3>2. Consistency with established Sunnah</h3>
+          <p>The text was compared with stronger and more widely transmitted Hadiths. A report that contradicted stronger evidence required rejection or careful interpretation.</p>
+        </div>
+        <div class="card">
+          <h3>3. Historical and factual sense</h3>
+          <p>Scholars considered whether the report fitted known historical circumstances, chronology and the Prophet’s ﷺ life.</p>
+        </div>
+        <div class="card">
+          <h3>4. Language and meaning</h3>
+          <p>Scholars examined whether the wording and message were suitable, coherent and not crude, exaggerated or suspiciously self-serving.</p>
+        </div>
+      </div>
+
+      <h3>Common matn warning signs</h3>
+      <ul class="two-col-list">
+        <li>Contradiction with the Qur’an.</li>
+        <li>Contradiction with stronger Hadith evidence.</li>
+        <li>Impossible or historically unsuitable content.</li>
+        <li>Extreme rewards or punishments for very small actions without reliable support.</li>
+        <li>Language unlike the dignity and wisdom of Prophetic teaching.</li>
+        <li>Content that appears to serve a political, tribal or sectarian interest.</li>
+        <li>Text that contradicts well-known Islamic principles of justice, mercy and responsibility.</li>
+        <li>Reports that are isolated while the matter is public and would normally be widely known.</li>
+      </ul>
+
+      <div class="diagram">
+        <h3>Matn checking logic</h3>
+        <div class="flow">
+          <div class="step"><span class="step-num">1</span><h4>Read the text</h4><p>What is actually being claimed?</p></div>
+          <div class="step"><span class="step-num">2</span><h4>Compare with Qur’an</h4><p>Does it agree with the primary source?</p></div>
+          <div class="step"><span class="step-num">3</span><h4>Compare with Sunnah</h4><p>Does it agree with stronger reports?</p></div>
+          <div class="step"><span class="step-num">4</span><h4>Check context</h4><p>Does it fit history and meaning?</p></div>
+          <div class="step"><span class="step-num">5</span><h4>Judge carefully</h4><p>Accept, interpret, weaken or reject.</p></div>
+        </div>
+      </div>
+
+      <div class="warning">
+        <h3>Important balance</h3>
+        <p>Students should not suggest that scholars accepted every report with a good chain or rejected every unfamiliar text quickly. The best answer says scholars used <strong>both isnād and matn together</strong>, with careful comparison and expert judgement.</p>
+      </div>
+    </section>
+
+    <section id="together">
+      <h2>6. Why Isnād and Matn Must Be Used Together</h2>
+      <p>Hadith reliability is strongest when the chain and the text support each other. A strong chain shows reliable transmission, while a sound matn shows that the content agrees with Islamic principles and stronger evidence.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Situation</th><th>Likely scholarly response</th><th>Student explanation</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Strong isnād + sound matn</strong></td>
+              <td>The report may be accepted if other conditions are fulfilled.</td>
+              <td>Both the route and the content are reliable.</td>
+            </tr>
+            <tr>
+              <td><strong>Weak isnād + sound-looking matn</strong></td>
+              <td>The report is not treated as fully reliable merely because the meaning sounds good.</td>
+              <td>A beautiful message still needs a trustworthy route.</td>
+            </tr>
+            <tr>
+              <td><strong>Strong-looking isnād + problematic matn</strong></td>
+              <td>Scholars investigate for hidden defects, contradiction or misreporting.</td>
+              <td>A chain may look sound outwardly, but the content still needs testing.</td>
+            </tr>
+            <tr>
+              <td><strong>Multiple reliable chains + consistent matn</strong></td>
+              <td>The report becomes stronger because independent routes support it.</td>
+              <td>Agreement from reliable routes increases confidence.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="success">
+        <h3>Best one-line conclusion</h3>
+        <p><strong>Isnād protects the source of the report; matn protects the meaning of the report.</strong> Together they helped preserve the Sunnah accurately.</p>
+      </div>
+    </section>
+
+    <section id="classification">
+      <h2>7. Link with Hadith Classification</h2>
+      <p>After examining isnād and matn, scholars classified Hadiths according to reliability. These categories help students understand how the checking process led to practical results.</p>
+      <div class="grid-2">
+        <div class="card white">
+          <h3>Ṣaḥīḥ</h3>
+          <p>A sound Hadith. It has a continuous chain, reliable and accurate narrators, and is free from serious contradiction and hidden defects.</p>
+        </div>
+        <div class="card white">
+          <h3>Ḥasan</h3>
+          <p>A good Hadith. It is acceptable, but some narrators may be slightly less precise than those in a ṣaḥīḥ report.</p>
+        </div>
+        <div class="card white">
+          <h3>Ḍaʿīf</h3>
+          <p>A weak Hadith. It may have a broken chain, unreliable narrator, weak memory, contradiction or another defect.</p>
+        </div>
+        <div class="card white">
+          <h3>Mawḍūʿ</h3>
+          <p>A fabricated report. It is falsely attributed to the Prophet ﷺ and cannot be used as authentic Prophetic teaching.</p>
+        </div>
+      </div>
+      <div class="exam-focus">
+        <h3>Exam connection</h3>
+        <p>If the question asks about isnād and matn, do not spend the whole answer only listing Hadith categories. Mention categories briefly to show the result of verification, then return to the method of testing reliability.</p>
+      </div>
+    </section>
+
+    <section id="exam">
+      <h2>8. How to Write This in the Exam</h2>
+      <div class="exam-box">
+        <div class="card">
+          <h3>For a 10-mark part (a)</h3>
+          <ol>
+            <li>Define isnād and matn clearly.</li>
+            <li>Explain why verification became necessary.</li>
+            <li>Give 4–5 detailed isnād checks.</li>
+            <li>Give 4–5 detailed matn checks.</li>
+            <li>Link the method to preservation, classification and legal use of Hadith.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h3>For a 4-mark part (b)</h3>
+          <ol>
+            <li>Explain why authentic Hadiths matter for Muslims.</li>
+            <li>Connect Hadith to the Qur’an, worship, law and conduct.</li>
+            <li>Give a reasoned judgement, not only facts.</li>
+            <li>Use words such as <strong>therefore</strong>, <strong>because</strong>, <strong>this shows</strong>, <strong>this protects</strong>.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="answer">
+        <span class="mark-pill">Model Answer · 10 marks</span>
+        <h3>Question: Describe how Hadith scholars used isnād and matn to test the reliability of Hadiths.</h3>
+        <p><strong>Model answer:</strong> Hadith scholars tested reports through both the chain of transmitters, called <strong>isnād</strong>, and the text or content, called <strong>matn</strong>. This was necessary because after the Prophet’s ﷺ death, reports spread through many people and regions, and scholars had to protect his teachings from error and fabrication.</p>
+        <p>In examining the <strong>isnād</strong>, scholars checked whether the chain was continuous from the collector back to the Prophet ﷺ. They investigated whether each narrator could have met the person from whom he claimed to narrate, by comparing dates, places, teachers and students. They also examined the narrator’s <strong>ʿadālah</strong>, meaning truthfulness and moral uprightness, because a dishonest narrator could not be trusted. They checked <strong>ḍabṭ</strong>, meaning accuracy of memory or written record, because even a sincere person could make mistakes. They compared different chains of the same report to discover missing links, contradictions or hidden defects.</p>
+        <p>Scholars also examined the <strong>matn</strong>. They checked whether the meaning agreed with the Qur’an, because the Qur’an is the primary source of Islam. They compared the wording with stronger and well-known Hadiths. They considered whether the text fitted the Prophet’s ﷺ character, known historical facts and the general principles of Islam. Reports with strange exaggeration, contradiction or self-serving content were treated with suspicion. In this way, scholars used both the route of transmission and the content of the report to decide whether a Hadith was sound, good, weak or fabricated.</p>
+        <p><strong>Why this is strong:</strong> It defines the terms, explains the need, gives detailed chain checks, gives detailed text checks and links the method with classification.</p>
+      </div>
+
+      <div class="answer">
+        <span class="mark-pill">Model Answer · 4 marks</span>
+        <h3>Question: Why was it important for Muslims to test the reliability of Hadiths?</h3>
+        <p><strong>Model answer:</strong> It was important because Hadiths are a major source of guidance after the Qur’an. Muslims use them to understand prayer, fasting, zakat, family life, moral conduct and legal rulings. If weak or fabricated reports were accepted, Muslims could wrongly attribute teachings to the Prophet ﷺ and act on false guidance. Testing reliability protected the Sunnah, preserved the Prophet’s ﷺ authority and helped later Muslims practise Islam with confidence.</p>
+      </div>
+
+      <div class="answer">
+        <span class="mark-pill">Advanced comparison</span>
+        <h3>Question: Is isnād more important than matn in judging Hadith reliability?</h3>
+        <p><strong>Balanced answer:</strong> Isnād is extremely important because it shows whether a report came through trustworthy transmitters. Without a reliable chain, a report cannot be confidently traced to the Prophet ﷺ. However, matn is also necessary because scholars had to examine whether the content agreed with the Qur’an, established Sunnah and known Islamic principles. Therefore, the strongest judgement comes from using both together: the isnād checks the route, while the matn checks the message.</p>
+      </div>
+    </section>
+
+    <section id="phrases">
+      <h2>9. High-Scoring Phrases to Use</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>AO1 phrases</h3>
+          <ul>
+            <li>“The isnād is the chain of transmitters through whom the report passed.”</li>
+            <li>“Scholars checked whether the chain was continuous and unbroken.”</li>
+            <li>“They examined the narrator’s truthfulness, memory and accuracy.”</li>
+            <li>“The matn is the actual wording or content of the Hadith.”</li>
+            <li>“The text was compared with the Qur’an and stronger Hadiths.”</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>AO2 phrases</h3>
+          <ul>
+            <li>“This protected the Prophet’s ﷺ teachings from false attribution.”</li>
+            <li>“This was important because Hadiths guide Muslim law and daily conduct.”</li>
+            <li>“It gave later Muslims confidence that the Sunnah had been preserved carefully.”</li>
+            <li>“It shows that Muslim scholarship was disciplined and evidence-based.”</li>
+            <li>“Without such checks, fabricated reports could influence belief and practice.”</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="practice">
+      <h2>10. Cambridge-Style Practice Questions</h2>
+      <div class="warning">
+        <strong>Authenticity note:</strong> The following are Cambridge-style practice questions, not claimed as exact past-paper questions. Add exact years/session labels only after checking official question papers or mark schemes.
+      </div>
+      <div class="exam-box">
+        <div class="question"><strong>10 marks:</strong> Describe the methods used by Hadith scholars to test the reliability of Hadiths through isnād and matn.</div>
+        <div class="question"><strong>4 marks:</strong> Why was it important for Muslims to distinguish authentic Hadiths from weak or fabricated reports?</div>
+        <div class="question"><strong>10 marks:</strong> Explain how the chain of transmitters was examined by Hadith scholars.</div>
+        <div class="question"><strong>4 marks:</strong> In your opinion, why is the text of a Hadith also important when deciding its reliability?</div>
+        <div class="question"><strong>10 marks:</strong> Give an account of the criteria used to classify Hadiths as sound, good, weak or fabricated.</div>
+        <div class="question"><strong>4 marks:</strong> Why are authentic Hadiths important in Islamic legal thinking?</div>
+      </div>
+    </section>
+
+    <section id="mistakes">
+      <h2>11. Common Mistakes to Avoid</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Mistake</th><th>Why it loses marks</th><th>Better approach</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Only writing “isnād is chain and matn is text.”</td>
+              <td>This is only definition, not detailed explanation.</td>
+              <td>Explain the checks used for the chain and the text.</td>
+            </tr>
+            <tr>
+              <td>Ignoring matn completely.</td>
+              <td>The syllabus specifically mentions both isnād and matn.</td>
+              <td>Give separate paragraphs for chain-checking and text-checking.</td>
+            </tr>
+            <tr>
+              <td>Writing only about Hadith compilers.</td>
+              <td>Compilers are related, but this question is about reliability methods.</td>
+              <td>Mention compilers only briefly as users of these methods.</td>
+            </tr>
+            <tr>
+              <td>Claiming all weak Hadiths are fabricated.</td>
+              <td>Weak and fabricated are not the same category.</td>
+              <td>Say weak reports have defects; fabricated reports are invented.</td>
+            </tr>
+            <tr>
+              <td>Giving emotional statements without exam detail.</td>
+              <td>Cambridge rewards accurate, developed knowledge and understanding.</td>
+              <td>Use technical terms with simple explanations and significance.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="revision">
+      <h2>12. Rapid Revision Cards</h2>
+      <details open>
+        <summary>What is isnād?</summary>
+        <div class="inside"><p>Isnād is the chain of narrators who transmitted a Hadith. It shows how the report passed from one person to another until it reached the collector.</p></div>
+      </details>
+      <details>
+        <summary>What is matn?</summary>
+        <div class="inside"><p>Matn is the actual wording or content of the Hadith. It is what the report says.</p></div>
+      </details>
+      <details>
+        <summary>What did scholars check in the isnād?</summary>
+        <div class="inside"><p>They checked continuity, possibility of meeting, narrator character, narrator accuracy, comparison with other chains and hidden defects.</p></div>
+      </details>
+      <details>
+        <summary>What did scholars check in the matn?</summary>
+        <div class="inside"><p>They checked agreement with the Qur’an, established Sunnah, known history, sound meaning, Prophetic dignity and absence of suspicious exaggeration or contradiction.</p></div>
+      </details>
+      <details>
+        <summary>Why were these checks important?</summary>
+        <div class="inside"><p>They protected the Sunnah from error and fabrication, helped classify Hadiths, and allowed Muslims to use authentic reports for belief, worship, law and conduct.</p></div>
+      </details>
+    </section>
+
+    <section id="checklist">
+      <h2>13. Student Self-Assessment Checklist</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>I can explain…</h3>
+          <ul>
+            <li>the difference between isnād and matn</li>
+            <li>why Hadith verification became necessary</li>
+            <li>how scholars checked continuity of the chain</li>
+            <li>how scholars checked narrator reliability</li>
+            <li>how scholars tested the content of the Hadith</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>I can write…</h3>
+          <ul>
+            <li>a 10-mark answer with separate isnād and matn paragraphs</li>
+            <li>a 4-mark answer on importance/significance</li>
+            <li>technical terms with simple explanation</li>
+            <li>a balanced comparison of chain and text</li>
+            <li>a conclusion linking reliability with preservation of Sunnah</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="sources">
+      <h2>14. Source and Accuracy Notes</h2>
+      <p>This page has been prepared for educational use with Cambridge O Level Islamiyat 2058 Paper 2. It avoids invented past-paper claims and uses Cambridge-style practice questions unless exact papers are separately checked.</p>
+      <ul class="source-list">
+        <li>Cambridge O Level Islamiyat 2058 syllabus, 2026–2027: Paper 2 includes “the history and importance of the Hadiths,” including isnād and matn methods for reliability testing.</li>
+        <li>Qur’an 49:6 supports the general principle of verifying reports before acting on them.</li>
+        <li>Sahih al-Bukhari includes the warning against intentionally attributing lies to the Prophet ﷺ, which explains the seriousness of Hadith verification.</li>
+      </ul>
+      <div class="print-tip">
+        <strong>Teacher tip:</strong> If uploading this to GitHub Pages, save the file as <code>isnad-and-matn.html</code> inside <code>notes/paper-2/</code> and link it from your Paper 2 notes index.
+      </div>
+      <p class="footer-note">Prepared as premium O Level Islamiyat notes. Use official Cambridge question papers and mark schemes before adding exact year/session references.</p>
+    </section>
+  </main>
+</body>
+</html>
