@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Paper 2 Past Papers | O Level Islamiyat 2058</title>
+
+  <meta name="description" content="Cambridge O Level Islamiyat 2058 Paper 2 past paper practice hub. Access premium topic-wise past paper pages for Hadith, Articles of Faith, Pillars of Islam and Rightly Guided Caliphs." />
+  <meta name="keywords" content="O Level Islamiyat 2058 Paper 2 past papers, Hadith past papers, Articles of Faith, Pillars of Islam, Rightly Guided Caliphs, Cambridge Islamiyat 2058" />
+  <meta name="author" content="Dr Imran Hayat" />
+
+  <link rel="stylesheet" href="../../style.css" />
+
+  <style>
+    :root {
+      --p2-navy: #102a43;
+      --p2-blue: #1d4ed8;
+      --p2-green: #047857;
+      --p2-gold: #b45309;
+      --p2-red: #be123c;
+      --p2-light: #f8fafc;
+      --p2-border: #e2e8f0;
+      --p2-text: #1f2937;
+      --p2-muted: #64748b;
+      --p2-card: #ffffff;
+      --p2-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+    }
+
+    body {
+      background: var(--p2-light);
+      color: var(--p2-text);
+    }
+
+    .p2-page {
+      padding: 42px 0 70px;
+    }
+
+    .p2-hero {
+      background:
+        radial-gradient(circle at top left, rgba(29, 78, 216, 0.18), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(4, 120, 87, 0.18), transparent 34%),
+        linear-gradient(135deg, #0f172a, #12305a);
+      color: #ffffff;
+      border-radius: 28px;
+      padding: 48px;
+      box-shadow: var(--p2-shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .p2-hero::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 28px solid rgba(255, 255, 255, 0.08);
+      right: -80px;
+      top: -70px;
+    }
+
+    .p2-breadcrumb {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      font-size: 0.92rem;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .p2-breadcrumb a {
+      color: #bfdbfe;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .p2-breadcrumb span {
+      color: #e2e8f0;
+    }
+
+    .p2-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.35rem);
+      line-height: 1.08;
+      max-width: 900px;
+      margin: 0 0 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .p2-hero p {
+      max-width: 860px;
+      font-size: 1.08rem;
+      line-height: 1.75;
+      color: #e5e7eb;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .p2-hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .p2-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .p2-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
+    }
+
+    .p2-btn-light {
+      background: #ffffff;
+      color: #0f172a;
+    }
+
+    .p2-btn-outline {
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .p2-section {
+      margin-top: 46px;
+    }
+
+    .p2-section-header {
+      max-width: 850px;
+      margin-bottom: 26px;
+    }
+
+    .p2-kicker {
+      display: inline-block;
+      color: var(--p2-blue);
+      background: #dbeafe;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+    }
+
+    .p2-section h2 {
+      color: var(--p2-navy);
+      font-size: clamp(1.7rem, 3vw, 2.45rem);
+      margin: 0 0 10px;
+    }
+
+    .p2-section-header p {
+      color: var(--p2-muted);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .p2-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .p2-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 270px;
+      background: var(--p2-card);
+      border: 1px solid var(--p2-border);
+      border-radius: 24px;
+      padding: 24px;
+      text-decoration: none;
+      color: var(--p2-text);
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+
+    .p2-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--p2-shadow);
+      border-color: rgba(29, 78, 216, 0.32);
+    }
+
+    .p2-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 7px;
+      background: var(--accent, var(--p2-blue));
+    }
+
+    .p2-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      background: var(--soft, #dbeafe);
+      color: var(--accent, var(--p2-blue));
+      font-size: 1.55rem;
+      margin-bottom: 18px;
+    }
+
+    .p2-card h3 {
+      font-size: 1.25rem;
+      color: var(--p2-navy);
+      margin: 0 0 10px;
+    }
+
+    .p2-card p {
+      color: var(--p2-muted);
+      line-height: 1.65;
+      margin: 0 0 18px;
+      flex: 1;
+    }
+
+    .p2-card strong {
+      color: var(--accent, var(--p2-blue));
+      font-size: 0.95rem;
+    }
+
+    .blue {
+      --accent: #1d4ed8;
+      --soft: #dbeafe;
+    }
+
+    .green {
+      --accent: #047857;
+      --soft: #d1fae5;
+    }
+
+    .gold {
+      --accent: #b45309;
+      --soft: #fef3c7;
+    }
+
+    .red {
+      --accent: #be123c;
+      --soft: #ffe4e6;
+    }
+
+    .p2-info-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 22px;
+      margin-top: 42px;
+    }
+
+    .p2-panel {
+      background: #ffffff;
+      border: 1px solid var(--p2-border);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 12px 28px rgba(15, 23, 42, 0.07);
+    }
+
+    .p2-panel h3 {
+      color: var(--p2-navy);
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+    }
+
+    .p2-panel ul,
+    .p2-panel ol {
+      margin: 0;
+      padding-left: 22px;
+      color: var(--p2-text);
+      line-height: 1.85;
+    }
+
+    .p2-panel li::marker {
+      color: var(--p2-blue);
+      font-weight: bold;
+    }
+
+    .p2-footer-nav {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+      justify-content: center;
+    }
+
+    .p2-footer-nav a {
+      background: #ffffff;
+      color: var(--p2-navy);
+      border: 1px solid var(--p2-border);
+      text-decoration: none;
+      padding: 11px 16px;
+      border-radius: 999px;
+      font-weight: 800;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .p2-footer-nav a:hover {
+      background: #e0f2fe;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 980px) {
+      .p2-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .p2-info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .p2-hero {
+        padding: 30px 22px;
+        border-radius: 22px;
+      }
+
+      .p2-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .p2-card {
+        min-height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="p2-page">
+    <div class="container">
+
+      <section class="p2-hero">
+        <div class="p2-breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span>›</span>
+          <a href="../../past-papers.html">Past Papers</a>
+          <span>›</span>
+          <span>Paper 2</span>
+        </div>
+
+        <h1>O Level Islamiyat 2058 Paper 2 Past Papers</h1>
+
+        <p>
+          Use this page as the main index for Paper 2 topic-wise past paper practice.
+          It connects students to the most important repeated-question areas from Hadith,
+          Articles of Faith, Pillars of Islam and the Rightly Guided Caliphs.
+        </p>
+
+        <div class="p2-hero-actions">
+          <a href="../../paper-2.html" class="p2-btn p2-btn-light">Open Paper 2 Guide</a>
+          <a href="../../past-papers.html" class="p2-btn p2-btn-outline">Back to Past Papers</a>
+        </div>
+      </section>
+
+      <section class="p2-section">
+        <div class="p2-section-header">
+          <span class="p2-kicker">Premium Paper 2 Practice</span>
+          <h2>Choose a Paper 2 Past Paper Topic</h2>
+          <p>
+            Start with one topic, study the repeated questions, understand the examiner-style
+            demands, then practise writing complete 10-mark and 4-mark answers.
+          </p>
+        </div>
+
+        <div class="p2-grid">
+
+          <a class="p2-card blue" href="premium-history-importance-hadith-p2-past-papers.html">
+            <div class="p2-icon">📜</div>
+            <h3>History & Importance of Hadith</h3>
+            <p>
+              Practise repeated questions on Hadith compilation, transmission, preservation,
+              isnad, matn, collections and the importance of Hadith in Islam.
+            </p>
+            <strong>Open topic →</strong>
+          </a>
+
+          <a class="p2-card green" href="premium-major-teachings-hadith-p2-past-papers.html">
+            <div class="p2-icon">🌿</div>
+            <h3>Major Teachings in Hadith</h3>
+            <p>
+              Revise key Hadith themes linked with individual conduct, community life,
+              moral values and practical Muslim behaviour.
+            </p>
+            <strong>Open topic →</strong>
+          </a>
+
+          <a class="p2-card gold" href="premium-articles-faith-pillars-islam-p2-past-papers.html">
+            <div class="p2-icon">🕌</div>
+            <h3>Articles of Faith & Pillars of Islam</h3>
+            <p>
+              Prepare questions on belief, worship, practice, duties, meaning and significance
+              of the core foundations of Islamic life.
+            </p>
+            <strong>Open topic →</strong>
+          </a>
+
+          <a class="p2-card red" href="premium-rightly-guided-caliphs-p2-past-papers.html">
+            <div class="p2-icon">⭐</div>
+            <h3>Rightly Guided Caliphs</h3>
+            <p>
+              Study repeated questions on the lives, achievements, challenges and leadership
+              qualities of the first four caliphs.
+            </p>
+            <strong>Open topic →</strong>
+          </a>
+
+        </div>
+      </section>
+
+      <section class="p2-info-grid">
+
+        <div class="p2-panel">
+          <h3>How to Use These Past Paper Pages</h3>
+          <ol>
+            <li>Open one topic and read the repeated question pattern carefully.</li>
+            <li>Identify whether the question demands description, explanation, comparison or significance.</li>
+            <li>Prepare a clear 10-mark answer with accurate facts, sequence and development.</li>
+            <li>Practise the 4-mark part with reasoning, relevance and Islamic teaching.</li>
+            <li>Rewrite weak answers into stronger answers using examiner-style improvement.</li>
+          </ol>
+        </div>
+
+        <div class="p2-panel">
+          <h3>A* Answer Focus</h3>
+          <ul>
+            <li>Accurate dates, names and terms where relevant</li>
+            <li>Clear link with the wording of the question</li>
+            <li>Developed explanation, not memorised storytelling only</li>
+            <li>Relevant Qur’an/Hadith reference where suitable</li>
+            <li>Balanced and thoughtful 4-mark evaluation</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <nav class="p2-footer-nav" aria-label="Past paper navigation">
+        <a href="../../index.html">Home</a>
+        <a href="../../paper-1.html">Paper 1</a>
+        <a href="../../paper-2.html">Paper 2</a>
+        <a href="../../past-papers.html">Past Papers</a>
+        <a href="../p1/">Paper 1 Past Papers</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+
+    </div>
+  </main>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
