@@ -450,11 +450,483 @@
         text-align: center;
       }
     }
-    
+  
+
+    /* ===== Professional About Page Photo Card ===== */
+    .hero-photo-card {
+      background: rgba(255,255,255,0.96);
+      color: #111827;
+      padding: 18px;
+      border-radius: 28px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.30);
+      border: 1px solid rgba(255,255,255,0.55);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-photo-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,0.18), transparent 32%),
+        radial-gradient(circle at bottom right, rgba(15,118,110,0.14), transparent 34%);
+      pointer-events: none;
+    }
+
+    .teacher-photo-frame {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #06203f;
+      border: 5px solid #ffffff;
+      box-shadow: 0 14px 35px rgba(6,32,63,0.22);
+    }
+
+    .teacher-photo {
+      width: 100%;
+      display: block;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .photo-name-card {
+      position: relative;
+      margin-top: 16px;
+      background: #06203f;
+      color: white;
+      border-radius: 20px;
+      padding: 18px;
+      border-left: 5px solid #d6a84f;
+    }
+
+    .photo-name-card h3 {
+      margin: 0 0 6px;
+      color: #d6a84f;
+      font-size: 24px;
+    }
+
+    .photo-name-card p {
+      margin: 0;
+      color: #e5e7eb;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .photo-badges {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .photo-badges span {
+      background: #fff7e6;
+      color: #7a4f00;
+      border: 1px solid #f3d48b;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .profile-glance-mini {
+      position: relative;
+      margin-top: 15px;
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      padding: 18px;
+    }
+
+    .profile-glance-mini h4 {
+      color: #06203f;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .profile-glance-mini ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .profile-glance-mini li {
+      position: relative;
+      padding-left: 25px;
+      margin-bottom: 8px;
+      color: #374151;
+      font-size: 14px;
+    }
+
+    .profile-glance-mini li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #0f766e;
+      font-weight: 900;
+    }
+
+    @media (max-width: 980px) {
+      .hero-photo-card {
+        max-width: 520px;
+        margin: 10px auto 0;
+      }
+    }
+
+
+    /* ===== Premium Sidebar ===== */
+    :root {
+      --sb-navy: #071f3f;
+      --sb-navy-2: #0b2e5f;
+      --sb-gold: #d9a441;
+      --sb-white: #ffffff;
+      --sb-line: rgba(255, 255, 255, 0.16);
+      --sb-shadow: 0 20px 45px rgba(7, 31, 63, 0.25);
+    }
+
+    body.has-premium-sidebar {
+      padding-left: 292px;
+    }
+
+    .premium-sidebar {
+      position: fixed;
+      inset: 0 auto 0 0;
+      width: 292px;
+      height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(217, 164, 65, 0.24), transparent 36%),
+        linear-gradient(180deg, var(--sb-navy), var(--sb-navy-2));
+      color: var(--sb-white);
+      z-index: 9999;
+      box-shadow: var(--sb-shadow);
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--sb-gold) transparent;
+    }
+
+    .premium-sidebar::-webkit-scrollbar { width: 6px; }
+    .premium-sidebar::-webkit-scrollbar-thumb { background: var(--sb-gold); border-radius: 999px; }
+
+    .sidebar-brand {
+      padding: 24px 20px 18px;
+      border-bottom: 1px solid var(--sb-line);
+    }
+
+    .brand-badge {
+      width: 54px;
+      height: 54px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: rgba(217, 164, 65, 0.18);
+      border: 1px solid rgba(217, 164, 65, 0.45);
+      color: #ffe8a3;
+      font-size: 25px;
+      margin-bottom: 14px;
+    }
+
+    .sidebar-brand h2 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.2;
+      color: var(--sb-white);
+    }
+
+    .sidebar-brand p {
+      margin: 7px 0 0;
+      font-size: 13px;
+      color: #dbeafe;
+    }
+
+    .sidebar-search { padding: 16px 18px 10px; }
+
+    .sidebar-search input {
+      width: 100%;
+      border: 1px solid var(--sb-line);
+      background: rgba(255, 255, 255, 0.10);
+      color: var(--sb-white);
+      border-radius: 14px;
+      padding: 12px 14px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .sidebar-search input::placeholder { color: #cbd5e1; }
+
+    .sidebar-search input:focus {
+      border-color: var(--sb-gold);
+      box-shadow: 0 0 0 4px rgba(217, 164, 65, 0.14);
+    }
+
+    .sidebar-menu { padding: 10px 12px 24px; }
+
+    .sidebar-label {
+      margin: 18px 10px 8px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #bdd3f3;
+      font-weight: 800;
+    }
+
+    .sidebar-link,
+    .sidebar-accordion {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      border: 0;
+      background: transparent;
+      color: #f8fafc;
+      text-decoration: none;
+      padding: 11px 12px;
+      border-radius: 14px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.25s ease;
+      text-align: left;
+      font-family: inherit;
+    }
+
+    .sidebar-link:hover,
+    .sidebar-accordion:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateX(3px);
+    }
+
+    .sidebar-link.active {
+      background: linear-gradient(90deg, rgba(217, 164, 65, 0.28), rgba(255, 255, 255, 0.08));
+      border: 1px solid rgba(217, 164, 65, 0.42);
+      color: #fff5cf;
+    }
+
+    .sidebar-icon {
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.11);
+      font-size: 15px;
+    }
+
+    .accordion-arrow {
+      margin-left: auto;
+      font-size: 13px;
+      transition: 0.25s ease;
+    }
+
+    .sidebar-accordion.open .accordion-arrow { transform: rotate(180deg); }
+
+    .sidebar-submenu {
+      display: none;
+      margin: 4px 0 8px 39px;
+      padding-left: 10px;
+      border-left: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .sidebar-submenu.open { display: block; }
+
+    .sidebar-submenu a {
+      display: block;
+      text-decoration: none;
+      color: #dbeafe;
+      padding: 8px 10px;
+      margin: 3px 0;
+      border-radius: 10px;
+      font-size: 13.5px;
+      line-height: 1.35;
+      transition: 0.25s ease;
+    }
+
+    .sidebar-submenu a:hover {
+      background: rgba(255, 255, 255, 0.11);
+      color: #fff5cf;
+    }
+
+    .sidebar-cta {
+      margin: 16px 10px 6px;
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(217, 164, 65, 0.13);
+      border: 1px solid rgba(217, 164, 65, 0.34);
+    }
+
+    .sidebar-cta strong {
+      display: block;
+      color: #fff3c4;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .sidebar-cta p {
+      margin: 0 0 12px;
+      color: #e5eefc;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .sidebar-cta a {
+      display: block;
+      text-align: center;
+      background: var(--sb-gold);
+      color: #08244d;
+      text-decoration: none;
+      padding: 10px 12px;
+      border-radius: 999px;
+      font-weight: 900;
+      font-size: 13px;
+    }
+
+    .sidebar-toggle {
+      display: none;
+      position: fixed;
+      top: 14px;
+      left: 14px;
+      z-index: 10001;
+      border: 0;
+      background: var(--sb-navy);
+      color: white;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      font-size: 22px;
+      box-shadow: 0 12px 26px rgba(7, 31, 63, 0.28);
+      cursor: pointer;
+    }
+
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(2, 8, 23, 0.58);
+      z-index: 9998;
+    }
+
+    @media (max-width: 900px) {
+      body.has-premium-sidebar { padding-left: 0; }
+      .sidebar-toggle { display: grid; place-items: center; }
+      .premium-sidebar { transform: translateX(-105%); transition: 0.3s ease; }
+      .premium-sidebar.open { transform: translateX(0); }
+      .sidebar-overlay.open { display: block; }
+    }
+
   </style>
 </head>
 
 <body>
+
+  <!-- ================= PREMIUM SIDEBAR START ================= -->
+  <button class="sidebar-toggle" id="sidebarToggle" aria-label="Open menu">☰</button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="premium-sidebar" id="premiumSidebar">
+    <div class="sidebar-brand">
+      <div class="brand-badge">🕌</div>
+      <h2>O Level Islamiyat</h2>
+      <p>Cambridge 2058 / IGCSE 0493 Study Portal</p>
+    </div>
+
+    <div class="sidebar-search">
+      <input type="search" id="sidebarSearch" placeholder="Search menu..." />
+    </div>
+
+    <nav class="sidebar-menu" id="sidebarMenu">
+      <div class="sidebar-label">Main</div>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/index.html">
+        <span class="sidebar-icon">🏠</span>
+        Home
+      </a>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/about.html">
+        <span class="sidebar-icon">👨‍🏫</span>
+        About Dr. Imran Hayat
+      </a>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/olevel-islamiyat-2058.html">
+        <span class="sidebar-icon">📘</span>
+        O Level Islamiyat 2058
+      </a>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/igcse-islamiyat-0493.html">
+        <span class="sidebar-icon">🌍</span>
+        IGCSE Islamiyat 0493
+      </a>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/past-papers.html">
+        <span class="sidebar-icon">📂</span>
+        Past Papers
+      </a>
+
+      <div class="sidebar-label">Paper 1</div>
+
+      <button class="sidebar-accordion" type="button">
+        <span class="sidebar-icon">📖</span>
+        Paper 1 Topics
+        <span class="accordion-arrow">⌄</span>
+      </button>
+
+      <div class="sidebar-submenu">
+        <a href="/olevel-islamiyat-2058/paper-1.html">Paper 1 Overview</a>
+        <a href="/olevel-islamiyat-2058/past-papers/p1/premium-history-importance-quran-p1-past-papers.html">History & Importance of the Qur’an</a>
+        <a href="/olevel-islamiyat-2058/past-papers/p1/premium-makki-life-p1-past-papers.html">Life of Prophet ﷺ in Makkah</a>
+        <a href="/olevel-islamiyat-2058/past-papers/p1/premium-madani-life-p1-past-papers.html">Life of Prophet ﷺ in Madinah</a>
+        <a href="/olevel-islamiyat-2058/past-papers/p1/premium-first-islamic-community-p1-past-papers.html">The First Islamic Community</a>
+      </div>
+
+      <div class="sidebar-label">Paper 2</div>
+
+      <button class="sidebar-accordion" type="button">
+        <span class="sidebar-icon">🌟</span>
+        Paper 2 Topics
+        <span class="accordion-arrow">⌄</span>
+      </button>
+
+      <div class="sidebar-submenu">
+        <a href="/olevel-islamiyat-2058/paper-2.html">Paper 2 Overview</a>
+        <a href="/olevel-islamiyat-2058/past-papers/p2/premium-major-teachings-hadith-p2-past-papers.html">Major Teachings in the Hadiths</a>
+        <a href="/olevel-islamiyat-2058/past-papers/p2/premium-history-importance-hadith-p2-past-papers.html">History & Importance of the Hadiths</a>
+        <a href="/olevel-islamiyat-2058/past-papers/p2/premium-rightly-guided-caliphs-p2-past-papers.html">Rightly Guided Caliphs</a>
+        <a href="/olevel-islamiyat-2058/past-papers/p2/premium-articles-faith-pillars-islam-p2-past-papers.html">Articles of Faith & Pillars of Islam</a>
+      </div>
+
+      <div class="sidebar-label">Exam Prep</div>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/resources.html">
+        <span class="sidebar-icon">📚</span>
+        Resources
+      </a>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/faq.html">
+        <span class="sidebar-icon">❓</span>
+        FAQs
+      </a>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/reviews.html">
+        <span class="sidebar-icon">⭐</span>
+        Reviews
+      </a>
+
+      <a class="sidebar-link" href="/olevel-islamiyat-2058/contact.html">
+        <span class="sidebar-icon">📞</span>
+        Contact
+      </a>
+
+      <div class="sidebar-cta">
+        <strong>Need guided preparation?</strong>
+        <p>Book a trial class and discuss your O Level / IGCSE Islamiyat preparation plan.</p>
+        <a href="https://wa.me/923354910481" target="_blank">WhatsApp Now</a>
+      </div>
+    </nav>
+  </aside>
+  <!-- ================= PREMIUM SIDEBAR END ================= -->
+
 
   <header>
     <div class="container navbar">
@@ -489,16 +961,37 @@
         </div>
       </div>
 
-      <div class="hero-card">
-        <h3>Profile at a Glance</h3>
-        <ul>
-          <li>PhD in Islamic Studies</li>
-          <li>12 years teaching experience</li>
-          <li>Lecturer in Islamic Studies, University of Education</li>
-          <li>Cambridge Islamiyat and Arabic teaching experience</li>
-          <li>Former IGCSE Arabic Oral Examiner with British Council Pakistan</li>
-          <li>Online classes from Lahore, Pakistan</li>
-        </ul>
+      <div class="hero-photo-card">
+        <div class="teacher-photo-frame">
+          <img
+            src="images/dr-imran-hayat-profile.jpg"
+            alt="Dr. Imran Hayat - O Level Islamiyat 2058 and IGCSE Islamiyat 0493 Tutor"
+            class="teacher-photo"
+            loading="eager"
+          />
+        </div>
+
+        <div class="photo-name-card">
+          <h3>Dr. Imran Hayat</h3>
+          <p>Islamic Studies scholar, university lecturer, and Cambridge-focused O Level / IGCSE Islamiyat tutor.</p>
+        </div>
+
+        <div class="photo-badges">
+          <span>PhD Islamic Studies</span>
+          <span>12 Years Experience</span>
+          <span>Cambridge Focus</span>
+        </div>
+
+        <div class="profile-glance-mini">
+          <h4>Profile at a Glance</h4>
+          <ul>
+            <li>Lecturer in Islamic Studies</li>
+            <li>O Level Islamiyat 2058 specialist</li>
+            <li>IGCSE Islamiyat 0493 preparation</li>
+            <li>Former IGCSE Arabic Oral Examiner</li>
+            <li>Online classes from Lahore, Pakistan</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -681,476 +1174,86 @@
     </div>
   </footer>
 
-</body>
 
-  ```html
-<!-- ================= PREMIUM SIDEBAR START ================= -->
 
-<style>
-  :root {
-    --sb-navy: #071f3f;
-    --sb-navy-2: #0b2e5f;
-    --sb-gold: #d9a441;
-    --sb-white: #ffffff;
-    --sb-soft: #eef5ff;
-    --sb-text: #1f2937;
-    --sb-muted: #6b7280;
-    --sb-line: rgba(255, 255, 255, 0.16);
-    --sb-shadow: 0 20px 45px rgba(7, 31, 63, 0.25);
-  }
+  <script>
+    document.body.classList.add("has-premium-sidebar");
 
-  body.has-premium-sidebar {
-    padding-left: 292px;
-  }
+    const sidebar = document.getElementById("premiumSidebar");
+    const toggle = document.getElementById("sidebarToggle");
+    const overlay = document.getElementById("sidebarOverlay");
+    const accordions = document.querySelectorAll(".sidebar-accordion");
+    const sidebarSearch = document.getElementById("sidebarSearch");
+    const sidebarMenu = document.getElementById("sidebarMenu");
 
-  .premium-sidebar {
-    position: fixed;
-    inset: 0 auto 0 0;
-    width: 292px;
-    height: 100vh;
-    background:
-      radial-gradient(circle at top left, rgba(217, 164, 65, 0.24), transparent 36%),
-      linear-gradient(180deg, var(--sb-navy), var(--sb-navy-2));
-    color: var(--sb-white);
-    z-index: 9999;
-    box-shadow: var(--sb-shadow);
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: var(--sb-gold) transparent;
-  }
-
-  .premium-sidebar::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .premium-sidebar::-webkit-scrollbar-thumb {
-    background: var(--sb-gold);
-    border-radius: 999px;
-  }
-
-  .sidebar-brand {
-    padding: 24px 20px 18px;
-    border-bottom: 1px solid var(--sb-line);
-  }
-
-  .brand-badge {
-    width: 54px;
-    height: 54px;
-    border-radius: 18px;
-    display: grid;
-    place-items: center;
-    background: rgba(217, 164, 65, 0.18);
-    border: 1px solid rgba(217, 164, 65, 0.45);
-    color: #ffe8a3;
-    font-size: 25px;
-    margin-bottom: 14px;
-  }
-
-  .sidebar-brand h2 {
-    margin: 0;
-    font-size: 20px;
-    line-height: 1.2;
-    color: var(--sb-white);
-  }
-
-  .sidebar-brand p {
-    margin: 7px 0 0;
-    font-size: 13px;
-    color: #dbeafe;
-  }
-
-  .sidebar-search {
-    padding: 16px 18px 10px;
-  }
-
-  .sidebar-search input {
-    width: 100%;
-    border: 1px solid var(--sb-line);
-    background: rgba(255, 255, 255, 0.10);
-    color: var(--sb-white);
-    border-radius: 14px;
-    padding: 12px 14px;
-    outline: none;
-    font-size: 14px;
-  }
-
-  .sidebar-search input::placeholder {
-    color: #cbd5e1;
-  }
-
-  .sidebar-search input:focus {
-    border-color: var(--sb-gold);
-    box-shadow: 0 0 0 4px rgba(217, 164, 65, 0.14);
-  }
-
-  .sidebar-menu {
-    padding: 10px 12px 24px;
-  }
-
-  .sidebar-label {
-    margin: 18px 10px 8px;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: #bdd3f3;
-    font-weight: 800;
-  }
-
-  .sidebar-link,
-  .sidebar-accordion {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    border: 0;
-    background: transparent;
-    color: #f8fafc;
-    text-decoration: none;
-    padding: 11px 12px;
-    border-radius: 14px;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: 0.25s ease;
-    text-align: left;
-  }
-
-  .sidebar-link:hover,
-  .sidebar-accordion:hover {
-    background: rgba(255, 255, 255, 0.12);
-    transform: translateX(3px);
-  }
-
-  .sidebar-link.active {
-    background: linear-gradient(90deg, rgba(217, 164, 65, 0.28), rgba(255, 255, 255, 0.08));
-    border: 1px solid rgba(217, 164, 65, 0.42);
-    color: #fff5cf;
-  }
-
-  .sidebar-icon {
-    width: 28px;
-    height: 28px;
-    min-width: 28px;
-    display: grid;
-    place-items: center;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.11);
-    font-size: 15px;
-  }
-
-  .accordion-arrow {
-    margin-left: auto;
-    font-size: 13px;
-    transition: 0.25s ease;
-  }
-
-  .sidebar-accordion.open .accordion-arrow {
-    transform: rotate(180deg);
-  }
-
-  .sidebar-submenu {
-    display: none;
-    margin: 4px 0 8px 39px;
-    padding-left: 10px;
-    border-left: 1px solid rgba(255, 255, 255, 0.18);
-  }
-
-  .sidebar-submenu.open {
-    display: block;
-  }
-
-  .sidebar-submenu a {
-    display: block;
-    text-decoration: none;
-    color: #dbeafe;
-    padding: 8px 10px;
-    margin: 3px 0;
-    border-radius: 10px;
-    font-size: 13.5px;
-    line-height: 1.35;
-    transition: 0.25s ease;
-  }
-
-  .sidebar-submenu a:hover {
-    background: rgba(255, 255, 255, 0.11);
-    color: #fff5cf;
-  }
-
-  .sidebar-cta {
-    margin: 16px 10px 6px;
-    padding: 16px;
-    border-radius: 18px;
-    background: rgba(217, 164, 65, 0.13);
-    border: 1px solid rgba(217, 164, 65, 0.34);
-  }
-
-  .sidebar-cta strong {
-    display: block;
-    color: #fff3c4;
-    font-size: 15px;
-    margin-bottom: 6px;
-  }
-
-  .sidebar-cta p {
-    margin: 0 0 12px;
-    color: #e5eefc;
-    font-size: 13px;
-    line-height: 1.45;
-  }
-
-  .sidebar-cta a {
-    display: block;
-    text-align: center;
-    background: var(--sb-gold);
-    color: #08244d;
-    text-decoration: none;
-    padding: 10px 12px;
-    border-radius: 999px;
-    font-weight: 900;
-    font-size: 13px;
-  }
-
-  .sidebar-toggle {
-    display: none;
-    position: fixed;
-    top: 14px;
-    left: 14px;
-    z-index: 10001;
-    border: 0;
-    background: var(--sb-navy);
-    color: white;
-    width: 46px;
-    height: 46px;
-    border-radius: 14px;
-    font-size: 22px;
-    box-shadow: 0 12px 26px rgba(7, 31, 63, 0.28);
-    cursor: pointer;
-  }
-
-  .sidebar-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(2, 8, 23, 0.58);
-    z-index: 9998;
-  }
-
-  mark.sidebar-highlight {
-    background: #fff1a8;
-    color: #111827;
-    border-radius: 4px;
-    padding: 0 3px;
-  }
-
-  @media (max-width: 900px) {
-    body.has-premium-sidebar {
-      padding-left: 0;
+    function openSidebar() {
+      sidebar.classList.add("open");
+      overlay.classList.add("open");
     }
 
-    .sidebar-toggle {
-      display: grid;
-      place-items: center;
+    function closeSidebar() {
+      sidebar.classList.remove("open");
+      overlay.classList.remove("open");
     }
 
-    .premium-sidebar {
-      transform: translateX(-105%);
-      transition: 0.3s ease;
-    }
-
-    .premium-sidebar.open {
-      transform: translateX(0);
-    }
-
-    .sidebar-overlay.open {
-      display: block;
-    }
-  }
-</style>
-
-<button class="sidebar-toggle" id="sidebarToggle" aria-label="Open menu">☰</button>
-<div class="sidebar-overlay" id="sidebarOverlay"></div>
-
-<aside class="premium-sidebar" id="premiumSidebar">
-  <div class="sidebar-brand">
-    <div class="brand-badge">🕌</div>
-    <h2>O Level Islamiyat</h2>
-    <p>Cambridge 2058 / IGCSE 0493 Study Portal</p>
-  </div>
-
-  <div class="sidebar-search">
-    <input type="search" id="sidebarSearch" placeholder="Search menu..." />
-  </div>
-
-  <nav class="sidebar-menu" id="sidebarMenu">
-
-    <div class="sidebar-label">Main</div>
-
-    <a class="sidebar-link" href="/olevel-islamiyat-2058/index.html">
-      <span class="sidebar-icon">🏠</span>
-      Home
-    </a>
-
-    <a class="sidebar-link" href="/olevel-islamiyat-2058/syllabus.html">
-      <span class="sidebar-icon">📘</span>
-      Syllabus
-    </a>
-
-    <a class="sidebar-link" href="/olevel-islamiyat-2058/notes.html">
-      <span class="sidebar-icon">📝</span>
-      Notes
-    </a>
-
-    <a class="sidebar-link" href="/olevel-islamiyat-2058/past-papers.html">
-      <span class="sidebar-icon">📂</span>
-      Past Papers
-    </a>
-
-    <div class="sidebar-label">Paper 1</div>
-
-    <button class="sidebar-accordion" type="button">
-      <span class="sidebar-icon">📖</span>
-      Paper 1 Topics
-      <span class="accordion-arrow">⌄</span>
-    </button>
-
-    <div class="sidebar-submenu">
-      <a href="/olevel-islamiyat-2058/past-papers/p1/premium-history-importance-quran-p1-past-papers.html">
-        History & Importance of the Qur’an
-      </a>
-      <a href="/olevel-islamiyat-2058/past-papers/p1/premium-makki-life-p1-past-papers.html">
-        Life of Prophet ﷺ in Makkah
-      </a>
-      <a href="/olevel-islamiyat-2058/past-papers/p1/premium-madani-life-p1-past-papers.html">
-        Life of Prophet ﷺ in Madinah
-      </a>
-      <a href="/olevel-islamiyat-2058/past-papers/p1/premium-first-islamic-community-p1-past-papers.html">
-        The First Islamic Community
-      </a>
-    </div>
-
-    <div class="sidebar-label">Paper 2</div>
-
-    <button class="sidebar-accordion" type="button">
-      <span class="sidebar-icon">🌟</span>
-      Paper 2 Topics
-      <span class="accordion-arrow">⌄</span>
-    </button>
-
-    <div class="sidebar-submenu">
-      <a href="/olevel-islamiyat-2058/past-papers/p2/premium-major-teachings-hadith-p2-past-papers.html">
-        Major Teachings in the Hadiths
-      </a>
-      <a href="/olevel-islamiyat-2058/past-papers/p2/premium-history-importance-hadith-p2-past-papers.html">
-        History & Importance of the Hadiths
-      </a>
-      <a href="/olevel-islamiyat-2058/past-papers/p2/premium-rightly-guided-caliphs-p2-past-papers.html">
-        Rightly Guided Caliphs
-      </a>
-      <a href="/olevel-islamiyat-2058/past-papers/p2/premium-articles-faith-pillars-islam-p2-past-papers.html">
-        Articles of Faith & Pillars of Islam
-      </a>
-    </div>
-
-    <div class="sidebar-label">Exam Prep</div>
-
-    <a class="sidebar-link" href="/olevel-islamiyat-2058/faq.html">
-      <span class="sidebar-icon">❓</span>
-      FAQs
-    </a>
-
-    <a class="sidebar-link" href="/olevel-islamiyat-2058/contact.html">
-      <span class="sidebar-icon">📞</span>
-      Contact
-    </a>
-
-    <div class="sidebar-cta">
-      <strong>Need guided preparation?</strong>
-      <p>Use topical past papers, A* answer plans, and repeated-question practice.</p>
-      <a href="/olevel-islamiyat-2058/past-papers.html">Start Revision</a>
-    </div>
-
-  </nav>
-</aside>
-
-<script>
-  document.body.classList.add("has-premium-sidebar");
-
-  const sidebar = document.getElementById("premiumSidebar");
-  const toggle = document.getElementById("sidebarToggle");
-  const overlay = document.getElementById("sidebarOverlay");
-  const accordions = document.querySelectorAll(".sidebar-accordion");
-  const sidebarSearch = document.getElementById("sidebarSearch");
-  const sidebarMenu = document.getElementById("sidebarMenu");
-
-  function openSidebar() {
-    sidebar.classList.add("open");
-    overlay.classList.add("open");
-  }
-
-  function closeSidebar() {
-    sidebar.classList.remove("open");
-    overlay.classList.remove("open");
-  }
-
-  toggle.addEventListener("click", openSidebar);
-  overlay.addEventListener("click", closeSidebar);
-
-  accordions.forEach((button) => {
-    button.addEventListener("click", () => {
-      button.classList.toggle("open");
-      const submenu = button.nextElementSibling;
-      submenu.classList.toggle("open");
-    });
-  });
-
-  const currentPath = window.location.pathname;
-  document.querySelectorAll(".sidebar-link, .sidebar-submenu a").forEach((link) => {
-    const linkPath = new URL(link.href).pathname;
-    if (currentPath === linkPath) {
-      link.classList.add("active");
-
-      const parentSubmenu = link.closest(".sidebar-submenu");
-      if (parentSubmenu) {
-        parentSubmenu.classList.add("open");
-        const parentButton = parentSubmenu.previousElementSibling;
-        if (parentButton) parentButton.classList.add("open");
-      }
-    }
-  });
-
-  sidebarSearch.addEventListener("input", function () {
-    const query = this.value.toLowerCase().trim();
-    const links = sidebarMenu.querySelectorAll("a");
-    const labels = sidebarMenu.querySelectorAll(".sidebar-label");
-    const accordions = sidebarMenu.querySelectorAll(".sidebar-accordion");
-
-    links.forEach((link) => {
-      const text = link.textContent.toLowerCase();
-      link.style.display = text.includes(query) || query === "" ? "" : "none";
-    });
-
-    labels.forEach((label) => {
-      label.style.display = query === "" ? "" : "none";
-    });
+    if (toggle) toggle.addEventListener("click", openSidebar);
+    if (overlay) overlay.addEventListener("click", closeSidebar);
 
     accordions.forEach((button) => {
-      const submenu = button.nextElementSibling;
-      const visibleLinks = submenu ? [...submenu.querySelectorAll("a")].some(a => a.style.display !== "none") : false;
+      button.addEventListener("click", () => {
+        button.classList.toggle("open");
+        const submenu = button.nextElementSibling;
+        if (submenu) submenu.classList.toggle("open");
+      });
+    });
 
-      if (query === "") {
-        button.style.display = "";
-      } else {
-        button.style.display = visibleLinks ? "" : "none";
-        if (visibleLinks) {
-          button.classList.add("open");
-          submenu.classList.add("open");
+    const currentPath = window.location.pathname;
+    document.querySelectorAll(".sidebar-link, .sidebar-submenu a").forEach((link) => {
+      const linkPath = new URL(link.href).pathname;
+      if (currentPath === linkPath) {
+        link.classList.add("active");
+        const parentSubmenu = link.closest(".sidebar-submenu");
+        if (parentSubmenu) {
+          parentSubmenu.classList.add("open");
+          const parentButton = parentSubmenu.previousElementSibling;
+          if (parentButton) parentButton.classList.add("open");
         }
       }
     });
-  });
-</script>
 
-<!-- ================= PREMIUM SIDEBAR END ================= -->
-```
+    if (sidebarSearch && sidebarMenu) {
+      sidebarSearch.addEventListener("input", function () {
+        const query = this.value.toLowerCase().trim();
+        const links = sidebarMenu.querySelectorAll("a");
+        const labels = sidebarMenu.querySelectorAll(".sidebar-label");
+        const accordionButtons = sidebarMenu.querySelectorAll(".sidebar-accordion");
 
+        links.forEach((link) => {
+          const text = link.textContent.toLowerCase();
+          link.style.display = text.includes(query) || query === "" ? "" : "none";
+        });
+
+        labels.forEach((label) => {
+          label.style.display = query === "" ? "" : "none";
+        });
+
+        accordionButtons.forEach((button) => {
+          const submenu = button.nextElementSibling;
+          const visibleLinks = submenu ? [...submenu.querySelectorAll("a")].some(a => a.style.display !== "none") : false;
+
+          if (query === "") {
+            button.style.display = "";
+          } else {
+            button.style.display = visibleLinks ? "" : "none";
+            if (visibleLinks && submenu) {
+              button.classList.add("open");
+              submenu.classList.add("open");
+            }
+          }
+        });
+      });
+    }
+  </script>
+
+</body>
 </html>
