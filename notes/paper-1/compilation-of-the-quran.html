@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Compilation of the Qur’an | O Level Islamiyat 2058 / IGCSE 0493 Paper 1 Notes</title>
+  <meta name="description" content="Read-only detailed bullet notes on the compilation and preservation of the Qur’an for Cambridge O Level Islamiyat 2058 and IGCSE Islamiyat 0493 Paper 1." />
+
+  <style>
+    :root{
+      --navy:#06203f;
+      --navy2:#0b3b66;
+      --teal:#0f766e;
+      --gold:#d6a84f;
+      --gold2:#fff7e6;
+      --green:#ecfdf5;
+      --blue:#eff6ff;
+      --red:#fff1f2;
+      --ink:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --paper:#ffffff;
+      --bg:#f8fafc;
+      --shadow:0 14px 36px rgba(6,32,63,.10);
+      --radius:22px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.13), transparent 26%),
+        linear-gradient(180deg,#f8fafc 0%,#eef5ff 55%,#f8fafc 100%);
+      line-height:1.72;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+
+    a{color:inherit}
+    .container{width:92%;max-width:1180px;margin:auto}
+
+    .top-lock{
+      position:fixed;
+      right:16px;
+      top:16px;
+      z-index:9000;
+      background:rgba(6,32,63,.92);
+      color:#fff;
+      padding:9px 13px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      box-shadow:0 10px 25px rgba(6,32,63,.22);
+    }
+
+    .hero{
+      background:
+        radial-gradient(circle at top right, rgba(214,168,79,.24), transparent 35%),
+        linear-gradient(135deg,var(--navy),var(--navy2) 58%,var(--teal));
+      color:white;
+      padding:72px 0 54px;
+      border-bottom:7px solid var(--gold);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:34px;
+      align-items:center;
+    }
+
+    .kicker{
+      display:inline-block;
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.25);
+      color:#fff3c4;
+      padding:7px 13px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:12px;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+      margin-bottom:16px;
+    }
+
+    h1{
+      font-size:clamp(2.2rem,5vw,4.4rem);
+      line-height:1.05;
+      margin:0 0 15px;
+    }
+
+    .hero p{
+      color:#e5e7eb;
+      font-size:18px;
+      max-width:820px;
+      margin:0 0 22px;
+    }
+
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:900;
+      border:1px solid transparent;
+      transition:.25s ease;
+    }
+    .btn.primary{background:var(--gold);color:var(--navy)}
+    .btn.outline{border-color:rgba(255,255,255,.48);color:white;background:rgba(255,255,255,.08)}
+    .btn:hover{transform:translateY(-2px);filter:brightness(.98)}
+
+    .quick-card{
+      background:rgba(255,255,255,.96);
+      color:var(--ink);
+      border-radius:28px;
+      padding:25px;
+      box-shadow:0 24px 60px rgba(0,0,0,.28);
+      border:1px solid rgba(255,255,255,.65);
+    }
+
+    .quick-card h2{
+      margin:0 0 14px;
+      color:var(--navy);
+      font-size:24px;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+    }
+
+    .stat{
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:15px;
+    }
+    .stat strong{display:block;color:var(--teal);font-size:24px;line-height:1}
+    .stat span{display:block;color:var(--muted);font-size:13px;font-weight:800;margin-top:5px}
+
+    .toolbar{
+      position:sticky;
+      top:0;
+      z-index:2000;
+      background:rgba(255,255,255,.95);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+      box-shadow:0 8px 20px rgba(15,23,42,.06);
+    }
+    .toolbar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:13px 0}
+    .search{flex:1;min-width:230px}
+    .search input{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:12px 16px;
+      font-size:15px;
+      outline:0;
+      background:#fff;
+    }
+    .search input:focus{border-color:var(--teal);box-shadow:0 0 0 4px rgba(15,118,110,.11)}
+    .tool-btn{
+      border:0;
+      background:var(--navy);
+      color:#fff;
+      border-radius:999px;
+      padding:11px 14px;
+      cursor:pointer;
+      font-weight:900;
+    }
+    .tool-btn.light{background:#e2e8f0;color:#0f172a}
+
+    .main{padding:34px 0 74px}
+    .nav-pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:9px;
+      margin-bottom:22px;
+    }
+    .nav-pills a{
+      text-decoration:none;
+      background:#fff;
+      color:var(--navy);
+      border:1px solid var(--line);
+      border-left:4px solid var(--gold);
+      padding:9px 12px;
+      border-radius:12px;
+      font-size:13px;
+      font-weight:900;
+      transition:.2s ease;
+    }
+    .nav-pills a:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+    .section{
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      margin:22px 0;
+      overflow:hidden;
+    }
+
+    .section-head{
+      padding:24px 26px;
+      background:linear-gradient(90deg,#ffffff,#f8fafc);
+      border-bottom:1px solid var(--line);
+    }
+
+    .section-head .tag{
+      display:inline-block;
+      background:var(--gold2);
+      color:#875b00;
+      border:1px solid #f3d48b;
+      padding:5px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:9px;
+    }
+
+    .section-head h2{
+      margin:0 0 8px;
+      color:var(--navy);
+      font-size:clamp(1.5rem,3vw,2.2rem);
+      line-height:1.2;
+    }
+
+    .section-head p{margin:0;color:var(--muted)}
+
+    .section-body{padding:24px 26px}
+
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+
+    .mini-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:18px;
+    }
+
+    .mini-card.blue{background:var(--blue);border-color:#bfdbfe}
+    .mini-card.green{background:var(--green);border-color:#bbf7d0}
+    .mini-card.gold{background:var(--gold2);border-color:#f3d48b}
+    .mini-card.red{background:var(--red);border-color:#fecdd3}
+
+    .mini-card h3{
+      margin:0 0 10px;
+      color:var(--navy);
+      font-size:20px;
+    }
+
+    ul{margin:0;padding-left:21px}
+    li{margin:7px 0;color:#374151}
+    li strong{color:var(--navy)}
+    .important{font-weight:900;color:#0f766e}
+    .danger{font-weight:900;color:#b42318}
+
+    details.topic{
+      border:1px solid var(--line);
+      background:#fff;
+      border-radius:18px;
+      margin:14px 0;
+      overflow:hidden;
+    }
+
+    details.topic[open]{box-shadow:0 12px 28px rgba(6,32,63,.08);border-color:#cbd5e1}
+    details.topic summary{
+      list-style:none;
+      cursor:pointer;
+      display:grid;
+      grid-template-columns:auto 1fr auto;
+      align-items:center;
+      gap:12px;
+      padding:17px 18px;
+      background:linear-gradient(90deg,#fff,#f8fafc);
+    }
+    details.topic summary::-webkit-details-marker{display:none}
+
+    .num{
+      width:36px;
+      height:36px;
+      border-radius:12px;
+      background:var(--navy);
+      color:#fff;
+      display:grid;
+      place-items:center;
+      font-weight:900;
+    }
+    .sum-title{font-weight:900;color:#0f172a}
+    .sum-chip{
+      background:#ecfeff;
+      color:#155e75;
+      border:1px solid #a5f3fc;
+      border-radius:999px;
+      padding:5px 9px;
+      font-size:12px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+    .topic-content{padding:18px;background:#fcfcfd;border-top:1px solid var(--line)}
+
+    .answer-plan{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+      margin-top:14px;
+    }
+
+    .plan-box{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px;
+    }
+    .plan-box h4{
+      margin:0 0 10px;
+      color:var(--navy);
+      font-size:18px;
+    }
+
+    .exam-question{
+      border:1px solid var(--line);
+      border-left:5px solid var(--gold);
+      background:#fff;
+      border-radius:16px;
+      padding:16px 18px;
+      margin:14px 0;
+    }
+
+    .exam-question h3{margin:0 0 8px;color:var(--navy);font-size:19px}
+    .exam-question p{margin:6px 0;color:#374151}
+
+    .mark-scheme{
+      background:linear-gradient(180deg,#ecfdf5,#ffffff);
+      border:1px solid #bbf7d0;
+      border-radius:18px;
+      padding:18px;
+      margin-top:16px;
+    }
+    .mark-scheme h3{margin:0 0 10px;color:#166534}
+
+    .warning{
+      background:#fff7ed;
+      border:1px solid #fed7aa;
+      color:#7c2d12;
+      border-radius:16px;
+      padding:16px 18px;
+      margin-top:16px;
+      font-weight:800;
+    }
+
+    .source-list{
+      font-size:13px;
+      color:#475569;
+    }
+    .source-list a{
+      color:#0b3b66;
+      text-decoration:none;
+      font-weight:800;
+      word-break:break-word;
+    }
+
+    .back-end{
+      margin:32px 0 0;
+      display:flex;
+      justify-content:center;
+    }
+    .back-end a{
+      background:linear-gradient(135deg,var(--navy),var(--teal));
+      color:#fff;
+      text-decoration:none;
+      border-radius:999px;
+      padding:14px 22px;
+      font-weight:900;
+      box-shadow:0 12px 25px rgba(6,32,63,.20);
+    }
+
+    .footer{
+      background:#030f24;
+      color:#fff;
+      padding:30px 0;
+      text-align:center;
+    }
+    .footer p{margin:5px 0;color:#cbd5e1}
+
+    .no-results{
+      display:none;
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px;
+      color:#64748b;
+      font-weight:800;
+      margin:18px 0;
+    }
+
+    .watermark{
+      position:fixed;
+      inset:auto 15px 15px auto;
+      z-index:1000;
+      opacity:.18;
+      color:#06203f;
+      font-weight:900;
+      pointer-events:none;
+      font-size:12px;
+    }
+
+    .protection-overlay{
+      display:none;
+      position:fixed;
+      inset:0;
+      background:#06203f;
+      color:white;
+      z-index:99999;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:30px;
+    }
+    .protection-overlay.show{display:flex}
+    .protection-overlay h2{font-size:30px;margin-bottom:12px}
+
+    @media(max-width:980px){
+      .hero-grid,.grid-2,.grid-3,.answer-plan{grid-template-columns:1fr}
+      details.topic summary{grid-template-columns:auto 1fr}
+      .sum-chip{grid-column:2}
+      .top-lock{display:none}
+    }
+
+    @media print{
+      body *{visibility:hidden!important}
+      body::before{
+        content:"Printing is disabled for this read-only study page.";
+        visibility:visible!important;
+        display:block!important;
+        font-size:24px;
+        color:#111;
+        padding:50px;
+      }
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false">
+  <div class="top-lock">🔒 Read-only Study Page</div>
+  <div class="watermark">Dr. Imran Hayat • O Level Islamiyat 2058 / 0493</div>
+
+  <div class="protection-overlay" id="protectionOverlay">
+    <div>
+      <h2>Read-only protection is active</h2>
+      <p>Copying, printing, saving and screenshots are discouraged on this study page.</p>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Paper 1 Notes • History & Importance of the Qur’an</span>
+        <h1>Compilation of the Qur’an</h1>
+        <p>
+          Complete, student-friendly bullet notes on how the Qur’an was preserved, collected under Abu Bakr رضي الله عنه,
+          and standardised under ‘Uthman رضي الله عنه — with Cambridge-style answer planning.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#a-star-answer">A* Answer Plan</a>
+          <a class="btn outline" href="#past-paper-links">Past Paper Links</a>
+        </div>
+      </div>
+
+      <div class="quick-card">
+        <h2>What you must master</h2>
+        <div class="stats">
+          <div class="stat"><strong>3</strong><span>Main stages</span></div>
+          <div class="stat"><strong>4</strong><span>Key personalities</span></div>
+          <div class="stat"><strong>10+4</strong><span>Exam answer pattern</span></div>
+          <div class="stat"><strong>A*</strong><span>Bullet plan included</span></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar">
+    <div class="container toolbar-inner">
+      <div class="search">
+        <input id="searchBox" type="search" placeholder="Search: Abu Bakr, Uthman, Zayd, Hafsa, Yamama, Mushaf..." />
+      </div>
+      <button class="tool-btn" id="expandAll">Expand All</button>
+      <button class="tool-btn light" id="collapseAll">Collapse All</button>
+    </div>
+  </nav>
+
+  <main class="main container">
+
+    <div class="nav-pills">
+      <a href="#exam-snapshot">Exam Snapshot</a>
+      <a href="#core-story">Core Story</a>
+      <a href="#prophet-lifetime">Prophet’s ﷺ Lifetime</a>
+      <a href="#abu-bakr">Abu Bakr رضي الله عنه</a>
+      <a href="#uthman">‘Uthman رضي الله عنه</a>
+      <a href="#significance">Significance</a>
+      <a href="#past-paper-links">Past Papers</a>
+      <a href="#a-star-answer">A* Plan</a>
+    </div>
+
+    <div class="no-results" id="noResults">No matching section found. Try another keyword.</div>
+
+    <section class="section searchable" id="exam-snapshot">
+      <div class="section-head">
+        <span class="tag">Exam Snapshot</span>
+        <h2>What this topic means in Cambridge Paper 1</h2>
+        <p>Compilation questions usually test history, personalities, method, reasons and importance.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="grid-3">
+          <div class="mini-card blue">
+            <h3>Part A [10]</h3>
+            <ul>
+              <li>Requires <strong>accurate historical knowledge</strong>.</li>
+              <li>Usually asks you to describe the stages of compilation.</li>
+              <li>Needs names, reasons, sequence, methods and outcomes.</li>
+              <li>High answers are clear, detailed, structured and relevant.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card green">
+            <h3>Part B [4]</h3>
+            <ul>
+              <li>Requires <strong>understanding and evaluation</strong>.</li>
+              <li>You must explain why compilation mattered for Muslims.</li>
+              <li>Give reasons, not just facts.</li>
+              <li>Link to preservation, unity, authenticity and guidance today.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card gold">
+            <h3>Core Formula</h3>
+            <ul>
+              <li><strong>Why?</strong> Fear of loss and disagreement.</li>
+              <li><strong>Who?</strong> Abu Bakr, ‘Umar, Zayd, Hafsa, ‘Uthman.</li>
+              <li><strong>How?</strong> Verified collection and standard copies.</li>
+              <li><strong>Why important?</strong> One preserved text for the ummah.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mark-scheme">
+          <h3>Mark scheme focus in simple words</h3>
+          <ul>
+            <li>For top AO1 marks, write a <strong>well-structured, clear and comprehensive</strong> answer with extensive accurate knowledge.</li>
+            <li>For top AO2 marks, give your own judgement with reasoning and show understanding of the religious significance.</li>
+            <li>Do not write vague lines such as “the Qur’an was made into a book”; explain the exact historical process.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="core-story">
+      <div class="section-head">
+        <span class="tag">Big Picture</span>
+        <h2>The full story in one flow</h2>
+        <p>Learn this sequence first. It is the backbone of almost every answer on compilation.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="grid-2">
+          <div class="mini-card">
+            <h3>Before compilation</h3>
+            <ul>
+              <li>The Qur’an was revealed gradually to Prophet Muhammad ﷺ over about 23 years.</li>
+              <li>The Prophet ﷺ recited the revelation to his Companions.</li>
+              <li>Many Companions memorised it completely or partly.</li>
+              <li>Scribes wrote the revelation on available materials.</li>
+              <li>The Prophet ﷺ indicated the placement of verses and surahs as revelation came.</li>
+              <li>There was no single bound book during his lifetime because revelation was still continuing.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <h3>After the Prophet’s ﷺ death</h3>
+            <ul>
+              <li>The Qur’an remained preserved through memorisation and written records.</li>
+              <li>During Abu Bakr’s رضي الله عنه caliphate, many memorizers were killed at Yamama.</li>
+              <li>‘Umar رضي الله عنه feared that parts of the Qur’an could be lost if more memorizers died.</li>
+              <li>Abu Bakr رضي الله عنه ordered Zayd ibn Thabit رضي الله عنه to collect the Qur’an in one manuscript.</li>
+              <li>During ‘Uthman’s رضي الله عنه caliphate, differences in recitation threatened unity.</li>
+              <li>‘Uthman رضي الله عنه produced standard copies and sent them to major regions.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="prophet-lifetime">
+      <div class="section-head">
+        <span class="tag">Stage 1</span>
+        <h2>Preservation during the Prophet’s ﷺ lifetime</h2>
+        <p>This stage explains why the Qur’an was already preserved before formal compilation.</p>
+      </div>
+
+      <div class="section-body">
+        <details class="topic" open>
+          <summary><span class="num">1</span><span class="sum-title">Oral preservation</span><span class="sum-chip">Memorisation</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The Prophet ﷺ received revelation from Angel Jibril عليه السلام.</li>
+              <li>He recited the revelation to his Companions.</li>
+              <li>Many Companions memorised the Qur’an because Arab society had a strong oral tradition.</li>
+              <li>Some Companions became known as <strong>huffaz</strong> or <strong>qurra’</strong>.</li>
+              <li>Regular recitation in prayer helped preserve the Qur’an in people’s hearts.</li>
+              <li>The Prophet ﷺ revised the Qur’an with Jibril عليه السلام, especially in Ramadan.</li>
+              <li>This oral preservation was important because writing materials were limited.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">2</span><span class="sum-title">Written preservation</span><span class="sum-chip">Scribes</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The Prophet ﷺ had scribes of revelation who wrote down verses as they were revealed.</li>
+              <li>Important scribes included <strong>Zayd ibn Thabit رضي الله عنه</strong>, <strong>Ubayy ibn Ka‘b رضي الله عنه</strong>, <strong>Ali رضي الله عنه</strong> and others.</li>
+              <li>Verses were written on available materials such as parchment, shoulder bones, palm stalks, leather, stones and leaves.</li>
+              <li>The writing was not yet collected as one official book.</li>
+              <li>The Prophet ﷺ guided the Companions about where verses belonged in the surahs.</li>
+              <li>Written records supported memorisation and gave an additional layer of preservation.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic">
+          <summary><span class="num">3</span><span class="sum-title">Why no complete bound book during the Prophet’s ﷺ lifetime?</span><span class="sum-chip">Common exam point</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>Revelation was still continuing until near the end of the Prophet’s ﷺ life.</li>
+              <li>Some verses were revealed in response to events and questions.</li>
+              <li>The final arrangement had to wait until revelation was complete.</li>
+              <li>The Qur’an was already preserved orally and in writing, so an official bound copy was not yet required.</li>
+              <li>After the Prophet’s ﷺ death, revelation ended, so compilation became possible and necessary.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section searchable" id="abu-bakr">
+      <div class="section-head">
+        <span class="tag">Stage 2</span>
+        <h2>Compilation under Abu Bakr رضي الله عنه</h2>
+        <p>This is the most repeated part of the topic. Learn the reasons, personalities, method and final storage.</p>
+      </div>
+
+      <div class="section-body">
+        <details class="topic" open>
+          <summary><span class="num">1</span><span class="sum-title">Reason: Battle of Yamama</span><span class="sum-chip">Why compilation began</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>The Battle of Yamama took place during Abu Bakr’s رضي الله عنه caliphate.</li>
+              <li>Many Companions who had memorised the Qur’an were killed.</li>
+              <li>‘Umar رضي الله عنه became worried that if more memorizers died, parts of the Qur’an could be lost from public memory.</li>
+              <li>He advised Abu Bakr رضي الله عنه to collect the Qur’an in one official manuscript.</li>
+              <li>This shows ‘Umar’s رضي الله عنه foresight and concern for preserving revelation.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">2</span><span class="sum-title">Abu Bakr’s hesitation and decision</span><span class="sum-chip">Evaluation point</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>Abu Bakr رضي الله عنه initially hesitated.</li>
+              <li>He asked how he could do something that the Prophet ﷺ had not done.</li>
+              <li>‘Umar رضي الله عنه continued to explain that the action was necessary for protecting the Qur’an.</li>
+              <li>Abu Bakr رضي الله عنه became convinced that compilation was a good and necessary action.</li>
+              <li>This is an excellent Part B point: it shows respect for the Prophet’s ﷺ practice but also responsible leadership when the community faced a new need.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">3</span><span class="sum-title">Role of Zayd ibn Thabit رضي الله عنه</span><span class="sum-chip">Key personality</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>Abu Bakr رضي الله عنه appointed <strong>Zayd ibn Thabit رضي الله عنه</strong> to lead the collection.</li>
+              <li>Zayd رضي الله عنه was suitable because:
+                <ul>
+                  <li>he was a scribe of revelation;</li>
+                  <li>he had memorised the Qur’an;</li>
+                  <li>he was young, intelligent and trustworthy;</li>
+                  <li>he had directly served the Prophet ﷺ in writing revelation.</li>
+                </ul>
+              </li>
+              <li>Zayd رضي الله عنه also felt the task was extremely heavy because of its religious seriousness.</li>
+              <li>He did not rely on memory alone, even though he was a memoriser himself.</li>
+              <li>He collected written pieces and compared them with memorised recitation.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">4</span><span class="sum-title">Method of collection</span><span class="sum-chip">How it was done</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>Zayd رضي الله عنه collected the Qur’an from written materials and from the memories of Companions.</li>
+              <li>Written materials included palm stalks, thin stones, parchment, shoulder bones and other available writing surfaces.</li>
+              <li>The collection was checked carefully against memorisation.</li>
+              <li>Reports mention strict verification before accepting material into the manuscript.</li>
+              <li>The aim was not to create a new Qur’an, but to gather the already-preserved revelation into one secure manuscript.</li>
+              <li>The final collection was known as a <strong>suhuf</strong> or manuscript sheets.</li>
+              <li>It was kept with Abu Bakr رضي الله عنه, then with ‘Umar رضي الله عنه, and later with Hafsa رضي الله عنها.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="warning">
+          A common weak answer only says: “Abu Bakr collected the Qur’an.” A strong answer explains Yamama, ‘Umar’s advice, Abu Bakr’s hesitation, Zayd’s role, verification, and the manuscript being kept with Hafsa رضي الله عنها.
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="uthman">
+      <div class="section-head">
+        <span class="tag">Stage 3</span>
+        <h2>Standardisation under ‘Uthman رضي الله عنه</h2>
+        <p>This stage explains how the Muslim community was protected from disagreement over recitation and dialect.</p>
+      </div>
+
+      <div class="section-body">
+        <details class="topic" open>
+          <summary><span class="num">1</span><span class="sum-title">Reason: expansion of Islam</span><span class="sum-chip">Why standardisation began</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>During ‘Uthman’s رضي الله عنه caliphate, Islam spread into new regions.</li>
+              <li>Muslims from different tribes and lands recited with different dialects or readings they had learned.</li>
+              <li>Some disagreements developed among Muslim soldiers and communities.</li>
+              <li>Hudhayfah ibn al-Yaman رضي الله عنه became worried after seeing disagreement during campaigns.</li>
+              <li>He urged ‘Uthman رضي الله عنه to protect the ummah before Muslims differed over the Qur’an like earlier communities differed over their scriptures.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">2</span><span class="sum-title">Using Hafsa’s manuscript</span><span class="sum-chip">Source copy</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>‘Uthman رضي الله عنه requested the manuscript kept with Hafsa رضي الله عنها.</li>
+              <li>This manuscript went back to the collection made under Abu Bakr رضي الله عنه.</li>
+              <li>Using it gave the standardisation process authority and continuity.</li>
+              <li>After copies were made, the original manuscript was returned to Hafsa رضي الله عنها.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">3</span><span class="sum-title">Committee appointed by ‘Uthman رضي الله عنه</span><span class="sum-chip">Key names</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>‘Uthman رضي الله عنه appointed a committee to make standard copies.</li>
+              <li>The committee included:
+                <ul>
+                  <li><strong>Zayd ibn Thabit رضي الله عنه</strong>;</li>
+                  <li><strong>Abdullah ibn al-Zubayr رضي الله عنه</strong>;</li>
+                  <li><strong>Sa‘id ibn al-‘As رضي الله عنه</strong>;</li>
+                  <li><strong>Abd al-Rahman ibn al-Harith ibn Hisham رضي الله عنه</strong>.</li>
+                </ul>
+              </li>
+              <li>If there was disagreement in writing, the dialect of Quraysh was followed because the Qur’an was revealed in their tongue.</li>
+              <li>This did not change the Qur’an; it standardised the official written form for the growing Muslim empire.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="topic" open>
+          <summary><span class="num">4</span><span class="sum-title">Sending official copies and removing unofficial versions</span><span class="sum-chip">Outcome</span></summary>
+          <div class="topic-content">
+            <ul>
+              <li>Official copies were made from the authorised manuscript.</li>
+              <li>Copies were sent to major centres of the Muslim empire.</li>
+              <li>Teachers/reciters were associated with these official copies so people could learn correctly.</li>
+              <li>Other private or incomplete written materials were removed to prevent confusion.</li>
+              <li>This action preserved unity and prevented disputes over the Qur’an.</li>
+              <li>The standardised text became known as the <strong>‘Uthmanic mushaf</strong>.</li>
+            </ul>
+          </div>
+        </details>
+
+        <div class="warning">
+          Do not write that ‘Uthman رضي الله عنه “changed” the Qur’an. He standardised the written copies to protect the already-preserved revelation from disagreement.
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="comparison">
+      <div class="section-head">
+        <span class="tag">Comparison</span>
+        <h2>Abu Bakr’s compilation vs ‘Uthman’s standardisation</h2>
+        <p>This comparison helps students answer many 4-mark evaluation questions.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="grid-2">
+          <div class="mini-card blue">
+            <h3>Abu Bakr رضي الله عنه</h3>
+            <ul>
+              <li>Main concern: <strong>fear of loss</strong> after deaths of memorizers.</li>
+              <li>Main trigger: <strong>Battle of Yamama</strong>.</li>
+              <li>Main adviser: <strong>‘Umar رضي الله عنه</strong>.</li>
+              <li>Main collector: <strong>Zayd ibn Thabit رضي الله عنه</strong>.</li>
+              <li>Main result: one collected manuscript/suhuf.</li>
+              <li>Kept with Abu Bakr, then ‘Umar, then Hafsa رضي الله عنهم.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card green">
+            <h3>‘Uthman رضي الله عنه</h3>
+            <ul>
+              <li>Main concern: <strong>fear of disagreement</strong> among Muslims.</li>
+              <li>Main trigger: spread of Islam and different recitations/dialects.</li>
+              <li>Main warning: <strong>Hudhayfah رضي الله عنه</strong>.</li>
+              <li>Main source: Hafsa’s رضي الله عنها manuscript.</li>
+              <li>Main result: official standard copies.</li>
+              <li>Copies sent to provinces; unofficial materials removed.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="significance">
+      <div class="section-head">
+        <span class="tag">Importance</span>
+        <h2>Why compilation was so important</h2>
+        <p>Use these points especially in Part B answers.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="grid-2">
+          <div class="mini-card">
+            <h3>Religious importance</h3>
+            <ul>
+              <li>It preserved the final revelation given by Allah.</li>
+              <li>It protected the Qur’an after the death of the Prophet ﷺ.</li>
+              <li>It supported the promise of preservation understood by Muslims from the Qur’an.</li>
+              <li>It kept the Qur’an available for worship, recitation and memorisation.</li>
+              <li>It preserved the basis of Islamic belief and law.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <h3>Community importance</h3>
+            <ul>
+              <li>It united Muslims around one recognised text.</li>
+              <li>It prevented disputes over recitation and written forms.</li>
+              <li>It helped new Muslims learn the Qur’an correctly as Islam spread.</li>
+              <li>It protected Muslim identity across different regions and languages.</li>
+              <li>It ensured that Muslims today recite the same Qur’an worldwide.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <h3>Legal importance</h3>
+            <ul>
+              <li>The Qur’an is the primary source of Islamic law.</li>
+              <li>Without a preserved text, Islamic law and worship could have faced confusion.</li>
+              <li>Standardisation helped scholars refer to the same authoritative text.</li>
+              <li>It preserved instructions about prayer, fasting, zakat, hajj, family life and moral conduct.</li>
+            </ul>
+          </div>
+
+          <div class="mini-card">
+            <h3>Modern importance</h3>
+            <ul>
+              <li>Muslims can trust the Qur’an they read today.</li>
+              <li>Students can study the same text across the world.</li>
+              <li>It strengthens Muslim confidence in the authenticity of revelation.</li>
+              <li>It shows how the early Muslim community combined faith, caution and responsibility.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="past-paper-links">
+      <div class="section-head">
+        <span class="tag">Past Paper Links</span>
+        <h2>Relevant past-paper question angles</h2>
+        <p>Use these question types to practise. The wording may vary by variant/session, but the core topic is the same.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="exam-question">
+          <h3>Question Angle 1: Abu Bakr, ‘Umar and ‘Uthman</h3>
+          <p><strong>Part A:</strong> Describe the ways in which Abu Bakr, ‘Umar and ‘Uthman رضي الله عنهم were involved in the compilation of the Qur’an. [10]</p>
+          <p><strong>Part B:</strong> “The Qur’an should not have been compiled in written form because it did not take place during the Prophet’s ﷺ lifetime.” Agree or disagree? [4]</p>
+          <ul>
+            <li>Best plan: Prophet’s lifetime preservation → Yamama → ‘Umar’s concern → Abu Bakr’s hesitation → Zayd’s collection → Hafsa → ‘Uthman’s standard copies.</li>
+          </ul>
+        </div>
+
+        <div class="exam-question">
+          <h3>Question Angle 2: Abu Bakr and ‘Uthman</h3>
+          <p><strong>Part A:</strong> Outline why Abu Bakr and ‘Uthman رضي الله عنهما thought it necessary to compile/standardise the Qur’an and describe how they completed this task. [10]</p>
+          <p><strong>Part B:</strong> How important was it to have a compiled copy of the Qur’an? What dangers could there have been without one? [4]</p>
+          <ul>
+            <li>Best plan: compare their different reasons — Abu Bakr feared loss, ‘Uthman feared disagreement.</li>
+          </ul>
+        </div>
+
+        <div class="exam-question">
+          <h3>Question Angle 3: Mushaf of Hafsa رضي الله عنها</h3>
+          <p><strong>Part A:</strong> Write about the preservation of the Qur’an in the form of the mushaf held by Hafsa رضي الله عنها. [10]</p>
+          <p><strong>Part B:</strong> “Memorising the Qur’an is no longer important because the Qur’an is preserved as a book.” Discuss. [4]</p>
+          <ul>
+            <li>Best plan: show the chain of custody — Abu Bakr → ‘Umar → Hafsa → used by ‘Uthman.</li>
+          </ul>
+        </div>
+
+        <div class="exam-question">
+          <h3>Question Angle 4: Development into book form</h3>
+          <p><strong>Part A:</strong> Give an account of how the Qur’an developed into book form. [10]</p>
+          <p><strong>Part B:</strong> Explain why the early Muslim community thought it was necessary to compile the Qur’an. [4]</p>
+          <ul>
+            <li>Best plan: start with revelation and writing, but do not spend too long before the Prophet’s ﷺ death. Focus on the compilation process.</li>
+          </ul>
+        </div>
+
+        <div class="mark-scheme">
+          <h3>What examiners usually reward</h3>
+          <ul>
+            <li>Clear sequence and accurate names.</li>
+            <li>Difference between preservation, compilation and standardisation.</li>
+            <li>Battle of Yamama as a reason for Abu Bakr’s action.</li>
+            <li>Hudhayfah’s warning as a reason for ‘Uthman’s action.</li>
+            <li>Zayd ibn Thabit’s role and careful checking.</li>
+            <li>Hafsa’s manuscript and ‘Uthman’s use of it.</li>
+            <li>Explanation of importance, not only narration of events.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="a-star-answer">
+      <div class="section-head">
+        <span class="tag">A* Answer Route</span>
+        <h2>Maximum content plan for Part A and Part B</h2>
+        <p>Use this as a full answer checklist before writing.</p>
+      </div>
+
+      <div class="section-body">
+        <div class="answer-plan">
+          <div class="plan-box">
+            <h4>Part A [10]: Full content plan</h4>
+            <ul>
+              <li>Start with a short opening:
+                <ul>
+                  <li>The Qur’an was preserved through both memorisation and writing.</li>
+                  <li>Formal compilation became necessary after the Prophet’s ﷺ death.</li>
+                </ul>
+              </li>
+              <li>During the Prophet’s ﷺ lifetime:
+                <ul>
+                  <li>revelation came gradually;</li>
+                  <li>the Prophet ﷺ recited it to Companions;</li>
+                  <li>Companions memorised it;</li>
+                  <li>scribes wrote it on available materials;</li>
+                  <li>no single bound book existed because revelation was ongoing.</li>
+                </ul>
+              </li>
+              <li>Under Abu Bakr رضي الله عنه:
+                <ul>
+                  <li>Battle of Yamama caused concern;</li>
+                  <li>many Qur’an memorizers were killed;</li>
+                  <li>‘Umar رضي الله عنه feared loss of the Qur’an;</li>
+                  <li>Abu Bakr رضي الله عنه hesitated but accepted the need;</li>
+                  <li>Zayd ibn Thabit رضي الله عنه was appointed;</li>
+                  <li>he collected from written pieces and memories;</li>
+                  <li>material was carefully verified;</li>
+                  <li>the manuscript was kept with Abu Bakr, then ‘Umar, then Hafsa رضي الله عنها.</li>
+                </ul>
+              </li>
+              <li>Under ‘Uthman رضي الله عنه:
+                <ul>
+                  <li>Islam spread into new lands;</li>
+                  <li>different dialects/readings caused disagreement;</li>
+                  <li>Hudhayfah رضي الله عنه warned ‘Uthman رضي الله عنه;</li>
+                  <li>Hafsa’s manuscript was borrowed;</li>
+                  <li>Zayd and three Qurayshi Companions copied it;</li>
+                  <li>where needed, Qurayshi dialect was followed;</li>
+                  <li>standard copies were sent to provinces;</li>
+                  <li>unofficial written materials were removed to avoid confusion.</li>
+                </ul>
+              </li>
+              <li>End with outcome:
+                <ul>
+                  <li>The Qur’an was preserved in one accepted written form.</li>
+                  <li>This protected unity and authenticity for later generations.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="plan-box">
+            <h4>Part B [4]: Full evaluation plan</h4>
+            <ul>
+              <li>Choose a clear judgement:
+                <ul>
+                  <li>“It was extremely important because it protected the Qur’an and the unity of the ummah.”</li>
+                </ul>
+              </li>
+              <li>Reason 1: Protection from loss
+                <ul>
+                  <li>Memorizers could die in battles or due to age.</li>
+                  <li>A written manuscript gave the community a secure reference.</li>
+                </ul>
+              </li>
+              <li>Reason 2: Protection from disagreement
+                <ul>
+                  <li>As Islam spread, dialect differences could confuse new Muslims.</li>
+                  <li>Standard copies prevented arguments over the Qur’an.</li>
+                </ul>
+              </li>
+              <li>Reason 3: Preservation of worship and law
+                <ul>
+                  <li>Prayer, recitation, belief and Islamic law depend on the Qur’an.</li>
+                  <li>A preserved text protects the foundation of Islam.</li>
+                </ul>
+              </li>
+              <li>Modern link:
+                <ul>
+                  <li>Muslims worldwide recite the same Qur’an today.</li>
+                  <li>This gives confidence, unity and continuity.</li>
+                </ul>
+              </li>
+              <li>Balanced point if needed:
+                <ul>
+                  <li>Memorisation remains important, but written compilation protects and supports memorisation.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="warning">
+          A* reminder: Part A tells the story accurately. Part B explains why the story matters.
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="mistakes">
+      <div class="section-head">
+        <span class="tag">Common Mistakes</span>
+        <h2>What students should avoid</h2>
+      </div>
+      <div class="section-body">
+        <div class="grid-2">
+          <div class="mini-card red">
+            <h3>Do not write this</h3>
+            <ul>
+              <li>“The Qur’an was written only after the Prophet ﷺ died.”</li>
+              <li>“Abu Bakr changed the Qur’an into a book.”</li>
+              <li>“‘Uthman burned the Qur’an because there were mistakes.”</li>
+              <li>“Zayd just wrote whatever people told him.”</li>
+              <li>“Compilation and revelation are the same thing.”</li>
+            </ul>
+          </div>
+
+          <div class="mini-card green">
+            <h3>Write this instead</h3>
+            <ul>
+              <li>The Qur’an was preserved during the Prophet’s ﷺ lifetime through memorisation and writing.</li>
+              <li>Abu Bakr رضي الله عنه collected the existing revelation into one manuscript.</li>
+              <li>‘Uthman رضي الله عنه standardised official copies to prevent disagreement.</li>
+              <li>Zayd رضي الله عنه used careful verification and comparison.</li>
+              <li>Compilation protected the authenticity and unity of the Qur’an.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="sources">
+      <div class="section-head">
+        <span class="tag">Sources Consulted</span>
+        <h2>Reliable sources behind these notes</h2>
+      </div>
+      <div class="section-body source-list">
+        <ul>
+          <li>Cambridge O Level Islamiyat 2058 official syllabus and past-paper resources: <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-o-level-islamiyat-2058/" target="_blank" rel="noopener">Cambridge International Islamiyat 2058</a></li>
+          <li>Cambridge June 2024 Paper 1 mark scheme: <a href="https://www.cambridgeinternational.org/Images/604490-june-2024-mark-scheme-paper-11.pdf" target="_blank" rel="noopener">Paper 11 Mark Scheme</a></li>
+          <li>Sahih al-Bukhari report on Abu Bakr, ‘Umar and Zayd’s collection: <a href="https://sunnah.com/bukhari:7191" target="_blank" rel="noopener">Sahih al-Bukhari 7191</a></li>
+          <li>Sahih al-Bukhari report on ‘Uthman’s standard copies: <a href="https://sunnah.com/bukhari:4987" target="_blank" rel="noopener">Sahih al-Bukhari 4987</a></li>
+          <li>Cambridge-style topical past-paper question patterns for Paper 1 history and importance of the Qur’an.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="back-end">
+      <a href="../../paper-1.html">← Back to Paper 1</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>O Level Islamiyat 2058 / IGCSE Islamiyat 0493</strong></p>
+      <p>Read-only student notes prepared for focused Paper 1 revision.</p>
+    </div>
+  </footer>
+
+  <script>
+    const cards = [...document.querySelectorAll('.searchable')];
+    const input = document.getElementById('searchBox');
+    const noResults = document.getElementById('noResults');
+
+    function searchSections(){
+      const q = (input.value || '').toLowerCase().trim();
+      let visible = 0;
+      cards.forEach(card => {
+        const hit = !q || card.innerText.toLowerCase().includes(q);
+        card.style.display = hit ? '' : 'none';
+        if(hit) visible++;
+      });
+      noResults.style.display = visible ? 'none' : 'block';
+    }
+
+    input.addEventListener('input', searchSections);
+
+    document.getElementById('expandAll').addEventListener('click', () => {
+      document.querySelectorAll('details.topic').forEach(d => d.open = true);
+    });
+
+    document.getElementById('collapseAll').addEventListener('click', () => {
+      document.querySelectorAll('details.topic').forEach(d => d.open = false);
+    });
+
+    document.addEventListener('copy', e => e.preventDefault());
+    document.addEventListener('cut', e => e.preventDefault());
+    document.addEventListener('paste', e => e.preventDefault());
+    document.addEventListener('selectstart', e => e.preventDefault());
+    document.addEventListener('dragstart', e => e.preventDefault());
+
+    document.addEventListener('keydown', function(e){
+      const key = e.key.toLowerCase();
+      if (
+        (e.ctrlKey && ['c','x','s','p','u','a'].includes(key)) ||
+        (e.metaKey && ['c','x','s','p','u','a'].includes(key)) ||
+        key === 'printscreen' ||
+        key === 'f12'
+      ) {
+        e.preventDefault();
+        showProtection();
+        return false;
+      }
+      if (e.ctrlKey && e.shiftKey && ['i','j','c'].includes(key)) {
+        e.preventDefault();
+        showProtection();
+        return false;
+      }
+    });
+
+    window.addEventListener('beforeprint', function(e){
+      showProtection();
+    });
+
+    function showProtection(){
+      const overlay = document.getElementById('protectionOverlay');
+      overlay.classList.add('show');
+      setTimeout(() => overlay.classList.remove('show'), 1800);
+    }
+
+    // Basic PrintScreen response where browser permits key detection
+    window.addEventListener('keyup', function(e){
+      if(e.key === 'PrintScreen'){
+        try { navigator.clipboard.writeText('Read-only page: screenshots are discouraged.'); } catch(err) {}
+        showProtection();
+      }
+    });
+  </script>
+</body>
+</html>
