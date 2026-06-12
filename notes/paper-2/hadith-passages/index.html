@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hadith Passages Index | O Level Islamiyat 2058 / IGCSE 0493</title>
+  <meta name="description" content="Authentic Cambridge syllabus-based index of the 20 Hadith passages for special study in O Level Islamiyat 2058 / IGCSE Islamiyat 0493 Paper 2, with categories, themes, study links and exam method." />
+
+  <style>
+    :root {
+      --navy:#06203f;
+      --navy2:#0b3b66;
+      --teal:#0f766e;
+      --gold:#d6a84f;
+      --gold-soft:#fff7e6;
+      --mint:#ecfdf5;
+      --blue:#eff6ff;
+      --rose:#fff1f2;
+      --purple:#f5f3ff;
+      --cream:#fffaf0;
+      --ink:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --shadow:0 18px 46px rgba(6,32,63,.11);
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      -webkit-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+
+    html { scroll-behavior:smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.18), transparent 27%),
+        radial-gradient(circle at 88% 15%, rgba(15,118,110,.15), transparent 24%),
+        radial-gradient(circle at 18% 82%, rgba(6,32,63,.08), transparent 25%),
+        linear-gradient(180deg,#f8fafc 0%,#eef5ff 48%,#f8fafc 100%);
+      line-height:1.72;
+    }
+
+    a { text-decoration:none; }
+
+    .container {
+      width:92%;
+      max-width:1220px;
+      margin:auto;
+    }
+
+    .topbar {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(6,32,63,.98);
+      color:white;
+      box-shadow:0 8px 24px rgba(0,0,0,.18);
+      backdrop-filter:blur(10px);
+    }
+
+    .topbar-inner {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:14px;
+      padding:14px 0;
+    }
+
+    .brand {
+      color:white;
+      font-size:19px;
+      font-weight:900;
+      letter-spacing:-.01em;
+    }
+
+    .brand span { color:var(--gold); }
+
+    .nav {
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .nav a {
+      color:white;
+      padding:8px 10px;
+      border-radius:999px;
+      font-size:13.5px;
+      font-weight:800;
+      transition:.25s ease;
+    }
+
+    .nav a:hover {
+      color:#fff3c4;
+      background:rgba(255,255,255,.12);
+    }
+
+    .hero {
+      position:relative;
+      overflow:hidden;
+      color:white;
+      padding:96px 0 80px;
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.39), transparent 36%),
+        radial-gradient(circle at bottom right, rgba(15,118,110,.45), transparent 36%),
+        linear-gradient(135deg,#04162f 0%, #06203f 48%, #0f766e 100%);
+    }
+
+    .hero:after {
+      content:"";
+      position:absolute;
+      width:410px;
+      height:410px;
+      right:-170px;
+      top:-145px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+
+    .hero:before {
+      content:"";
+      position:absolute;
+      width:260px;
+      height:260px;
+      left:-100px;
+      bottom:-120px;
+      border-radius:50%;
+      border:34px solid rgba(214,168,79,.16);
+    }
+
+    .hero-grid {
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:38px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .label {
+      display:inline-block;
+      background:rgba(214,168,79,.18);
+      border:1px solid rgba(214,168,79,.48);
+      color:#fff3c4;
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:900;
+      margin-bottom:16px;
+    }
+
+    h1 {
+      font-size:clamp(36px,5vw,61px);
+      line-height:1.05;
+      margin-bottom:18px;
+      letter-spacing:-.035em;
+    }
+
+    .hero p {
+      color:#e5e7eb;
+      font-size:18px;
+      margin-bottom:15px;
+      max-width:900px;
+    }
+
+    .hero-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:26px;
+    }
+
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      border-radius:999px;
+      padding:12px 18px;
+      font-size:14px;
+      font-weight:900;
+      transition:.25s ease;
+    }
+
+    .btn-primary { background:var(--gold); color:var(--navy); }
+    .btn-primary:hover { background:#c3953d; transform:translateY(-2px); }
+    .btn-outline { border:2px solid white; color:white; }
+    .btn-outline:hover { background:white; color:var(--navy); transform:translateY(-2px); }
+
+    .hero-card {
+      background:rgba(255,255,255,.98);
+      color:var(--ink);
+      border:1px solid rgba(255,255,255,.6);
+      border-radius:30px;
+      padding:26px;
+      box-shadow:0 28px 66px rgba(0,0,0,.28);
+    }
+
+    .title-box {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.26), transparent 35%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      padding:24px;
+      border-radius:24px;
+      border-bottom:5px solid var(--gold);
+      text-align:center;
+      margin-bottom:16px;
+    }
+
+    .title-box strong {
+      display:block;
+      color:#fff3c4;
+      font-size:31px;
+      margin-bottom:4px;
+    }
+
+    .title-mini-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .title-mini-grid div {
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:16px;
+      padding:10px;
+      font-weight:900;
+      color:white;
+    }
+
+    .hero-card h2 { color:var(--navy); font-size:25px; margin-bottom:12px; }
+
+    .hero-card ul {
+      list-style:none;
+      display:grid;
+      gap:9px;
+    }
+
+    .hero-card li {
+      position:relative;
+      padding-left:28px;
+      color:#374151;
+      font-weight:700;
+    }
+
+    .hero-card li:before {
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:var(--teal);
+      font-weight:900;
+    }
+
+    .toolbar {
+      margin:-31px auto 34px;
+      position:relative;
+      z-index:5;
+    }
+
+    .toolbox {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:14px;
+      align-items:center;
+    }
+
+    .search {
+      width:100%;
+      border:1px solid #d9e2ef;
+      border-radius:999px;
+      padding:13px 16px;
+      font-size:15px;
+      outline:none;
+      background:#f8fafc;
+      color:var(--ink);
+      user-select:text;
+      -webkit-user-select:text;
+    }
+
+    .search:focus {
+      border-color:var(--gold);
+      box-shadow:0 0 0 4px rgba(214,168,79,.16);
+    }
+
+    .mini-buttons { display:flex; gap:9px; flex-wrap:wrap; }
+
+    .mini-btn {
+      border:0;
+      background:var(--navy);
+      color:white;
+      padding:11px 14px;
+      border-radius:999px;
+      font-weight:900;
+      cursor:pointer;
+      transition:.25s ease;
+    }
+
+    .mini-btn:hover, .mini-btn.active { background:var(--teal); }
+
+    .section { padding:44px 0; }
+
+    .section-title {
+      text-align:center;
+      max-width:980px;
+      margin:0 auto 34px;
+    }
+
+    .section-title .label { background:var(--navy); border:0; }
+
+    .section-title h2 {
+      color:var(--navy);
+      font-size:clamp(29px,4vw,43px);
+      line-height:1.15;
+      margin-bottom:12px;
+      letter-spacing:-.02em;
+    }
+
+    .section-title p { color:var(--muted); font-size:17px; }
+
+    .grid-4 {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:17px;
+    }
+
+    .stat-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:23px;
+      padding:22px;
+      box-shadow:var(--shadow);
+      min-height:176px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .stat-card:after {
+      content:"";
+      position:absolute;
+      right:-26px;
+      top:-26px;
+      width:95px;
+      height:95px;
+      border-radius:50%;
+      background:rgba(214,168,79,.13);
+    }
+
+    .stat-card span {
+      display:inline-block;
+      background:var(--mint);
+      color:#166534;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .stat-card h3 { color:var(--navy); font-size:22px; margin-bottom:8px; }
+    .stat-card p { color:var(--muted); font-size:14px; }
+
+    .path-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .path-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      transition:.25s ease;
+    }
+
+    .path-card:hover {
+      transform:translateY(-4px);
+      box-shadow:0 20px 44px rgba(6,32,63,.14);
+    }
+
+    .path-head {
+      background:linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      border-bottom:5px solid var(--gold);
+      padding:22px;
+    }
+
+    .path-head span {
+      color:#fff3c4;
+      font-weight:900;
+      font-size:12px;
+    }
+
+    .path-head h3 {
+      font-size:22px;
+      margin-top:6px;
+      line-height:1.22;
+    }
+
+    .path-body {
+      padding:20px;
+    }
+
+    .path-body p {
+      color:var(--muted);
+      font-size:14px;
+      margin-bottom:14px;
+    }
+
+    .path-body a {
+      display:inline-flex;
+      background:var(--gold);
+      color:var(--navy);
+      padding:10px 14px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:13px;
+    }
+
+    .flow {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      padding:26px;
+    }
+
+    .flow-grid {
+      display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:14px;
+    }
+
+    .flow-step {
+      background:#f8fafc;
+      border:1px solid #d9e2ef;
+      border-top:5px solid var(--gold);
+      border-radius:20px;
+      padding:17px;
+      min-height:170px;
+      text-align:center;
+    }
+
+    .flow-step .icon {
+      width:50px;
+      height:50px;
+      margin:0 auto 11px;
+      display:grid;
+      place-items:center;
+      border-radius:17px;
+      background:linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      font-size:23px;
+      font-weight:900;
+    }
+
+    .flow-step h3 { color:var(--navy); font-size:17px; margin-bottom:7px; }
+    .flow-step p { color:var(--muted); font-size:13px; }
+
+    .notice {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.22), transparent 34%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      border-radius:30px;
+      padding:28px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+    }
+
+    .notice h3 {
+      color:#fff3c4;
+      font-size:25px;
+      margin-bottom:10px;
+    }
+
+    .notice p, .notice li {
+      color:#e5e7eb;
+    }
+
+    .notice ul {
+      padding-left:22px;
+    }
+
+    .passage-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+
+    .passage-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:25px;
+      box-shadow:0 12px 30px rgba(6,32,63,.07);
+      overflow:hidden;
+      transition:.25s ease;
+    }
+
+    .passage-card:hover {
+      transform:translateY(-4px);
+      box-shadow:0 18px 40px rgba(6,32,63,.12);
+    }
+
+    .passage-card.individual .passage-top {
+      background:linear-gradient(135deg,#06203f,#0f766e);
+    }
+
+    .passage-card.community .passage-top {
+      background:linear-gradient(135deg,#06203f,#7a4f00);
+    }
+
+    .passage-top {
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      padding:20px;
+      color:white;
+      border-bottom:5px solid var(--gold);
+    }
+
+    .passage-top .num {
+      flex:0 0 auto;
+      width:58px;
+      height:58px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:rgba(214,168,79,.2);
+      border:1px solid rgba(214,168,79,.5);
+      color:#fff3c4;
+      font-weight:900;
+      font-size:18px;
+    }
+
+    .passage-top span {
+      display:inline-block;
+      color:#fff3c4;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:6px;
+    }
+
+    .passage-top h3 { font-size:21px; line-height:1.25; }
+
+    .passage-body {
+      padding:20px;
+    }
+
+    .memory-line {
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-left:5px solid var(--gold);
+      border-radius:18px;
+      padding:14px;
+      color:#374151;
+      font-size:14px;
+      margin-bottom:12px;
+    }
+
+    .exam-line {
+      background:#eef6f5;
+      border:1px solid #bfe4dc;
+      border-radius:18px;
+      padding:14px;
+      color:#374151;
+      font-size:14px;
+      margin-bottom:14px;
+    }
+
+    .study-link {
+      display:inline-flex;
+      background:var(--navy);
+      color:white;
+      padding:10px 14px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:13px;
+      transition:.25s ease;
+    }
+
+    .study-link:hover {
+      background:var(--teal);
+    }
+
+    .table-wrap {
+      overflow-x:auto;
+      border-radius:22px;
+      border:1px solid var(--line);
+      margin:18px 0;
+      box-shadow:0 10px 26px rgba(6,32,63,.05);
+    }
+
+    table {
+      width:100%;
+      min-width:900px;
+      border-collapse:collapse;
+      background:white;
+    }
+
+    th {
+      background:var(--navy);
+      color:white;
+      padding:15px;
+      text-align:left;
+      font-size:14px;
+    }
+
+    td {
+      padding:15px;
+      border-top:1px solid var(--line);
+      color:#374151;
+      vertical-align:top;
+      font-size:14px;
+    }
+
+    tr:nth-child(even) td { background:#f8fafc; }
+
+    .note-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+      overflow:hidden;
+    }
+
+    .note-head {
+      padding:24px 28px;
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.16), transparent 35%),
+        linear-gradient(135deg,var(--navy),var(--navy2));
+      color:white;
+      border-bottom:5px solid var(--gold);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      cursor:pointer;
+    }
+
+    .note-head h2 { font-size:26px; line-height:1.25; }
+
+    .note-head span {
+      display:inline-block;
+      background:rgba(255,255,255,.12);
+      color:#fff3c4;
+      padding:6px 11px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:12px;
+      margin-bottom:8px;
+    }
+
+    .toggle { font-size:24px; color:#fff3c4; transition:.25s ease; }
+    .note-card.closed .toggle { transform:rotate(-90deg); }
+    .note-body { padding:28px; }
+    .note-card.closed .note-body { display:none; }
+
+    .two-col {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .mini-card {
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:20px;
+      margin-bottom:18px;
+    }
+
+    .mini-card.gold { background:var(--gold-soft); border-color:#f3d48b; }
+    .mini-card.teal { background:#eef6f5; border-color:#bfe4dc; }
+    .mini-card.blue { background:var(--blue); border-color:#bfdbfe; }
+    .mini-card.rose { background:var(--rose); border-color:#fecdd3; }
+    .mini-card.purple { background:var(--purple); border-color:#ddd6fe; }
+
+    .mini-card h3 { color:var(--navy); font-size:22px; margin-bottom:11px; }
+
+    ul { padding-left:22px; }
+    li { margin-bottom:8px; color:#374151; }
+    strong { color:var(--navy); }
+
+    .back-final {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.22), transparent 34%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      border-radius:30px;
+      padding:42px 28px;
+      text-align:center;
+      box-shadow:var(--shadow);
+      margin-top:24px;
+    }
+
+    .back-final h2 { font-size:32px; margin-bottom:10px; }
+    .back-final p { color:#e5e7eb; max-width:780px; margin:0 auto 22px; }
+
+    footer {
+      background:#030f24;
+      color:white;
+      text-align:center;
+      padding:35px 0;
+      margin-top:40px;
+    }
+
+    footer p { color:#d1d5db; margin-bottom:8px; }
+    footer a { color:var(--gold); font-weight:900; }
+
+    .readonly-alert {
+      position:fixed;
+      left:50%;
+      bottom:22px;
+      transform:translateX(-50%);
+      background:var(--navy);
+      color:white;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:14px;
+      box-shadow:0 14px 32px rgba(0,0,0,.28);
+      display:none;
+      z-index:99999;
+      text-align:center;
+    }
+
+    .hidden-search { display:none !important; }
+
+    @media print {
+      body { display:none !important; }
+    }
+
+    @media (max-width:1120px) {
+      .hero-grid,
+      .two-col {
+        grid-template-columns:1fr;
+      }
+
+      .grid-4,
+      .flow-grid,
+      .passage-grid,
+      .path-grid {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .toolbox {
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:700px) {
+      .nav { gap:6px; }
+      .nav a { font-size:12px; padding:7px 8px; }
+      .hero { padding:64px 0 52px; }
+      .hero-actions,
+      .mini-buttons { width:100%; }
+      .btn,
+      .mini-btn { width:100%; }
+      .title-mini-grid,
+      .grid-4,
+      .flow-grid,
+      .passage-grid,
+      .path-grid {
+        grid-template-columns:1fr;
+      }
+      .note-head { flex-direction:column; align-items:flex-start; }
+      .note-body { padding:20px; }
+      .hero-card { padding:20px; }
+      .passage-top { align-items:flex-start; }
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+  <div class="readonly-alert" id="readonlyAlert">This page is read-only for protected study use.</div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../../index.html">O Level Islamiyat <span>2058</span></a>
+      <nav class="nav">
+        <a href="../../index.html">Home</a>
+        <a href="../../paper-2.html">Paper 2</a>
+        <a href="../paper-2/major-teachings-in-hadiths.html">Major Teachings</a>
+        <a href="../paper-2/individual-conduct.html">Individual</a>
+        <a href="../paper-2/life-in-the-community.html">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="label">Paper 2 • Appendix 2 • Hadiths for Special Study</span>
+        <h1>Hadith Passages Index</h1>
+        <p>
+          A premium, Cambridge syllabus-based index of the 20 Hadith passages for special study in Paper 2: organised by number, theme, category, exam use and direct study links.
+        </p>
+        <p>
+          Built for authentic revision: no invented passages, no careless translations, and no fabricated source claims. Students should use the exact Arabic and English passage printed by Cambridge in the exam.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#passages">Open the 20 Hadith Index</a>
+          <a class="btn btn-outline" href="../../paper-2.html">Back to Paper 2</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="title-box">
+          <strong>20 Prescribed Hadiths</strong>
+          <span>Cambridge Paper 2 special study list</span>
+          <div class="title-mini-grid">
+            <div>Individual Conduct</div>
+            <div>Life in Community</div>
+            <div>Arabic + English</div>
+            <div>Belief + Action</div>
+          </div>
+        </div>
+        <h2>What this index gives</h2>
+        <ul>
+          <li>All 20 Hadith passages arranged in order.</li>
+          <li>Clean separation of individual and community themes.</li>
+          <li>Quick memory meanings without replacing the exact passage.</li>
+          <li>Direct links to detailed study pages.</li>
+          <li>Exam method, revision route and authenticity notes.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container toolbar">
+    <div class="toolbox">
+      <input class="search" id="searchInput" type="search" placeholder="Search: sincerity, brotherhood, charity, orphan, mercy, Qur’an, modesty, pride, unity..." />
+      <div class="mini-buttons">
+        <button class="mini-btn active" data-filter="all">All</button>
+        <button class="mini-btn" data-filter="Individual Conduct">Individual</button>
+        <button class="mini-btn" data-filter="Life in the Community">Community</button>
+        <button class="mini-btn" id="expandAll">Expand</button>
+        <button class="mini-btn" id="collapseAll">Collapse</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <div class="notice searchable">
+          <h3>Authenticity and Cambridge syllabus note</h3>
+          <ul>
+            <li>This page is an index and study guide for the <strong>Cambridge Appendix 2 Hadith passages for special study</strong>.</li>
+            <li>Cambridge states that these Hadiths are recorded by <strong>al-Bukhari</strong> or <strong>Muslim</strong> in their Sahih collections, many by both.</li>
+            <li>The wording here is a <strong>meaning guide</strong> for revision. In the exam, students should rely on the exact Arabic and English passage printed in the Cambridge paper.</li>
+            <li>Do not invent translations, references or stories. Explain the teaching, then apply it to Muslim belief and action.</li>
+          </ul>
+        </div>
+
+        <div class="section-title">
+          <span class="label">Cambridge Alignment</span>
+          <h2>What Paper 2 expects from these Hadiths</h2>
+          <p>
+            Cambridge sets these passages under “Major teachings in the Hadiths of the Prophet.” Students should study teachings in each passage about what Muslims should believe and how they should act.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="stat-card searchable">
+            <span>Group 1</span>
+            <h3>Individual Conduct</h3>
+            <p>Personal sincerity, worship, morality, lawful earning, Qur’an, modesty and inner purity.</p>
+          </div>
+          <div class="stat-card searchable">
+            <span>Group 2</span>
+            <h3>Community Life</h3>
+            <p>Brotherhood, speech, neighbours, guests, charity, welfare, mercy, trade and unity.</p>
+          </div>
+          <div class="stat-card searchable">
+            <span>Exam Skill</span>
+            <h3>Arabic + English</h3>
+            <p>Passages are set in Arabic and English, so students should recognise both.</p>
+          </div>
+          <div class="stat-card searchable">
+            <span>A* Method</span>
+            <h3>Belief + Action</h3>
+            <p>Always explain both what the Hadith teaches Muslims to believe and how it changes behaviour.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:18px;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Study Route</span>
+          <h2>Choose the best route for your lesson or revision</h2>
+          <p>
+            Use this index as the hub. Then open the detailed pages for full teaching notes and answer frames.
+          </p>
+        </div>
+
+        <div class="path-grid">
+          <div class="path-card searchable">
+            <div class="path-head">
+              <span>Full overview</span>
+              <h3>Major Teachings in Hadiths</h3>
+            </div>
+            <div class="path-body">
+              <p>Use this page to understand all 20 Hadith passages together with meaning, theme and application.</p>
+              <a href="../paper-2/major-teachings-in-hadiths.html">Open full overview</a>
+            </div>
+          </div>
+
+          <div class="path-card searchable">
+            <div class="path-head">
+              <span>Theme 1</span>
+              <h3>Individual Conduct</h3>
+            </div>
+            <div class="path-body">
+              <p>Use for sincerity, worship, lawful earning, Qur’an revision, modesty, humility and inner purity.</p>
+              <a href="../paper-2/individual-conduct.html">Open individual notes</a>
+            </div>
+          </div>
+
+          <div class="path-card searchable">
+            <div class="path-head">
+              <span>Theme 2</span>
+              <h3>Life in the Community</h3>
+            </div>
+            <div class="path-body">
+              <p>Use for brotherhood, neighbours, guests, welfare, orphans, mercy, business ethics and unity.</p>
+              <a href="../paper-2/life-in-the-community.html">Open community notes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#eef5ff;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Answer Method</span>
+          <h2>5-step method for any Hadith passage</h2>
+          <p>
+            This simple structure prevents vague answers and keeps students close to the Cambridge task.
+          </p>
+        </div>
+
+        <div class="flow">
+          <div class="flow-grid">
+            <div class="flow-step searchable">
+              <div class="icon">1</div>
+              <h3>Recognise</h3>
+              <p>Identify the Hadith by number, key words and theme.</p>
+            </div>
+            <div class="flow-step searchable">
+              <div class="icon">2</div>
+              <h3>Explain</h3>
+              <p>State the teaching in your own words without inventing extra details.</p>
+            </div>
+            <div class="flow-step searchable">
+              <div class="icon">3</div>
+              <h3>Belief</h3>
+              <p>Show what Muslims learn about faith, Allah, the Hereafter or accountability.</p>
+            </div>
+            <div class="flow-step searchable">
+              <div class="icon">4</div>
+              <h3>Action</h3>
+              <p>Explain how Muslims should act in worship, character or society.</p>
+            </div>
+            <div class="flow-step searchable">
+              <div class="icon">5</div>
+              <h3>Importance</h3>
+              <p>End with why the teaching matters for Muslims today.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="passages">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Complete Index</span>
+          <h2>All 20 Hadith Passages in Cambridge Order</h2>
+          <p>
+            Use the search and filters to locate themes quickly. Each card gives a safe memory meaning and a direct link to detailed notes.
+          </p>
+        </div>
+
+        <div class="passage-grid">
+          
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Sincerity / Nasiha">
+        <div class="passage-top">
+          <div class="num">H1</div>
+          <div>
+            <span>Individual Conduct • Sincerity / Nasiha</span>
+            <h3>Religion is sincerity</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Faith must be sincere towards Allah, His Book, His Messenger ﷺ, Muslim leaders and ordinary Muslims.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for sincerity, intention, loyalty, advice, Qur’an and Sunnah.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Brotherhood / Selflessness">
+        <div class="passage-top">
+          <div class="num">H2</div>
+          <div>
+            <span>Life in the Community • Brotherhood / Selflessness</span>
+            <h3>Love for your brother</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> True faith includes wanting good for others as one wants good for oneself.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for brotherhood, jealousy, fairness, goodwill and social harmony.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Manners / Accountability">
+        <div class="passage-top">
+          <div class="num">H3</div>
+          <div>
+            <span>Life in the Community • Manners / Accountability</span>
+            <h3>Good speech, neighbours and guests</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Belief in Allah and the Last Day should produce good speech, neighbourly care and hospitality.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for speech, social manners, neighbours, guests and accountability.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Obedience / Basic Duties">
+        <div class="passage-top">
+          <div class="num">H4</div>
+          <div>
+            <span>Individual Conduct • Obedience / Basic Duties</span>
+            <h3>Obligatory worship and halal/haram</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Obligatory prayer, fasting Ramadan and respecting halal and haram are basic duties leading to Paradise.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for worship, obedience, lawful and forbidden boundaries.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Charity / Public Good">
+        <div class="passage-top">
+          <div class="num">H5</div>
+          <div>
+            <span>Life in the Community • Charity / Public Good</span>
+            <h3>Everyday charity</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Charity includes justice, helping others, good speech, steps to prayer and removing harm.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for wider meaning of sadaqah, public service and gratitude.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Moral Courage">
+        <div class="passage-top">
+          <div class="num">H6</div>
+          <div>
+            <span>Individual Conduct • Moral Courage</span>
+            <h3>Changing evil</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> A Muslim should resist evil by action, speech or at least inward rejection according to ability.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for responsibility, wisdom, moral courage and graded action.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Striving / Sacrifice">
+        <div class="passage-top">
+          <div class="num">H7</div>
+          <div>
+            <span>Individual Conduct • Striving / Sacrifice</span>
+            <h3>The excellent believer</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> The excellent believer strives in Allah’s way with self and wealth.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for effort, sacrifice, wealth, service and commitment.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Hardship / Reward">
+        <div class="passage-top">
+          <div class="num">H8</div>
+          <div>
+            <span>Individual Conduct • Hardship / Reward</span>
+            <h3>Wider meaning of martyrdom</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Allah rewards sincere hardship and suffering beyond visible battlefield martyrdom.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for patience, suffering, reward and Allah’s mercy.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Honest Work / Halal Livelihood">
+        <div class="passage-top">
+          <div class="num">H9</div>
+          <div>
+            <span>Individual Conduct • Honest Work / Halal Livelihood</span>
+            <h3>Earning by one’s own hands</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> The best earning is through honest personal effort and lawful work.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for dignity of labour, halal earning and self-reliance.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Social Welfare">
+        <div class="passage-top">
+          <div class="num">H10</div>
+          <div>
+            <span>Life in the Community • Social Welfare</span>
+            <h3>Caring for widows and the poor</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Serving widows and poor people carries reward like striving or continuous worship.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for welfare, poverty, widows, charity and social responsibility.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Orphan Care">
+        <div class="passage-top">
+          <div class="num">H11</div>
+          <div>
+            <span>Life in the Community • Orphan Care</span>
+            <h3>Caring for orphans</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> The one who cares for an orphan is promised closeness to the Prophet ﷺ in Paradise.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for children, vulnerability, protection, affection and Paradise.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Da‘wah / Leadership">
+        <div class="passage-top">
+          <div class="num">H12</div>
+          <div>
+            <span>Life in the Community • Da‘wah / Leadership</span>
+            <h3>Be gentle and do not make things hard</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Religion should be taught with ease, encouragement, cooperation and wisdom.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for teaching, leadership, da‘wah, gentleness and avoiding harshness.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Qur’an Revision">
+        <div class="passage-top">
+          <div class="num">H13</div>
+          <div>
+            <span>Individual Conduct • Qur’an Revision</span>
+            <h3>Keeping hold of the Qur’an</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Qur’anic knowledge must be maintained through regular revision like tethered camels.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for recitation, memorisation, revision and practice.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Business Ethics">
+        <div class="passage-top">
+          <div class="num">H14</div>
+          <div>
+            <span>Life in the Community • Business Ethics</span>
+            <h3>Kindness in buying and selling</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Allah shows mercy to those who are kind in selling, buying and asking for repayment.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for trade, debt, mercy, fairness and economic ethics.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Mercy / Compassion">
+        <div class="passage-top">
+          <div class="num">H15</div>
+          <div>
+            <span>Life in the Community • Mercy / Compassion</span>
+            <h3>Mercy to people</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Allah’s mercy is linked with showing mercy to people.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for compassion, family, society, weakness and prophetic character.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable community" data-category="Life in the Community" data-theme="Unity / Solidarity">
+        <div class="passage-top">
+          <div class="num">H16</div>
+          <div>
+            <span>Life in the Community • Unity / Solidarity</span>
+            <h3>Believers as one body</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Believers should feel each other’s suffering like one body feels pain.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for Ummah, empathy, unity, charity and shared responsibility.
+          </div>
+          <a class="study-link" href="../paper-2/life-in-the-community.html#community-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Modesty / Haya">
+        <div class="passage-top">
+          <div class="num">H17</div>
+          <div>
+            <span>Individual Conduct • Modesty / Haya</span>
+            <h3>Modesty produces good</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Modesty is a positive moral quality that leads only to good.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for dignity, speech, behaviour, dress, online life and self-control.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Humility / Arrogance">
+        <div class="passage-top">
+          <div class="num">H18</div>
+          <div>
+            <span>Individual Conduct • Humility / Arrogance</span>
+            <h3>Faith and pride</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Faith saves, while pride is spiritually dangerous and blocks Paradise.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for humility, arrogance, accepting truth and respecting people.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Akhirah / Self-control">
+        <div class="passage-top">
+          <div class="num">H19</div>
+          <div>
+            <span>Individual Conduct • Akhirah / Self-control</span>
+            <h3>The world as a prison for the believer</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> A believer accepts worldly limits because the Hereafter is the real reward.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for self-control, desires, patience, haram avoidance and Akhirah.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+      <article class="passage-card searchable individual" data-category="Individual Conduct" data-theme="Inner Purity / Intention">
+        <div class="passage-top">
+          <div class="num">H20</div>
+          <div>
+            <span>Individual Conduct • Inner Purity / Intention</span>
+            <h3>Hearts and deeds</h3>
+          </div>
+        </div>
+        <div class="passage-body">
+          <div class="memory-line">
+            <strong>Memory meaning:</strong> Allah judges hearts and deeds, not outward forms, wealth or status.
+          </div>
+          <div class="exam-line">
+            <strong>Best exam use:</strong> Use for sincerity, anti-showing off, equality, deeds and inner faith.
+          </div>
+          <a class="study-link" href="../paper-2/individual-conduct.html#individual-hadiths">Open detailed notes →</a>
+        </div>
+      </article>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#eef5ff;">
+      <div class="container">
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Quick Table</span>
+              <h2>Teacher’s one-screen syllabus map</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+          <div class="note-body">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>Hadith title</th>
+                    <th>Category</th>
+                    <th>Main theme</th>
+                    <th>Best exam use</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+      <tr>
+        <td><strong>H1</strong></td>
+        <td>Religion is sincerity</td>
+        <td>Individual Conduct</td>
+        <td>Sincerity / Nasiha</td>
+        <td>Use for sincerity, intention, loyalty, advice, Qur’an and Sunnah.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H2</strong></td>
+        <td>Love for your brother</td>
+        <td>Life in the Community</td>
+        <td>Brotherhood / Selflessness</td>
+        <td>Use for brotherhood, jealousy, fairness, goodwill and social harmony.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H3</strong></td>
+        <td>Good speech, neighbours and guests</td>
+        <td>Life in the Community</td>
+        <td>Manners / Accountability</td>
+        <td>Use for speech, social manners, neighbours, guests and accountability.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H4</strong></td>
+        <td>Obligatory worship and halal/haram</td>
+        <td>Individual Conduct</td>
+        <td>Obedience / Basic Duties</td>
+        <td>Use for worship, obedience, lawful and forbidden boundaries.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H5</strong></td>
+        <td>Everyday charity</td>
+        <td>Life in the Community</td>
+        <td>Charity / Public Good</td>
+        <td>Use for wider meaning of sadaqah, public service and gratitude.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H6</strong></td>
+        <td>Changing evil</td>
+        <td>Individual Conduct</td>
+        <td>Moral Courage</td>
+        <td>Use for responsibility, wisdom, moral courage and graded action.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H7</strong></td>
+        <td>The excellent believer</td>
+        <td>Individual Conduct</td>
+        <td>Striving / Sacrifice</td>
+        <td>Use for effort, sacrifice, wealth, service and commitment.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H8</strong></td>
+        <td>Wider meaning of martyrdom</td>
+        <td>Individual Conduct</td>
+        <td>Hardship / Reward</td>
+        <td>Use for patience, suffering, reward and Allah’s mercy.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H9</strong></td>
+        <td>Earning by one’s own hands</td>
+        <td>Individual Conduct</td>
+        <td>Honest Work / Halal Livelihood</td>
+        <td>Use for dignity of labour, halal earning and self-reliance.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H10</strong></td>
+        <td>Caring for widows and the poor</td>
+        <td>Life in the Community</td>
+        <td>Social Welfare</td>
+        <td>Use for welfare, poverty, widows, charity and social responsibility.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H11</strong></td>
+        <td>Caring for orphans</td>
+        <td>Life in the Community</td>
+        <td>Orphan Care</td>
+        <td>Use for children, vulnerability, protection, affection and Paradise.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H12</strong></td>
+        <td>Be gentle and do not make things hard</td>
+        <td>Life in the Community</td>
+        <td>Da‘wah / Leadership</td>
+        <td>Use for teaching, leadership, da‘wah, gentleness and avoiding harshness.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H13</strong></td>
+        <td>Keeping hold of the Qur’an</td>
+        <td>Individual Conduct</td>
+        <td>Qur’an Revision</td>
+        <td>Use for recitation, memorisation, revision and practice.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H14</strong></td>
+        <td>Kindness in buying and selling</td>
+        <td>Life in the Community</td>
+        <td>Business Ethics</td>
+        <td>Use for trade, debt, mercy, fairness and economic ethics.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H15</strong></td>
+        <td>Mercy to people</td>
+        <td>Life in the Community</td>
+        <td>Mercy / Compassion</td>
+        <td>Use for compassion, family, society, weakness and prophetic character.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H16</strong></td>
+        <td>Believers as one body</td>
+        <td>Life in the Community</td>
+        <td>Unity / Solidarity</td>
+        <td>Use for Ummah, empathy, unity, charity and shared responsibility.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H17</strong></td>
+        <td>Modesty produces good</td>
+        <td>Individual Conduct</td>
+        <td>Modesty / Haya</td>
+        <td>Use for dignity, speech, behaviour, dress, online life and self-control.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H18</strong></td>
+        <td>Faith and pride</td>
+        <td>Individual Conduct</td>
+        <td>Humility / Arrogance</td>
+        <td>Use for humility, arrogance, accepting truth and respecting people.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H19</strong></td>
+        <td>The world as a prison for the believer</td>
+        <td>Individual Conduct</td>
+        <td>Akhirah / Self-control</td>
+        <td>Use for self-control, desires, patience, haram avoidance and Akhirah.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>H20</strong></td>
+        <td>Hearts and deeds</td>
+        <td>Individual Conduct</td>
+        <td>Inner Purity / Intention</td>
+        <td>Use for sincerity, anti-showing off, equality, deeds and inner faith.</td>
+      </tr>
+    
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Memory System</span>
+              <h2>How students should memorise the Hadith passages</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>Do this</h3>
+                <ul>
+                  <li>Memorise the number, key Arabic phrase and English meaning.</li>
+                  <li>Group passages by theme rather than memorising randomly.</li>
+                  <li>For each Hadith, learn one belief point and one action point.</li>
+                  <li>Practise writing a short teaching paragraph and a short application paragraph.</li>
+                  <li>Use exact Cambridge passage wording when answering exam questions.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card rose">
+                <h3>Avoid this</h3>
+                <ul>
+                  <li>Do not invent long stories around the Hadith.</li>
+                  <li>Do not quote uncertain wording as if it is exact.</li>
+                  <li>Do not write only a translation with no explanation.</li>
+                  <li>Do not ignore Arabic recognition.</li>
+                  <li>Do not confuse individual conduct with community life when classifying themes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Sources</span>
+              <h2>Sources consulted / recommended</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card blue">
+                <h3>Cambridge</h3>
+                <ul>
+                  <li>Cambridge O Level Islamiyat 2058 Syllabus 2026–2027.</li>
+                  <li>Appendix 2: Hadiths for special study.</li>
+                  <li>Paper 2 syllabus content: Major teachings in the Hadiths of the Prophet.</li>
+                </ul>
+              </div>
+              <div class="mini-card gold">
+                <h3>Hadith collections</h3>
+                <ul>
+                  <li>Sahih al-Bukhari.</li>
+                  <li>Sahih Muslim.</li>
+                  <li>Cambridge states the prescribed Hadiths are recorded by al-Bukhari or Muslim in their Sahih collections, many by both.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="back-final">
+          <h2>Return to Paper 2</h2>
+          <p>
+            Go back to the main Paper 2 page for Major Teachings in Hadiths, Individual Conduct, Life in the Community, History and Importance of Hadiths, Rightly Guided Caliphs, Articles of Faith and Pillars of Islam.
+          </p>
+          <a class="btn btn-primary" href="../../paper-2.html">← Back to Paper 2</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>O Level Islamiyat 2058 / IGCSE Islamiyat 0493</p>
+      <p>Hadith Passages Index • Paper 2 Appendix 2 • Read-only study page</p>
+      <p><a href="../../paper-2.html">Back to Paper 2</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const readonlyAlert = document.getElementById("readonlyAlert");
+
+    function showReadonlyAlert() {
+      readonlyAlert.style.display = "block";
+      clearTimeout(window.readonlyTimer);
+      window.readonlyTimer = setTimeout(() => {
+        readonlyAlert.style.display = "none";
+      }, 1800);
+    }
+
+    document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("copy", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("cut", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("paste", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("selectstart", function(e) {
+      if (e.target && e.target.classList && e.target.classList.contains("search")) return;
+      e.preventDefault();
+    });
+
+    document.addEventListener("dragstart", function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener("keydown", function(e) {
+      const key = e.key.toLowerCase();
+      if (
+        (e.ctrlKey && ["s","p","u","c","x","a"].includes(key)) ||
+        (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(key)) ||
+        key === "f12" ||
+        key === "printscreen"
+      ) {
+        e.preventDefault();
+        showReadonlyAlert();
+        return false;
+      }
+    });
+
+    window.addEventListener("beforeprint", function() {
+      document.body.innerHTML = "";
+    });
+
+    const cards = document.querySelectorAll(".note-card");
+    cards.forEach(card => {
+      const head = card.querySelector(".note-head");
+      if (head) {
+        head.addEventListener("click", () => {
+          card.classList.toggle("closed");
+        });
+      }
+    });
+
+    document.getElementById("expandAll").addEventListener("click", () => {
+      cards.forEach(card => card.classList.remove("closed"));
+    });
+
+    document.getElementById("collapseAll").addEventListener("click", () => {
+      cards.forEach(card => card.classList.add("closed"));
+    });
+
+    const searchInput = document.getElementById("searchInput");
+    const searchable = document.querySelectorAll(".searchable, .stat-card, .flow-step, .passage-card, .path-card");
+    const filterButtons = document.querySelectorAll("[data-filter]");
+    let currentFilter = "all";
+
+    function applySearchAndFilter() {
+      const query = searchInput.value.toLowerCase().trim();
+
+      searchable.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        const category = item.getAttribute("data-category") || "";
+        const matchesQuery = !query || text.includes(query);
+        const matchesFilter = currentFilter === "all" || category === currentFilter || text.includes(currentFilter.toLowerCase());
+
+        if (matchesQuery && matchesFilter) {
+          item.classList.remove("hidden-search");
+          const parent = item.closest(".note-card");
+          if (parent) parent.classList.remove("closed");
+        } else {
+          item.classList.add("hidden-search");
+        }
+      });
+    }
+
+    searchInput.addEventListener("input", applySearchAndFilter);
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        filterButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentFilter = btn.getAttribute("data-filter");
+        applySearchAndFilter();
+      });
+    });
+  </script>
+
+</body>
+</html>
