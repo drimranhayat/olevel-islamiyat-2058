@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Musnad and Musannaf Collections | O Level Islamiyat 2058 / IGCSE 0493</title>
+  <meta name="description" content="Authentic Cambridge-aligned read-only notes on Musnad and Musannaf collections for O Level Islamiyat 2058 / IGCSE Islamiyat 0493 Paper 2, with comparison, examples, exam frames and premium UI." />
+
+  <style>
+    :root {
+      --navy:#06203f;
+      --navy2:#0b3b66;
+      --teal:#0f766e;
+      --gold:#d6a84f;
+      --gold-soft:#fff7e6;
+      --mint:#ecfdf5;
+      --blue:#eff6ff;
+      --rose:#fff1f2;
+      --purple:#f5f3ff;
+      --cream:#fffaf0;
+      --ink:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --shadow:0 18px 46px rgba(6,32,63,.11);
+    }
+
+    * {
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      -webkit-user-select:none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+
+    html { scroll-behavior:smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.18), transparent 27%),
+        radial-gradient(circle at 88% 15%, rgba(15,118,110,.15), transparent 24%),
+        radial-gradient(circle at 18% 82%, rgba(6,32,63,.08), transparent 25%),
+        linear-gradient(180deg,#f8fafc 0%,#eef5ff 48%,#f8fafc 100%);
+      line-height:1.72;
+    }
+
+    a { text-decoration:none; }
+
+    .container {
+      width:92%;
+      max-width:1220px;
+      margin:auto;
+    }
+
+    .topbar {
+      position:sticky;
+      top:0;
+      z-index:1000;
+      background:rgba(6,32,63,.98);
+      color:white;
+      box-shadow:0 8px 24px rgba(0,0,0,.18);
+      backdrop-filter:blur(10px);
+    }
+
+    .topbar-inner {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:14px;
+      padding:14px 0;
+    }
+
+    .brand {
+      color:white;
+      font-size:19px;
+      font-weight:900;
+      letter-spacing:-.01em;
+    }
+
+    .brand span { color:var(--gold); }
+
+    .nav {
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .nav a {
+      color:white;
+      padding:8px 10px;
+      border-radius:999px;
+      font-size:13.5px;
+      font-weight:800;
+      transition:.25s ease;
+    }
+
+    .nav a:hover {
+      color:#fff3c4;
+      background:rgba(255,255,255,.12);
+    }
+
+    .hero {
+      position:relative;
+      overflow:hidden;
+      color:white;
+      padding:96px 0 80px;
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.39), transparent 36%),
+        radial-gradient(circle at bottom right, rgba(15,118,110,.45), transparent 36%),
+        linear-gradient(135deg,#04162f 0%, #06203f 48%, #0f766e 100%);
+    }
+
+    .hero:after {
+      content:"";
+      position:absolute;
+      width:410px;
+      height:410px;
+      right:-170px;
+      top:-145px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+
+    .hero:before {
+      content:"";
+      position:absolute;
+      width:260px;
+      height:260px;
+      left:-100px;
+      bottom:-120px;
+      border-radius:50%;
+      border:34px solid rgba(214,168,79,.16);
+    }
+
+    .hero-grid {
+      display:grid;
+      grid-template-columns:1.08fr .92fr;
+      gap:38px;
+      align-items:center;
+      position:relative;
+      z-index:2;
+    }
+
+    .label {
+      display:inline-block;
+      background:rgba(214,168,79,.18);
+      border:1px solid rgba(214,168,79,.48);
+      color:#fff3c4;
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:900;
+      margin-bottom:16px;
+    }
+
+    h1 {
+      font-size:clamp(36px,5vw,61px);
+      line-height:1.05;
+      margin-bottom:18px;
+      letter-spacing:-.035em;
+    }
+
+    .hero p {
+      color:#e5e7eb;
+      font-size:18px;
+      margin-bottom:15px;
+      max-width:900px;
+    }
+
+    .hero-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-top:26px;
+    }
+
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      border-radius:999px;
+      padding:12px 18px;
+      font-size:14px;
+      font-weight:900;
+      transition:.25s ease;
+    }
+
+    .btn-primary { background:var(--gold); color:var(--navy); }
+    .btn-primary:hover { background:#c3953d; transform:translateY(-2px); }
+    .btn-outline { border:2px solid white; color:white; }
+    .btn-outline:hover { background:white; color:var(--navy); transform:translateY(-2px); }
+
+    .hero-card {
+      background:rgba(255,255,255,.98);
+      color:var(--ink);
+      border:1px solid rgba(255,255,255,.6);
+      border-radius:30px;
+      padding:26px;
+      box-shadow:0 28px 66px rgba(0,0,0,.28);
+    }
+
+    .title-box {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.26), transparent 35%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      padding:24px;
+      border-radius:24px;
+      border-bottom:5px solid var(--gold);
+      text-align:center;
+      margin-bottom:16px;
+    }
+
+    .title-box strong {
+      display:block;
+      color:#fff3c4;
+      font-size:31px;
+      margin-bottom:4px;
+    }
+
+    .title-mini-grid {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .title-mini-grid div {
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.22);
+      border-radius:16px;
+      padding:10px;
+      font-weight:900;
+      color:white;
+    }
+
+    .hero-card h2 { color:var(--navy); font-size:25px; margin-bottom:12px; }
+
+    .hero-card ul {
+      list-style:none;
+      display:grid;
+      gap:9px;
+    }
+
+    .hero-card li {
+      position:relative;
+      padding-left:28px;
+      color:#374151;
+      font-weight:700;
+    }
+
+    .hero-card li:before {
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:var(--teal);
+      font-weight:900;
+    }
+
+    .toolbar {
+      margin:-31px auto 34px;
+      position:relative;
+      z-index:5;
+    }
+
+    .toolbox {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:18px;
+      box-shadow:var(--shadow);
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:14px;
+      align-items:center;
+    }
+
+    .search {
+      width:100%;
+      border:1px solid #d9e2ef;
+      border-radius:999px;
+      padding:13px 16px;
+      font-size:15px;
+      outline:none;
+      background:#f8fafc;
+      color:var(--ink);
+      user-select:text;
+      -webkit-user-select:text;
+    }
+
+    .search:focus {
+      border-color:var(--gold);
+      box-shadow:0 0 0 4px rgba(214,168,79,.16);
+    }
+
+    .mini-buttons { display:flex; gap:9px; flex-wrap:wrap; }
+
+    .mini-btn {
+      border:0;
+      background:var(--navy);
+      color:white;
+      padding:11px 14px;
+      border-radius:999px;
+      font-weight:900;
+      cursor:pointer;
+      transition:.25s ease;
+    }
+
+    .mini-btn:hover, .mini-btn.active { background:var(--teal); }
+
+    .section { padding:44px 0; }
+
+    .section-title {
+      text-align:center;
+      max-width:980px;
+      margin:0 auto 34px;
+    }
+
+    .section-title .label { background:var(--navy); border:0; }
+
+    .section-title h2 {
+      color:var(--navy);
+      font-size:clamp(29px,4vw,43px);
+      line-height:1.15;
+      margin-bottom:12px;
+      letter-spacing:-.02em;
+    }
+
+    .section-title p { color:var(--muted); font-size:17px; }
+
+    .grid-4 {
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:17px;
+    }
+
+    .stat-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:23px;
+      padding:22px;
+      box-shadow:var(--shadow);
+      min-height:176px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .stat-card:after {
+      content:"";
+      position:absolute;
+      right:-26px;
+      top:-26px;
+      width:95px;
+      height:95px;
+      border-radius:50%;
+      background:rgba(214,168,79,.13);
+    }
+
+    .stat-card span {
+      display:inline-block;
+      background:var(--mint);
+      color:#166534;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .stat-card h3 { color:var(--navy); font-size:22px; margin-bottom:8px; }
+    .stat-card p { color:var(--muted); font-size:14px; }
+
+    .notice {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.22), transparent 34%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      border-radius:30px;
+      padding:28px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+    }
+
+    .notice h3 {
+      color:#fff3c4;
+      font-size:25px;
+      margin-bottom:10px;
+    }
+
+    .notice p, .notice li { color:#e5e7eb; }
+    .notice ul { padding-left:22px; }
+
+    .timeline {
+      position:relative;
+      max-width:1080px;
+      margin:auto;
+    }
+
+    .timeline:before {
+      content:"";
+      position:absolute;
+      left:24px;
+      top:0;
+      bottom:0;
+      width:4px;
+      background:linear-gradient(var(--gold),var(--teal));
+      border-radius:999px;
+    }
+
+    .timeline-card {
+      position:relative;
+      padding-left:66px;
+      margin-bottom:20px;
+    }
+
+    .timeline-marker {
+      position:absolute;
+      left:11px;
+      top:20px;
+      width:30px;
+      height:30px;
+      border-radius:50%;
+      background:var(--gold);
+      border:6px solid white;
+      box-shadow:0 8px 20px rgba(6,32,63,.2);
+      z-index:2;
+    }
+
+    .timeline-content {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:25px;
+      box-shadow:var(--shadow);
+      padding:22px;
+      overflow:hidden;
+    }
+
+    .timeline-content span {
+      display:inline-block;
+      background:var(--gold-soft);
+      border:1px solid #f3d48b;
+      color:#7a4f00;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:9px;
+    }
+
+    .timeline-content h3 {
+      color:var(--navy);
+      font-size:24px;
+      margin-bottom:10px;
+    }
+
+    .note-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:30px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+      overflow:hidden;
+    }
+
+    .note-head {
+      padding:24px 28px;
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.16), transparent 35%),
+        linear-gradient(135deg,var(--navy),var(--navy2));
+      color:white;
+      border-bottom:5px solid var(--gold);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:16px;
+      cursor:pointer;
+    }
+
+    .note-head h2 { font-size:26px; line-height:1.25; }
+
+    .note-head span {
+      display:inline-block;
+      background:rgba(255,255,255,.12);
+      color:#fff3c4;
+      padding:6px 11px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:12px;
+      margin-bottom:8px;
+    }
+
+    .toggle { font-size:24px; color:#fff3c4; transition:.25s ease; }
+    .note-card.closed .toggle { transform:rotate(-90deg); }
+    .note-body { padding:28px; }
+    .note-card.closed .note-body { display:none; }
+
+    .two-col {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    .mini-card {
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:20px;
+      margin-bottom:18px;
+    }
+
+    .mini-card.gold { background:var(--gold-soft); border-color:#f3d48b; }
+    .mini-card.teal { background:#eef6f5; border-color:#bfe4dc; }
+    .mini-card.blue { background:var(--blue); border-color:#bfdbfe; }
+    .mini-card.rose { background:var(--rose); border-color:#fecdd3; }
+    .mini-card.purple { background:var(--purple); border-color:#ddd6fe; }
+    .mini-card.cream { background:var(--cream); border-color:#fde68a; }
+
+    .mini-card h3 { color:var(--navy); font-size:22px; margin-bottom:11px; }
+
+    ul { padding-left:22px; }
+    li { margin-bottom:8px; color:#374151; }
+    strong { color:var(--navy); }
+
+    .table-wrap {
+      overflow-x:auto;
+      border-radius:22px;
+      border:1px solid var(--line);
+      margin:18px 0;
+      box-shadow:0 10px 26px rgba(6,32,63,.05);
+    }
+
+    table {
+      width:100%;
+      min-width:850px;
+      border-collapse:collapse;
+      background:white;
+    }
+
+    th {
+      background:var(--navy);
+      color:white;
+      padding:15px;
+      text-align:left;
+      font-size:14px;
+    }
+
+    td {
+      padding:15px;
+      border-top:1px solid var(--line);
+      color:#374151;
+      vertical-align:top;
+      font-size:14px;
+    }
+
+    tr:nth-child(even) td { background:#f8fafc; }
+
+    .collection-grid {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+
+    .collection-card {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:25px;
+      box-shadow:0 12px 30px rgba(6,32,63,.07);
+      overflow:hidden;
+      transition:.25s ease;
+    }
+
+    .collection-card:hover {
+      transform:translateY(-4px);
+      box-shadow:0 18px 40px rgba(6,32,63,.12);
+    }
+
+    .collection-top {
+      background:linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      border-bottom:5px solid var(--gold);
+      padding:20px;
+    }
+
+    .collection-top span {
+      color:#fff3c4;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .collection-top h3 {
+      font-size:22px;
+      margin-top:6px;
+    }
+
+    .collection-body {
+      padding:20px;
+    }
+
+    .collection-body h4 {
+      color:var(--navy);
+      font-size:18px;
+      margin:12px 0 8px;
+    }
+
+    .collection-body p {
+      color:#374151;
+      margin-bottom:10px;
+    }
+
+    .exam-line {
+      background:#eef6f5;
+      border:1px solid #bfe4dc;
+      border-radius:18px;
+      padding:14px;
+      color:#374151;
+      font-size:14px;
+      margin-top:12px;
+    }
+
+    .answer-box {
+      background:white;
+      border:1px solid var(--line);
+      border-radius:25px;
+      box-shadow:var(--shadow);
+      padding:24px;
+      margin-bottom:22px;
+      border-top:6px solid var(--teal);
+    }
+
+    .answer-box h3 { color:var(--navy); font-size:24px; margin-bottom:12px; }
+
+    .mark-pill {
+      display:inline-block;
+      background:var(--gold-soft);
+      color:#7a4f00;
+      border:1px solid #f3d48b;
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .question-bank {
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:18px;
+    }
+
+    .question {
+      background:white;
+      border:1px solid var(--line);
+      border-left:5px solid var(--gold);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:0 10px 26px rgba(6,32,63,.06);
+    }
+
+    .question h3 { color:var(--navy); font-size:19px; margin-bottom:8px; }
+    .question p { color:var(--muted); font-size:14px; }
+
+    .source-list { display:grid; gap:13px; }
+
+    .source-list a {
+      display:block;
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-left:5px solid var(--teal);
+      border-radius:16px;
+      padding:14px 16px;
+      color:var(--navy);
+      font-weight:800;
+      transition:.25s ease;
+    }
+
+    .source-list a:hover { background:var(--navy); color:white; }
+
+    .back-final {
+      background:
+        radial-gradient(circle at top left, rgba(214,168,79,.22), transparent 34%),
+        linear-gradient(135deg,var(--navy),var(--teal));
+      color:white;
+      border-radius:30px;
+      padding:42px 28px;
+      text-align:center;
+      box-shadow:var(--shadow);
+      margin-top:24px;
+    }
+
+    .back-final h2 { font-size:32px; margin-bottom:10px; }
+    .back-final p { color:#e5e7eb; max-width:780px; margin:0 auto 22px; }
+
+    footer {
+      background:#030f24;
+      color:white;
+      text-align:center;
+      padding:35px 0;
+      margin-top:40px;
+    }
+
+    footer p { color:#d1d5db; margin-bottom:8px; }
+    footer a { color:var(--gold); font-weight:900; }
+
+    .readonly-alert {
+      position:fixed;
+      left:50%;
+      bottom:22px;
+      transform:translateX(-50%);
+      background:var(--navy);
+      color:white;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:900;
+      font-size:14px;
+      box-shadow:0 14px 32px rgba(0,0,0,.28);
+      display:none;
+      z-index:99999;
+      text-align:center;
+    }
+
+    .hidden-search { display:none !important; }
+
+    @media print {
+      body { display:none !important; }
+    }
+
+    @media (max-width:1120px) {
+      .hero-grid,
+      .two-col {
+        grid-template-columns:1fr;
+      }
+
+      .grid-4 {
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .toolbox {
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:760px) {
+      .nav { gap:6px; }
+      .nav a { font-size:12px; padding:7px 8px; }
+      .hero { padding:64px 0 52px; }
+      .hero-actions,
+      .mini-buttons { width:100%; }
+      .btn,
+      .mini-btn { width:100%; }
+      .title-mini-grid,
+      .grid-4,
+      .collection-grid,
+      .question-bank {
+        grid-template-columns:1fr;
+      }
+      .timeline:before { left:16px; }
+      .timeline-card { padding-left:48px; }
+      .timeline-marker { left:3px; }
+      .note-head { flex-direction:column; align-items:flex-start; }
+      .note-body { padding:20px; }
+      .hero-card { padding:20px; }
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+  <div class="readonly-alert" id="readonlyAlert">This page is read-only for protected study use.</div>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="../../index.html">O Level Islamiyat <span>2058</span></a>
+      <nav class="nav">
+        <a href="../../index.html">Home</a>
+        <a href="../../paper-2.html">Paper 2</a>
+        <a href="compilation-of-hadiths.html">Compilation</a>
+        <a href="earliest-hadith-collections.html">Earliest Collections</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="label">Paper 2 • History and Importance of Hadiths</span>
+        <h1>Musnad and Musannaf Collections</h1>
+        <p>
+          A careful, authentic and Cambridge-aligned page explaining the main Musnad and Musannaf Hadith collections: what they mean, how they are arranged, why they matter and how to use them in exam answers.
+        </p>
+        <p>
+          Designed to prevent the common confusion between <strong>Companion-based arrangement</strong> and <strong>topic-based arrangement</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#comparison">Compare Musnad & Musannaf</a>
+          <a class="btn btn-outline" href="../../paper-2.html">Back to Paper 2</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="title-box">
+          <strong>Two Hadith Formats</strong>
+          <span>Who narrated? vs What topic?</span>
+          <div class="title-mini-grid">
+            <div>Musnad</div>
+            <div>Companion-based</div>
+            <div>Musannaf</div>
+            <div>Topic-based</div>
+          </div>
+        </div>
+        <h2>Core Exam Idea</h2>
+        <ul>
+          <li>Musnad collections are mainly arranged by Companion narrator.</li>
+          <li>Musannaf collections are arranged by topics or legal chapters.</li>
+          <li>Both helped preserve and organise Hadith material.</li>
+          <li>Cambridge specifically lists main Musnad and Musannaf collections.</li>
+          <li>Best answers compare structure, purpose and examples.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="container toolbar">
+    <div class="toolbox">
+      <input class="search" id="searchInput" type="search" placeholder="Search: Musnad, Musannaf, Ahmad, Abd al-Razzaq, Ibn Abi Shaybah, topic, Companion..." />
+      <div class="mini-buttons">
+        <button class="mini-btn active" data-filter="all">All</button>
+        <button class="mini-btn" data-filter="Musnad">Musnad</button>
+        <button class="mini-btn" data-filter="Musannaf">Musannaf</button>
+        <button class="mini-btn" id="expandAll">Expand</button>
+        <button class="mini-btn" id="collapseAll">Collapse</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <div class="notice searchable">
+          <h3>Authenticity and exam caution</h3>
+          <ul>
+            <li>This page follows Cambridge Paper 2’s “history and importance of the Hadiths” topic, especially the syllabus line about <strong>the main musnad and musannaf collections</strong>.</li>
+            <li>Do not confuse <strong>Musnad as a book type</strong> with technical discussions of chain continuity.</li>
+            <li>Do not confuse <strong>Musannaf</strong> with <strong>Sahih</strong>. A Musannaf is mainly about arrangement by topic; Sahih is mainly about selected authenticity criteria.</li>
+            <li>For O Level answers, the safest examples are <strong>Musnad Ahmad</strong>, <strong>Musannaf Abd al-Razzaq</strong> and <strong>Musannaf Ibn Abi Shaybah</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="section-title">
+          <span class="label">Cambridge Alignment</span>
+          <h2>Why this topic matters</h2>
+          <p>
+            Cambridge includes the main Musnad and Musannaf collections under Paper 2’s history and importance of Hadiths. Students should explain how Hadith collections were organised and why different formats helped preserve the Sunnah.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="stat-card searchable">
+            <span>Musnad</span>
+            <h3>Who narrated?</h3>
+            <p>Companion-based arrangement helps trace reports through named Companions.</p>
+          </div>
+          <div class="stat-card searchable">
+            <span>Musannaf</span>
+            <h3>What topic?</h3>
+            <p>Topic-based arrangement helps scholars find reports for worship, law and practice.</p>
+          </div>
+          <div class="stat-card searchable">
+            <span>Preservation</span>
+            <h3>Organisation matters</h3>
+            <p>Different formats helped preserve large amounts of Hadith material systematically.</p>
+          </div>
+          <div class="stat-card searchable">
+            <span>Exam Skill</span>
+            <h3>Compare clearly</h3>
+            <p>Top answers define both terms, give examples and explain importance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="comparison" style="background:#eef5ff;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Main Comparison</span>
+          <h2>Musnad vs Musannaf</h2>
+          <p>
+            Learn this table first. It gives the whole topic in a clear exam-ready form.
+          </p>
+        </div>
+
+        <div class="table-wrap searchable">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Musnad Collection</th>
+                <th>Musannaf Collection</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+      <tr>
+        <td><strong>Basic meaning</strong></td>
+        <td>A Hadith collection arranged mainly according to the Companion narrator or original transmitter.</td>
+        <td>A Hadith collection arranged according to subject headings or legal chapters.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Arrangement</strong></td>
+        <td>Reports are grouped under Companions such as Abu Bakr, Umar, Uthman, Ali, Aishah, Abu Hurayrah رضي الله عنهم.</td>
+        <td>Reports are grouped under topics such as purification, prayer, zakat, fasting, marriage, trade and legal matters.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Main question it answers</strong></td>
+        <td>Who narrated this Hadith?</td>
+        <td>What subject or ruling is this Hadith about?</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Best use</strong></td>
+        <td>Useful for tracing narrations from specific Companions and studying their transmitted material.</td>
+        <td>Useful for finding Hadiths relevant to worship, law, practice and daily Muslim life.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Famous examples</strong></td>
+        <td>Musnad Ahmad is the best-known example for O Level purposes.</td>
+        <td>Musannaf Abd al-Razzaq and Musannaf Ibn Abi Shaybah are key examples.</td>
+      </tr>
+    
+      <tr>
+        <td><strong>Exam warning</strong></td>
+        <td>Do not confuse it with the Hadith classification term “musnad” meaning a connected chain.</td>
+        <td>Do not say every topic-arranged book has the title Musannaf; the term refers to a type of arrangement.</td>
+      </tr>
+    
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="timeline">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Chronological Position</span>
+          <h2>Where Musnad and Musannaf fit in Hadith compilation</h2>
+          <p>
+            Use this timeline to show that these collections were part of the wider development of Hadith preservation.
+          </p>
+        </div>
+
+        <div class="timeline">
+          
+      <article class="timeline-card searchable">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span>Early preservation</span>
+          <h3>Memory, practice and personal written material</h3>
+          <ul><li>Hadith preservation began with the Companions who heard and saw the Prophet ﷺ directly.</li><li>Some personal written material existed early, but large organised collections developed later.</li><li>This stage gives the foundation for later Musnad and Musannaf collections.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Begin from preservation, not directly from book names.</div>
+        </div>
+      </article>
+    
+      <article class="timeline-card searchable">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span>Early organised collection</span>
+          <h3>Topic arrangement becomes useful</h3>
+          <ul><li>As Islamic law and teaching developed, scholars needed reports under practical subjects.</li><li>This encouraged collections arranged by chapters such as purification, prayer, fasting and trade.</li><li>Al-Muwatta and later Musannaf works show this practical arrangement.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Use this to explain why Musannaf arrangement mattered.</div>
+        </div>
+      </article>
+    
+      <article class="timeline-card searchable">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span>Musannaf stage</span>
+          <h3>Reports arranged by subject</h3>
+          <ul><li>Musannaf collections arranged Hadith and early reports by topic.</li><li>Musannaf Abd al-Razzaq and Musannaf Ibn Abi Shaybah are key examples.</li><li>These works were useful for jurists, teachers and students.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Define Musannaf as subject/chapter arrangement.</div>
+        </div>
+      </article>
+    
+      <article class="timeline-card searchable">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span>Musnad stage</span>
+          <h3>Reports arranged by Companion narrator</h3>
+          <ul><li>Musnad collections arranged reports mainly under the Companions who narrated them.</li><li>Musnad Ahmad is the most important example for O Level study.</li><li>This arrangement helped preserve material transmitted through particular Companions.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Define Musnad as Companion-narrator arrangement.</div>
+        </div>
+      </article>
+    
+      <article class="timeline-card searchable">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <span>Later critical collections</span>
+          <h3>Sahih and Sunan works</h3>
+          <ul><li>Later collections such as Sahih al-Bukhari and Sahih Muslim applied strict selection criteria.</li><li>Sunan collections also arranged many reports by legal chapters.</li><li>These did not replace Musnad and Musannaf works; they represent another stage of organisation and verification.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Show how Musnad and Musannaf fit into the wider Hadith compilation story.</div>
+        </div>
+      </article>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:#eef5ff;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Key Collections</span>
+          <h2>Main Musnad and Musannaf collections</h2>
+          <p>
+            These are the examples students should learn with purpose, arrangement and exam value.
+          </p>
+        </div>
+
+        <div class="collection-grid">
+          
+      <article class="collection-card searchable" data-category="Musnad">
+        <div class="collection-top">
+          <span>Musnad • 3rd century AH</span>
+          <h3>Musnad Ahmad</h3>
+        </div>
+        <div class="collection-body">
+          <p><strong>Compiler:</strong> Imam Ahmad ibn Hanbal</p>
+          <p><strong>Arrangement:</strong> Arranged mainly according to the Companion narrator.</p>
+          <h4>Why it matters</h4>
+          <ul><li>One of the most famous Musnad collections.</li><li>Shows the Musnad method clearly: Companion-based arrangement.</li><li>Preserves a very large body of reports from many Companions.</li><li>Useful for studying the transmission of Hadith through individual Companions.</li><li>Important for O Level because it represents the main Musnad format.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Use Musnad Ahmad when explaining that not all Hadith books are arranged by subject; some are arranged by narrator.</div>
+        </div>
+      </article>
+    
+      <article class="collection-card searchable" data-category="Musnad">
+        <div class="collection-top">
+          <span>Musnad • 3rd century AH</span>
+          <h3>Musnad Abu Ya‘la</h3>
+        </div>
+        <div class="collection-body">
+          <p><strong>Compiler:</strong> Abu Ya‘la al-Mawsili</p>
+          <p><strong>Arrangement:</strong> Arranged according to Companion narrators, following the Musnad style.</p>
+          <h4>Why it matters</h4>
+          <ul><li>Represents another example of Musnad arrangement.</li><li>Useful for showing that Musnad was a recognised Hadith-book format.</li><li>Less central for O Level than Musnad Ahmad, but helpful for deeper teacher notes.</li><li>Shows the diversity of Hadith compilation beyond the six famous Sunni collections.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Mention only briefly if needed; Musnad Ahmad is usually enough for a strong O Level answer.</div>
+        </div>
+      </article>
+    
+      <article class="collection-card searchable" data-category="Musannaf">
+        <div class="collection-top">
+          <span>Musannaf • 2nd/early 3rd century AH</span>
+          <h3>Musannaf Abd al-Razzaq</h3>
+        </div>
+        <div class="collection-body">
+          <p><strong>Compiler:</strong> Abd al-Razzaq al-San‘ani</p>
+          <p><strong>Arrangement:</strong> Arranged by subject and legal chapters.</p>
+          <h4>Why it matters</h4>
+          <ul><li>One of the most important early Musannaf collections.</li><li>Contains reports connected with law, practice and early scholarly transmission.</li><li>Shows that Hadith was arranged by practical topics before later canonical works became dominant.</li><li>Useful for explaining how jurists and scholars could find reports under legal subjects.</li><li>Often discussed in modern scholarship as an important early source.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Use it as a key example of a topic-based Hadith collection.</div>
+        </div>
+      </article>
+    
+      <article class="collection-card searchable" data-category="Musannaf">
+        <div class="collection-top">
+          <span>Musannaf • 3rd century AH</span>
+          <h3>Musannaf Ibn Abi Shaybah</h3>
+        </div>
+        <div class="collection-body">
+          <p><strong>Compiler:</strong> Ibn Abi Shaybah</p>
+          <p><strong>Arrangement:</strong> Arranged by chapters and subject areas.</p>
+          <h4>Why it matters</h4>
+          <ul><li>A major early Musannaf work.</li><li>Includes Prophetic reports as well as reports from Companions and early generations.</li><li>Important for law, practice and early Islamic discussions.</li><li>Shows how scholars organised material by topics for practical use.</li><li>Useful for comparing Musannaf format with Musnad format.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Use with Musannaf Abd al-Razzaq to show the main Musannaf collections.</div>
+        </div>
+      </article>
+    
+      <article class="collection-card searchable" data-category="Topic-arranged early work">
+        <div class="collection-top">
+          <span>Topic-arranged early work • 2nd century AH</span>
+          <h3>Al-Muwatta of Imam Malik</h3>
+        </div>
+        <div class="collection-body">
+          <p><strong>Compiler:</strong> Imam Malik ibn Anas</p>
+          <p><strong>Arrangement:</strong> Arranged by legal topics; includes Hadith, Companion reports and practice of Madinah.</p>
+          <h4>Why it matters</h4>
+          <ul><li>One of the earliest surviving arranged Hadith/legal works.</li><li>Not usually called a Musannaf in title, but it is topic-arranged and useful for comparison.</li><li>Shows the early link between Hadith and fiqh.</li><li>Helps students understand why topic arrangement was useful for law and worship.</li></ul>
+          <div class="exam-line"><strong>Exam use:</strong> Mention as a supporting early topic-arranged work, but keep the focus on Musannaf Abd al-Razzaq and Ibn Abi Shaybah if the question asks Musannaf specifically.</div>
+        </div>
+      </article>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Musnad Explained</span>
+              <h2>1. What is a Musnad collection?</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>Definition</h3>
+                <ul>
+                  <li>A <strong>Musnad collection</strong> arranges Hadith mainly according to the Companion who narrated the report.</li>
+                  <li>For example, reports narrated by Abu Bakr رضي الله عنه may be grouped together, then reports from Umar رضي الله عنه, and so on.</li>
+                  <li>The main focus is the original human transmitter from the Companions.</li>
+                  <li>This makes it useful for studying which Companion transmitted which reports.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>Purpose</h3>
+                <ul>
+                  <li>To preserve narrations linked with each Companion.</li>
+                  <li>To help scholars trace transmission through named Companions.</li>
+                  <li>To gather large bodies of Hadith material under narrator headings.</li>
+                  <li>To show the wide spread of Prophetic teaching among Companions.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mini-card rose">
+              <h3>Common confusion</h3>
+              <ul>
+                <li>The word <strong>musnad</strong> can also appear in technical Hadith terminology about chains. But in this syllabus topic, it mainly refers to a <strong>type of Hadith collection</strong>.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Musannaf Explained</span>
+              <h2>2. What is a Musannaf collection?</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>Definition</h3>
+                <ul>
+                  <li>A <strong>Musannaf collection</strong> arranges reports by subject or chapter.</li>
+                  <li>The word relates to arrangement/classification.</li>
+                  <li>Reports may appear under chapters such as purification, prayer, zakat, fasting, marriage, buying and selling, punishments or manners.</li>
+                  <li>Musannaf works often include Prophetic Hadith and reports from Companions and early generations.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>Purpose</h3>
+                <ul>
+                  <li>To make Hadith easy to use for law, worship and teaching.</li>
+                  <li>To gather reports on similar subjects in one place.</li>
+                  <li>To help jurists compare evidence for rulings.</li>
+                  <li>To show how Sunnah was applied in practical Muslim life.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mini-card blue">
+              <h3>A* sentence</h3>
+              <ul>
+                <li><strong>“A Musannaf is valuable because it organises Hadith material by subject, making the Sunnah easier to use in worship, law and daily conduct.”</strong></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Importance</span>
+              <h2>3. Why were Musnad and Musannaf collections important?</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+          <div class="note-body">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Importance</th>
+                    <th>Musnad contribution</th>
+                    <th>Musannaf contribution</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Preservation</strong></td>
+                    <td>Preserved reports connected to specific Companions.</td>
+                    <td>Preserved reports under useful subject areas.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Scholarship</strong></td>
+                    <td>Helped scholars study Companion-level transmission.</td>
+                    <td>Helped scholars compare evidence for legal topics.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Teaching</strong></td>
+                    <td>Useful for learning the narrations of particular Companions.</td>
+                    <td>Useful for teaching Hadith by topics such as prayer, trade and manners.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Law and practice</strong></td>
+                    <td>Less directly legal in arrangement but still preserves legal reports.</td>
+                    <td>Strongly useful for fiqh because similar reports are grouped together.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Later Hadith work</strong></td>
+                    <td>Gave later scholars huge narrator-based material.</td>
+                    <td>Gave later scholars topic-based material for selection and comparison.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="answer-frames" style="background:#eef5ff;">
+      <div class="container">
+        <div class="section-title">
+          <span class="label">Exam Training</span>
+          <h2>Cambridge-style answer frames</h2>
+          <p>
+            These frames help students answer clearly, without mixing up the two formats.
+          </p>
+        </div>
+
+        <div class="answer-box searchable">
+          <span class="mark-pill">10/14-mark knowledge answer</span>
+          <h3>Question: Write about the main Musnad and Musannaf collections of Hadith.</h3>
+          <ul>
+            <li>Begin by saying that Hadith collections were arranged in different ways according to scholarly needs.</li>
+            <li>Define a Musnad collection as one arranged mainly by Companion narrator.</li>
+            <li>Give Musnad Ahmad as the main example and explain that reports are grouped under Companions.</li>
+            <li>Explain that Musnad arrangement helps scholars trace reports through individual Companions.</li>
+            <li>Define a Musannaf collection as one arranged by topics or legal chapters.</li>
+            <li>Give Musannaf Abd al-Razzaq and Musannaf Ibn Abi Shaybah as important examples.</li>
+            <li>Explain that Musannaf collections often include Prophetic reports and reports from Companions and early generations.</li>
+            <li>Explain that Musannaf arrangement helps jurists and students find reports for subjects like prayer, fasting, trade and marriage.</li>
+            <li>Compare the two: Musnad asks “who narrated?” while Musannaf asks “what topic?”</li>
+            <li>Conclude that both formats helped preserve the Sunnah and organise Hadith knowledge for later Muslims.</li>
+          </ul>
+        </div>
+
+        <div class="answer-box searchable">
+          <span class="mark-pill">4-mark evaluation answer</span>
+          <h3>Question: Why were Musnad and Musannaf collections important?</h3>
+          <ul>
+            <li>They were important because they preserved large amounts of Hadith material in organised forms.</li>
+            <li>Musnad collections helped scholars trace narrations through particular Companions, strengthening knowledge of transmission.</li>
+            <li>Musannaf collections helped Muslims and scholars find Hadiths by topic, especially for worship and Islamic law.</li>
+            <li>Together, they show that Hadith scholarship was careful, organised and useful for Muslim belief and action.</li>
+            <li>Therefore, these collections helped later Muslims access the Prophet’s ﷺ guidance in a structured way.</li>
+          </ul>
+        </div>
+
+        <div class="answer-box searchable">
+          <span class="mark-pill">A* sentence starters</span>
+          <h3>Use these in answers</h3>
+          <ul>
+            <li><strong>“The main difference is that a Musnad collection is arranged by narrator, while a Musannaf collection is arranged by subject…”</strong></li>
+            <li><strong>“Musnad Ahmad is important because it preserves reports under the names of the Companions who narrated them…”</strong></li>
+            <li><strong>“Musannaf Abd al-Razzaq and Musannaf Ibn Abi Shaybah are important because they organise Hadith material by practical topics…”</strong></li>
+            <li><strong>“These collections show that Hadith scholarship was not random; scholars developed different systems for different purposes…”</strong></li>
+            <li><strong>“For Muslims today, such collections are significant because they preserve the Sunnah and make Prophetic guidance easier to study…”</strong></li>
+          </ul>
+        </div>
+
+        <div class="section-title" style="margin-top:44px;">
+          <h2>Likely Cambridge-style question angles</h2>
+          <p>
+            These are practice angles for Paper 2 history and importance questions.
+          </p>
+        </div>
+
+        <div class="question-bank">
+          <div class="question searchable">
+            <h3>Direct comparison</h3>
+            <p>Explain the difference between Musnad and Musannaf collections.</p>
+          </div>
+          <div class="question searchable">
+            <h3>Main examples</h3>
+            <p>Write about Musnad Ahmad and the main Musannaf collections.</p>
+          </div>
+          <div class="question searchable">
+            <h3>Importance</h3>
+            <p>Why were different types of Hadith collections important for Muslims?</p>
+          </div>
+          <div class="question searchable">
+            <h3>Arrangement</h3>
+            <p>How did arrangement by Companion differ from arrangement by subject?</p>
+          </div>
+          <div class="question searchable">
+            <h3>Legal use</h3>
+            <p>Why were Musannaf collections useful for Islamic law?</p>
+          </div>
+          <div class="question searchable">
+            <h3>Preservation</h3>
+            <p>How did Musnad and Musannaf collections help preserve the Sunnah?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Mark Scheme Focus</span>
+              <h2>What full-mark answers usually do</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="two-col">
+              <div class="mini-card teal">
+                <h3>For knowledge questions</h3>
+                <ul>
+                  <li>Define both Musnad and Musannaf clearly.</li>
+                  <li>Give accurate examples for both.</li>
+                  <li>Explain arrangement, not only names.</li>
+                  <li>Compare the two systems directly.</li>
+                  <li>Place them inside the wider history of Hadith compilation.</li>
+                </ul>
+              </div>
+
+              <div class="mini-card gold">
+                <h3>For importance questions</h3>
+                <ul>
+                  <li>Explain preservation of the Sunnah.</li>
+                  <li>Show why arrangement helped scholars and students.</li>
+                  <li>Link Musannaf with legal/practical use.</li>
+                  <li>Link Musnad with Companion-based transmission.</li>
+                  <li>Explain relevance for Muslims today.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mini-card rose">
+              <h3>Common mistakes to avoid</h3>
+              <ul>
+                <li>Saying Musnad and Musannaf are the same thing.</li>
+                <li>Saying Musnad means “only authentic Hadith”.</li>
+                <li>Saying Musannaf means “weak collection”.</li>
+                <li>Confusing Musnad Ahmad with Sahih al-Bukhari.</li>
+                <li>Listing names without explaining arrangement.</li>
+                <li>Forgetting that Cambridge asks for significance, not only facts.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="note-card searchable">
+          <div class="note-head">
+            <div>
+              <span>Sources</span>
+              <h2>Sources consulted / recommended</h2>
+            </div>
+            <div class="toggle">⌄</div>
+          </div>
+
+          <div class="note-body">
+            <div class="source-list">
+              <a href="https://www.cambridgeinternational.org/Images/697279-2026-2027-syllabus.pdf" target="_blank">Cambridge O Level Islamiyat 2058 Syllabus 2026–2027 — Paper 2 history and importance of Hadiths</a>
+              <a href="https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-o-level-islamiyat-2058/past-papers/" target="_blank">Cambridge O Level Islamiyat 2058 Past Papers, Mark Schemes and Examiner Reports</a>
+              <a href="https://sunnah.com/ahmad" target="_blank">Musnad Ahmad — Sunnah.com collection page</a>
+              <a href="https://www.kalamullah.com/musnad-ahmad.html" target="_blank">Musnad Ahmad description — arranged by Companion narrators</a>
+              <a href="https://en.wikipedia.org/wiki/Musannaf" target="_blank">Musannaf genre overview — topic/chapter arrangement</a>
+              <a href="https://en.wikipedia.org/wiki/Musannaf_Abd_al-Razzaq" target="_blank">Musannaf Abd al-Razzaq overview</a>
+              <a href="https://archive.org/details/MusannafIbnEAbiShaibahVol01" target="_blank">Musannaf Ibn Abi Shaybah archive record</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="back-final">
+          <h2>Return to Paper 2</h2>
+          <p>
+            Go back to the main Paper 2 page for Major Teachings in Hadiths, Hadith passages, Compilation of Hadiths, Earliest Collections, Rightly Guided Caliphs, Articles of Faith and Pillars of Islam.
+          </p>
+          <a class="btn btn-primary" href="../../paper-2.html">← Back to Paper 2</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>O Level Islamiyat 2058 / IGCSE Islamiyat 0493</p>
+      <p>Musnad and Musannaf Collections • Paper 2 history and importance • Read-only study page</p>
+      <p><a href="../../paper-2.html">Back to Paper 2</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const readonlyAlert = document.getElementById("readonlyAlert");
+
+    function showReadonlyAlert() {
+      readonlyAlert.style.display = "block";
+      clearTimeout(window.readonlyTimer);
+      window.readonlyTimer = setTimeout(() => {
+        readonlyAlert.style.display = "none";
+      }, 1800);
+    }
+
+    document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("copy", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("cut", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("paste", function(e) {
+      e.preventDefault();
+      showReadonlyAlert();
+    });
+
+    document.addEventListener("selectstart", function(e) {
+      if (e.target && e.target.classList && e.target.classList.contains("search")) return;
+      e.preventDefault();
+    });
+
+    document.addEventListener("dragstart", function(e) {
+      e.preventDefault();
+    });
+
+    document.addEventListener("keydown", function(e) {
+      const key = e.key.toLowerCase();
+      if (
+        (e.ctrlKey && ["s","p","u","c","x","a"].includes(key)) ||
+        (e.ctrlKey && e.shiftKey && ["i","j","c"].includes(key)) ||
+        key === "f12" ||
+        key === "printscreen"
+      ) {
+        e.preventDefault();
+        showReadonlyAlert();
+        return false;
+      }
+    });
+
+    window.addEventListener("beforeprint", function() {
+      document.body.innerHTML = "";
+    });
+
+    const cards = document.querySelectorAll(".note-card");
+    cards.forEach(card => {
+      const head = card.querySelector(".note-head");
+      if (head) {
+        head.addEventListener("click", () => {
+          card.classList.toggle("closed");
+        });
+      }
+    });
+
+    document.getElementById("expandAll").addEventListener("click", () => {
+      cards.forEach(card => card.classList.remove("closed"));
+    });
+
+    document.getElementById("collapseAll").addEventListener("click", () => {
+      cards.forEach(card => card.classList.add("closed"));
+    });
+
+    const searchInput = document.getElementById("searchInput");
+    const searchable = document.querySelectorAll(".searchable, .stat-card, .timeline-card, .collection-card, .answer-box, .question");
+    const filterButtons = document.querySelectorAll("[data-filter]");
+    let currentFilter = "all";
+
+    function applySearchAndFilter() {
+      const query = searchInput.value.toLowerCase().trim();
+
+      searchable.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        const category = item.getAttribute("data-category") || "";
+        const matchesQuery = !query || text.includes(query);
+        const matchesFilter = currentFilter === "all" || category.toLowerCase().includes(currentFilter.toLowerCase()) || text.includes(currentFilter.toLowerCase());
+
+        if (matchesQuery && matchesFilter) {
+          item.classList.remove("hidden-search");
+          const parent = item.closest(".note-card");
+          if (parent) parent.classList.remove("closed");
+        } else {
+          item.classList.add("hidden-search");
+        }
+      });
+    }
+
+    searchInput.addEventListener("input", applySearchAndFilter);
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        filterButtons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        currentFilter = btn.getAttribute("data-filter");
+        applySearchAndFilter();
+      });
+    });
+  </script>
+
+</body>
+</html>
