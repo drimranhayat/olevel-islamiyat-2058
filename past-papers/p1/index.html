@@ -72,6 +72,12 @@
   box-shadow: none;
 }
 
+.paper-tab.secondary:hover {
+  background: #e8f7f4;
+  border-color: #0f766e;
+  color: #0f766e;
+}
+
 .past-paper-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -179,7 +185,7 @@
   transform: translateX(4px);
 }
 
-.coming-soon {
+.paper-2-link-box {
   margin-top: 34px;
   background: #ffffff;
   border: 1px dashed #b8c8dc;
@@ -189,8 +195,14 @@
   color: #5d6b82;
 }
 
-.coming-soon strong {
+.paper-2-link-box strong {
   color: #071b33;
+}
+
+.paper-2-link-box a {
+  color: #0f766e;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 @media (max-width: 1050px) {
@@ -219,7 +231,7 @@
   <div class="past-papers-container">
     <div class="past-papers-header">
       <span class="past-papers-badge">O Level / IGCSE Islamiyat 2058 / 0493</span>
-      <h1>Past Paper Questions</h1>
+      <h1>Paper 1 Past Paper Questions</h1>
       <p>
         Explore premium topic-wise Paper 1 past-paper resources designed for focused revision,
         examiner understanding, repeated question analysis, and A/A* exam preparation.
@@ -229,7 +241,7 @@
 ```
 <div class="paper-tabs">
   <span class="paper-tab">Paper 1 Resources</span>
-  <span class="paper-tab secondary">Paper 2 Coming Soon</span>
+  <a class="paper-tab secondary" href="../p2/">Open Paper 2 Resources</a>
 </div>
 
 <div class="past-paper-grid">
@@ -244,7 +256,7 @@
       <span>High Frequency</span>
       <span>Qur’an Topics</span>
     </div>
-    <a class="open-card" href="p1/premium-history-importance-quran-p1-past-papers.html">
+    <a class="open-card" href="premium-history-importance-quran-p1-past-papers.html">
       Open Resource →
     </a>
   </article>
@@ -253,14 +265,14 @@
     <div class="card-icon">🕋</div>
     <h2>Life of Prophet ﷺ in Makkah</h2>
     <p>
-      Early life, preaching, persecution, migrations, pledges, Israʾ wal-Miʿraj, and Hijrah questions organized topic-wise.
+      Early life, preaching, persecution, migrations, pledges, Israʾ wal-Miʿraj, and Hijrah questions organised topic-wise.
     </p>
     <div class="card-meta">
       <span>P1</span>
       <span>Very Important</span>
       <span>Makki Life</span>
     </div>
-    <a class="open-card" href="p1/premium-makki-life-p1-past-papers.html">
+    <a class="open-card" href="premium-makki-life-p1-past-papers.html">
       Open Resource →
     </a>
   </article>
@@ -276,7 +288,7 @@
       <span>Exam Favourite</span>
       <span>Madani Life</span>
     </div>
-    <a class="open-card" href="p1/premium-madani-life-p1-past-papers.html">
+    <a class="open-card" href="premium-madani-life-p1-past-papers.html">
       Open Resource →
     </a>
   </article>
@@ -292,14 +304,16 @@
       <span>Repeated Area</span>
       <span>Community</span>
     </div>
-    <a class="open-card" href="p1/premium-first-islamic-community-p1-past-papers.html">
+    <a class="open-card" href="premium-first-islamic-community-p1-past-papers.html">
       Open Resource →
     </a>
   </article>
 </div>
 
-<div class="coming-soon">
-  <strong>Paper 2 Past Papers:</strong> A separate section can be added here once your P2 HTML files are ready.
+<div class="paper-2-link-box">
+  <strong>Paper 2 Past Papers:</strong>
+  Paper 2 topic-wise past paper resources are available here:
+  <a href="../p2/">Open Paper 2 Past Papers →</a>
 </div>
 ```
 
